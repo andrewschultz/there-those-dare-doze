@@ -60,19 +60,21 @@ the ppnn is privately-named scenery.
 
 book grave ground
 
-Grave Ground is west of There Those Dare Doze.
+Grave Ground is west of Rare Rows.
+
+Dave Downed is a person in Grave Ground. "Dave (Downed) is here, [one of][or]still [stopping]looking upset."
 
 book rowr room
 
-Rowr Room is east of There Those Dare Doze.
+Rowr Room is east of Rare Rows.
 
 book cram creek
 
-Cram Creek is north of There Those Dare Doze.
+Cram Creek is north of Rare Rows.
 
 book car cage
 
-Car Cage is south of There Those Dare Doze.
+Car Cage is south of Rare Rows.
 
 volume verb-checker rule
 

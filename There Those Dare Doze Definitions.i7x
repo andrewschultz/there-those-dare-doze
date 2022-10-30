@@ -24,6 +24,11 @@ this is the flag bad goto from rule: do nothing;
 
 this is the flag bad goto to rule: do nothing;
 
+volume in game barometers
+
+to decide which number is dave-score:
+	decide on (boolval of sco-rave-round) + (boolval of sco-pave-pound) + (boolval of sco-wave-wound) + (boolval of sco-save-sound) + (boolval of sco-crave-crowned)
+
 volume general stuff
 
 book which number

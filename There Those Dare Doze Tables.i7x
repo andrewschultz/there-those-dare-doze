@@ -4,8 +4,68 @@ Version 1/221007 of There Those Dare Doze Tables by Andrew Schultz begins here.
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
+"pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
+"wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
+"save"	"sound"	--	--	false	true	true	false	grave ground	vc-save-sound rule	vr-save-sound rule	--	--
+"crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	--
 "hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	--
 "rope"	"ruts"	--	--	false	true	true	false	rare rows	vc-rope-ruts rule	vr-rope-ruts rule	--	--
+
+a goodrhyme rule (this is the vc-rave-round rule):
+	if player is not in grave ground, unavailable;
+	if sco-rave-round is true:
+		vcal "You already boosted Dave this way!";
+		already-done;
+	ready;
+
+this is the vr-rave-round rule:
+	now sco-rave-round is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-pave-pound rule):
+	if player is not in grave ground, unavailable;
+	if sco-pave-pound is true:
+		vcal "You already boosted Dave this way!";
+		already-done;
+	ready;
+
+this is the vr-pave-pound rule:
+	now sco-pave-pound is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-wave-wound rule):
+	if player is not in grave ground, unavailable;
+	if sco-wave-wound is true:
+		vcal "You already boosted Dave this way!";
+		already-done;
+	ready;
+
+this is the vr-wave-wound rule:
+	now sco-wave-wound is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-save-sound rule):
+	if player is not in grave ground, unavailable;
+	if sco-save-sound is true:
+		vcal "You already boosted Dave this way!";
+		already-done;
+	ready;
+
+this is the vr-save-sound rule:
+	now sco-save-sound is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-crave-crowned rule):
+	if player is not in grave ground, unavailable;
+	if sco-crave-crowned is true:
+		vcal "You already boosted Dave this way!";
+		already-done;
+	ready;
+
+this is the vr-crave-crowned rule:
+	now sco-crave-crowned is true;
+	process-dave;
 
 a goodrhyme rule (this is the vc-hope-huts rule):
 	if ppnn is not fungible, unavailable;
@@ -31,6 +91,13 @@ this is the vr-rope-ruts rule:
 	abide by the hope-and-rope rule;
 
 section auxiliary rules
+
+to process-dave:
+	say "Dave perks up! He looks [one of]slightly[or]somewhat[or]really[or]adequately[or]extra[stopping] perky and more willing and able to help.";
+	if dave-score is 4:
+		say "Dave shakes your hand. 'Thank you! I feel like my old self now! There's one more thing ... no, it's not necessary. I can help the Prayer Pros now.'";
+	else if dave-score is 5:
+		say "'Thanks, man. You didn't have to.' You nod. You enjoyed the exercise and practice. Who knows when it could come in handy?";
 
 this is the hope-and-rope rule:
 	if rope-and-hope is 2:
