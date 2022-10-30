@@ -29,6 +29,9 @@ volume in game barometers
 to decide which number is dave-score:
 	decide on (boolval of sco-rave-round) + (boolval of sco-pave-pound) + (boolval of sco-wave-wound) + (boolval of sco-save-sound) + (boolval of sco-crave-crowned)
 
+to decide which number is rows-south:
+	decide on (boolval of sco-fair-foes) + (boolval of sco-bare-bows) + (boolval of sco-arrows);
+
 volume general stuff
 
 book which number

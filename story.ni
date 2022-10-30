@@ -54,9 +54,23 @@ book rare rows
 
 Rare Rows is a room. the player is in Rare Rows.
 
+check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
+
 chapter ppnn
 
 the ppnn is privately-named scenery.
+
+chapter Fair Foes
+
+the Fair Foes are people. "The Fair Foes wait here, ready to follow your lead as needed.". description is "Inscrutable, neither too enthusiastic nor too bored."
+
+chapter arrows
+
+the arrows are a thing. "Arrows lie here on the ground.".  description is "They look sharp enough for combat. You're not an expert."
+
+chapter bare bows
+
+the bare bows are a thing. "Bare bows lie on the ground.". description is "Too big and strong for you to use. Someone more experienced, though..."
 
 book grave ground
 
@@ -75,6 +89,19 @@ Cram Creek is north of Rare Rows.
 book car cage
 
 Car Cage is south of Rare Rows.
+
+check going south in rare rows:
+	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
+	if rows-south < 3:
+		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
+		if sco-fair-foes is false, say "Allies would be good to start with." instead;
+		if sco-bare-bows is false, say "Your allies, the fair foes, need [if sco-bare-bows is false]weapons[else]ammunition[end if]." instead;
+	say "Despite protests from the south, you feel brave enough to go [one of][or]back [stopping]there and take care of business.";
+	if fair foes are in rare rows:
+		say "The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while they don't kill the Mar Mage, their opponent curses their temporary loss of magic capabilities--keeping that shield up was hard work![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what.";
+		moot fair foes;
+		moot arrows;
+		moot bare bows;
 
 volume verb-checker rule
 

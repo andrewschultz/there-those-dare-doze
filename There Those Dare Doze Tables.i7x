@@ -4,6 +4,13 @@ Version 1/221007 of There Those Dare Doze Tables by Andrew Schultz begins here.
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"snare"	"snows"	--	--	false	true	true	false	rare rows	vc-snare-snows rule	vr-snare-snows rule	--	--
+"glare"	"glows"	--	--	false	true	true	false	rare rows	vc-glare-glows rule	vr-glare-glows rule	--	--
+"stair"	"stows"	--	--	false	true	true	false	rare rows	vc-stair-stows rule	vr-stair-stows rule	--	--
+"hair"	"hose"	--	--	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
+"fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
+"arrows"	--	--	--	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
+"bare"	"bows"	--	--	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
 "rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
 "pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
 "wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
@@ -11,6 +18,89 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	--
 "hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	--
 "rope"	"ruts"	--	--	false	true	true	false	rare rows	vc-rope-ruts rule	vr-rope-ruts rule	--	--
+
+a goodrhyme rule (this is the vc-snare-snows rule):
+	if player is not in rare rows, unavailable;
+	if sco-snare-snows is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-snare-snows is true:
+		vcal "You already harvested snows!";
+		already-done;
+	ready;
+
+this is the vr-snare-snows rule:
+	now sco-snare-snows is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-glare-glows rule):
+	if player is not in rare rows, unavailable;
+	if sco-glare-glows is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-glare-glows rule:
+	now sco-glare-glows is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-stair-stows rule):
+	if player is not in rare rows, unavailable;
+	if sco-stair-stows is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-stair-stows rule:
+	now sco-stair-stows is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-hair-hose rule):
+	if player is not in rare rows, unavailable;
+	if sco-hair-hose is true:
+		vcal "You already acquired hair hose!";
+		already-done;
+	ready;
+
+this is the vr-hair-hose rule:
+	now sco-hair-hose is true;
+	say "You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.";
+
+a goodrhyme rule (this is the vc-fair-foes rule):
+	if player is not in rare rows, unavailable;
+	if sco-fair-foes is true:
+		vcal "The fair foes have already been summoned!";
+		already-done;
+	ready;
+
+this is the vr-fair-foes rule:
+	now sco-fair-foes is true;
+	say "Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.";
+	move fair foes to Rare Rows;
+
+a goodrhyme rule (this is the vc-arrows rule):
+	if player is not in rare rows, unavailable;
+	if sco-arrows is true:
+		vcal "You already have enough arrows!";
+		already-done;
+	ready;
+
+this is the vr-arrows rule:
+	now sco-arrows is true;
+	say "Hooray! You figured what to do! You get a point!";
+	move arrows to rare rows;
+
+a goodrhyme rule (this is the vc-bare-bows rule):
+	if player is not in rare rows, unavailable;
+	if sco-bare-bows is true:
+		vcal "You already have enough bare bows!";
+		already-done;
+	ready;
+
+this is the vr-bare-bows rule:
+	now sco-bare-bows is true;
+	say "Hooray! You figured what to do! You get a point!";
+	move bare bows to rare rows;
 
 a goodrhyme rule (this is the vc-rave-round rule):
 	if player is not in grave ground, unavailable;

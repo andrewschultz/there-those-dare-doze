@@ -9,6 +9,16 @@ chapter endgame stuff
 sco-hope-huts is a truth state that varies.
 sco-rope-ruts is a truth state that varies.
 
+chapter center
+
+sco-snare-snows is a truth state that varies.
+sco-glare-glows is a truth state that varies.
+sco-stair-stows is a truth state that varies.
+sco-hair-hose is a truth state that varies.
+sco-fair-foes is a truth state that varies.
+sco-arrows is a truth state that varies.
+sco-bare-bows is a truth state that varies.
+
 chapter west
 
 sco-rave-round is a truth state that varies.
