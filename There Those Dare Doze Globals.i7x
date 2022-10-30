@@ -19,6 +19,14 @@ sco-fair-foes is a truth state that varies.
 sco-arrows is a truth state that varies.
 sco-bare-bows is a truth state that varies.
 
+chapter north
+
+sco-clam-clique is a truth state that varies.
+sco-slam-sleek is a truth state that varies.
+sco-wham-weak is a truth state that varies.
+sco-blam-bleak is a truth state that varies.
+sco-maam-meek is a truth state that varies.
+
 chapter west
 
 sco-rave-round is a truth state that varies.

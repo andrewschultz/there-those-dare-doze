@@ -11,6 +11,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
 "arrows"	--	--	--	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
 "bare"	"bows"	--	--	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
+"clam"	"clique"	--	--	false	true	true	false	cram creek	vc-clam-clique rule	vr-clam-clique rule	--	--
+"slam"	"sleek"	--	--	false	true	true	false	cram creek	vc-slam-sleek rule	vr-slam-sleek rule	--	--
+"wham"	"weak"	--	--	false	true	true	false	cram creek	vc-wham-weak rule	vr-wham-weak rule	--	--
+"blam"	"bleak"	--	--	false	true	true	false	cram creek	vc-blam-bleak rule	vr-blam-bleak rule	--	--
+"maam"	"meek"	--	--	false	true	true	false	cram creek	vc-maam-meek rule	vr-maam-meek rule	--	--
 "rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
 "pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
 "wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
@@ -102,6 +107,69 @@ this is the vr-bare-bows rule:
 	say "Hooray! You figured what to do! You get a point!";
 	move bare bows to rare rows;
 
+a goodrhyme rule (this is the vc-slam-sleek rule):
+	if player is not in cram creek, unavailable;
+	if sco-slam-sleek is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-slam-sleek rule:
+	now sco-slam-sleek is true;
+	say "You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-wham-weak rule):
+	if player is not in cram creek, unavailable;
+	if sco-wham-weak is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-wham-weak rule:
+	now sco-wham-weak is true;
+	say "Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-blam-bleak rule):
+	if player is not in cram creek, unavailable;
+	if sco-blam-bleak is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-blam-bleak rule:
+	now sco-blam-bleak is true;
+	say "Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-maam-meek rule):
+	if player is not in cram creek, unavailable;
+	if sco-maam-meek is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-maam-meek rule:
+	now sco-maam-meek is true;
+	say "You insult the Sham Sheik's perceived masculinity, which shouldn't be an insult to most well-adjusted people, but it is to him! And it's an effective one!";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-clam-clique rule):
+	if player is not in cram creek, unavailable;
+	if sco-clam-clique is true:
+		vcal "You already got the clam clique on your side!";
+		already-done;
+	if sheik-score < 3:
+		vcp "You hear a commotion beneath the creek, but one look from the Sham Sheik, and the riverbed inhabitants go calm again.";
+		not-yet;
+	ready;
+
+this is the vr-clam-clique rule:
+	now sco-clam-clique is true;
+	say "Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.";
+	move clam clique to rare rows;
+
 a goodrhyme rule (this is the vc-rave-round rule):
 	if player is not in grave ground, unavailable;
 	if sco-rave-round is true:
@@ -181,6 +249,16 @@ this is the vr-rope-ruts rule:
 	abide by the hope-and-rope rule;
 
 section auxiliary rules
+
+this is the check-sheik rule:
+	if sheik-score is 3:
+		say "That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.[paragraph break]Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.";
+		moot sham sheik;
+		the rule succeeds;
+	else if sheik-score is 4:
+		say "And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures there.";
+		the rule succeeds;
+	say "The Sham Sheik looks [one of][or]a little more [or]a lot more [stopping]peeved. You're getting to him!";
 
 to process-dave:
 	say "Dave perks up! He looks [one of]slightly[or]somewhat[or]really[or]adequately[or]extra[stopping] perky and more willing and able to help.";

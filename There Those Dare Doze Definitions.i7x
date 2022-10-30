@@ -32,6 +32,9 @@ to decide which number is dave-score:
 to decide which number is rows-south:
 	decide on (boolval of sco-fair-foes) + (boolval of sco-bare-bows) + (boolval of sco-arrows);
 
+to decide what number is sheik-score:
+	decide on (boolval of sco-slam-sleek) + (boolval of sco-wham-weak) + (boolval of sco-blam-bleak) + (boolval of sco-maam-meek)
+
 volume general stuff
 
 book which number

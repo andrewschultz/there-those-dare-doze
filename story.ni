@@ -84,7 +84,15 @@ Rowr Room is east of Rare Rows.
 
 book cram creek
 
-Cram Creek is north of Rare Rows.
+Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south."
+
+chapter Sham Sheik
+
+the Sham Sheik is a person in Cram Creek. "A Sham Sheik eyes you sardonically here. He seems to think he owns the place and tries to tower over you.". description is "He shoos you away. This confrontation is strictly verbal."
+
+chapter clam clique
+
+the clam clique are plural-named people. "The clam clique you rescued from the Sham Sheik is here.". description is "They occasionally make weird noises as their shells open and close."
 
 book car cage
 
