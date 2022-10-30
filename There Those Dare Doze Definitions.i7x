@@ -49,6 +49,12 @@ to decide whether immediate-attention of (ru - a rule):
 
 to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]
 
+to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
+	if r1 is adjacent to r2, yes;
+	no;
+
+this is the stuck-right-now rule: do nothing;
+
 book rules
 
 this is the disable-learner-options rule: if player does not have leet learner, say "You decide to take the leet learner before exercising any of its options." instead;

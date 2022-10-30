@@ -40,6 +40,14 @@ to say adverb:
 	else:
 		say "no longer";
 
+volume odd verbs
+
+chapter xyzzying
+
+carry out xyzzying:
+	say "A stern voice booms: 'SPACEY SPELL? HEY, SEE HELL!'[paragraph break]Better not risk it.";
+	the rule succeeds;
+
 volume rooms
 
 book rare rows
