@@ -67,7 +67,9 @@ check going in rare rows when number of solved rooms is 3:
 	if the room gone to is not solved, continue the action;
 	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward." instead;
 
-Rare Rows is a room. the player is in Rare Rows. "Here is the resting place of the Prayer Pros. Passages go in any cardinal direction.". win-score of rare rows is 7.
+Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in any cardinal direction.". win-score of rare rows is 7.
+
+the player is in Rare Rows.
 
 check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
 
@@ -100,7 +102,7 @@ book grave ground
 
 check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress." instead;
 
-Grave Ground is west of Rare Rows. win-score of Grave Ground is 5.
+Grave Ground is west of Rare Rows. win-score of Grave Ground is 4.
 
 Dave Downed is a person in Grave Ground. "Dave (Downed) is here, [one of][or]still [stopping]looking upset."
 
@@ -126,7 +128,7 @@ the clam clique are plural-named people. "The clam clique you rescued from the S
 
 book car cage
 
-Car Cage is south of Rare Rows. win-score of car cage is 3.
+Car Cage is south of Rare Rows. win-score of car cage is 3. printed name is "[if sco-star-stage is false]Car Cage[else]Star Stage[end if]".
 
 check going south in rare rows:
 	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
@@ -143,11 +145,11 @@ check going south in rare rows:
 
 chapter mar mage
 
-The Mar Mage is a person in Car Cage.
+The Mar Mage is a person in Car Cage. "The Mar Mage stands here defiantly! How can you adjust the Car Cage to drain their power?". description is "The Mar Mage glares back, intimdatingly, at your property-violating self."
 
 chapter Saar Sage
 
-The Saar Sage is a person.
+The Saar Sage is a person. "The Saar Sage, fresh off showing the Mar Mage what's what, waits for the right time to perform their next bit of magic.". description is "All very wizardly in a blue outfit with yellow Microsoft ClipArt-ish symbols all over. You suspect their position and size have some arcane meaning you will never know."
 
 volume verbs
 

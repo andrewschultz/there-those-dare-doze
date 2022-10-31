@@ -2,6 +2,10 @@ Version 1/221007 of There Those Dare Doze Definitions by Andrew Schultz begins h
 
 "This should briefly describe the purpose of There Those Dare Doze Definitions."
 
+volume basic definitions
+
+to say shows: say "[']Ware-Woes-Share Shows"
+
 book definitions
 
 definition: a room (called rm) is available-from-here:

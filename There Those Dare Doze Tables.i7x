@@ -72,7 +72,7 @@ this is the vr-rar-rage rule:
 
 a goodrhyme rule (this is the vc-star-stage rule):
 	if player is not in car cage, unavailable;
-	if cage-prep-score < 3:
+	if cage-prep-score < 2:
 		vcp "You haven't prepared enough to change the stage yet. But yes, that is the way to go once you do!";
 		not-yet;
 	if sco-star-stage is true:
@@ -85,6 +85,7 @@ this is the vr-star-stage rule:
 	say "On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...";
 	say "[line break]...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.";
 	move saar sage to Rare Rows;
+	solve-room;
 
 a goodrhyme rule (this is the vc-snare-snows rule):
 	if player is not in rare rows, unavailable;
@@ -228,6 +229,7 @@ this is the vr-clam-clique rule:
 	now sco-clam-clique is true;
 	say "Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.";
 	move clam clique to rare rows;
+	solve-room;
 
 a goodrhyme rule (this is the vc-rave-round rule):
 	if player is not in grave ground, unavailable;
@@ -239,6 +241,7 @@ a goodrhyme rule (this is the vc-rave-round rule):
 this is the vr-rave-round rule:
 	now sco-rave-round is true;
 	say "Hooray! You figured what to do! You get a point!";
+	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-pave-pound rule):
 	if player is not in grave ground, unavailable;
@@ -250,6 +253,7 @@ a goodrhyme rule (this is the vc-pave-pound rule):
 this is the vr-pave-pound rule:
 	now sco-pave-pound is true;
 	say "Hooray! You figured what to do! You get a point!";
+	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-wave-wound rule):
 	if player is not in grave ground, unavailable;
@@ -273,6 +277,7 @@ a goodrhyme rule (this is the vc-save-sound rule):
 this is the vr-save-sound rule:
 	now sco-save-sound is true;
 	say "Hooray! You figured what to do! You get a point!";
+	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-crave-crowned rule):
 	if player is not in grave ground, unavailable;
@@ -283,8 +288,8 @@ a goodrhyme rule (this is the vc-crave-crowned rule):
 
 this is the vr-crave-crowned rule:
 	now sco-crave-crowned is true;
-	process-dave;
 	say "Dave seems charged with motivation!";
+	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-tower-tomb rule):
 	if player is not in rowr room, unavailable;
@@ -367,7 +372,8 @@ a goodrhyme rule (this is the vc-hope-huts rule):
 
 this is the vr-hope-huts rule:
 	now sco-hope-huts is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Huts are built! The Prayer Pros go over to inspect them.";
+	abide by the huts-and-ruts rule;
 
 a goodrhyme rule (this is the vc-rope-ruts rule):
 	if ppnn is not fungible, unavailable;
@@ -379,20 +385,23 @@ a goodrhyme rule (this is the vc-rope-ruts rule):
 this is the vr-rope-ruts rule:
 	now sco-rope-ruts is true;
 	say "Rope ruts appear!";
-	abide by the hope-and-rope rule;
+	abide by the huts-and-ruts rule;
 
 section auxiliary rules
 
 to bump-room: increment win-score of location of player;
 
+to solve-room: now location of player is solved;
+
 this is the cage-change rule:
 	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. 'No! I don't believe it! You can't keep this up!'[line break]";
-	say "[one of]However, it settles back. You've done damage but nothing serious[or]It takes a little longer to settle back this time[or]Something has shattered. The car cage can become something more positive[stopping]";
+	say "[one of]However, it settles back. But you did something, you know that[or]Something has shattered. The car cage can become something more positive, you feel[or]Why not? Show off a bit, even though [if sco-star-stage is true]you defeated the star stage[else]the car cage seemed ripe for change[end if][stopping].";
 
 this is the ground-boost rule:
 	if dave-score is 4:
 		say "Dave jumps up! He feels fully released by your thoughts. He tries to shake your hand, but he fails, because he is undead and incorporeal. As he vanishes to ... wherever he needs to, you feel there's maybe one more thing you could do to help him.";
-		moot dave;
+		move dave to Rare Rows;
+		solve-room;
 		the rule succeeds;
 	else if dave-score is 5:
 		say "You feel a ripple across space. Dave is grateful for the additional support!";
@@ -413,6 +422,7 @@ to process-dave:
 	say "Dave perks up! He looks [one of]slightly[or]somewhat[or]really[or]adequately[or]extra[stopping] perky and more willing and able to help.";
 	if dave-score is 4:
 		say "Dave shakes your hand. 'Thank you! I feel like my old self now! There's one more thing ... no, it's not necessary. I can help the Prayer Pros now.'";
+		solve-room;
 	else if dave-score is 5:
 		say "'Thanks, man. You didn't have to.' You nod. You enjoyed the exercise and practice. Who knows when it could come in handy?";
 
@@ -428,18 +438,24 @@ this is the rowr-room-transform rule:
 		the rule succeeds;
 	if rowr-score is 3:
 		say "Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.";
+		solve-room;
 	else if rowr-score is 2:
 		say "The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is as loud as ever.";
 	else:
 		say "You feel a slight but long-lasting tremor. The noise isn't that bad, still.";
 	the rule succeeds;
 
-this is the hope-and-rope rule:
-	if rope-and-hope is 2:
-		say "The Prayer Pros have a new place to lie down. Their prayers will be more effective now, and they will use them more efficiently so that something like whatever discourage them before will not happen again. At least not so easily they shake your hand and thank you. You trot off. You've done a good job.";
-		end the story;
-	else:
-		say "You sense there is a bit more to do. What can [if sco-rope-ruts is true]the rope hole[else]hold the rope[end if]?";
+this is the huts-and-ruts rule:
+	if sco-rope-ruts is false:
+		say "But the huts are not sturdy enough yet. They need support.";
+		the rule succeeds;
+	else if sco-hope-huts is false:
+		say "The rope ruts seem adequate, but what can they support?";
+		the rule succeeds;
+	say "The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of 'Ne[']er Nos' or 'Ne[']er Knows' (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.[paragraph break]Then you close your eyes and think a Spare S'Pose. Then another. And another. When you open them, you are back outside [shows]. Very little time has passed.[paragraph break]You wonder what you have learned. You doubt you've learned anything. But you helped someone, somewhere. You know the Prayer Pros are praying for you, for your life to be a bit more interesting. You resolve to search more for oddities even more. You walk by the 'One wish in' sign again. It's changed ... to ...";
+	follow the score and thinking changes rule;
+	end the story finally saying "DONE DISHIN['] FUN FISHIN[']";
+	follow the shutdown rules;
 
 volume table of noways
 
