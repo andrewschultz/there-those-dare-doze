@@ -123,6 +123,11 @@ carry out verbsing:
 
 volume rooms
 
+after looking when player is not in rare rows and guide-gong-warn is false:
+	say "[i][bracket][b]NOTE:[r] [i]while the game map is simple, here's a small thing to help you narrow down where to go. [b]GUIDE GONG[r][i] will shut you out of completed areas, [b]STRIDE STRONG[r][i] will remove these restrictions, and [b]PRIDE PRONG[r][i] is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.[close bracket][r][line break]";
+	now guide-gong-warn is true;
+	continue the action;
+
 book rare rows
 
 check going in rare rows when number of solved rooms is 3:
@@ -130,7 +135,7 @@ check going in rare rows when number of solved rooms is 3:
 	if the room gone to is not solved, continue the action;
 	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward." instead;
 
-Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in any cardinal direction.". win-score of rare rows is 7.
+Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in all four cardinal directions.". win-score of rare rows is 7.
 
 the player is in Rare Rows.
 
@@ -171,13 +176,15 @@ book grave ground
 
 check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress." instead;
 
-Grave Ground is west of Rare Rows. win-score of Grave Ground is 4.
+Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "It's far too dark and spooky every way except back east."
 
-Dave Downed is a person in Grave Ground. "Dave (Downed) is here, [one of][or]still [stopping]looking upset."
+Dave Downed is a person in Grave Ground. "[if player is in grave ground][one of]A ghost floats into view and identifies himself as Dave (Downed). He mentions he'd like motivation to afterlive it up a bit more, and it should come form within, but it doesn't. Can you help him?[or]Dave (Downed) is here, [one of][or]still [stopping]looking [dave-upset] upset and, oh yeah, vaguely undead.[stopping][else]Dave waits a lot more cheerily here than when you first saw him.[end if]". description is "[if player is in grave ground]He looks purposeless and adrift[else]Happy enough, almost impatient to do something real[end if]."
+
+to say dave-upset: say "[if dave-score is 0]very[else if dave-score is 1]rather[else if dave-score is 2]kind of[else]a little[end if]"
 
 book rowr room
 
-Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if rowr-score < 3]You feel you need to change the mood, add a sub-room, and create some fireworks here to see the secret of this place[else if now-score of rowr room is 6]Nothing left to do here[else]There are still mysteries here, but nothing's critical[end if]."
+Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if rowr-score < 3]You feel you need to change the mood, add a sub-room, and create some fireworks here to see the secret of this place[else if now-score of rowr room is 6]Nothing left to do here[else]There are still mysteries here, but nothing's critical[end if]. The only way out is back west."
 
 check going east in rare rows: if sco-snare-snows is false, say "The heat, metaphorical and physical, pushes you back." instead;
 

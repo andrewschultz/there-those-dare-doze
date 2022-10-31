@@ -96,7 +96,7 @@ a goodrhyme rule (this is the vc-snare-snows rule):
 
 this is the vr-snare-snows rule:
 	now sco-snare-snows is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.";
 
 a goodrhyme rule (this is the vc-glare-glows rule):
 	if player is not in rare rows, unavailable;
@@ -107,7 +107,7 @@ a goodrhyme rule (this is the vc-glare-glows rule):
 
 this is the vr-glare-glows rule:
 	now sco-glare-glows is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.";
 
 a goodrhyme rule (this is the vc-stair-stows rule):
 	if player is not in rare rows, unavailable;
@@ -152,7 +152,7 @@ a goodrhyme rule (this is the vc-arrows rule):
 
 this is the vr-arrows rule:
 	now sco-arrows is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.";
 	move arrows to rare rows;
 
 a goodrhyme rule (this is the vc-bare-bows rule):
@@ -164,7 +164,7 @@ a goodrhyme rule (this is the vc-bare-bows rule):
 
 this is the vr-bare-bows rule:
 	now sco-bare-bows is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but [if sco-arrows is true]that's okay. You already have some[else]there's got to be some, somewhere[end if].";
 	move bare bows to rare rows;
 
 a goodrhyme rule (this is the vc-slam-sleek rule):
@@ -234,13 +234,13 @@ this is the vr-clam-clique rule:
 a goodrhyme rule (this is the vc-rave-round rule):
 	if player is not in grave ground, unavailable;
 	if sco-rave-round is true:
-		vcal "You already boosted Dave this way!";
+		vcal "Too much raving might leave Dave tired. Perhaps you should try something else.";
 		already-done;
 	ready;
 
 this is the vr-rave-round rule:
 	now sco-rave-round is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jolly and day around actually makes him feel better.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-pave-pound rule):
@@ -252,7 +252,7 @@ a goodrhyme rule (this is the vc-pave-pound rule):
 
 this is the vr-pave-pound rule:
 	now sco-pave-pound is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect full salary ";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-wave-wound rule):
@@ -264,7 +264,7 @@ a goodrhyme rule (this is the vc-wave-wound rule):
 
 this is the vr-wave-wound rule:
 	now sco-wave-wound is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "A big wave comes crashing in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, and you feel energized, yourself.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-save-sound rule):
@@ -276,7 +276,7 @@ a goodrhyme rule (this is the vc-save-sound rule):
 
 this is the vr-save-sound rule:
 	now sco-save-sound is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-crave-crowned rule):
@@ -300,67 +300,67 @@ a goodrhyme rule (this is the vc-tower-tomb rule):
 
 this is the vr-tower-tomb rule:
 	now sco-tower-tomb is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though[just-noise]";
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-wower-womb rule):
 	if player is not in rowr room, unavailable;
 	if sco-wower-womb is true:
-		vcal "You already did this!";
+		vcal "Duplicating wow factor doesn't increase the wows.";
 		already-done;
 	ready;
 
 this is the vr-wower-womb rule:
 	now sco-wower-womb is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "A passage opens downstairs briefly. Then it closes. But you know it's there[just-noise].";
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-dour-doom rule):
 	if player is not in rowr room, unavailable;
 	if sco-dour-doom is true:
-		vcal "You already did this!";
+		vcal "No, all that doom you fobbed off might leak back into you.";
 		already-done;
 	ready;
 
 this is the vr-dour-doom rule:
 	now sco-dour-doom is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You invoke a sense of doom so dour, the rowring itself gets quieter.";
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-glower-gloom rule):
 	if player is not in rowr room, unavailable;
 	if sco-glower-gloom is true:
-		vcal "You already did this!";
+		vcal "THere's a limit to how much glowering and gloom is helpful, here.";
 		already-done;
 	ready;
 
 this is the vr-glower-gloom rule:
 	now sco-glower-gloom is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You invoke a sense of gloom so glowery, the rowring itself gets quieter.";
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-plower-plume rule):
 	if player is not in rowr room, unavailable;
 	if sco-plower-plume is true:
-		vcal "You already did this!";
+		vcal "The plower plume was a neat one-time display. It's done its work.";
 		already-done;
 	ready;
 
 this is the vr-plower-plume rule:
 	now sco-plower-plume is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.";
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-flower-flume rule):
 	if player is not in rowr room, unavailable;
 	if sco-flower-flume is true:
-		vcal "You already did this!";
+		vcal "The flower flume was a neat one-time display. It's done its work.";
 		already-done;
 	ready;
 
 this is the vr-flower-flume rule:
 	now sco-flower-flume is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.";
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-hope-huts rule):
@@ -388,6 +388,8 @@ this is the vr-rope-ruts rule:
 	abide by the huts-and-ruts rule;
 
 section auxiliary rules
+
+to say just-noise: say ". Just having more places for the noise to dissipate is a good thing"
 
 to bump-room: increment win-score of location of player;
 
