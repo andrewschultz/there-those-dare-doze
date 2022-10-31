@@ -112,6 +112,8 @@ chapter ppnn
 
 the ppnn is privately-named scenery. understand "pn/ppnn" as ppnn when debug-state is true.
 
+guess-table of ppnn is table of ppnn guesses.
+
 chapter Prayer Pros
 
 the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4]mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them.". description is "[if number of solved rooms is 4]They look back at you expectantly[else]They all lie solemn in their rare rows, eyes closed, hands folded. What mental energy they must have expended in their failure! But perhaps it is not failure. Perhaps you were chosen as the agent of help[end if].".
