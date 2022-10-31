@@ -22,6 +22,10 @@ volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
 
+ a room can be solved. a room is usually not solved.
+
+ a room has a number called win-score. win-score of a room is usually 0.
+
 volume you
 
 description of the player is "There's something written on ... whatever you're wearing. [if ppnn is fungible]You can finally read it! POPE? PUTZ, NOPE! NUTS![else]It's [adverb] too blurry right now.[end if]"
@@ -42,6 +46,8 @@ to say adverb:
 
 volume odd verbs
 
+carry out swearing obscenely: say "Dooky-dinning?! Spooky-spinning!" instead;
+
 chapter xyzzying
 
 carry out xyzzying:
@@ -52,13 +58,22 @@ volume rooms
 
 book rare rows
 
-Rare Rows is a room. the player is in Rare Rows.
+check going in rare rows when number of solved rooms is 3:
+	if sco-glare-glows is true, continue the action;
+	if the room gone to is not solved, continue the action;
+	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward." instead;
+
+Rare Rows is a room. the player is in Rare Rows. "Here is the resting place of the Prayer Pros. Passages go in any cardinal direction."
 
 check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
 
 chapter ppnn
 
 the ppnn is privately-named scenery.
+
+chapter Prayer Pros
+
+the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4]mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them."
 
 chapter Fair Foes
 
@@ -74,7 +89,9 @@ the bare bows are a thing. "Bare bows lie on the ground.". description is "Too b
 
 book grave ground
 
-Grave Ground is west of Rare Rows.
+check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress." instead;
+
+Grave Ground is west of Rare Rows. win-score of Grave Ground is 5.
 
 Dave Downed is a person in Grave Ground. "Dave (Downed) is here, [one of][or]still [stopping]looking upset."
 
@@ -82,9 +99,13 @@ book rowr room
 
 Rowr Room is east of Rare Rows.
 
+check going east in rare rows: if sco-snare-snows is false, say "The heat, metaphorical and physical, pushes you back." instead;
+
 book cram creek
 
-Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south."
+check going north in rare rows: if sco-hair-hose is false, say "You see a body of water far ahead! Suddenly, you are irrationally worried you have no kind of swimming gear." instead;
+
+Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south.". win-score of Cram Creek is 4.
 
 chapter Sham Sheik
 
@@ -110,6 +131,22 @@ check going south in rare rows:
 		moot fair foes;
 		moot arrows;
 		moot bare bows;
+
+chapter mar mage
+
+The Mar Mage is a person in Car Cage.
+
+chapter Saar Sage
+
+The Saar Sage is a person.
+
+volume verbs
+
+check talktoing:
+	if noun is the player, say "'Make me wake, whee,' you say, unconvincingly." instead;
+	if noun is Dave Downed, say "Alas, regardless of his mood, he still seems only to say glub... glub..." instead;
+	if noun is fair foes, say "They brush off your small talk to avoid even the appearance of unfair bias in the fight ahead." instead;
+	say "No response[one of]. You don't need to talk to everyone, but hopefully when you do, the dialogue is fun[or][stopping]." instead;
 
 volume verb-checker rule
 

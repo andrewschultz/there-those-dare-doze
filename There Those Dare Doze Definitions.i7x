@@ -35,6 +35,9 @@ to decide which number is rows-south:
 to decide what number is sheik-score:
 	decide on (boolval of sco-slam-sleek) + (boolval of sco-wham-weak) + (boolval of sco-blam-bleak) + (boolval of sco-maam-meek)
 
+to decide what number is cage-prep-score:
+	decide on (boolval of sco-our-age) + (boolval of sco-far-phage) + (boolval of sco-rar-rage)
+
 volume general stuff
 
 book which number

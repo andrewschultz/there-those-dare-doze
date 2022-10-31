@@ -35,6 +35,13 @@ sco-wave-wound is a truth state that varies.
 sco-save-sound is a truth state that varies.
 sco-crave-crowned is a truth state that varies.
 
+chapter south
+
+sco-our-age is a truth state that varies.
+sco-far-phage is a truth state that varies.
+sco-rar-rage is a truth state that varies.
+sco-star-stage is a truth state that varies.
+
 There Those Dare Doze Globals ends here.
 
 ---- DOCUMENTATION ----

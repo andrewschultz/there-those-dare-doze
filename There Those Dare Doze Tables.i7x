@@ -16,6 +16,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "wham"	"weak"	--	--	false	true	true	false	cram creek	vc-wham-weak rule	vr-wham-weak rule	--	--
 "blam"	"bleak"	--	--	false	true	true	false	cram creek	vc-blam-bleak rule	vr-blam-bleak rule	--	--
 "maam"	"meek"	--	--	false	true	true	false	cram creek	vc-maam-meek rule	vr-maam-meek rule	--	--
+"our"	"age"	--	--	false	true	true	false	car cage	vc-our-age rule	vr-our-age rule	--	--
+"far"	"phage"	--	--	false	true	true	false	car cage	vc-far-phage rule	vr-far-phage rule	--	--
+"rar|rawr|rahr|rhar|rowr|rarr|raar"	"rage"	--	--	false	true	true	false	car cage	vc-rar-rage rule	vr-rar-rage rule	--	--
+"star"	"stage"	--	--	false	true	true	false	car cage	vc-star-stage rule	vr-star-stage rule	--	--
 "rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
 "pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
 "wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
@@ -23,6 +27,58 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	--
 "hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	--
 "rope"	"ruts"	--	--	false	true	true	false	rare rows	vc-rope-ruts rule	vr-rope-ruts rule	--	--
+
+a goodrhyme rule (this is the vc-our-age rule):
+	if player is not in car cage, unavailable;
+	if sco-our-age is true:
+		vcal "You already aligned things temporally!";
+		already-done;
+	ready;
+
+this is the vr-our-age rule:
+	now sco-our-age is true;
+	say "You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!";
+	abide by the cage-change rule;
+
+a goodrhyme rule (this is the vc-far-phage rule):
+	if player is not in car cage, unavailable;
+	if sco-far-phage is true:
+		vcal "You really don't want more phages than you need!";
+		already-done;
+	ready;
+
+this is the vr-far-phage rule:
+	now sco-far-phage is true;
+	say "A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!";
+	abide by the cage-change rule;
+
+a goodrhyme rule (this is the vc-rar-rage rule):
+	if player is not in car cage, unavailable;
+	if sco-rar-rage is true:
+		vcal "You already raged effectively! The next time won't work so well. It might be counterproductive.";
+		already-done;
+	ready;
+
+this is the vr-rar-rage rule:
+	now sco-rar-rage is true;
+	say "Your rage doesn't make perfect sense, but it doesn't have to. You're mad enough, and it's from the heart, and that's what counts.";
+	abide by the cage-change rule;
+
+a goodrhyme rule (this is the vc-star-stage rule):
+	if player is not in car cage, unavailable;
+	if cage-prep-score < 3:
+		vcp "You haven't prepared enough to change the stage yet. But yes, that is the way to go once you do!";
+		not-yet;
+	if sco-star-stage is true:
+		vcal "The star stage has already been summoned!";
+		already-done;
+	ready;
+
+this is the vr-star-stage rule:
+	now sco-star-stage is true;
+	say "On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...";
+	say "[line break]...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.";
+	move saar sage to Rare Rows;
 
 a goodrhyme rule (this is the vc-snare-snows rule):
 	if player is not in rare rows, unavailable;
@@ -41,7 +97,7 @@ this is the vr-snare-snows rule:
 a goodrhyme rule (this is the vc-glare-glows rule):
 	if player is not in rare rows, unavailable;
 	if sco-glare-glows is true:
-		vcal "You already did this!";
+		vcal "You already established an unnaturally bright glare of your own.";
 		already-done;
 	ready;
 
@@ -52,13 +108,13 @@ this is the vr-glare-glows rule:
 a goodrhyme rule (this is the vc-stair-stows rule):
 	if player is not in rare rows, unavailable;
 	if sco-stair-stows is true:
-		vcal "You already did this!";
+		vcal "You already found where the missing stair was!";
 		already-done;
 	ready;
 
 this is the vr-stair-stows rule:
 	now sco-stair-stows is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.";
 
 a goodrhyme rule (this is the vc-hair-hose rule):
 	if player is not in rare rows, unavailable;
@@ -110,7 +166,7 @@ this is the vr-bare-bows rule:
 a goodrhyme rule (this is the vc-slam-sleek rule):
 	if player is not in cram creek, unavailable;
 	if sco-slam-sleek is true:
-		vcal "You already did this!";
+		vcal "You already dropped a slam, sleek, on the Sham Sheik.";
 		already-done;
 	ready;
 
@@ -122,7 +178,7 @@ this is the vr-slam-sleek rule:
 a goodrhyme rule (this is the vc-wham-weak rule):
 	if player is not in cram creek, unavailable;
 	if sco-wham-weak is true:
-		vcal "You already did this!";
+		vcal "You already fingered the Sham Sheik as weak! And quite rightly, too.";
 		already-done;
 	ready;
 
@@ -134,7 +190,7 @@ this is the vr-wham-weak rule:
 a goodrhyme rule (this is the vc-blam-bleak rule):
 	if player is not in cram creek, unavailable;
 	if sco-blam-bleak is true:
-		vcal "You already did this!";
+		vcal "You already fingered the Sham Sheik as bleak! And quite rightly, too.";
 		already-done;
 	ready;
 
@@ -146,7 +202,7 @@ this is the vr-blam-bleak rule:
 a goodrhyme rule (this is the vc-maam-meek rule):
 	if player is not in cram creek, unavailable;
 	if sco-maam-meek is true:
-		vcal "You already did this!";
+		vcal "You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.";
 		already-done;
 	ready;
 
@@ -202,6 +258,7 @@ a goodrhyme rule (this is the vc-wave-wound rule):
 this is the vr-wave-wound rule:
 	now sco-wave-wound is true;
 	say "Hooray! You figured what to do! You get a point!";
+	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-save-sound rule):
 	if player is not in grave ground, unavailable;
@@ -250,6 +307,21 @@ this is the vr-rope-ruts rule:
 
 section auxiliary rules
 
+to bump-room: increment win-score of location of player;
+
+this is the cage-change rule:
+	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. 'No! I don't believe it! You can't keep this up!'[line break]";
+	say "[one of]However, it settles back. You've done damage but nothing serious[or]It takes a little longer to settle back this time[or]Something has shattered. The car cage can become something more positive[stopping]";
+
+this is the ground-boost rule:
+	if dave-score is 4:
+		say "Dave jumps up! He feels fully released by your thoughts. He tries to shake your hand, but he fails, because he is undead and incorporeal. As he vanishes to ... wherever he needs to, you feel there's maybe one more thing you could do to help him.";
+		moot dave;
+		the rule succeeds;
+	else if dave-score is 5:
+		say "You feel a ripple across space. Dave is grateful for the additional support!";
+		bump-room;
+
 this is the check-sheik rule:
 	if sheik-score is 3:
 		say "That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.[paragraph break]Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.";
@@ -257,6 +329,7 @@ this is the check-sheik rule:
 		the rule succeeds;
 	else if sheik-score is 4:
 		say "And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures there.";
+		bump-room;
 		the rule succeeds;
 	say "The Sham Sheik looks [one of][or]a little more [or]a lot more [stopping]peeved. You're getting to him!";
 
