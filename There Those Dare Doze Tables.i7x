@@ -391,7 +391,10 @@ section auxiliary rules
 
 to bump-room: increment win-score of location of player;
 
-to solve-room: now location of player is solved;
+to solve-room:
+	now location of player is solved;
+	if number of solved rooms is 0:
+		say "[i][bracket][b]NOTE[r][i]: a person or entity you rhymed will be moved back to Rare Rows, but since this is a Petite Mort game, I didn't have time to tweak the code for rhymes or rhyme guesses with them. Sorry about that! You've done what you could. I'll fill these details in post-Ectocomp.[close bracket][r]"
 
 this is the cage-change rule:
 	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. 'No! I don't believe it! You can't keep this up!'[line break]";

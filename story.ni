@@ -36,9 +36,11 @@ volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
 
- a room can be solved. a room is usually not solved.
+a room can be solved. a room is usually not solved.
 
- a room has a number called win-score. win-score of a room is usually 0.
+a room has a number called win-score. win-score of a room is usually 0.
+
+a room has a number called now-score. now-score of a room is usually 0.
 
 volume when play begins
 
@@ -79,6 +81,24 @@ to say adverb:
 		say "no longer";
 
 volume odd verbs
+
+chapter inventory
+
+check taking inventory: say "You are on a spiritual journey of sorts. You left your backpack behind in the chair-chose. You hope it's there when you get back, at any rate.[paragraph break]But it doesn't look like you'll need a lot here, though. It's more what you can do and think." instead;
+
+report requesting the score:
+	say "You've currently gotten [now-score of location of player] of [win-score of location of player] points needed right here in [location of player], with a total of [total-score of location of player] points available.";
+	continue the action;
+
+to decide which number is total-score of (rm - a room):
+	let temp be 0;
+	if player has ppnn and player is in Rare Rows, decide on 2;
+	repeat through table of verb checks:
+		if w1 entry is "hope", break;
+		if best-room entry is rm, increment temp;
+	decide on temp;
+
+chapter swearing
 
 carry out swearing obscenely: say "Dooky-dinning?! Spooky-spinning!" instead;
 
