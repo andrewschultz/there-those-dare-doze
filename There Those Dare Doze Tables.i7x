@@ -458,6 +458,7 @@ this is the huts-and-ruts rule:
 	say "The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of 'Ne[']er Nos' or 'Ne[']er Knows' (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.[paragraph break]Then you close your eyes and think a Spare S'Pose. Then another. And another. When you open them, you are back outside [shows]. Very little time has passed.[paragraph break]You wonder what you have learned. You doubt you've learned anything. But you helped someone, somewhere. You know the Prayer Pros are praying for you, for your life to be a bit more interesting. You resolve to search more for oddities even more. You walk by the 'One wish in' sign again. It's changed ... to ...";
 	follow the score and thinking changes rule;
 	end the story finally saying "DONE DISHIN['] FUN FISHIN[']";
+	say "But you do think about the Prayer Pros over the years. Did people still respect them? Did the entities they petitioned? Were they happy in their jobs? Were they too mechanical with their prayers or too sloppy? All this seems like sophistry, but it also applies to real-world concerns of asking for favors or giving them. They're there to think about, when you've got a bit of solitude. Perhaps they've petitioned someone else.";
 	follow the shutdown rules;
 
 volume table of noways

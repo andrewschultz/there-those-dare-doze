@@ -56,6 +56,14 @@ to decide what number is rowr-max:
 	if sco-plower-plume is true and sco-flower-flume is true, increment temp;
 	decide on temp;
 
+to decide which number is total-score of (rm - a room):
+	let temp be 0;
+	if player has ppnn and player is in Rare Rows, decide on 2;
+	repeat through table of verb checks:
+		if w1 entry is "hope", break;
+		if best-room entry is rm, increment temp;
+	decide on temp;
+
 volume general stuff
 
 book which number

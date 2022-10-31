@@ -45,22 +45,22 @@ a room has a number called now-score. now-score of a room is usually 0.
 volume when play begins
 
 when play begins:
-	say "You immediately regretted buying the candy corn the day after Christmas. And for whatever reason, you expected it to taste differently, because it came in rainbow colors. It did not. You ate one of each once a month, but there was a whole lot of it. You had meant to pitch it for a while, But you felt guilt wasting food, any food.";
-	wfak;
+	say "You immediately regretted buying the candy corn the day after Christmas. You expected it to taste different, because it came in rainbow colors. It did not. You ate one of each once or twice a month, but there was a whole lot of it. You had meant to pitch it for a while, But you felt guilt wasting food, any food.";
+	wfas;
 	say "So it's wound up in your backpack for quick energy during long bike rides. But even then, it's gone slowly. You planned to finish it on Halloween. The last of the day's chores. You take a ride down an alley you hadn't been down, and you see something glowing. A sign saying 'One Wish In!' You remove your backpack.";
-	wfak;
+	wfas;
 	say "Your backpack, like the sign, is glowing. You open it up to see the source: the old candy corn. You discover a small hole under the sign, and you dump the candy corn in there.";
-	wfak;
+	wfas;
 	say "Nothing happens. Bummer!";
-	wfak;
+	wfas;
 	say "But when the alley ends at a major street, You see a storefront you never did before. You know some of them are seasonal, but this one is really weird. It's called [shows]. What could it be selling? The door is open. It's dark inside.";
-	wfak;
+	wfas;
 	say "The door slams shut behind you. 'Chair ... CHOSE!' booms a voice. You feel you'd better sit down.";
-	wfak;
+	wfas;
 	say "As you do, you're told the story of the Prayer Pros, trying to stave off a nameless, faceless evil, but They can't find the right words or tone for their prayers, So what happens is, they just get tired of the whole business, and they decide to sleep on it. But the sleep isn't just a nap. It's lasted quite long now, and they need somebody, anybody. Are you up for the job? You're the only person who actually seems to eat candy corn.";
-	wfak;
+	wfas;
 	say "Whether you are or not, it doesn't matter. The area around the chair shimmers. You blink. You're in a wide-open space.";
-	wfak;
+	wfas;
 
 volume you
 
@@ -89,14 +89,6 @@ check taking inventory: say "You are on a spiritual journey of sorts. You left y
 report requesting the score:
 	say "You've currently gotten [now-score of location of player] of [win-score of location of player] points needed right here in [location of player], with a total of [total-score of location of player] points available.";
 	continue the action;
-
-to decide which number is total-score of (rm - a room):
-	let temp be 0;
-	if player has ppnn and player is in Rare Rows, decide on 2;
-	repeat through table of verb checks:
-		if w1 entry is "hope", break;
-		if best-room entry is rm, increment temp;
-	decide on temp;
 
 chapter swearing
 
@@ -147,6 +139,10 @@ check taking when player is in rare rows: say "Anything you need, you will take 
 after looking in rare rows when number of solved rooms is 4 and ppnn is off-stage:
 	say "You have assembled the needed components to wake the Prayer Pros. Dave (Downed)'s presence, the oppressed animals (the clam,) and a mystic (the Saar sage)  seem to stand in a triangle, with the right words (How, Er, Whom,) bouncing between them.";
 	say "[line break]The prayer pros wake up! They turn to you for guidance. They are staring at -- well, your shirt. That's weird.";
+	moot saar sage;
+	moot dave;
+	moot clam;
+	moot how er whom;
 	now player has ppnn;
 
 chapter ppnn
@@ -181,9 +177,13 @@ Dave Downed is a person in Grave Ground. "Dave (Downed) is here, [one of][or]sti
 
 book rowr room
 
-Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3.
+Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if rowr-score < 3]You feel you need to change the mood, add a sub-room, and create some fireworks here to see the secret of this place[else if now-score of rowr room is 6]Nothing left to do here[else]There are still mysteries here, but nothing's critical[end if]."
 
 check going east in rare rows: if sco-snare-snows is false, say "The heat, metaphorical and physical, pushes you back." instead;
+
+chapter how er whom
+
+how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The [whom] from the east floats in the air--perhaps a question to be asked at the right time.". description is "It is incorporeal."
 
 book cram creek
 
@@ -223,6 +223,34 @@ The Mar Mage is a person in Car Cage. "The Mar Mage stands here defiantly! How c
 chapter Saar Sage
 
 The Saar Sage is a person. "The Saar Sage, fresh off showing the Mar Mage what's what, waits for the right time to perform their next bit of magic.". description is "All very wizardly in a blue outfit with yellow Microsoft ClipArt-ish symbols all over. You suspect their position and size have some arcane meaning you will never know."
+
+volume gong stuff
+
+this-gong-rule of grave ground is gong-grave-ground rule.
+this-gong-rule of car cage is gong-car-cage rule.
+this-gong-rule of rowr room is gong-rowr-room rule.
+this-gong-rule of cram creek is gong-cram-creek rule.
+
+this is the gong-car-cage rule:
+	if now-score of car cage is total-score of car cage, completed;
+	if cage-prep-score <= 2, llp-remaining;
+	uncompleted;
+
+this is the gong-cram-creek rule:
+	if now-score of cram creek is total-score of cram creek, completed;
+	if sheik-score <= 4, llp-remaining;
+	uncompleted;
+
+this is the gong-rowr-room rule:
+	if now-score of rowr room is total-score of rowr room, completed;
+	if rowr-score is 3, llp-remaining;
+	uncompleted;
+
+this is the gong-grave-ground rule:
+	if now-score of grave ground is total-score of grave ground, completed;
+	if now-score of grave ground is total-score of grave ground - 1, llp-remaining;
+	if rowr-score is 3, llp-remaining;
+	uncompleted;
 
 volume verbs
 
