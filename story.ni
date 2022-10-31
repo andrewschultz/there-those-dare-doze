@@ -2,6 +2,16 @@
 
 volume basics
 
+the story description is "Wild-Weird-Styled Steered".
+
+the story headline is "Prime Pro-Rhyme Row entry 5".
+
+release along with cover art.
+
+release along with a website.
+
+release along with the "parchment" interpreter.
+
 include Trivial Niceties by Andrew Schultz.
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
@@ -29,6 +39,26 @@ this is the situational-cuing-reject rule: do nothing;
  a room can be solved. a room is usually not solved.
 
  a room has a number called win-score. win-score of a room is usually 0.
+
+volume when play begins
+
+when play begins:
+	say "You immediately regretted buying the candy corn the day after Christmas. And for whatever reason, you expected it to taste differently, because it came in rainbow colors. It did not. You ate one of each once a month, but there was a whole lot of it. You had meant to pitch it for a while, But you felt guilt wasting food, any food.";
+	wfak;
+	say "So it's wound up in your backpack for quick energy during long bike rides. But even then, it's gone slowly. You planned to finish it on Halloween. The last of the day's chores. You take a ride down an alley you hadn't been down, and you see something glowing. A sign saying 'One Wish In!' You remove your backpack.";
+	wfak;
+	say "Your backpack, like the sign, is glowing. You open it up to see the source: the old candy corn. You discover a small hole under the sign, and you dump the candy corn in there.";
+	wfak;
+	say "Nothing happens. Bummer!";
+	wfak;
+	say "But when the alley ends at a major street, You see a storefront you never did before. You know some of them are seasonal, but this one is really weird. It's called [shows]. What could it be selling? The door is open. It's dark inside.";
+	wfak;
+	say "The door slams shut behind you. 'Chair ... CHOSE!' booms a voice. You feel you'd better sit down.";
+	wfak;
+	say "As you do, you're told the story of the Prayer Pros, trying to stave off a nameless, faceless evil, but They can't find the right words or tone for their prayers, So what happens is, they just get tired of the whole business, and they decide to sleep on it. But the sleep isn't just a nap. It's lasted quite long now, and they need somebody, anybody. Are you up for the job? You're the only person who actually seems to eat candy corn.";
+	wfak;
+	say "Whether you are or not, it doesn't matter. The area around the chair shimmers. You blink. You're in a wide-open space.";
+	wfak;
 
 volume you
 
@@ -84,7 +114,7 @@ the ppnn is privately-named scenery. understand "pn/ppnn" as ppnn when debug-sta
 
 chapter Prayer Pros
 
-the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4]mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them."
+the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4]mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them.". description is "[if number of solved rooms is 4]They look back at you expectantly[else]They all lie solemn in their rare rows, eyes closed, hands folded. What mental energy they must have expended in their failure! But perhaps it is not failure. Perhaps you were chosen as the agent of help[end if].".
 
 chapter Fair Foes
 

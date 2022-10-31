@@ -4,6 +4,14 @@ Version 1/221007 of There Those Dare Doze Globals by Andrew Schultz begins here.
 
 volume point booleans
 
+the release number is 1.
+
+entry-in-series is 4.
+
+core-max is 22.
+
+max-bonus is 6. [ 1 point in each area except east, which is 3. ]
+
 chapter endgame stuff
 
 sco-hope-huts is a truth state that varies.
