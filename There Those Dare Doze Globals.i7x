@@ -42,6 +42,19 @@ sco-far-phage is a truth state that varies.
 sco-rar-rage is a truth state that varies.
 sco-star-stage is a truth state that varies.
 
+chapter east
+
+sco-tower-tomb is a truth state that varies.
+sco-wower-womb is a truth state that varies.
+sco-dour-doom is a truth state that varies.
+sco-glower-gloom is a truth state that varies.
+sco-plower-plume is a truth state that varies.
+sco-flower-flume is a truth state that varies.
+
+volume game state variables
+
+old-rowr-score is a number that varies.
+
 There Those Dare Doze Globals ends here.
 
 ---- DOCUMENTATION ----

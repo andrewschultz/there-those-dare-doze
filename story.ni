@@ -18,6 +18,10 @@ include There Those Dare Doze Mistakes by Andrew Schultz.
 
 include There Those Dare Doze Tables by Andrew Schultz.
 
+section debug - not for release
+
+include There Those Dare Doze Tests by Andrew Schultz.
+
 volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
@@ -63,13 +67,18 @@ check going in rare rows when number of solved rooms is 3:
 	if the room gone to is not solved, continue the action;
 	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward." instead;
 
-Rare Rows is a room. the player is in Rare Rows. "Here is the resting place of the Prayer Pros. Passages go in any cardinal direction."
+Rare Rows is a room. the player is in Rare Rows. "Here is the resting place of the Prayer Pros. Passages go in any cardinal direction.". win-score of rare rows is 7.
 
 check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
 
+after looking in rare rows when number of solved rooms is 4 and ppnn is off-stage:
+	say "You have assembled the needed components to wake the Prayer Pros. Dave (Downed)'s presence, the oppressed animals (the clam,) and a mystic (the Saar sage)  seem to stand in a triangle, with the right words (How, Er, Whom,) bouncing between them.";
+	say "[line break]The prayer pros wake up! They turn to you for guidance. They are staring at -- well, your shirt. That's weird.";
+	now player has ppnn;
+
 chapter ppnn
 
-the ppnn is privately-named scenery.
+the ppnn is privately-named scenery. understand "pn/ppnn" as ppnn when debug-state is true.
 
 chapter Prayer Pros
 
@@ -97,7 +106,7 @@ Dave Downed is a person in Grave Ground. "Dave (Downed) is here, [one of][or]sti
 
 book rowr room
 
-Rowr Room is east of Rare Rows.
+Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3.
 
 check going east in rare rows: if sco-snare-snows is false, say "The heat, metaphorical and physical, pushes you back." instead;
 
@@ -117,7 +126,7 @@ the clam clique are plural-named people. "The clam clique you rescued from the S
 
 book car cage
 
-Car Cage is south of Rare Rows.
+Car Cage is south of Rare Rows. win-score of car cage is 3.
 
 check going south in rare rows:
 	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";

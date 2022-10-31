@@ -25,6 +25,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
 "save"	"sound"	--	--	false	true	true	false	grave ground	vc-save-sound rule	vr-save-sound rule	--	--
 "crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	--
+"tower"	"tomb"	--	--	false	true	true	false	rowr room	vc-tower-tomb rule	vr-tower-tomb rule	--	--
+"wower"	"womb"	--	--	false	true	true	false	rowr room	vc-wower-womb rule	vr-wower-womb rule	--	--
+"dour"	"doom"	--	--	false	true	true	false	rowr room	vc-dour-doom rule	vr-dour-doom rule	--	--
+"glower"	"gloom"	--	--	false	true	true	false	rowr room	vc-glower-gloom rule	vr-glower-gloom rule	--	--
+"plower"	"plume"	--	--	false	true	true	false	rowr room	vc-plower-plume rule	vr-plower-plume rule	--	--
+"flower"	"flume"	--	--	false	true	true	false	rowr room	vc-flower-flume rule	vr-flower-flume rule	--	--
 "hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	--
 "rope"	"ruts"	--	--	false	true	true	false	rare rows	vc-rope-ruts rule	vr-rope-ruts rule	--	--
 
@@ -82,9 +88,6 @@ this is the vr-star-stage rule:
 
 a goodrhyme rule (this is the vc-snare-snows rule):
 	if player is not in rare rows, unavailable;
-	if sco-snare-snows is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-snare-snows is true:
 		vcal "You already harvested snows!";
 		already-done;
@@ -281,6 +284,79 @@ a goodrhyme rule (this is the vc-crave-crowned rule):
 this is the vr-crave-crowned rule:
 	now sco-crave-crowned is true;
 	process-dave;
+	say "Dave seems charged with motivation!";
+
+a goodrhyme rule (this is the vc-tower-tomb rule):
+	if player is not in rowr room, unavailable;
+	if sco-tower-tomb is true:
+		vcal "You already built a tower-tomb!";
+		already-done;
+	ready;
+
+this is the vr-tower-tomb rule:
+	now sco-tower-tomb is true;
+	say "Hooray! You figured what to do! You get a point!";
+	abide by the rowr-room-transform rule;
+
+a goodrhyme rule (this is the vc-wower-womb rule):
+	if player is not in rowr room, unavailable;
+	if sco-wower-womb is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-wower-womb rule:
+	now sco-wower-womb is true;
+	say "Hooray! You figured what to do! You get a point!";
+	abide by the rowr-room-transform rule;
+
+a goodrhyme rule (this is the vc-dour-doom rule):
+	if player is not in rowr room, unavailable;
+	if sco-dour-doom is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-dour-doom rule:
+	now sco-dour-doom is true;
+	say "Hooray! You figured what to do! You get a point!";
+	abide by the rowr-room-transform rule;
+
+a goodrhyme rule (this is the vc-glower-gloom rule):
+	if player is not in rowr room, unavailable;
+	if sco-glower-gloom is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-glower-gloom rule:
+	now sco-glower-gloom is true;
+	say "Hooray! You figured what to do! You get a point!";
+	abide by the rowr-room-transform rule;
+
+a goodrhyme rule (this is the vc-plower-plume rule):
+	if player is not in rowr room, unavailable;
+	if sco-plower-plume is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-plower-plume rule:
+	now sco-plower-plume is true;
+	say "Hooray! You figured what to do! You get a point!";
+	abide by the rowr-room-transform rule;
+
+a goodrhyme rule (this is the vc-flower-flume rule):
+	if player is not in rowr room, unavailable;
+	if sco-flower-flume is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-flower-flume rule:
+	now sco-flower-flume is true;
+	say "Hooray! You figured what to do! You get a point!";
+	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-hope-huts rule):
 	if ppnn is not fungible, unavailable;
@@ -339,6 +415,24 @@ to process-dave:
 		say "Dave shakes your hand. 'Thank you! I feel like my old self now! There's one more thing ... no, it's not necessary. I can help the Prayer Pros now.'";
 	else if dave-score is 5:
 		say "'Thanks, man. You didn't have to.' You nod. You enjoyed the exercise and practice. Who knows when it could come in handy?";
+
+this is the rowr-room-transform rule:
+	now win-score of rowr room is rowr-max;
+	if old-rowr-score is 3:
+		say "Nothing much happens otherwise, but you feel good about going above and beyond.";
+		the rule succeeds;
+	let up-rowr be whether or not rowr-score is old-rowr-score;
+	now old-rowr-score is rowr-score;
+	if up-rowr is true:
+		say "Nothing massive happens this time--perhaps you need to change what you are thinking of.";
+		the rule succeeds;
+	if rowr-score is 3:
+		say "Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.";
+	else if rowr-score is 2:
+		say "The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is as loud as ever.";
+	else:
+		say "You feel a slight but long-lasting tremor. The noise isn't that bad, still.";
+	the rule succeeds;
 
 this is the hope-and-rope rule:
 	if rope-and-hope is 2:

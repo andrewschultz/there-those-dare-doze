@@ -38,6 +38,20 @@ to decide what number is sheik-score:
 to decide what number is cage-prep-score:
 	decide on (boolval of sco-our-age) + (boolval of sco-far-phage) + (boolval of sco-rar-rage)
 
+to decide what number is rowr-score:
+	let temp be 0;
+	if sco-dour-doom is true or sco-glower-gloom is true, increment temp;
+	if sco-tower-tomb is true or sco-wower-womb is true, increment temp;
+	if sco-plower-plume is true or sco-flower-flume is true, increment temp;
+	decide on temp;
+
+to decide what number is rowr-max:
+	let temp be 3;
+	if sco-dour-doom is true and sco-glower-gloom is true, increment temp;
+	if sco-tower-tomb is true and sco-wower-womb is true, increment temp;
+	if sco-plower-plume is true and sco-flower-flume is true, increment temp;
+	decide on temp;
+
 volume general stuff
 
 book which number
