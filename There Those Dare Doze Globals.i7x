@@ -6,7 +6,7 @@ volume point booleans
 
 the release number is 1.
 
-entry-in-series is 4.
+entry-in-series is 5.
 
 core-max is 22.
 
