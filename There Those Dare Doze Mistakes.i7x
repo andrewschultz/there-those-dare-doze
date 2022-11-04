@@ -7,7 +7,7 @@ to current-table-note-x (tn - a table name):
 
 table of general good guesses
 mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
-"ride wrong"	--	false	--	"There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end."
+"ride wrong"	--	false	--	"There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end."
 "side song"	--	false	--	"This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art."
 
 table of ppnn guesses

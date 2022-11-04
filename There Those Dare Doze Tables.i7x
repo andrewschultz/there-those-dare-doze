@@ -397,7 +397,7 @@ section auxiliary rules
 
 to opt-rm (rm - a room):
 	repeat through table of verb checks:
-		if there is a bestroom entry and bestroom entry is location of player and idid entry is false, now core entry is false;
+		if there is a best-room entry and best-room entry is location of player and idid entry is false, now core entry is false;
 
 to opt-rule (ru - a rule):
 	repeat through table of verb checks:
@@ -470,12 +470,11 @@ this is the rowr-room-transform rule:
 this is the huts-and-ruts rule:
 	if sco-rope-ruts is false:
 		say "But the huts are not sturdy enough yet. They need support.";
-		the rule succeeds;
+		continue the action;
 	else if sco-hope-huts is false:
 		say "The rope ruts seem adequate, but what can they support?";
-		the rule succeeds;
+		continue the action;
 	say "The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of 'Ne[']er Nos' or 'Ne[']er Knows' (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.[paragraph break]Then you close your eyes and think a Spare S'Pose. Then another. And another. When you open them, you are back outside [shows]. Very little time has passed.[paragraph break]You wonder what you have learned. You doubt you've learned anything. But you helped someone, somewhere. You know the Prayer Pros are praying for you, for your life to be a bit more interesting. You resolve to search more for oddities even more. You walk by the 'One wish in' sign again. It's changed ... to ...";
-	up-reg;
 	process the score and thinking changes rule;
 	end the story finally saying "DONE DISHIN['] FUN FISHIN[']";
 	say "But you do think about the Prayer Pros over the years. Did people still respect them? Did the entities they petitioned? Were they happy in their jobs? Were they too mechanical with their prayers or too sloppy? All this seems like sophistry, but it also applies to real-world concerns of asking for favors or giving them. They're there to think about, when you've got a bit of solitude. Perhaps they've petitioned someone else.";
@@ -485,7 +484,7 @@ volume table of noways
 
 table of noways
 noway-rm	noway-txt
-Rare Rows	"There are no hidden directions here"
+Rare Rows	"There are no hidden directions here."
 Ground Grave	"It's even spookier and darker if you go further from the rare rows."
 Cram Creek	"The creek goes off too far into the distance. Whatever you need to do, it has to be right here."
 Rowr Room	"It's a room. The only way back is west."

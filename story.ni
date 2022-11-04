@@ -139,6 +139,8 @@ Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go 
 
 the player is in Rare Rows.
 
+the leet learner is in Rare Rows.
+
 check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
 
 after looking in rare rows when number of solved rooms is 4 and ppnn is off-stage:
@@ -174,7 +176,7 @@ the bare bows are a thing. "Bare bows lie on the ground.". description is "Too b
 
 book grave ground
 
-check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress." instead;
+check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress without injury." instead;
 
 Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "It's far too dark and spooky every way except back east."
 
@@ -194,7 +196,7 @@ how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The
 
 book cram creek
 
-check going north in rare rows: if sco-hair-hose is false, say "You see a body of water far ahead! Suddenly, you are irrationally worried you have no kind of swimming gear." instead;
+check going north in rare rows: if sco-hair-hose is false, say "You see a body of water far ahead! Suddenly, you are irrationally worried you have no kind of swimming gear. You turn back." instead;
 
 Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south.". win-score of Cram Creek is 4.
 
@@ -214,7 +216,7 @@ check going south in rare rows:
 	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
 	if rows-south < 3:
 		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
-		if sco-fair-foes is false, say "Allies would be good to start with." instead;
+		if sco-fair-foes is false, say "[line break]Start with summoning allies, then, maybe." instead;
 		if sco-bare-bows is false, say "Your allies, the fair foes, need [if sco-bare-bows is false]weapons[else]ammunition[end if]." instead;
 	say "Despite protests from the south, you feel brave enough to go [one of][or]back [stopping]there and take care of business.";
 	if fair foes are in rare rows:
