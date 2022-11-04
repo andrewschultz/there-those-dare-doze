@@ -68,7 +68,172 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 >take learner
 Taken.
 
+@gt
+#testcase-goto-table-of-noways-rare-rows
+>in
+There are no hidden directions here.
+
 >au 2
+
+@ha
+#testcase-ha-half-table-of-verb-checks-1-snare
+>snare snows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-1-snows
+>snare snows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-2-glare
+>glare glows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-2-glows
+>glare glows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-3-stair
+>stair stows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-3-stows
+>stair stows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-4-hair
+>hair hose
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-4-hose
+>hair hose
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-5-fair
+>fair foes
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-5-foes
+>fair foes
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-7-bare
+>bare bows
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-7-bows
+>bare bows
+{$GREENCORE}
+
+@rej
+====alphabetize on
+#testcase-reject-start-table-of-verb-checks-vr-bare-bows-rule
+>bare bows
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-blam-bleak-rule
+>blam bleak
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-clam-clique-rule
+>clam clique
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-crave-crowned-rule
+>crave crowned
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-dour-doom-rule
+>dour doom
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-fair-foes-rule
+>fair foes
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-far-phage-rule
+>far phage
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-flower-flume-rule
+>flower flume
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-glare-glows-rule
+>glare glows
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-glower-gloom-rule
+>glower gloom
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-hope-huts-rule
+>hope huts
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-maam-meek-rule
+>maam meek
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-our-age-rule
+>our age
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-pave-pound-rule
+>pave pound
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-plower-plume-rule
+>plower plume
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-rar-rage-rule
+>rar rage
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-rave-round-rule
+>rave round
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-rope-ruts-rule
+>rope ruts
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-save-sound-rule
+>save sound
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-slam-sleek-rule
+>slam sleek
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-snare-snows-rule
+>snare snows
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-stair-stows-rule
+>stair stows
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-star-stage-rule
+>star stage
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-tower-tomb-rule
+>tower tomb
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-wave-wound-rule
+>wave wound
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-wham-weak-rule
+>wham weak
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vr-wower-womb-rule
+>wower womb
+{$REJECT2}
+====alphabetize off
 
 @verbs
 #testcase-mainverbs-carry-out-versioning-default
@@ -86,7 +251,7 @@ Sneak-snivel? Seek CIVIL!
 #testcase-mainverbs-carry-out-xyzzying-default
 >xyzzy
 Trope-tread: dope?! DEAD.
-(Cross-promotion: why, yes, Very Vile Fairy File, Quite Queer Night Near, Low-Key Learny Jokey Journey and There Those Dare Doze, the other four entries in the Prime Pro-Rhyme Row series, have different and equally "witty" XYZZY responses. Of course they do!)
+(Cross-promotion: why, yes, Very Vile Fairy File, Quite Queer Night Near, Low-Key Learny Jokey Journey and Civil Seeming Drivel Dreaming, the other four entries in the Prime Pro-Rhyme Row series, have different and equally "witty" XYZZY responses. Of course they do!)
 \\
 >xyzzy
 Trope-tread: dope?! DEAD.
@@ -120,6 +285,21 @@ You don't need any special verbs to win. The four basic cardinal directions work
 OPTS also gives options.
 META gives meta-commands that show general information.
 
+@rej
+##balance undos
+>stair stows
+by one point
+\\
+>w
+\\
+#testcase-reject-start-table-of-verb-checks-vr-snare-snows-rule
+>snare snows
+{$REJECT2}
+\\
+>undo
+>undo
+>undo
+
 @gt
 >n
 WRONG
@@ -133,6 +313,52 @@ WRONG
 >w
 WRONG
 
+@rej
+##balance undos
+>snare snows
+by one point
+\\
+>e
+\\
+#testcase-reject-start-table-of-verb-checks-vr-arrows-rule
+>arrows
+{$REJECT2}
+\\
+>undo
+\\
+#testcase-reject-start-table-of-verb-checks-vr-bare-bows-rule
+>bare bows
+{$REJECT2}
+\\
+>undo
+\\
+#testcase-reject-start-table-of-verb-checks-vr-fair-foes-rule
+>fair foes
+{$REJECT2}
+\\
+>undo
+\\
+#testcase-reject-start-table-of-verb-checks-vr-glare-glows-rule
+>glare glows
+{$REJECT2}
+\\
+>undo
+\\
+#testcase-reject-start-table-of-verb-checks-vr-hair-hose-rule
+>hair hose
+{$REJECT2}
+\\
+>undo
+\\
+#testcase-reject-start-table-of-verb-checks-vr-stair-stows-rule
+>stair stows
+{$REJECT2}
+\\
+>undo
+\\
+>undo
+>undo
+
 >snare snows
 by one point
 
@@ -141,6 +367,60 @@ by one point
 @all
 #testcase-room-names-rowr-room
 `Rowr Room
+
+@gt
+#testcase-goto-table-of-noways-rowr-room
+>e
+It's a room. The only way back is west.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-22-tomb
+>ztower tomb
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-22-tower
+>tower ztomb
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-23-womb
+>zwower womb
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-23-wower
+>wower zwomb
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-doom
+>zdour doom
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-dour
+>dour zdoom
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-25-gloom
+>zglower gloom
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-25-glower
+>glower zgloom
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-26-plower
+>plower zplume
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-26-plume
+>zplower plume
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-flower
+>flower zflume
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-flume
+>zflower flume
+{$GREENCORE}
 
 >tower tomb
 by one point
@@ -168,6 +448,44 @@ by one point
 #testcase-room-names-car-cage
 `Car Cage
 
+@gt
+#testcase-goto-table-of-noways-car-cage
+>s
+The only way out is back north.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-13-age
+>zour age
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-13-our
+>our zage
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-14-far
+>far zphage
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-14-phage
+>zfar phage
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-15-rage
+>zrar rage
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-15-rar-rawr-rahr-rhar-rowr-rarr-raar
+>rar zrage
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-16-stage
+>zstar stage
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-16-star
+>star zstage
+{$GREENCORE}
+
 >our age
 by one point
 
@@ -187,6 +505,52 @@ by one point
 @all
 #testcase-room-names-cram-creek
 `Cram Creek
+
+@gt
+#testcase-goto-table-of-noways-cram-creek
+>n
+The creek goes off too far into the distance. Whatever you need to do, it has to be right here.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-8-clam
+>clam zclique
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-8-clique
+>zclam clique
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-9-slam
+>slam zsleek
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-9-sleek
+>zslam sleek
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-10-weak
+>zwham weak
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-10-wham
+>wham zweak
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-blam
+>blam zbleak
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-bleak
+>zblam bleak
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-12-maam
+>maam zmeek
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-12-meek
+>zmaam meek
+{$GREENCORE}
 
 >blam bleak
 by one point
@@ -211,6 +575,52 @@ by one point
 #testcase-room-names-grave-ground
 `Grave Ground
 
+@gt
+#testcase-goto-table-of-noways-ground-grave
+>gt
+It's even spookier and darker if you go further from the rare rows.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-17-rave
+>rave zround
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-17-round
+>zrave round
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-18-pave
+>pave zpound
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-18-pound
+>zpave pound
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-19-wave
+>wave zwound
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-19-wound
+>zwave wound
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-20-save
+>save zsound
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-20-sound
+>zsave sound
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-21-crave
+>crave zcrowned
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-21-crowned
+>zcrave crowned
+{$GREENCORE}
+
 >crave crowned
 by one point
 
@@ -224,6 +634,158 @@ by one point
 by one point
 
 >e
+
+@rej
+====alphabetize on
+#testcase-reject-end-table-of-verb-checks-vr-arrows-rule
+>arrows
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-bare-bows-rule
+>bare bows
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-fair-foes-rule
+>fair foes
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-glare-glows-rule
+>glare glows
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-hair-hose-rule
+>hair hose
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-snare-snows-rule
+>snare snows
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-stair-stows-rule
+>stair stows
+{$REJECT2}
+====alphabetize off
+
+@mis
+#ttc-table-of-ppnn-guesses-cope-cuts
+>cope cuts
+The right idea, but you need something more concrete.
+\\
+#ttc-table-of-ppnn-guesses-mope-mutts
+>mope mutts
+The Prayer Pros could use pets, even ones not very cheery, but first comes more basic needs.
+\\
+#ttc-table-of-ppnn-guesses-slope-sluts
+>slope sluts
+Whoever they're for, um, no.
+
+@rej
+====alphabetize on
+#testcase-reject-end-table-of-verb-checks-vr-blam-bleak-rule
+>blam bleak
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-clam-clique-rule
+>clam clique
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-crave-crowned-rule
+>crave crowned
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-dour-doom-rule
+>dour doom
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-far-phage-rule
+>far phage
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-flower-flume-rule
+>flower flume
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-glower-gloom-rule
+>glower gloom
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-hope-huts-rule
+>hope huts
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-maam-meek-rule
+>maam meek
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-our-age-rule
+>our age
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-pave-pound-rule
+>pave pound
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-plower-plume-rule
+>plower plume
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-rar-rage-rule
+>rar rage
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-rave-round-rule
+>rave round
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-rope-ruts-rule
+>rope ruts
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-save-sound-rule
+>save sound
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-slam-sleek-rule
+>slam sleek
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-star-stage-rule
+>star stage
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-tower-tomb-rule
+>tower tomb
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-wave-wound-rule
+>wave wound
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-wham-weak-rule
+>wham weak
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vr-wower-womb-rule
+>wower womb
+{$REJECT2}
+====alphabetize off
+
+@ha
+#testcase-ha-half-table-of-verb-checks-28-hope
+>hope huts
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-28-huts
+>hope huts
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-29-rope
+>rope ruts
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-29-ruts
+>rope ruts
+{$GREENCORE}
 
 >rope ruts
 by one point
