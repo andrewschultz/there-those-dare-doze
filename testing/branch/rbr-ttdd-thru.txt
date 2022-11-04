@@ -1,0 +1,233 @@
+#-- rbr-ttdd-thru.txt
+#-- main branch file for There Those Dare Doze walkthroughs
+#
+#-- use HHV.PY to verify ha-half
+#-- use MCH.PY to verify mistake checking code
+#-- use SCT.PY to verify alternate verb solutions
+#-- use HCH.PY to verify room/thing homonyms
+#--
+#--
+
+#NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+
+files=reg-ttdd-thru-min.txt,reg-ttdd-thru-all.txt,reg-ttdd-thru-reject.txt,reg-ttdd-thru-alt-verbs.txt,reg-ttdd-thru-guide-gong.txt,reg-ttdd-thru-pride-prong.txt,reg-ttdd-thru-mistakes.txt,reg-ttdd-thru-ha-half.txt,reg-ttdd-thru-homonyms.txt,reg-ttdd-thru-verbs.txt,reg-ttdd-thru-goto.txt,reg-ttdd-thru-hints.txt,reg-ttdd-thru-hintfull.txt
+~	min	t0
+~	all	t1
+~	rej	t2
+~	alt	t3
+~	gong	t4
+~	prong	t5
+~	mis	t6
+~	ha	t7
+~	hom	t8
+~	ver,verbs	t9
+~	goto,gt,go	t10
+~	hin,hint,hints	t11
+~	hf,hfull	t12
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+}$REJECT=I couldn't parse that command. You don't need any more than two words long.
+}$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
+}$GREENCORE=The HA HALF button on your Leet Learner lights up green.
+}$YELLOWBONUS=The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$YELLOWCOREFIRST=The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
+}$YELLOWCORE=The HA HALF button on your Leet Learner lights up yellow.
+
+}}MAX=28
+}}CURMAX=28
+}}SCORE=0
+}}CURMIN=25
+}}CURMINBONUS=0
+}}CURMAXBONUS=3
+}}MAXBONUS=3
+
+}$SCOS=You have scored a total of {SCORE} out of {MAX} points and need {CURMIN} to win. You have found {CURMIN} of {MAXBONUS} optional points so far.
+}$MISSINGONE=1 optional point is no longer available.
+}$MISSING={} optional points are no longer available.
+
+## *FILE
+## *FORK
+
+TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing guide gong	## walkthrough testing pride prong	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	## walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS basic	## walkthrough testing HINTS full
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+@all
+#testcase-room-names-rare-rows
+`Rare Rows
+
+@!min
+>take learner
+Taken.
+
+>au 2
+
+@verbs
+#testcase-mainverbs-carry-out-versioning-default
+>version
+Release 1 was submitted for EctoComp around 12:01 AM on October 31, 2022.
+\\
+#+testcase-mainverbs-carry-out-versioning-default
+>versions
+Release 1 was submitted for EctoComp around 12:01 AM on October 31, 2022.
+\\
+#testcase-mainverbs-check-swearing-obscenely-default
+>damn
+Sneak-snivel? Seek CIVIL!
+\\
+#testcase-mainverbs-carry-out-xyzzying-default
+>xyzzy
+Trope-tread: dope?! DEAD.
+(Cross-promotion: why, yes, Very Vile Fairy File, Quite Queer Night Near, Low-Key Learny Jokey Journey and There Those Dare Doze, the other four entries in the Prime Pro-Rhyme Row series, have different and equally "witty" XYZZY responses. Of course they do!)
+\\
+>xyzzy
+Trope-tread: dope?! DEAD.
+!Cross-promotion
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-purring-pest
+>t pest
+A warn-was-borne buzz. Dialogue isn't the way to go, here.
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-the-player
+>t me
+"Mild, me? Wild! Whee!" you say, to pep yourself up.
+\\
+#testcase-mainverbs-carry-out-abouting-default
+>about
+Civil Seeming Drivel Dreaming is the fourth entry in the Prime Pro-Rhyme Row series.
+https://github.com/andrewschultz/there-those-dare-doze is a site where you can report issues.
+\\
+#testcase-mainverbs-carry-out-creditsing-default
+>credits
+Thanks to my testers.
+Thanks to Ruber Eaglenest for holding EctoComp yet again and hosting a Grand Guignol division.
+\\
+#testcase-mainverbs-check-attacking-default
+>attack pros
+You're in a dream. One-on-one violence never works there.
+\\
+#testcase-mainverbs-carry-out-verbsing-default
+>verbs
+You don't need any special verbs to win. The four basic cardinal directions work, and you can T NPC for small clues, maybe. The main thing is to guess what to say--you may note something about the room name and the pest.
+OPTS also gives options.
+META gives meta-commands that show general information.
+
+@gt
+>n
+WRONG
+\\
+>s
+WRONG
+\\
+>e
+WRONG
+\\
+>w
+WRONG
+
+>snare snows
+by one point
+
+>e
+
+@all
+#testcase-room-names-rowr-room
+`Rowr Room
+
+>tower tomb
+by one point
+
+>flower flume
+by one point
+
+>dour doom
+by one point
+
+>w
+
+>fair foes
+by one point
+
+>bare bows
+by one point
+
+>arrows
+by one point
+
+>s
+
+@all
+#testcase-room-names-car-cage
+`Car Cage
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>n
+
+>hair hose
+by one point
+
+>n
+
+@all
+#testcase-room-names-cram-creek
+`Cram Creek
+
+>blam bleak
+by one point
+
+>slam sleek
+by one point
+
+>wham weak
+by one point
+
+>clam clique
+by one point
+
+>s
+
+>stair stows
+by one point
+
+>w
+
+@all
+#testcase-room-names-grave-ground
+`Grave Ground
+
+>crave crowned
+by one point
+
+>save sound
+by one point
+
+>pave pound
+by one point
+
+>rave round
+by one point
+
+>e
+
+>rope ruts
+by one point
+
+>hope huts
+by one point
+DONE DISHIN' FUN FISHIN'

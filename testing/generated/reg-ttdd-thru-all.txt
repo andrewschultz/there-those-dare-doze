@@ -1,0 +1,114 @@
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+
+## reg-ttdd-thru-all.txt
+## GENERATOR FILE: rbr-ttdd-thru.txt
+
+## walkthrough with all points
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+#testcase-room-names-rare-rows
+`Rare Rows
+
+>take learner
+Taken.
+
+>au 2
+
+>snare snows
+by one point
+
+>e
+
+#testcase-room-names-rowr-room
+`Rowr Room
+
+>tower tomb
+by one point
+
+>flower flume
+by one point
+
+>dour doom
+by one point
+
+>w
+
+>fair foes
+by one point
+
+>bare bows
+by one point
+
+>arrows
+by one point
+
+>s
+
+#testcase-room-names-car-cage
+`Car Cage
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>n
+
+>hair hose
+by one point
+
+>n
+
+#testcase-room-names-cram-creek
+`Cram Creek
+
+>blam bleak
+by one point
+
+>slam sleek
+by one point
+
+>wham weak
+by one point
+
+>clam clique
+by one point
+
+>s
+
+>stair stows
+by one point
+
+>w
+
+#testcase-room-names-grave-ground
+`Grave Ground
+
+>crave crowned
+by one point
+
+>save sound
+by one point
+
+>pave pound
+by one point
+
+>rave round
+by one point
+
+>e
+
+>rope ruts
+by one point
+
+>hope huts
+by one point
+DONE DISHIN' FUN FISHIN'
