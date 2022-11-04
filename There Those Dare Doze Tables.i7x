@@ -301,6 +301,7 @@ a goodrhyme rule (this is the vc-tower-tomb rule):
 this is the vr-tower-tomb rule:
 	now sco-tower-tomb is true;
 	say "Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though[just-noise]";
+	opt-rule vc-wower-womb rule;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-wower-womb rule):
@@ -313,6 +314,7 @@ a goodrhyme rule (this is the vc-wower-womb rule):
 this is the vr-wower-womb rule:
 	now sco-wower-womb is true;
 	say "A passage opens downstairs briefly. Then it closes. But you know it's there[just-noise].";
+	opt-rule vc-tower-tomb rule;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-dour-doom rule):
@@ -325,6 +327,7 @@ a goodrhyme rule (this is the vc-dour-doom rule):
 this is the vr-dour-doom rule:
 	now sco-dour-doom is true;
 	say "You invoke a sense of doom so dour, the rowring itself gets quieter.";
+	opt-rule vc-glower-gloom rule;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-glower-gloom rule):
@@ -337,6 +340,7 @@ a goodrhyme rule (this is the vc-glower-gloom rule):
 this is the vr-glower-gloom rule:
 	now sco-glower-gloom is true;
 	say "You invoke a sense of gloom so glowery, the rowring itself gets quieter.";
+	opt-rule vc-dour-doom rule;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-plower-plume rule):
@@ -349,6 +353,7 @@ a goodrhyme rule (this is the vc-plower-plume rule):
 this is the vr-plower-plume rule:
 	now sco-plower-plume is true;
 	say "A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.";
+	opt-rule vc-flower-flume rule;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-flower-flume rule):
@@ -361,6 +366,7 @@ a goodrhyme rule (this is the vc-flower-flume rule):
 this is the vr-flower-flume rule:
 	now sco-flower-flume is true;
 	say "Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.";
+	opt-rule vc-plower-plume rule;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-hope-huts rule):
@@ -388,6 +394,17 @@ this is the vr-rope-ruts rule:
 	abide by the huts-and-ruts rule;
 
 section auxiliary rules
+
+to opt-rm (rm - a room):
+	repeat through table of verb checks:
+		if there is a bestroom entry and bestroom entry is location of player and idid entry is false, now core entry is false;
+
+to opt-rule (ru - a rule):
+	repeat through table of verb checks:
+		unless run-rule entry is ru, next;
+		if idid entry is false, now core entry is false;
+		continue the action;
+	say "TRIVIAL BUG: I did not see [ru] in the table of verb checks. If you can let me know at my github repository, I'd appreciate knowing this so I can fix it!"
 
 to say just-noise: say ". Just having more places for the noise to dissipate is a good thing"
 
@@ -458,7 +475,8 @@ this is the huts-and-ruts rule:
 		say "The rope ruts seem adequate, but what can they support?";
 		the rule succeeds;
 	say "The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of 'Ne[']er Nos' or 'Ne[']er Knows' (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.[paragraph break]Then you close your eyes and think a Spare S'Pose. Then another. And another. When you open them, you are back outside [shows]. Very little time has passed.[paragraph break]You wonder what you have learned. You doubt you've learned anything. But you helped someone, somewhere. You know the Prayer Pros are praying for you, for your life to be a bit more interesting. You resolve to search more for oddities even more. You walk by the 'One wish in' sign again. It's changed ... to ...";
-	follow the score and thinking changes rule;
+	up-reg;
+	process the score and thinking changes rule;
 	end the story finally saying "DONE DISHIN['] FUN FISHIN[']";
 	say "But you do think about the Prayer Pros over the years. Did people still respect them? Did the entities they petitioned? Were they happy in their jobs? Were they too mechanical with their prayers or too sloppy? All this seems like sophistry, but it also applies to real-world concerns of asking for favors or giving them. They're there to think about, when you've got a bit of solitude. Perhaps they've petitioned someone else.";
 	follow the shutdown rules;
@@ -477,7 +495,11 @@ volume homonyms
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-a thing	a rule	a topic	a text
+rare rows	--	"stare"	"Yes, there [if sco-stair-stows is true]was something to look for, and you found it.[else]is something to look for. But where?[end if]"
+rare rows	--	"hoes"	"Not around the Prayer Pros!"
+rare rows	--	"air/rows"	"No, that [if sco-arrows is true]was[else]is[end if] only half it."
+car cage	--	"hour"	"That's too specific a time."
+grave ground	--	"waive"	"No, something more positive."
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)

@@ -321,10 +321,6 @@ this is the verb-checker rule:
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
 			abide-nlb the situational-cuing-reject rule;
-			process the run-rule entry;
-			if the rule failed:
-				now think-cue entry is true;
-				the rule succeeds;
 			if there is a core entry and idid entry is false:
 				if core entry is true and nwpc > 2:
 					say "You may have used too many words. Any necessary command just needs two words, no more, no less. I put this in to make sure you can't just spam guesses. It's a bit strict, but ... I wanted some cursory protection, as well as simple guidance to narrow down what you should guess.";
@@ -334,6 +330,7 @@ this is the verb-checker rule:
 					increase lump-count by 1;
 			now idid entry is true;
 			now think-cue entry is false;
+			process the run-rule entry;
 			if zap-core-entry is true: [must be after "process the run-rule entry" or next LLP may not register]
 				blank out the core entry;
 				now zap-core-entry is false;
