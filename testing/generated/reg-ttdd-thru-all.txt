@@ -21,6 +21,9 @@ Taken.
 >snare snows
 by one point
 
+#testcase-run-vr-snare-snows-rule-default
+Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.
+
 >e
 
 #testcase-room-names-rowr-room
@@ -32,6 +35,9 @@ by one point
 >flower flume
 by one point
 
+#testcase-run-vr-flower-flume-rule-default
+Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.
+
 >dour doom
 by one point
 
@@ -40,11 +46,17 @@ by one point
 >fair foes
 by one point
 
+#testcase-run-vr-fair-foes-rule-default
+Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.
+
 >bare bows
 by one point
 
 >arrows
 by one point
+
+#testcase-run-vr-arrows-rule-default
+Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.
 
 >s
 
@@ -60,10 +72,18 @@ by one point
 >star stage
 by one point
 
+#testcase-run-vr-star-stage-rule-default
+On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...
+...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.
+
 >n
 
 >hair hose
 by one point
+
+#testcase-run-vr-hair-hose-rule-default
+You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.
+WRONG different if gone north
 
 >n
 
@@ -76,6 +96,9 @@ by one point
 >slam sleek
 by one point
 
+#testcase-run-vr-slam-sleek-rule-default
+You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!
+
 >wham weak
 by one point
 
@@ -86,6 +109,9 @@ by one point
 
 >stair stows
 by one point
+
+#testcase-run-vr-stair-stows-rule-default
+You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.
 
 >w
 
@@ -109,6 +135,12 @@ by one point
 >rope ruts
 by one point
 
+#testcase-run-vr-rope-ruts-rule-default
+Rope ruts appear!
+
 >hope huts
 by one point
 DONE DISHIN' FUN FISHIN'
+
+#testcase-run-vr-hope-huts-rule-default
+Huts are built! The Prayer Pros go over to inspect them.

@@ -76,11 +76,9 @@ The HA HALF button on your Leet Learner lights up green.
 >tower ztomb
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-23-womb
 >zwower womb
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-23-wower
 >wower zwomb
 The HA HALF button on your Leet Learner lights up green.
 
@@ -321,3 +319,4 @@ by one point
 >hope huts
 by one point
 DONE DISHIN' FUN FISHIN'
+
