@@ -39,7 +39,7 @@ chapter west
 
 sco-rave-round is a truth state that varies.
 sco-pave-pound is a truth state that varies.
-sco-wave-wound is a truth state that varies.
+sco-fave-found is a truth state that varies.
 sco-save-sound is a truth state that varies.
 sco-crave-crowned is a truth state that varies.
 

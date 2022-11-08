@@ -7,11 +7,10 @@ volume tests
 test x1 with "rope ruts/hope huts".
 test x2 with "hope huts/rope ruts".
 
-test w1 with "stair stows/w/crave crowned/pave pound/rave round/save sound/e".
-test w2 with "stair stows/w/wave wound/crave crowned/pave pound/rave round/e".
-test w3 with "stair stows/w/save sound/wave wound/crave crowned/pave pound/e".
-test w4 with "stair stows/w/rave round/save sound/wave wound/crave crowned/e".
-test w5 with "stair stows/w/pave pound/rave round/save sound/wave wound/e".
+test w1 with "stair stows/w/crave crowned/pave pound/rave round/fave found/e".
+test w2 with "stair stows/w/save sound/crave crowned/pave pound/fave found/e".
+test w3 with "stair stows/w/rave round/save sound/crave crowned/fave found/e".
+test w4 with "stair stows/w/pave pound/rave round/save sound/fave found/e".
 
 test n1 with "hair hose/n/maam meek/wham weak/blam bleak/clam clique/s".
 test n2 with "hair hose/n/slam sleek/maam meek/wham weak/clam clique/s".
@@ -29,7 +28,6 @@ test go1 with "test w1/test n1/test e1/test s1/test x1".
 test go2 with "test w2/test n2/test e2/test s2/test x2".
 test go3 with "test w3/test n3/test e2/test s3/test x2".
 test go4 with "test w4/test n4/test e2/test s3/test x2".
-test go5 with "test w5/test n4/test e2/test s3/test x2".
 
 There Those Dare Doze Tests ends here.
 

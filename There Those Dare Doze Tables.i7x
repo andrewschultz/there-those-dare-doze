@@ -26,7 +26,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
 "rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
 "save"	"sound"	--	--	false	true	true	false	grave ground	vc-save-sound rule	vr-save-sound rule	--	--
-"wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
+"fave"	"found"	--	--	false	true	true	false	grave ground	vc-fave-found rule	vr-fave-found rule	--	--
 "tower"	"tomb"	--	--	false	true	true	false	rowr room	vc-tower-tomb rule	vr-tower-tomb rule	--	-- [start way east]
 "wower"	"womb"	--	--	false	true	true	false	rowr room	vc-wower-womb rule	vr-wower-womb rule	--	--
 "dour"	"doom"	--	--	false	true	true	false	rowr room	vc-dour-doom rule	vr-dour-doom rule	--	--
@@ -260,17 +260,21 @@ this is the vr-pave-pound rule:
 	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect full salary ";
 	abide by the ground-boost rule;
 
-a goodrhyme rule (this is the vc-wave-wound rule):
+a goodrhyme rule (this is the vc-fave-found rule):
 	if player is not in grave ground, unavailable;
-	if sco-wave-wound is true:
+	if dave-score < 3:
+		vcp "Hmm, that would be a good idea once Dave had [if dave-score is 0]favorites[else if dave-score is 1]some more[else]a bit more[end if] desires to choose from.";
+		not-yet;
+	if sco-fave-found is true:
 		vcal "You already boosted Dave this way!";
 		already-done;
 	ready;
 
-this is the vr-wave-wound rule:
-	now sco-wave-wound is true;
-	say "A big wave comes crashing in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, and you feel energized, yourself.";
-	abide by the ground-boost rule;
+this is the vr-fave-found rule:
+	now sco-fave-found is true;
+	say "'Aha! Yes, that's what I'll focus on. My afterlife has purpose now!' Dave gives you a thumbs-up.[paragraph break]You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.";
+	move dave to Rare Rows;
+	solve-room;
 
 a goodrhyme rule (this is the vc-save-sound rule):
 	if player is not in grave ground, unavailable;
@@ -416,7 +420,7 @@ to opt-rule (ru - a rule):
 
 to say just-noise: say ". Just having more places for the noise to dissipate is a good thing"
 
-to bump-room: increment win-score of location of player;
+to bump-room (rm - a room): increment win-score of location of player;
 
 to solve-room:
 	now location of player is solved;
@@ -430,13 +434,8 @@ this is the cage-change rule:
 
 this is the ground-boost rule:
 	if dave-score is 4:
-		say "Dave jumps up! He feels fully released by your thoughts. He tries to shake your hand, but he fails, because he is undead and incorporeal. As he vanishes to ... wherever he needs to, you feel there's maybe one more thing you could do to help him.";
-		move dave to Rare Rows;
-		solve-room;
-		the rule succeeds;
-	else if dave-score is 5:
-		say "You feel a ripple across space. Dave is grateful for the additional support!";
-		bump-room;
+		say "You feel [if player is in grave ground]a ripple across space[else]that much warmer[end if]. Dave is grateful for the additional support!";
+		bump-room grave ground;
 
 this is the check-sheik rule:
 	if sheik-score is 3:
@@ -445,7 +444,7 @@ this is the check-sheik rule:
 		the rule succeeds;
 	else if sheik-score is 4:
 		say "And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures there.";
-		bump-room;
+		bump-room cram creek;
 		the rule succeeds;
 	say "The Sham Sheik looks [one of][or]a little more [or]a lot more [stopping]peeved. You're getting to him!";
 
