@@ -1,6 +1,6 @@
 Version 1/221007 of There Those Dare Doze Definitions by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of There Those Dare Doze Definitions."
+"This file tracks reusable definitons and decide-which-number options for There Those Dare Doze, so they're not scattered about . This includes necessary definitions for cross-game functions."
 
 volume basic definitions
 

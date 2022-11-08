@@ -1,6 +1,6 @@
 Version 1/221007 of There Those Dare Doze Globals by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of There Those Dare Doze Globals."
+"This file has very basic globals for There Those Dare Doze, to help keep the story file clean."
 
 volume point booleans
 

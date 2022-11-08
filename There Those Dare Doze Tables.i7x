@@ -1,6 +1,8 @@
 Version 1/221007 of There Those Dare Doze Tables by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of There Those Dare Doze Tables."
+"This is the main tables file for TTDD. It largely encompasses the point-scoring mechanisms, but there are homonym clues, too."
+
+[the puzzles are organized by room and then alphabetically.]
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)

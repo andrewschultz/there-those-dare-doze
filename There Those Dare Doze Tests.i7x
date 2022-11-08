@@ -1,6 +1,6 @@
 Version 1/221007 of There Those Dare Doze Tests by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of There Those Dare Doze Tests."
+"This encompasses basic IDE tests for There Those Dare Doze."
 
 volume tests
 

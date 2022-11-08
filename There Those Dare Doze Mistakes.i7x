@@ -1,6 +1,6 @@
 Version 1/221007 of There Those Dare Doze Mistakes by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of There Those Dare Doze Mistakes."
+"This encompasses all the credit TTDD gives for good guesses."
 
 to current-table-note-x (tn - a table name):
 	current-table-note tn;
