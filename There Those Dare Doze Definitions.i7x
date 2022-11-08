@@ -30,6 +30,10 @@ this is the flag bad goto to rule: do nothing;
 
 volume in game barometers
 
+to decide whether (ru - a rule) is optionable: [ this could be done more elegantly by adding a boolean column in the table of verb checks for fungibility, but that would mean mucking with test scripts. It determines which points are conditionally necessary, optioning the last of the feeder points in a room once you can get the final rhyme. ]
+	if ru is vc-clam-clique rule or ru is vc-star-stage rule, no;
+	yes;
+
 to decide which number is dave-score:
 	decide on (boolval of sco-rave-round) + (boolval of sco-pave-pound) + (boolval of sco-wave-wound) + (boolval of sco-save-sound) + (boolval of sco-crave-crowned)
 

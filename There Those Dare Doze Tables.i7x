@@ -6,35 +6,38 @@ Version 1/221007 of There Those Dare Doze Tables by Andrew Schultz begins here.
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"snare"	"snows"	--	--	false	true	true	false	rare rows	vc-snare-snows rule	vr-snare-snows rule	--	--
-"glare"	"glows"	--	--	false	true	true	false	rare rows	vc-glare-glows rule	vr-glare-glows rule	--	--
-"stair"	"stows"	--	--	false	true	true	false	rare rows	vc-stair-stows rule	vr-stair-stows rule	--	--
-"hair"	"hose"	--	--	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
-"fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
 "arrows"	--	--	--	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
 "bare"	"bows"	--	--	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
-"clam"	"clique"	--	--	false	true	true	false	cram creek	vc-clam-clique rule	vr-clam-clique rule	--	--
+"fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
+"hair"	"hose"	--	--	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
+"glare"	"glows"	--	--	false	true	true	false	rare rows	vc-glare-glows rule	vr-glare-glows rule	--	--
+"snare"	"snows"	--	--	false	true	true	false	rare rows	vc-snare-snows rule	vr-snare-snows rule	--	--
+"stair"	"stows"	--	--	false	true	true	false	rare rows	vc-stair-stows rule	vr-stair-stows rule	--	--
+"blam"	"bleak"	--	--	false	true	true	false	cram creek	vc-blam-bleak rule	vr-blam-bleak rule	--	-- [start way north]
+"maam"	"meek"	--	--	false	true	true	false	cram creek	vc-maam-meek rule	vr-maam-meek rule	--	--
 "slam"	"sleek"	--	--	false	true	true	false	cram creek	vc-slam-sleek rule	vr-slam-sleek rule	--	--
 "wham"	"weak"	--	--	false	true	true	false	cram creek	vc-wham-weak rule	vr-wham-weak rule	--	--
-"blam"	"bleak"	--	--	false	true	true	false	cram creek	vc-blam-bleak rule	vr-blam-bleak rule	--	--
-"maam"	"meek"	--	--	false	true	true	false	cram creek	vc-maam-meek rule	vr-maam-meek rule	--	--
-"our"	"age"	--	--	false	true	true	false	car cage	vc-our-age rule	vr-our-age rule	--	--
-"far"	"phage"	--	--	false	true	true	false	car cage	vc-far-phage rule	vr-far-phage rule	--	--
+"clam"	"clique"	--	--	false	true	true	false	cram creek	vc-clam-clique rule	vr-clam-clique rule	--	--
+"far"	"phage"	--	--	false	true	true	false	car cage	vc-far-phage rule	vr-far-phage rule	--	-- [start way south]
+"our"	"age"	"hour"	vh-our-age rule	false	true	true	false	car cage	vc-our-age rule	vr-our-age rule	--	--
 "rar|rawr|rahr|rhar|rowr|rarr|raar"	"rage"	--	--	false	true	true	false	car cage	vc-rar-rage rule	vr-rar-rage rule	--	--
 "star"	"stage"	--	--	false	true	true	false	car cage	vc-star-stage rule	vr-star-stage rule	--	--
-"rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
+"crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	-- [start way west]
 "pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
-"wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
+"rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
 "save"	"sound"	--	--	false	true	true	false	grave ground	vc-save-sound rule	vr-save-sound rule	--	--
-"crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	--
-"tower"	"tomb"	--	--	false	true	true	false	rowr room	vc-tower-tomb rule	vr-tower-tomb rule	--	--
+"wave"	"wound"	--	--	false	true	true	false	grave ground	vc-wave-wound rule	vr-wave-wound rule	--	--
+"tower"	"tomb"	--	--	false	true	true	false	rowr room	vc-tower-tomb rule	vr-tower-tomb rule	--	-- [start way east]
 "wower"	"womb"	--	--	false	true	true	false	rowr room	vc-wower-womb rule	vr-wower-womb rule	--	--
 "dour"	"doom"	--	--	false	true	true	false	rowr room	vc-dour-doom rule	vr-dour-doom rule	--	--
 "glower"	"gloom"	--	--	false	true	true	false	rowr room	vc-glower-gloom rule	vr-glower-gloom rule	--	--
 "plower"	"plume"	--	--	false	true	true	false	rowr room	vc-plower-plume rule	vr-plower-plume rule	--	--
 "flower"	"flume"	--	--	false	true	true	false	rowr room	vc-flower-flume rule	vr-flower-flume rule	--	--
-"hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	--
+"hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	-- [final bit]
 "rope"	"ruts"	--	--	false	true	true	false	rare rows	vc-rope-ruts rule	vr-rope-ruts rule	--	--
+
+this is the vh-our-age rule:
+	say "That is too specific a time frame.";
 
 a goodrhyme rule (this is the vc-our-age rule):
 	if player is not in car cage, unavailable;
@@ -397,9 +400,12 @@ this is the vr-rope-ruts rule:
 
 section auxiliary rules
 
-to opt-rm (rm - a room):
+to opt-rm:
 	repeat through table of verb checks:
-		if there is a best-room entry and best-room entry is location of player and idid entry is false, now core entry is false;
+		if there is no best-room entry, next;
+		if best-room entry is not location of player, next;
+		if idid entry is true, next;
+		if check-rule entry is optionable, now core entry is false;
 
 to opt-rule (ru - a rule):
 	repeat through table of verb checks:
@@ -415,7 +421,8 @@ to bump-room: increment win-score of location of player;
 to solve-room:
 	now location of player is solved;
 	if number of solved rooms is 0:
-		say "[i][bracket][b]NOTE[r][i]: a person or entity you rhymed will be moved back to Rare Rows, but since this is a Petite Mort game, I didn't have time to tweak the code for rhymes or rhyme guesses with them. Sorry about that! You've done what you could. I'll fill these details in post-Ectocomp.[close bracket][r]"
+		say "[i][bracket][b]NOTE[r][i]: a person or entity you rhymed will be moved back to Rare Rows, but since this is a Petite Mort game, I didn't have time to tweak the code for rhymes or rhyme guesses with them. Sorry about that! You've done what you could. I'll fill these details in post-Ectocomp.[close bracket][r]";
+	opt-rm;
 
 this is the cage-change rule:
 	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. 'No! I don't believe it! You can't keep this up!'[line break]";
@@ -499,7 +506,6 @@ loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
 rare rows	--	"stare"	"Yes, there [if sco-stair-stows is true]was something to look for, and you found it.[else]is something to look for. But where?[end if]"
 rare rows	--	"hoes"	"Not around the Prayer Pros!"
 rare rows	--	"air/rows"	"No, that [if sco-arrows is true]was[else]is[end if] only half it."
-car cage	--	"hour"	"That's too specific a time."
 grave ground	--	"waive"	"No, something more positive."
 
 table of thing homonyms
