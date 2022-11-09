@@ -125,6 +125,12 @@ by one point
 >flower flume
 by one point
 
+>plower plume
+by one point
+
+>glower gloom
+by one point
+
 >dour doom
 by one point
 
@@ -133,10 +139,10 @@ by one point
 >fair foes
 by one point
 
->bare bows
+>arrows
 by one point
 
->arrows
+>bare bows
 by one point
 
 >s
@@ -180,6 +186,9 @@ by one point
 by one point
 
 >star stage
+by one point
+
+>rar rage
 by one point
 
 >n
@@ -241,6 +250,9 @@ by one point
 >clam clique
 by one point
 
+>maam meek
+by one point
+
 >s
 
 >stair stows
@@ -300,7 +312,13 @@ by one point
 >fave found
 by one point
 
+>rave round
+by one point
+
 >e
+
+>glare glows
+by one point
 
 #testcase-ha-half-table-of-verb-checks-28-hope
 >hope zhuts

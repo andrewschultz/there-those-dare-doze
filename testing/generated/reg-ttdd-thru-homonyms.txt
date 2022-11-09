@@ -1,0 +1,174 @@
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+
+## reg-ttdd-thru-homonyms.txt
+## GENERATOR FILE: rbr-ttdd-thru.txt
+
+## walkthrough testing homonyms
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+#testcase-homonym-detail-vh-arrows-rule-default
+#testcase-homonym-reject-table-of-verb-checks-air-rows
+>air
+No, that is only half it.
+
+>rows
+No, that is only half it.
+
+#testcase-homonym-detail-vh-hair-hose-rule-if-the-player's-command-includes-hare
+#testcase-homonym-reject-table-of-verb-checks-hare-hoes
+>hare
+You'd need more than one rabbit.
+
+#+testcase-homonym-detail-vh-hair-hose-rule-if-the-player's-command-includes-hare
+>hoes
+Not around the Prayer Pros! Something less sacrilegious, if you please.
+
+>snare snows
+by one point
+
+>e
+
+#testcase-homonym-reject-table-of-verb-checks-dower
+#testcase-homonym-detail-vh-dour-doom-rule-default
+>dower
+We need more than money, here.
+
+>tower tomb
+by one point
+
+>wower womb
+by one point
+
+>flower flume
+by one point
+
+>plower plume
+by one point
+
+>glower gloom
+by one point
+
+>dour doom
+by one point
+
+>w
+
+>fair foes
+by one point
+
+>arrows
+by one point
+
+#+testcase-homonym-detail-vh-arrows-rule-default
+#+testcase-homonym-reject-table-of-verb-checks-air-rows
+>air/rows
+No, that was only half it.
+
+>bare bows
+by one point
+
+>s
+
+#testcase-homonym-reject-table-of-verb-checks-hour
+#testcase-homonym-detail-vh-our-age-rule-default
+>hour
+That is too specific a time frame.
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>rar rage
+by one point
+
+>n
+
+>hair hose
+by one point
+
+>n
+
+#ttc-table-of-room-homonyms-cram-creek-creak
+>cram creak
+A different sort of noise is required here.
+
+>blam bleak
+by one point
+
+>slam sleek
+by one point
+
+>wham weak
+by one point
+
+>clam clique
+by one point
+
+#+ttc-table-of-room-homonyms-cram-creek-creak
+>creak
+A different sort of noise was required here.
+
+>maam meek
+by one point
+
+>s
+
+#testcase-homonym-detail-vh-stair-stows-rule-default
+#testcase-homonym-reject-table-of-verb-checks-stare
+>stare
+Yes, there is something to look for. But where?
+
+>stair stows
+by one point
+
+#+testcase-homonym-detail-vh-stair-stows-rule-default
+>stare
+Yes, there was something to look for, and you found it.
+
+>w
+
+>crave crowned
+by one point
+
+>save sound
+by one point
+
+>pave pound
+by one point
+
+>fave found
+by one point
+
+>rave round
+by one point
+
+>e
+
+>glare glows
+by one point
+
+#testcase-homonym-reject-table-of-verb-checks-hutz
+#testcase-homonym-detail-vh-hope-huts-rule-default
+>hutz
+And why not wish for Troy McClure, while you're at it?
+
+>rope ruts
+by one point
+
+>hope huts
+by one point
+

@@ -1,0 +1,181 @@
+## reg-ttdd-lone-glareblock.txt
+
+## checking blocking each way with glare glows undone
+##TODO: comment out WRONG so that we see things look differently
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* north-block
+
+>{include} _west
+>{include} _south
+>{include} _east
+
+>n
+You see a body of water far ahead! Suddenly, you are irrationally worried you have no kind of swimming gear. You turn back.
+
+>l
+#WRONG
+
+>hair hose
+by one point
+
+>l
+#WRONG
+
+* east-block
+
+>{include} _north
+>{include} _south
+>{include} _west
+
+>e
+The heat, metaphorical and physical, pushes you back.
+
+* south-block
+
+>{include} _north
+>{include} _west
+>{include} _east
+
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+Sadly, you are repressed a bit too much by the argument. "No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!"
+You realize you'll be needing the right allies, fully armed.
+Start with summoning allies, then, maybe.
+
+>l
+#WRONG
+
+>fair foes
+by one point
+
+>s
+#WRONG
+
+>arrows
+by one point
+
+>s
+#WRONG
+
+>undo
+>undo
+
+>bare bows
+by one point
+
+>s
+#WRONG
+
+>arrows
+by one point
+
+>l
+#WRONG
+
+* west-block
+
+>{include} _north
+>{include} _south
+>{include} _east
+
+>w
+Suddenly, the land drops off! You will need a ladder or something to make further progress without injury.
+
+>l
+#WRONG
+
+>stair stows
+by one point
+
+>l
+#WRONG
+
+* _north
+
+>hair hose
+by one point
+
+>n
+
+>slam sleek
+by one point
+
+>blam bleak
+by one point
+
+>wham weak
+by one point
+
+>maam meek
+by one point
+
+>clam clique
+by one point
+
+>s
+
+* _south
+
+>arrows
+by one point
+
+>bare bows
+by one point
+
+>fair foes
+by one point
+
+>s
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>n
+
+* _east
+
+>snare snows
+by one point
+
+>e
+
+>tower tomb
+by one point
+
+>flower flume
+by one point
+
+>dour doom
+by one point
+
+>w
+
+* _west
+
+>stair stows
+by one point
+
+>w
+
+>rave round
+by one point
+
+>save sound
+by one point
+
+>pave pound
+by one point
+
+>fave found
+by one point
+
+>e

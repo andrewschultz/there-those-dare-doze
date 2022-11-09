@@ -1,14 +1,17 @@
 ##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 
-## reg-ttdd-thru-min.txt
+## reg-ttdd-thru-alt-verbs.txt
 ## GENERATOR FILE: rbr-ttdd-thru.txt
 
-## minimum walkthrough
+## walkthrough with altverb tests
 
 ** game: /home/andrew/prt/debug-there-those-dare-doze.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
 * main-thru
+
+>take learner
+Taken.
 
 >au 2
 
@@ -20,7 +23,16 @@ by one point
 >tower tomb
 by one point
 
+>wower womb
+by one point
+
 >flower flume
+by one point
+
+>plower plume
+by one point
+
+>glower gloom
 by one point
 
 >dour doom
@@ -39,6 +51,31 @@ by one point
 
 >s
 
+#testcase-alt-words-table-of-verb-checks-15-rar-rawr-rahr-rhar-rowr-rarr-raar-rage
+>rawr rage
+by one point
+>undo
+
+>rahr rage
+by one point
+>undo
+
+>rhar rage
+by one point
+>undo
+
+>rowr rage
+by one point
+>undo
+
+>rarr rage
+by one point
+>undo
+
+>raar rage
+by one point
+>undo
+
 >our age
 by one point
 
@@ -46,6 +83,9 @@ by one point
 by one point
 
 >star stage
+by one point
+
+>rar rage
 by one point
 
 >n
@@ -67,6 +107,9 @@ by one point
 >clam clique
 by one point
 
+>maam meek
+by one point
+
 >s
 
 >stair stows
@@ -84,6 +127,9 @@ by one point
 by one point
 
 >fave found
+by one point
+
+>rave round
 by one point
 
 >e

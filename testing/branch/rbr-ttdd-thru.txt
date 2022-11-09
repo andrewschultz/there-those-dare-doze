@@ -136,115 +136,128 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 @rej
 ====alphabetize on
 #testcase-check-vc-blam-bleak-rule-if-player-is-not-in-cram-creek
-#testcase-reject-start-table-of-verb-checks-vr-blam-bleak-rule
+#testcase-reject-start-table-of-verb-checks-vc-blam-bleak-rule
 >blam bleak
 {$REJECT2}
 \\
 #testcase-check-vc-clam-clique-rule-if-player-is-not-in-cram-creek
-#testcase-reject-start-table-of-verb-checks-vr-clam-clique-rule
+#testcase-reject-start-table-of-verb-checks-vc-clam-clique-rule
 >clam clique
 {$REJECT2}
 \\
 #testcase-check-vc-crave-crowned-rule-if-player-is-not-in-grave-ground
-#testcase-reject-start-table-of-verb-checks-vr-crave-crowned-rule
+#testcase-reject-start-table-of-verb-checks-vc-crave-crowned-rule
 >crave crowned
 {$REJECT2}
 \\
 #testcase-check-vc-dour-doom-rule-if-player-is-not-in-rowr-room
-#testcase-reject-start-table-of-verb-checks-vr-dour-doom-rule
+#testcase-reject-start-table-of-verb-checks-vc-dour-doom-rule
 >dour doom
 {$REJECT2}
 \\
 #testcase-check-vc-far-phage-rule-if-player-is-not-in-car-cage
-#testcase-reject-start-table-of-verb-checks-vr-far-phage-rule
+#testcase-reject-start-table-of-verb-checks-vc-far-phage-rule
 >far phage
 {$REJECT2}
 \\
 #testcase-check-vc-fave-found-rule-if-player-is-not-in-grave-ground
-#testcase-reject-start-table-of-verb-checks-vr-fave-found-rule
+#testcase-reject-start-table-of-verb-checks-vc-fave-found-rule
 >fave found
 {$REJECT2}
 \\
 #testcase-check-vc-flower-flume-rule-if-player-is-not-in-rowr-room
-#testcase-reject-start-table-of-verb-checks-vr-flower-flume-rule
+#testcase-reject-start-table-of-verb-checks-vc-flower-flume-rule
 >flower flume
 {$REJECT2}
 \\
 #testcase-check-vc-glower-gloom-rule-if-player-is-not-in-rowr-room
-#testcase-reject-start-table-of-verb-checks-vr-glower-gloom-rule
+#testcase-reject-start-table-of-verb-checks-vc-glower-gloom-rule
 >glower gloom
 {$REJECT2}
 \\
-#testcase-reject-start-table-of-verb-checks-vr-hope-huts-rule
+#testcase-reject-start-table-of-verb-checks-vc-hope-huts-rule
 >hope huts
 {$REJECT2}
 \\
 #testcase-check-vc-maam-meek-rule-if-player-is-not-in-cram-creek
-#testcase-reject-start-table-of-verb-checks-vr-maam-meek-rule
+#testcase-reject-start-table-of-verb-checks-vc-maam-meek-rule
 >maam meek
 {$REJECT2}
 \\
 #testcase-check-vc-our-age-rule-if-player-is-not-in-car-cage
-#testcase-reject-start-table-of-verb-checks-vr-our-age-rule
+#testcase-reject-start-table-of-verb-checks-vc-our-age-rule
 >our age
 {$REJECT2}
 \\
 #testcase-check-vc-pave-pound-rule-if-player-is-not-in-grave-ground
-#testcase-reject-start-table-of-verb-checks-vr-pave-pound-rule
+#testcase-reject-start-table-of-verb-checks-vc-pave-pound-rule
 >pave pound
 {$REJECT2}
 \\
 #testcase-check-vc-plower-plume-rule-if-player-is-not-in-rowr-room
-#testcase-reject-start-table-of-verb-checks-vr-plower-plume-rule
+#testcase-reject-start-table-of-verb-checks-vc-plower-plume-rule
 >plower plume
 {$REJECT2}
 \\
 #testcase-check-vc-rar-rage-rule-if-player-is-not-in-car-cage
-#testcase-reject-start-table-of-verb-checks-vr-rar-rage-rule
+#testcase-reject-start-table-of-verb-checks-vc-rar-rage-rule
 >rar rage
 {$REJECT2}
 \\
 #testcase-check-vc-rave-round-rule-if-player-is-not-in-grave-ground
-#testcase-reject-start-table-of-verb-checks-vr-rave-round-rule
+#testcase-reject-start-table-of-verb-checks-vc-rave-round-rule
 >rave round
 {$REJECT2}
 \\
-#testcase-reject-start-table-of-verb-checks-vr-rope-ruts-rule
+#testcase-reject-start-table-of-verb-checks-vc-rope-ruts-rule
 >rope ruts
 {$REJECT2}
 \\
 #testcase-check-vc-save-sound-rule-if-player-is-not-in-grave-ground
-#testcase-reject-start-table-of-verb-checks-vr-save-sound-rule
+#testcase-reject-start-table-of-verb-checks-vc-save-sound-rule
 >save sound
 {$REJECT2}
 \\
 #testcase-check-vc-slam-sleek-rule-if-player-is-not-in-cram-creek
-#testcase-reject-start-table-of-verb-checks-vr-slam-sleek-rule
+#testcase-reject-start-table-of-verb-checks-vc-slam-sleek-rule
 >slam sleek
 {$REJECT2}
 \\
 #testcase-check-vc-star-stage-rule-if-player-is-not-in-car-cage
-#testcase-reject-start-table-of-verb-checks-vr-star-stage-rule
+#testcase-reject-start-table-of-verb-checks-vc-star-stage-rule
 >star stage
 {$REJECT2}
 \\
 #testcase-check-vc-tower-tomb-rule-if-player-is-not-in-rowr-room
-#testcase-reject-start-table-of-verb-checks-vr-tower-tomb-rule
+#testcase-reject-start-table-of-verb-checks-vc-tower-tomb-rule
 >tower tomb
 {$REJECT2}
 \\
 #testcase-check-vc-wham-weak-rule-if-player-is-not-in-cram-creek
-#testcase-reject-start-table-of-verb-checks-vr-wham-weak-rule
+#testcase-reject-start-table-of-verb-checks-vc-wham-weak-rule
 >wham weak
 {$REJECT2}
 \\
 #testcase-check-vc-wower-womb-rule-if-player-is-not-in-rowr-room
-#testcase-reject-start-table-of-verb-checks-vr-wower-womb-rule
+#testcase-reject-start-table-of-verb-checks-vc-wower-womb-rule
 >wower womb
 {$REJECT2}
 ====alphabetize off
 
 @verbs
+#testcase-mainverbs-carry-out-hinting-default
+>hint
+Sadly, the walkthrough feelie is the only thing I had time to write up for EctoComp.
+\\
+#testcase-mainverbs-check-attacking-if-noun-is-prayer-pros
+>a pros
+But you're trying to help them!
+\\
+#testcase-mainverbs-check-taking-inventory-default
+>i
+You are on a spiritual journey of sorts. You left your backpack behind in the chair-chose. You hope it's there when you get back, at any rate.
+But it doesn't look like you'll need a lot here, though. It's more what you can do and think.
+\\
 #testcase-mainverbs-carry-out-versioning-default
 >version
 Version 1 of There Those Dare Doze was released October 31, 2022, for the EctoComp Petite Mort division.
@@ -282,9 +295,9 @@ https://github.com/andrewschultz/there-those-dare-doze is a site where you can r
 Thanks to my testers.
 Thanks to Ruber Eaglenest for holding EctoComp yet again and hosting a Grand Guignol division.
 \\
-#testcase-mainverbs-check-attacking-default
+#testcase-mainverbs-check-attacking-fallthrough
 >attack pros
-You're in a dream. One-on-one violence never works there.
+Violence is not the way here.
 \\
 #testcase-mainverbs-carry-out-verbsing-default
 >verbs
@@ -300,7 +313,7 @@ by one point
 >w
 \\
 #testcase-check-vc-snare-snows-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-snare-snows-rule
+#testcase-reject-start-table-of-verb-checks-vc-snare-snows-rule
 >snare snows
 {$REJECT2}
 \\
@@ -331,42 +344,42 @@ by one point
 >e
 \\
 #testcase-check-vc-arrows-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-arrows-rule
+#testcase-reject-start-table-of-verb-checks-vc-arrows-rule
 >arrows
 {$REJECT2}
 \\
 >undo
 \\
 #testcase-check-vc-bare-bows-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-bare-bows-rule
+#testcase-reject-start-table-of-verb-checks-vc-bare-bows-rule
 >bare bows
 {$REJECT2}
 \\
 >undo
 \\
 #testcase-check-vc-fair-foes-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-fair-foes-rule
+#testcase-reject-start-table-of-verb-checks-vc-fair-foes-rule
 >fair foes
 {$REJECT2}
 \\
 >undo
 \\
 #testcase-check-vc-glare-glows-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-glare-glows-rule
+#testcase-reject-start-table-of-verb-checks-vc-glare-glows-rule
 >glare glows
 {$REJECT2}
 \\
 >undo
 \\
 #testcase-check-vc-hair-hose-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-hair-hose-rule
+#testcase-reject-start-table-of-verb-checks-vc-hair-hose-rule
 >hair hose
 {$REJECT2}
 \\
 >undo
 \\
 #testcase-check-vc-stair-stows-rule-if-player-is-not-in-rare-rows
-#testcase-reject-start-table-of-verb-checks-vr-stair-stows-rule
+#testcase-reject-start-table-of-verb-checks-vc-stair-stows-rule
 >stair stows
 {$REJECT2}
 \\
@@ -376,24 +389,35 @@ by one point
 >undo
 
 @hom
+#testcase-homonym-detail-vh-arrows-rule-default
 #testcase-homonym-reject-table-of-verb-checks-air-rows
->air/rows
-$HOMONYM TEXT HERE
+>air
+No, that is only half it.
 \\
-#testcase-homonym-reject-table-of-verb-checks-hare
+>rows
+No, that is only half it.
+\\
+#testcase-homonym-detail-vh-hair-hose-rule-if-the-player's-command-includes-hare
+#testcase-homonym-reject-table-of-verb-checks-hare-hoes
 >hare
-$HOMONYM TEXT HERE
+You'd need more than one rabbit.
 \\
-#testcase-homonym-reject-table-of-verb-checks-stare
->stare
-$HOMONYM TEXT HERE
+#+testcase-homonym-detail-vh-hair-hose-rule-if-the-player's-command-includes-hare
+>hoes
+Not around the Prayer Pros! Something less sacrilegious, if you please.
 
 >snare snows
 by one point
 
 @all
-#testcase-run-vr-snare-snows-rule-default
+{--rej}#testcase-check-vc-snare-snows-rule-fallthrough
+{--all}#testcase-run-vr-snare-snows-rule-default
 Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.
+
+@rej
+#testcase-check-vc-snare-snows-rule-if-sco-snare-snows-is-true
+>snare snows
+WRONG
 
 >e
 
@@ -408,12 +432,9 @@ It's a room. The only way back is west.
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-dower
+#testcase-homonym-detail-vh-dour-doom-rule-default
 >dower
-$HOMONYM TEXT HERE
-\\
-#testcase-homonym-reject-table-of-verb-checks-hour
->hour
-$HOMONYM TEXT HERE
+We need more than money, here.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-22-tomb
@@ -467,28 +488,107 @@ $HOMONYM TEXT HERE
 >tower tomb
 by one point
 
+@all
+#testcase-run-vr-tower-tomb-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-tower-tomb-rule-default
+{--rej}#testcase-check-vc-tower-tomb-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-tower-tomb-rule-if-sco-tower-tomb-is-true
+>tower tomb
+WRONG
+
 @!min
 >wower womb
 by one point
 
-@rej
-#testcase-think-table-of-verb-checks-vc-wower-womb-rule
->wower womb
+@all
+#testcase-run-vr-wower-womb-rule-abide-by-the-rowr-room-transform-rule
 WRONG
-\\
-#testcase-think-table-of-verb-checks-vc-tower-tomb-rule
->tower tomb
+
+@all,rej
+{--all}#testcase-run-vr-wower-womb-rule-default
+{--rej}#testcase-check-vc-wower-womb-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-wower-womb-rule-if-sco-wower-womb-is-true
+>wower womb
 WRONG
 
 >flower flume
 by one point
 
 @all
-#testcase-run-vr-flower-flume-rule-default
+#testcase-run-vr-flower-flume-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-flower-flume-rule-default
+{--rej}#testcase-check-vc-flower-flume-rule-fallthrough
 Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.
+
+@rej
+#testcase-check-vc-flower-flume-rule-if-sco-flower-flume-is-true
+>flower flume
+WRONG
+
+@!min
+>plower plume
+by one point
+
+@all
+#testcase-run-vr-plower-plume-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-plower-plume-rule-default
+{--rej}#testcase-check-vc-plower-plume-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-plower-plume-rule-if-sco-plower-plume-is-true
+>plower plume
+WRONG
+
+@!min
+>glower gloom
+by one point
+
+@all
+#testcase-run-vr-glower-gloom-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-glower-gloom-rule-default
+{--rej}#testcase-check-vc-glower-gloom-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-glower-gloom-rule-if-sco-glower-gloom-is-true
+>glower gloom
+WRONG
 
 >dour doom
 by one point
+
+@all
+#testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-dour-doom-rule-default
+{--rej}#testcase-check-vc-dour-doom-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
+>dour doom
+WRONG
 
 >w
 
@@ -496,8 +596,18 @@ by one point
 by one point
 
 @all
-#testcase-run-vr-fair-foes-rule-default
+#testcase-run-vr-fair-foes-rule-abide-by-the-to-cage-progress-rule
+WRONG
+
+@all,rej
+{--rej}#testcase-check-vc-fair-foes-rule-fallthrough
+{--all}#testcase-run-vr-fair-foes-rule-default
 Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.
+
+@rej
+#testcase-check-vc-fair-foes-rule-if-sco-fair-foes-is-true
+>fair foes
+WRONG
 
 @verbs
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-fair-foes
@@ -506,17 +616,61 @@ They brush off your small talk to avoid even the appearance of unfair bias in th
 \\
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-prayer-pros
 >t prayer pros
-You must wake them through your actions.
+But you're trying to help them!
 
+@all
+#testcase-run-vr-bare-bows-rule-default
 >bare bows
 by one point
+Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but there's got to be some, somewhere.
+\\
+#testcase-run-vr-arrows-rule-default
+>arrows
+by one point
+Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but there's got to be some, somewhere.
+\\
+>undo
+>undo
 
 >arrows
 by one point
 
 @all
-#testcase-run-vr-arrows-rule-default
+#testcase-run-vr-arrows-rule-abide-by-the-to-cage-progress-rule
+WRONG
+
+@all,rej
+{--all}#+testcase-run-vr-arrows-rule-default
+{--rej}#testcase-check-vc-arrows-rule-fallthrough
 Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.
+
+@rej
+#testcase-check-vc-arrows-rule-if-sco-arrows-is-true
+>arrows
+WRONG
+
+@hom
+#+testcase-homonym-detail-vh-arrows-rule-default
+#+testcase-homonym-reject-table-of-verb-checks-air-rows
+>air/rows
+No, that was only half it.
+
+>bare bows
+by one point
+
+@all
+#testcase-run-vr-bare-bows-rule-abide-by-the-to-cage-progress-rule
+WRONG
+
+@all,rej
+{--all}#+testcase-run-vr-bare-bows-rule-default
+{--rej}#testcase-check-vc-bare-bows-rule-fallthrough
+Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but that's okay. You already have some.
+
+@rej
+#testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
+>bare bows
+WRONG
 
 >s
 
@@ -524,7 +678,22 @@ Now that you know to look for arrows, or to some of them, you find a bunch, and 
 #testcase-room-names-car-cage
 `Car Cage
 
+@rej
+#testcase-check-vc-star-stage-rule-if-cage-prep-score-<-2
+>star stage
+WRONG
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-hour
+#testcase-homonym-detail-vh-our-age-rule-default
+>hour
+That is too specific a time frame.
+
 @verbs
+#testcase-mainverbs-check-attacking-if-noun-is-mar-mage
+>attack mar mage
+No way. Not on your own.
+\\
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-mar-mage
 >t mar mage
 The Mar Mage is too busy casting spells.
@@ -575,19 +744,98 @@ The only way out is back north.
 >star zstage
 {$GREENCORE}
 
+@alt
+##balance undo
+#testcase-alt-words-table-of-verb-checks-15-rar-rawr-rahr-rhar-rowr-rarr-raar-rage
+>rawr rage
+by one point
+>undo
+\\
+>rahr rage
+by one point
+>undo
+\\
+>rhar rage
+by one point
+>undo
+\\
+>rowr rage
+by one point
+>undo
+\\
+>rarr rage
+by one point
+>undo
+\\
+>raar rage
+by one point
+>undo
+
 >our age
 by one point
+
+@all
+#testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
+WRONG
+
+@all,rej
+{--rej}#testcase-check-vc-our-age-rule-fallthrough
+{--all}#testcase-run-vr-our-age-rule-default
+WRONG
+
+@rej
+#testcase-check-vc-our-age-rule-if-sco-our-age-is-true
+>our age
+WRONG
 
 >far phage
 by one point
 
+@all
+#testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-far-phage-rule-default
+{--rej}#testcase-check-vc-far-phage-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
+>far phage
+WRONG
+
 >star stage
 by one point
 
-@all
-#testcase-run-vr-star-stage-rule-default
+@all,rej
+{--rej}#testcase-check-vc-star-stage-rule-fallthrough
+{--all}#testcase-run-vr-star-stage-rule-default
 On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...
 ...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.
+
+@rej
+#testcase-check-vc-star-stage-rule-if-sco-star-stage-is-true
+>star stage
+WRONG
+
+@!min
+>rar rage
+by one point
+
+@all
+#testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-rar-rage-rule-default
+{--rej}#testcase-check-vc-rar-rage-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-rar-rage-rule-if-sco-rar-rage-is-true
+>rar rage
+WRONG
 
 >n
 
@@ -599,10 +847,16 @@ The Saar Sage is exhausted from casting spells.
 >hair hose
 by one point
 
-@all
-#testcase-run-vr-hair-hose-rule-default
+@all,rej
+{--rej}#testcase-check-vc-hair-hose-rule-fallthrough
+{--all}#testcase-run-vr-hair-hose-rule-default
 You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.
 WRONG different if gone north
+
+@rej
+#testcase-check-vc-hair-hose-rule-if-sco-hair-hose-is-true
+>hair hose
+WRONG
 
 >n
 
@@ -666,35 +920,137 @@ The creek goes off too far into the distance. Whatever you need to do, it has to
 >zclam clique
 {$GREENCORE}
 
+@rej
+#testcase-check-vc-clam-clique-rule-if-sheik-score-<-3
+>clam clique
+WRONG
+
 >blam bleak
 by one point
+
+@all
+#testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
+The Sham Sheik looks peeved. You're getting to him!
+
+@all,rej
+{--rej}#testcase-check-vc-blam-bleak-rule-fallthrough
+{--all}#testcase-run-vr-blam-bleak-rule-default
+WRONG
+
+@rej
+#testcase-check-vc-blam-bleak-rule-if-sco-blam-bleak-is-true
+>blam bleak
+WRONG
 
 >slam sleek
 by one point
 
 @all
-#testcase-run-vr-slam-sleek-rule-default
+#testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
+The Sham Sheik looks a little more peeved. You're getting to him!
+
+@all,rej
+{--rej}#testcase-check-vc-slam-sleek-rule-fallthrough
+{--all}#testcase-run-vr-slam-sleek-rule-default
 You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!
+
+@rej
+#testcase-check-vc-slam-sleek-rule-if-sco-slam-sleek-is-true
+>slam sleek
+WRONG
 
 >wham weak
 by one point
 
+@all
+#testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
+That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
+Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
+
+@all,rej
+{--all}#testcase-run-vr-wham-weak-rule-default
+{--rej}#testcase-check-vc-wham-weak-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-wham-weak-rule-if-sco-wham-weak-is-true
+>wham weak
+WRONG
+
 >clam clique
 by one point
+
+@all,rej
+{--all}#testcase-run-vr-clam-clique-rule-default
+{--rej}#testcase-check-vc-clam-clique-rule-fallthrough
+Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.
+
+@rej
+#testcase-check-vc-clam-clique-rule-if-sco-clam-clique-is-true
+>clam clique
+WRONG
 
 @hom
 #+ttc-table-of-room-homonyms-cram-creek-creak
 >creak
 A different sort of noise was required here.
 
+@all
+##balance undo
 >s
+>maam meek
+by one point
+\\
+>maam meek
+by one point
+\\
+>undo
+>undo
+>undo
+
+@!min
+>maam meek
+by one point
+
+@all
+#testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
+And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures elsewhere.
+
+@all,rej
+{--all}#testcase-run-vr-maam-meek-rule-default
+{--rej}#testcase-check-vc-maam-meek-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-maam-meek-rule-if-sco-maam-meek-is-true
+>maam meek
+WRONG
+
+>s
+
+@hom
+#testcase-homonym-detail-vh-stair-stows-rule-default
+#testcase-homonym-reject-table-of-verb-checks-stare
+>stare
+Yes, there is something to look for. But where?
 
 >stair stows
 by one point
 
-@all
-#testcase-run-vr-stair-stows-rule-default
+@all,rej
+{--rej}#testcase-check-vc-stair-stows-rule-fallthrough
+{--all}#testcase-run-vr-stair-stows-rule-default
 You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.
+
+@rej
+#testcase-check-vc-stair-stows-rule-if-sco-stair-stows-is-true
+>stair stows
+WRONG
+
+@hom
+#+testcase-homonym-detail-vh-stair-stows-rule-default
+>stare
+Yes, there was something to look for, and you found it.
 
 >w
 
@@ -702,12 +1058,21 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 #testcase-room-names-grave-ground
 `Grave Ground
 
+@rej
+#testcase-check-vc-fave-found-rule-if-dave-score-<-3
+>fave found
+WRONG
+
 @gt
 #testcase-goto-table-of-noways-ground-grave
 >w
 It's even spookier and darker if you go further from the rare rows.
 
 @verbs
+#testcase-mainverbs-check-attacking-if-noun-is-dave
+>attack dave
+No. He can help you.
+\\
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-dave-downed
 >t dave
 Alas, he is too down to speak much.
@@ -756,15 +1121,53 @@ Alas, he is too down to speak much.
 >crave crowned
 by one point
 
+@all
+#testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-crave-crowned-rule-default
+{--rej}#testcase-check-vc-crave-crowned-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-crave-crowned-rule-if-sco-crave-crowned-is-true
+>crave crowned
+WRONG
+
 >save sound
 by one point
 
 @all
-#testcase-run-vr-save-sound-rule-default
+#testcase-run-vr-save-sound-rule-abide-by-the-ground-boost-rule
+WRONG
+
+@all,rej
+{--rej}#testcase-check-vc-save-sound-rule-fallthrough
+{--all}#testcase-run-vr-save-sound-rule-default
 You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.
+
+@rej
+#testcase-check-vc-save-sound-rule-if-sco-save-sound-is-true
+>save sound
+WRONG
 
 >pave pound
 by one point
+
+@all
+#testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-pave-pound-rule-default
+{--rej}#testcase-check-vc-pave-pound-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
+>pave pound
+WRONG
 
 >fave found
 by one point
@@ -772,7 +1175,59 @@ by one point
 @all
 `Wave (Wound)
 
+@all,rej
+{--rej}#testcase-check-vc-fave-found-rule-fallthrough
+{--all}#testcase-run-vr-fave-found-rule-default
+WRONG
+
+@rej
+#testcase-check-vc-fave-found-rule-if-sco-fave-found-is-true
+>fave found
+WRONG
+
+@!min
+>rave round
+by one point
+
+@all
+#testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-rave-round-rule-default
+{--rej}#testcase-check-vc-rave-round-rule-fallthrough
+
+@rej
+#testcase-check-vc-rave-round-rule-if-sco-rave-round-is-true
+>rave round
+WRONG
+\\
 >e
+\\
+>w
+\\
+#testcase-check-vc-hope-huts-rule-if-ppnn-is-not-fungible
+>hope huts
+WRONG
+\\
+#testcase-check-vc-rope-ruts-rule-if-ppnn-is-not-fungible
+>rope ruts
+WRONG
+
+>e
+
+>glare glows
+by one point
+
+@all,rej
+{--all}#testcase-run-vr-glare-glows-rule-default
+{--rej}#testcase-check-vc-glare-glows-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
+>glare glows
+WRONG
 
 @gt
 # 0 = rare rows 1 = car cage 2 = cram creek 3 = grave ground 4 = rowr rows
@@ -886,31 +1341,31 @@ You're already there! Well, here.
 
 @rej
 ====alphabetize on
-#testcase-reject-end-table-of-verb-checks-vr-arrows-rule
+#testcase-reject-end-table-of-verb-checks-vc-arrows-rule
 >arrows
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-bare-bows-rule
+#testcase-reject-end-table-of-verb-checks-vc-bare-bows-rule
 >bare bows
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-fair-foes-rule
+#testcase-reject-end-table-of-verb-checks-vc-fair-foes-rule
 >fair foes
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-glare-glows-rule
+#testcase-reject-end-table-of-verb-checks-vc-glare-glows-rule
 >glare glows
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-hair-hose-rule
+#testcase-reject-end-table-of-verb-checks-vc-hair-hose-rule
 >hair hose
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-snare-snows-rule
+#testcase-reject-end-table-of-verb-checks-vc-snare-snows-rule
 >snare snows
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-stair-stows-rule
+#testcase-reject-end-table-of-verb-checks-vc-stair-stows-rule
 >stair stows
 {$REJECT2}
 ====alphabetize off
@@ -930,91 +1385,91 @@ Whoever they're for, um, no.
 
 @rej
 ====alphabetize on
-#testcase-reject-end-table-of-verb-checks-vr-blam-bleak-rule
+#testcase-reject-end-table-of-verb-checks-vc-blam-bleak-rule
 >blam bleak
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-clam-clique-rule
+#testcase-reject-end-table-of-verb-checks-vc-clam-clique-rule
 >clam clique
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-crave-crowned-rule
+#testcase-reject-end-table-of-verb-checks-vc-crave-crowned-rule
 >crave crowned
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-dour-doom-rule
+#testcase-reject-end-table-of-verb-checks-vc-dour-doom-rule
 >dour doom
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-far-phage-rule
+#testcase-reject-end-table-of-verb-checks-vc-far-phage-rule
 >far phage
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-fave-found-rule
+#testcase-reject-end-table-of-verb-checks-vc-fave-found-rule
 >fave found
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-flower-flume-rule
+#testcase-reject-end-table-of-verb-checks-vc-flower-flume-rule
 >flower flume
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-glower-gloom-rule
+#testcase-reject-end-table-of-verb-checks-vc-glower-gloom-rule
 >glower gloom
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-hope-huts-rule
+#testcase-reject-end-table-of-verb-checks-vc-hope-huts-rule
 >hope huts
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-maam-meek-rule
+#testcase-reject-end-table-of-verb-checks-vc-maam-meek-rule
 >maam meek
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-our-age-rule
+#testcase-reject-end-table-of-verb-checks-vc-our-age-rule
 >our age
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-pave-pound-rule
+#testcase-reject-end-table-of-verb-checks-vc-pave-pound-rule
 >pave pound
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-plower-plume-rule
+#testcase-reject-end-table-of-verb-checks-vc-plower-plume-rule
 >plower plume
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-rar-rage-rule
+#testcase-reject-end-table-of-verb-checks-vc-rar-rage-rule
 >rar rage
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-rave-round-rule
+#testcase-reject-end-table-of-verb-checks-vc-rave-round-rule
 >rave round
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-rope-ruts-rule
+#testcase-reject-end-table-of-verb-checks-vc-rope-ruts-rule
 >rope ruts
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-save-sound-rule
+#testcase-reject-end-table-of-verb-checks-vc-save-sound-rule
 >save sound
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-slam-sleek-rule
+#testcase-reject-end-table-of-verb-checks-vc-slam-sleek-rule
 >slam sleek
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-star-stage-rule
+#testcase-reject-end-table-of-verb-checks-vc-star-stage-rule
 >star stage
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-tower-tomb-rule
+#testcase-reject-end-table-of-verb-checks-vc-tower-tomb-rule
 >tower tomb
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-wham-weak-rule
+#testcase-reject-end-table-of-verb-checks-vc-wham-weak-rule
 >wham weak
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-wower-womb-rule
+#testcase-reject-end-table-of-verb-checks-vc-wower-womb-rule
 >wower womb
 {$REJECT2}
 ====alphabetize off
@@ -1038,15 +1493,16 @@ Whoever they're for, um, no.
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-hutz
+#testcase-homonym-detail-vh-hope-huts-rule-default
 >hutz
-$HOMONYM TEXT HERE
+And why not wish for Troy McClure, while you're at it?
 
 @rej
 ##balance undos
 >hope huts
 by one point
 \\
-#testcase-think-table-of-verb-checks-vc-hope-huts-rule
+#testcase-check-vc-hope-huts-rule-if-sco-hope-huts-is-true
 >hope huts
 You already created the hope huts!
 \\
@@ -1061,6 +1517,7 @@ by one point
 !DONE DISHIN' FUN FISHIN'
 \\
 >rope ruts
+\\
 #testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
 by one point
 DONE DISHIN' FUN FISHIN'
@@ -1072,23 +1529,29 @@ DONE DISHIN' FUN FISHIN'
 by one point
 
 @all
-#testcase-run-vr-rope-ruts-rule-default
+{--rej}#testcase-check-vc-rope-ruts-rule-fallthrough
+{--all}#testcase-run-vr-rope-ruts-rule-default
 Rope ruts appear!
 \\
-#testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
+#+testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
 !DONE DISHIN' FUN FISHIN'
 
 @rej
-#testcase-think-table-of-verb-checks-vc-rope-ruts-rule
+#testcase-check-vc-rope-ruts-rule-if-sco-rope-ruts-is-true
 >rope ruts
 You already created the rope ruts!
 
 >hope huts
 by one point
 
+@all,rej
+{--rej}#testcase-check-vc-hope-huts-rule-fallthrough
+{--all}#testcase-run-vr-hope-huts-rule-default
+WRONG
+
 @all
-#testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
+#+testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
 DONE DISHIN' FUN FISHIN'
 \\
-#testcase-run-vr-hope-huts-rule-default
+#+testcase-run-vr-hope-huts-rule-default
 Huts are built! The Prayer Pros go over to inspect them.

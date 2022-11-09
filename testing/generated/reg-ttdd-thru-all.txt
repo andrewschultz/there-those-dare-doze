@@ -32,34 +32,98 @@ Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your l
 >tower tomb
 by one point
 
+#testcase-run-vr-tower-tomb-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+#testcase-run-vr-tower-tomb-rule-default
+WRONG
+
 >wower womb
 by one point
+
+#testcase-run-vr-wower-womb-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+#testcase-run-vr-wower-womb-rule-default
+WRONG
 
 >flower flume
 by one point
 
+#testcase-run-vr-flower-flume-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
 #testcase-run-vr-flower-flume-rule-default
 Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.
 
+>plower plume
+by one point
+
+#testcase-run-vr-plower-plume-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+#testcase-run-vr-plower-plume-rule-default
+WRONG
+
+>glower gloom
+by one point
+
+#testcase-run-vr-glower-gloom-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+#testcase-run-vr-glower-gloom-rule-default
+WRONG
+
 >dour doom
 by one point
+
+#testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+#testcase-run-vr-dour-doom-rule-default
+WRONG
 
 >w
 
 >fair foes
 by one point
 
+#testcase-run-vr-fair-foes-rule-abide-by-the-to-cage-progress-rule
+WRONG
+
 #testcase-run-vr-fair-foes-rule-default
 Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.
 
+#testcase-run-vr-bare-bows-rule-default
 >bare bows
 by one point
+Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but there's got to be some, somewhere.
+
+#testcase-run-vr-arrows-rule-default
+>arrows
+by one point
+Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but there's got to be some, somewhere.
+
+>undo
+>undo
 
 >arrows
 by one point
 
-#testcase-run-vr-arrows-rule-default
+#testcase-run-vr-arrows-rule-abide-by-the-to-cage-progress-rule
+WRONG
+
+#+testcase-run-vr-arrows-rule-default
 Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.
+
+>bare bows
+by one point
+
+#testcase-run-vr-bare-bows-rule-abide-by-the-to-cage-progress-rule
+WRONG
+
+#+testcase-run-vr-bare-bows-rule-default
+Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but that's okay. You already have some.
 
 >s
 
@@ -69,8 +133,20 @@ Now that you know to look for arrows, or to some of them, you find a bunch, and 
 >our age
 by one point
 
+#testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
+WRONG
+
+#testcase-run-vr-our-age-rule-default
+WRONG
+
 >far phage
 by one point
+
+#testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
+WRONG
+
+#testcase-run-vr-far-phage-rule-default
+WRONG
 
 >star stage
 by one point
@@ -78,6 +154,15 @@ by one point
 #testcase-run-vr-star-stage-rule-default
 On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...
 ...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.
+
+>rar rage
+by one point
+
+#testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
+WRONG
+
+#testcase-run-vr-rar-rage-rule-default
+WRONG
 
 >n
 
@@ -96,8 +181,17 @@ WRONG different if gone north
 >blam bleak
 by one point
 
+#testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
+The Sham Sheik looks peeved. You're getting to him!
+
+#testcase-run-vr-blam-bleak-rule-default
+WRONG
+
 >slam sleek
 by one point
+
+#testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
+The Sham Sheik looks a little more peeved. You're getting to him!
 
 #testcase-run-vr-slam-sleek-rule-default
 You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!
@@ -105,8 +199,38 @@ You don't just slam the Sheik. You do so with a minimum of wasted words, before 
 >wham weak
 by one point
 
+#testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
+That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
+Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
+
+#testcase-run-vr-wham-weak-rule-default
+WRONG
+
 >clam clique
 by one point
+
+#testcase-run-vr-clam-clique-rule-default
+Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.
+
+>s
+>maam meek
+by one point
+
+>maam meek
+by one point
+
+>undo
+>undo
+>undo
+
+>maam meek
+by one point
+
+#testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
+And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures elsewhere.
+
+#testcase-run-vr-maam-meek-rule-default
+WRONG
 
 >s
 
@@ -124,8 +248,17 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 >crave crowned
 by one point
 
+#testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
+WRONG
+
+#testcase-run-vr-crave-crowned-rule-default
+WRONG
+
 >save sound
 by one point
+
+#testcase-run-vr-save-sound-rule-abide-by-the-ground-boost-rule
+WRONG
 
 #testcase-run-vr-save-sound-rule-default
 You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.
@@ -133,12 +266,35 @@ You catalog ways to save things soundly, as well as ways to economize on the yel
 >pave pound
 by one point
 
+#testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
+WRONG
+
+#testcase-run-vr-pave-pound-rule-default
+WRONG
+
 >fave found
 by one point
 
 `Wave (Wound)
 
+#testcase-run-vr-fave-found-rule-default
+WRONG
+
+>rave round
+by one point
+
+#testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
+WRONG
+
+#testcase-run-vr-rave-round-rule-default
+
 >e
+
+>glare glows
+by one point
+
+#testcase-run-vr-glare-glows-rule-default
+WRONG
 
 #testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
 >hope huts
@@ -146,6 +302,7 @@ by one point
 !DONE DISHIN' FUN FISHIN'
 
 >rope ruts
+
 #testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
 by one point
 DONE DISHIN' FUN FISHIN'
@@ -159,14 +316,17 @@ by one point
 #testcase-run-vr-rope-ruts-rule-default
 Rope ruts appear!
 
-#testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
+#+testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
 !DONE DISHIN' FUN FISHIN'
 
 >hope huts
 by one point
 
-#testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
+#testcase-run-vr-hope-huts-rule-default
+WRONG
+
+#+testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
 DONE DISHIN' FUN FISHIN'
 
-#testcase-run-vr-hope-huts-rule-default
+#+testcase-run-vr-hope-huts-rule-default
 Huts are built! The Prayer Pros go over to inspect them.
