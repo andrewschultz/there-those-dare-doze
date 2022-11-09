@@ -137,7 +137,7 @@ book grave ground
 
 check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress without injury." instead;
 
-Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "[if sco-fave-found is true]The wave (wound) surrounds you[else]It's far too dark and spooky[end if] every way except back east.". printed name of Grave Ground is "[if sco-fave-found is true]Wave (Wound)[else]Grave Ground[end if]".
+Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "[if sco-fave-found is true]Dave's not here, man.[paragraph break]The wave (wound) surrounds you[else]It's far too dark and spooky[end if] every way except back east.". printed name of Grave Ground is "[if sco-fave-found is true]Wave (Wound)[else]Grave Ground[end if]".
 
 Dave Downed is a person in Grave Ground. "[if player is in grave ground][one of]A ghost floats into view and identifies himself as Dave (Downed). He mentions he'd like motivation to afterlive it up a bit more, and it should come form within, but it doesn't. Can you help him?[or]Dave (Downed) is here, [one of][or]still [stopping]looking [dave-upset] upset and, oh yeah, vaguely undead.[stopping][else]Dave waits a lot more cheerily here than when you first saw him.[end if]". description is "[if player is in grave ground]He looks purposeless and adrift[else]Happy enough, almost impatient to do something real[end if]."
 
@@ -176,7 +176,7 @@ check going south in rare rows:
 	if rows-south < 3:
 		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
 		if sco-fair-foes is false, say "[line break]Start with summoning allies, then, maybe." instead;
-		if sco-bare-bows is false, say "Your allies, the fair foes, need [if sco-bare-bows is false]weapons[else]ammunition[end if]." instead;
+		if sco-bare-bows is false or sco-arrows is false, say "Your allies, the fair foes, need [if sco-bare-bows is true]ammunition[else if sco-arrows is true]weapons[else]ammunition and weapons[end if]." instead;
 	say "Despite protests from the south, you feel brave enough to go [one of][or]back [stopping]there and take care of business.";
 	if fair foes are in rare rows:
 		say "The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while they don't kill the Mar Mage, their opponent curses their temporary loss of magic capabilities--keeping that shield up was hard work![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what.";
@@ -198,6 +198,12 @@ chapter attacking
 
 the block attacking rule is not listed in any rulebook.
 
+check attacking:
+	if noun is prayer pros, say "But you're trying to help them!" instead;
+	if noun is mar mage, say "No way. Not on your own." instead;
+	if noun is Dave, say "No. He can help you." instead;
+	say "Violence is not the way here." instead;
+
 chapter inventory
 
 check taking inventory: say "You are on a spiritual journey of sorts. You left your backpack behind in the chair-chose. You hope it's there when you get back, at any rate.[paragraph break]But it doesn't look like you'll need a lot here, though. It's more what you can do and think." instead;
@@ -214,7 +220,7 @@ chapter talktoing
 
 carry out talktoing:
 	if noun is the player, say "'Make me wake, whee,' you say, unconvincingly." instead;
-	if noun is Dave Downed, say "Alas, regardless of his mood, he still seems only to say glub... glub..." instead;
+	if noun is Dave Downed, say "Alas, he is too down to speak much." instead;
 	if noun is fair foes, say "They brush off your small talk to avoid even the appearance of unfair bias in the fight ahead." instead;
 	if noun is mar mage, say "The Mar Mage is too busy casting spells." instead;
 	if noun is prayer pros, say "You must wake them through your actions." instead;

@@ -6,13 +6,13 @@ Version 1/221007 of There Those Dare Doze Tables by Andrew Schultz begins here.
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"arrows"	--	--	--	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
+"arrows"	--	"air/rows"	vh-arrows rule	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
 "bare"	"bows"	--	--	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
 "fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
-"hair"	"hose"	--	--	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
+"hair"	"hose"	"hare/hoes"	vh-hair-hose rule	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
 "glare"	"glows"	--	--	false	true	true	false	rare rows	vc-glare-glows rule	vr-glare-glows rule	--	--
 "snare"	"snows"	--	--	false	true	true	false	rare rows	vc-snare-snows rule	vr-snare-snows rule	--	--
-"stair"	"stows"	--	--	false	true	true	false	rare rows	vc-stair-stows rule	vr-stair-stows rule	--	--
+"stair"	"stows"	"stare"	vh-stair-stows rule	false	true	true	false	rare rows	vc-stair-stows rule	vr-stair-stows rule	--	--
 "blam"	"bleak"	--	--	false	true	true	false	cram creek	vc-blam-bleak rule	vr-blam-bleak rule	--	-- [start way north]
 "maam"	"meek"	--	--	false	true	true	false	cram creek	vc-maam-meek rule	vr-maam-meek rule	--	--
 "slam"	"sleek"	--	--	false	true	true	false	cram creek	vc-slam-sleek rule	vr-slam-sleek rule	--	--
@@ -29,12 +29,24 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fave"	"found"	--	--	false	true	true	false	grave ground	vc-fave-found rule	vr-fave-found rule	--	--
 "tower"	"tomb"	--	--	false	true	true	false	rowr room	vc-tower-tomb rule	vr-tower-tomb rule	--	-- [start way east]
 "wower"	"womb"	--	--	false	true	true	false	rowr room	vc-wower-womb rule	vr-wower-womb rule	--	--
-"dour"	"doom"	--	--	false	true	true	false	rowr room	vc-dour-doom rule	vr-dour-doom rule	--	--
+"dour"	"doom"	"dower"	vh-dour-doom rule	false	true	true	false	rowr room	vc-dour-doom rule	vr-dour-doom rule	--	--
 "glower"	"gloom"	--	--	false	true	true	false	rowr room	vc-glower-gloom rule	vr-glower-gloom rule	--	--
 "plower"	"plume"	--	--	false	true	true	false	rowr room	vc-plower-plume rule	vr-plower-plume rule	--	--
 "flower"	"flume"	--	--	false	true	true	false	rowr room	vc-flower-flume rule	vr-flower-flume rule	--	--
-"hope"	"huts"	--	--	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	-- [final bit]
+"hope"	"huts"	"hutz"	vh-hope-huts rule	false	true	true	false	rare rows	vc-hope-huts rule	vr-hope-huts rule	--	-- [final bit]
 "rope"	"ruts"	--	--	false	true	true	false	rare rows	vc-rope-ruts rule	vr-rope-ruts rule	--	--
+
+this is the vh-arrows rule:
+	say "No, that [if sco-arrows is true]was[else]is[end if] only half it."
+
+this is the vh-hair-hose rule:
+	if the player's command includes "hare":
+		say "You'd need more than one rabbit.";
+	else:
+		say "Not around the Prayer Pros! Something less sacrilegious, if you please."
+
+this is the vh-stair-stows rule:
+	say "Yes, there [if sco-stair-stows is true]was something to look for, and you found it.[else]is something to look for. But where?[end if]"
 
 this is the vh-our-age rule:
 	say "That is too specific a time frame.";
@@ -157,7 +169,7 @@ a goodrhyme rule (this is the vc-arrows rule):
 
 this is the vr-arrows rule:
 	now sco-arrows is true;
-	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.";
+	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and [if sco-bare-bows is true]they're good ammo for the bare bows[else]there's got to be something that can sling them, somewhere[end if].";
 	move arrows to rare rows;
 
 a goodrhyme rule (this is the vc-bare-bows rule):
@@ -326,6 +338,9 @@ this is the vr-wower-womb rule:
 	opt-rule vc-tower-tomb rule;
 	abide by the rowr-room-transform rule;
 
+this is the vh-dour-doom rule:
+	say "We need more than money, here."
+
 a goodrhyme rule (this is the vc-dour-doom rule):
 	if player is not in rowr room, unavailable;
 	if sco-dour-doom is true:
@@ -377,6 +392,9 @@ this is the vr-flower-flume rule:
 	say "Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.";
 	opt-rule vc-plower-plume rule;
 	abide by the rowr-room-transform rule;
+
+this is the vh-hope-huts rule:
+	say "And why not wish for Troy McClure, while you're at it?"
 
 a goodrhyme rule (this is the vc-hope-huts rule):
 	if ppnn is not fungible, unavailable;
@@ -443,10 +461,10 @@ this is the check-sheik rule:
 		moot sham sheik;
 		the rule succeeds;
 	else if sheik-score is 4:
-		say "And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures there.";
+		say "And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures elsewhere.";
 		bump-room cram creek;
 		the rule succeeds;
-	say "The Sham Sheik looks [one of][or]a little more [or]a lot more [stopping]peeved. You're getting to him!";
+	say "The Sham Sheik looks [one of]a little more [or]a lot more [stopping]peeved. You're getting to him!";
 
 to process-dave:
 	say "Dave perks up! He looks [one of]slightly[or]somewhat[or]really[or]adequately[or]extra[stopping] perky and more willing and able to help.";
@@ -502,10 +520,13 @@ volume homonyms
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-rare rows	--	"stare"	"Yes, there [if sco-stair-stows is true]was something to look for, and you found it.[else]is something to look for. But where?[end if]"
-rare rows	--	"hoes"	"Not around the Prayer Pros!"
-rare rows	--	"air/rows"	"No, that [if sco-arrows is true]was[else]is[end if] only half it."
-grave ground	--	"waive"	"No, something more positive."
+cram creek	--	"creak"	"A different sort of noise [if cram creek is solved]was[else]is[end if] required here."
+grave ground	homonyms-waive rule	"waive"	--
+
+this is the homonyms-waive rule:
+	if sco-fave-found is true:
+		say "No, you want to keep the wave. Your work here is done.";
+		the rule succeeds;
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
