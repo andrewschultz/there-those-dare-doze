@@ -6,6 +6,16 @@ volume basic definitions
 
 to say shows: say "[']Ware-Woes-Share Shows"
 
+chapter room properties
+
+a room can be untried, tried, tried-then-opened, or solved. a room is usually untried.
+
+a room has a number called win-score. win-score of a room is usually 0.
+
+a room has a number called now-score. now-score of a room is usually 0.
+
+a room has text called block-descrip-text.
+
 book definitions
 
 definition: a room (called rm) is available-from-here:
@@ -67,6 +77,42 @@ to decide which number is total-score of (rm - a room):
 		if w1 entry is "hope", break;
 		if best-room entry is rm, increment temp;
 	decide on temp;
+
+volume exits from rare rows
+
+to try-open (rm - a room): if rm is tried, now rm is tried-then-opened;
+
+to say note-won:
+	if number of dirsolved directions is 0, continue the action;
+	if number of dirsolved directions is 4:
+		say ". You sense the main action is here, now, since you've tidied up everywhere else";
+		continue the action;
+	say ". You've already figured what to do to the [list of dirsolved directions]";
+
+definition: a direction (called di) is dirsolved:
+	if the room di of location of player is solved, yes;
+	no;
+
+to say note-blocked:
+	if number of dirblocked directions is 0, continue the action;
+	now print-room-block is true;
+	say ". Currently, you're a bit stuck because [list of tried rooms]";
+	now print-room-block is false;
+
+rule for printing the name of a room (called rm) when print-room-block is true:
+	say "[block-descrip-text of rm]";
+
+definition: a direction (called di) is dirblocked:
+	if the room di of location of player is tried, yes;
+	no;
+
+to say note-okay-now:
+	if number of dirokaynow directions is 0, continue the action;
+	say ". You feel like you should be able to go [list of dirokaynow directions] now";
+
+definition: a direction (called di) is dirokaynow:
+	if the room di of location of player is tried-then-opened, yes;
+	no;
 
 volume general stuff
 

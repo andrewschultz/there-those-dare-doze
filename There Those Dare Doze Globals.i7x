@@ -63,6 +63,10 @@ volume game state variables
 
 old-rowr-score is a number that varies.
 
+volume printing booleans
+
+print-room-block is a truth state that varies.
+
 There Those Dare Doze Globals ends here.
 
 ---- DOCUMENTATION ----

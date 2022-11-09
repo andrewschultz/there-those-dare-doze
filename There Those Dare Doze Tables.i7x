@@ -114,6 +114,7 @@ a goodrhyme rule (this is the vc-snare-snows rule):
 this is the vr-snare-snows rule:
 	now sco-snare-snows is true;
 	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.";
+	try-open Rowr Room;
 
 a goodrhyme rule (this is the vc-glare-glows rule):
 	if player is not in rare rows, unavailable;
@@ -125,6 +126,8 @@ a goodrhyme rule (this is the vc-glare-glows rule):
 this is the vr-glare-glows rule:
 	now sco-glare-glows is true;
 	say "You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.";
+	try-open Rare Rows;
+
 
 a goodrhyme rule (this is the vc-stair-stows rule):
 	if player is not in rare rows, unavailable;
@@ -136,6 +139,7 @@ a goodrhyme rule (this is the vc-stair-stows rule):
 this is the vr-stair-stows rule:
 	now sco-stair-stows is true;
 	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.";
+	try-open Grave Ground;
 
 a goodrhyme rule (this is the vc-hair-hose rule):
 	if player is not in rare rows, unavailable;
@@ -147,6 +151,7 @@ a goodrhyme rule (this is the vc-hair-hose rule):
 this is the vr-hair-hose rule:
 	now sco-hair-hose is true;
 	say "You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.";
+	try-open Cram Creek;
 
 a goodrhyme rule (this is the vc-fair-foes rule):
 	if player is not in rare rows, unavailable;
@@ -159,6 +164,7 @@ this is the vr-fair-foes rule:
 	now sco-fair-foes is true;
 	say "Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.";
 	move fair foes to Rare Rows;
+	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-arrows rule):
 	if player is not in rare rows, unavailable;
@@ -171,6 +177,7 @@ this is the vr-arrows rule:
 	now sco-arrows is true;
 	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and [if sco-bare-bows is true]they're good ammo for the bare bows[else]there's got to be something that can sling them, somewhere[end if].";
 	move arrows to rare rows;
+	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-bare-bows rule):
 	if player is not in rare rows, unavailable;
@@ -183,6 +190,7 @@ this is the vr-bare-bows rule:
 	now sco-bare-bows is true;
 	say "Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but [if sco-arrows is true]that's okay. You already have some[else]there's got to be some, somewhere[end if].";
 	move bare bows to rare rows;
+	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-slam-sleek rule):
 	if player is not in cram creek, unavailable;
@@ -445,6 +453,23 @@ to solve-room:
 	if number of solved rooms is 0:
 		say "[i][bracket][b]NOTE[r][i]: a person or entity you rhymed will be moved back to Rare Rows, but since this is a Petite Mort game, I didn't have time to tweak the code for rhymes or rhyme guesses with them. Sorry about that! You've done what you could. I'll fill these details in post-Ectocomp.[close bracket][r]";
 	opt-rm;
+
+this is the to-cage-progress rule:
+	let binary-thing be (boolval of sco-fair-foes * 4) + (boolval of sco-bare-bows * 2) + (boolval of sco-arrows);
+	if binary-thing is 1:
+		say "Hmm! But what can you do with arrows? You're not a fighter, and you have no weapons.";
+	else if binary-thing is 2:
+		say "It would be nice if the bare bows had some ammunition and people that could use them.";
+	else if binary-thing is 3:
+		say "The bows and arrows would be good in a fight, but you have no accuracy. Maybe get some allies?";
+	else if binary-thing is 4:
+		say "The fair foes don't seem to have anything to do. They aren't equipped for battle.";
+	else if binary-thing is 5:
+		say "The fair foes pick up the arrows and study them with interest, but something is missing.";
+	else if binary-thing is 6:
+		say "The fair foes pick up the bare bows and study them with interest, but something is missing.";
+	else if binary-thing is 7:
+		say "The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.";
 
 this is the cage-change rule:
 	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. 'No! I don't believe it! You can't keep this up!'[line break]";

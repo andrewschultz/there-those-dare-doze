@@ -36,12 +36,6 @@ volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
 
-a room can be solved. a room is usually not solved.
-
-a room has a number called win-score. win-score of a room is usually 0.
-
-a room has a number called now-score. now-score of a room is usually 0.
-
 volume when play begins
 
 when play begins:
@@ -91,10 +85,10 @@ book rare rows
 
 check going in rare rows when number of solved rooms is 3:
 	if sco-glare-glows is true, continue the action;
-	if the room gone to is not solved, continue the action;
-	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward." instead;
+	if the room gone to is solved, continue the action;
+	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward. How can you counter this feeling of being watched?" instead;
 
-Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in all four cardinal directions.". win-score of rare rows is 7.
+Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in all four cardinal directions[note-won][note-okay-now][note-blocked].". win-score of rare rows is 7.
 
 the player is in Rare Rows.
 
@@ -110,6 +104,37 @@ after looking in rare rows when number of solved rooms is 4 and ppnn is off-stag
 	moot clam;
 	moot how er whom;
 	now player has ppnn;
+
+chapter block going when necessary
+
+check going north in rare rows:
+	if sco-hair-hose is false:
+		now Cram Creek is tried;
+		say "You see a body of water far ahead! Suddenly, you are irrationally worried you have no kind of swimming gear. You turn back." instead;
+
+check going west in Rare Rows:
+	if sco-stair-stows is false:
+		now Grave Ground is tried;
+		say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress without injury." instead;
+
+check going east in rare rows:
+	if sco-snare-snows is false:
+		now Rowr Room is tried;
+		say "The heat, metaphorical and physical, pushes you back." instead;
+
+check going south in rare rows:
+	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
+	if rows-south < 3:
+		now Car Cage is tried;
+		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
+		if sco-fair-foes is false, say "[line break]Start with summoning allies, then, maybe." instead;
+		if sco-bare-bows is false or sco-arrows is false, say "Your allies, the fair foes, need [if sco-bare-bows is true]ammunition[else if sco-arrows is true]weapons[else]ammunition and weapons[end if]." instead;
+	say "Despite protests from the south, you feel brave enough to go [one of][or]back [stopping]there and take care of business.";
+	if fair foes are in rare rows:
+		say "The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while they don't kill the Mar Mage, their opponent curses their temporary loss of magic capabilities--keeping that shield up was hard work![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what.";
+		moot fair foes;
+		moot arrows;
+		moot bare bows;
 
 chapter ppnn
 
@@ -135,9 +160,7 @@ the bare bows are a thing. "Bare bows lie on the ground.". description is "Too b
 
 book grave ground
 
-check going west in Rare Rows: if sco-stair-stows is false, say "[one of]Suddenly, the land drops off! You will[or]You'll still[stopping] need a ladder or something to make further progress without injury." instead;
-
-Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "[if sco-fave-found is true]Dave's not here, man.[paragraph break]The wave (wound) surrounds you[else]It's far too dark and spooky[end if] every way except back east.". printed name of Grave Ground is "[if sco-fave-found is true]Wave (Wound)[else]Grave Ground[end if]".
+Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "[if sco-fave-found is true]Dave's not here, man.[paragraph break]The wave (wound) surrounds you[else]It's far too dark and spooky[end if] every way except back east.". printed name of Grave Ground is "[if sco-fave-found is true]Wave (Wound)[else]Grave Ground[end if]". block-descrip-text of Grave Ground is "you can't quite navigate a drop-off to the west".
 
 Dave Downed is a person in Grave Ground. "[if player is in grave ground][one of]A ghost floats into view and identifies himself as Dave (Downed). He mentions he'd like motivation to afterlive it up a bit more, and it should come form within, but it doesn't. Can you help him?[or]Dave (Downed) is here, [one of][or]still [stopping]looking [dave-upset] upset and, oh yeah, vaguely undead.[stopping][else]Dave waits a lot more cheerily here than when you first saw him.[end if]". description is "[if player is in grave ground]He looks purposeless and adrift[else]Happy enough, almost impatient to do something real[end if]."
 
@@ -145,9 +168,7 @@ to say dave-upset: say "[if dave-score is 0]very[else if dave-score is 1]rather[
 
 book rowr room
 
-Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if rowr-score < 3]You feel you need to change the mood, add a sub-room, and create some fireworks here to see the secret of this place[else if now-score of rowr room is 6]Nothing left to do here[else]There are still mysteries here, but nothing's critical[end if]. The only way out is back west."
-
-check going east in rare rows: if sco-snare-snows is false, say "The heat, metaphorical and physical, pushes you back." instead;
+Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if rowr-score < 3]You feel you need to change the mood, add a sub-room, and create some fireworks here to see the secret of this place[else if now-score of rowr room is 6]Nothing left to do here[else]There are still mysteries here, but nothing's critical[end if]. The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
 
 chapter how er whom
 
@@ -155,9 +176,7 @@ how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The
 
 book cram creek
 
-check going north in rare rows: if sco-hair-hose is false, say "You see a body of water far ahead! Suddenly, you are irrationally worried you have no kind of swimming gear. You turn back." instead;
-
-Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south.". win-score of Cram Creek is 4.
+Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south.". win-score of Cram Creek is 4. block-descrip-text of Cram Creek is "you need a way to get less wet before going north".
 
 chapter Sham Sheik
 
@@ -169,20 +188,7 @@ the clam clique are plural-named people. "The clam clique you rescued from the S
 
 book car cage
 
-Car Cage is south of Rare Rows. win-score of car cage is 3. printed name is "[if sco-star-stage is false]Car Cage[else]Star Stage[end if]".
-
-check going south in rare rows:
-	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
-	if rows-south < 3:
-		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
-		if sco-fair-foes is false, say "[line break]Start with summoning allies, then, maybe." instead;
-		if sco-bare-bows is false or sco-arrows is false, say "Your allies, the fair foes, need [if sco-bare-bows is true]ammunition[else if sco-arrows is true]weapons[else]ammunition and weapons[end if]." instead;
-	say "Despite protests from the south, you feel brave enough to go [one of][or]back [stopping]there and take care of business.";
-	if fair foes are in rare rows:
-		say "The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while they don't kill the Mar Mage, their opponent curses their temporary loss of magic capabilities--keeping that shield up was hard work![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what.";
-		moot fair foes;
-		moot arrows;
-		moot bare bows;
+Car Cage is south of Rare Rows. win-score of car cage is 3. printed name is "[if sco-star-stage is false]Car Cage[else]Star Stage[end if]". block-descrip-text of Car Cage is "you need an army to fight off the Mar Mage to the south".
 
 chapter mar mage
 
