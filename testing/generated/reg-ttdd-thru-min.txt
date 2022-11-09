@@ -83,7 +83,7 @@ by one point
 >pave pound
 by one point
 
->rave round
+>fave found
 by one point
 
 >e
@@ -93,5 +93,4 @@ by one point
 
 >hope huts
 by one point
-DONE DISHIN' FUN FISHIN'
 

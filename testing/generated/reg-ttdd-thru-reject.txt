@@ -15,30 +15,42 @@ Taken.
 
 >au 2
 
+#testcase-check-vc-blam-bleak-rule-if-player-is-not-in-cram-creek
 #testcase-reject-start-table-of-verb-checks-vr-blam-bleak-rule
 >blam bleak
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-clam-clique-rule-if-player-is-not-in-cram-creek
 #testcase-reject-start-table-of-verb-checks-vr-clam-clique-rule
 >clam clique
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-crave-crowned-rule-if-player-is-not-in-grave-ground
 #testcase-reject-start-table-of-verb-checks-vr-crave-crowned-rule
 >crave crowned
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-dour-doom-rule-if-player-is-not-in-rowr-room
 #testcase-reject-start-table-of-verb-checks-vr-dour-doom-rule
 >dour doom
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-far-phage-rule-if-player-is-not-in-car-cage
 #testcase-reject-start-table-of-verb-checks-vr-far-phage-rule
 >far phage
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-fave-found-rule-if-player-is-not-in-grave-ground
+#testcase-reject-start-table-of-verb-checks-vr-fave-found-rule
+>fave found
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-check-vc-flower-flume-rule-if-player-is-not-in-rowr-room
 #testcase-reject-start-table-of-verb-checks-vr-flower-flume-rule
 >flower flume
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-glower-gloom-rule-if-player-is-not-in-rowr-room
 #testcase-reject-start-table-of-verb-checks-vr-glower-gloom-rule
 >glower gloom
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -47,26 +59,32 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >hope huts
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-maam-meek-rule-if-player-is-not-in-cram-creek
 #testcase-reject-start-table-of-verb-checks-vr-maam-meek-rule
 >maam meek
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-our-age-rule-if-player-is-not-in-car-cage
 #testcase-reject-start-table-of-verb-checks-vr-our-age-rule
 >our age
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pave-pound-rule-if-player-is-not-in-grave-ground
 #testcase-reject-start-table-of-verb-checks-vr-pave-pound-rule
 >pave pound
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-plower-plume-rule-if-player-is-not-in-rowr-room
 #testcase-reject-start-table-of-verb-checks-vr-plower-plume-rule
 >plower plume
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-rar-rage-rule-if-player-is-not-in-car-cage
 #testcase-reject-start-table-of-verb-checks-vr-rar-rage-rule
 >rar rage
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-rave-round-rule-if-player-is-not-in-grave-ground
 #testcase-reject-start-table-of-verb-checks-vr-rave-round-rule
 >rave round
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -75,30 +93,32 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >rope ruts
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-save-sound-rule-if-player-is-not-in-grave-ground
 #testcase-reject-start-table-of-verb-checks-vr-save-sound-rule
 >save sound
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-slam-sleek-rule-if-player-is-not-in-cram-creek
 #testcase-reject-start-table-of-verb-checks-vr-slam-sleek-rule
 >slam sleek
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-star-stage-rule-if-player-is-not-in-car-cage
 #testcase-reject-start-table-of-verb-checks-vr-star-stage-rule
 >star stage
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-tower-tomb-rule-if-player-is-not-in-rowr-room
 #testcase-reject-start-table-of-verb-checks-vr-tower-tomb-rule
 >tower tomb
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-reject-start-table-of-verb-checks-vr-wave-wound-rule
->wave wound
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
+#testcase-check-vc-wham-weak-rule-if-player-is-not-in-cram-creek
 #testcase-reject-start-table-of-verb-checks-vr-wham-weak-rule
 >wham weak
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-wower-womb-rule-if-player-is-not-in-rowr-room
 #testcase-reject-start-table-of-verb-checks-vr-wower-womb-rule
 >wower womb
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -108,6 +128,7 @@ by one point
 
 >w
 
+#testcase-check-vc-snare-snows-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-snare-snows-rule
 >snare snows
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -121,36 +142,42 @@ by one point
 
 >e
 
+#testcase-check-vc-arrows-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-arrows-rule
 >arrows
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >undo
 
+#testcase-check-vc-bare-bows-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-bare-bows-rule
 >bare bows
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >undo
 
+#testcase-check-vc-fair-foes-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-fair-foes-rule
 >fair foes
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >undo
 
+#testcase-check-vc-glare-glows-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-glare-glows-rule
 >glare glows
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >undo
 
+#testcase-check-vc-hair-hose-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-hair-hose-rule
 >hair hose
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >undo
 
+#testcase-check-vc-stair-stows-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vr-stair-stows-rule
 >stair stows
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -168,6 +195,17 @@ by one point
 >tower tomb
 by one point
 
+>wower womb
+by one point
+
+#testcase-think-table-of-verb-checks-vc-wower-womb-rule
+>wower womb
+WRONG
+
+#testcase-think-table-of-verb-checks-vc-tower-tomb-rule
+>tower tomb
+WRONG
+
 >flower flume
 by one point
 
@@ -231,7 +269,7 @@ by one point
 >pave pound
 by one point
 
->rave round
+>fave found
 by one point
 
 >e
@@ -282,6 +320,10 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-reject-end-table-of-verb-checks-vr-far-phage-rule
 >far phage
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vr-fave-found-rule
+>fave found
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vr-flower-flume-rule
@@ -340,10 +382,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >tower tomb
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-reject-end-table-of-verb-checks-vr-wave-wound-rule
->wave wound
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 #testcase-reject-end-table-of-verb-checks-vr-wham-weak-rule
 >wham weak
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -352,10 +390,23 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >wower womb
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+>hope huts
+by one point
+
+#testcase-think-table-of-verb-checks-vc-hope-huts-rule
+>hope huts
+You already created the hope huts!
+
+>undo
+>undo
+
 >rope ruts
 by one point
 
+#testcase-think-table-of-verb-checks-vc-rope-ruts-rule
+>rope ruts
+You already created the rope ruts!
+
 >hope huts
 by one point
-DONE DISHIN' FUN FISHIN'
 

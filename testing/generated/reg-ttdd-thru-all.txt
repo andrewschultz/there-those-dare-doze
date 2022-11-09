@@ -32,6 +32,9 @@ Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your l
 >tower tomb
 by one point
 
+>wower womb
+by one point
+
 >flower flume
 by one point
 
@@ -124,13 +127,31 @@ by one point
 >save sound
 by one point
 
+#testcase-run-vr-save-sound-rule-default
+You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.
+
 >pave pound
 by one point
 
->rave round
+>fave found
 by one point
 
+`Wave (Wound)
+
 >e
+
+#testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
+>hope huts
+by one point
+!DONE DISHIN' FUN FISHIN'
+
+>rope ruts
+#testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
+by one point
+DONE DISHIN' FUN FISHIN'
+
+>undo
+>undo
 
 >rope ruts
 by one point
@@ -138,8 +159,13 @@ by one point
 #testcase-run-vr-rope-ruts-rule-default
 Rope ruts appear!
 
+#testcase-run-vr-rope-ruts-rule-abide-by-the-huts-and-ruts-rule
+!DONE DISHIN' FUN FISHIN'
+
 >hope huts
 by one point
+
+#testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
 DONE DISHIN' FUN FISHIN'
 
 #testcase-run-vr-hope-huts-rule-default
