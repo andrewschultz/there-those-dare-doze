@@ -123,15 +123,16 @@ check going east in rare rows:
 		say "The heat, metaphorical and physical, pushes you back." instead;
 
 check going south in rare rows:
-	say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
+	if sco-star-stage is false, say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
 	if rows-south < 3:
 		now Car Cage is tried;
 		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
 		if sco-fair-foes is false, say "[line break]Start with summoning allies, then, maybe." instead;
 		if sco-bare-bows is false or sco-arrows is false, say "Your allies, the fair foes, need [if sco-bare-bows is true]ammunition[else if sco-arrows is true]weapons[else]ammunition and weapons[end if]." instead;
-	say "Despite protests from the south, you feel brave enough to go [one of][or]back [stopping]there and take care of business.";
+	if sco-star-stage is false:
+		say "You hear grumbling from the south, but it's not enough to stop you proceeding [one of][or]back [stopping]there to take care of business.";
 	if fair foes are in rare rows:
-		say "The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while they don't kill the Mar Mage, their opponent curses their temporary loss of magic capabilities--keeping that shield up was hard work![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what.";
+		say "[line break]The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while the Mar Mage easily throws up a shield, the arrows do damage to it. The Mar Mage has lost their magic capabilities![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what. And it's fair enough some work should be left to you.";
 		moot fair foes;
 		moot arrows;
 		moot bare bows;
@@ -263,31 +264,35 @@ carry out verbsing:
 
 volume gong stuff
 
+this-gong-rule of rare rows is gong-rare-rows rule.
 this-gong-rule of grave ground is gong-grave-ground rule.
 this-gong-rule of car cage is gong-car-cage rule.
 this-gong-rule of rowr room is gong-rowr-room rule.
 this-gong-rule of cram creek is gong-cram-creek rule.
 
-this is the gong-car-cage rule:
-	if now-score of car cage is total-score of car cage, completed;
-	if cage-prep-score <= 2, llp-remaining;
+this is the gong-rare-rows rule:
 	uncompleted;
+
+this is the gong-car-cage rule:
+	if sco-star-stage is false, uncompleted;
+	if cage-prep-score is 3, completed;
+	llp-remaining;
 
 this is the gong-cram-creek rule:
-	if now-score of cram creek is total-score of cram creek, completed;
-	if sheik-score <= 4, llp-remaining;
-	uncompleted;
+	if sco-clam-clique is false, uncompleted;
+	if sheik-score is 4, completed;
+	llp-remaining;
 
 this is the gong-rowr-room rule:
-	if now-score of rowr room is total-score of rowr room, completed;
-	if rowr-score is 3, llp-remaining;
-	uncompleted;
+	say "Rowr = [rowr-score], now-score = [now-score of rowr room].";
+	if rowr-score < 3, uncompleted;
+	if now-score of rowr room is 6, completed;
+	llp-remaining;
 
 this is the gong-grave-ground rule:
-	if now-score of grave ground is total-score of grave ground, completed;
-	if now-score of grave ground is total-score of grave ground - 1, llp-remaining;
-	if rowr-score is 3, llp-remaining;
-	uncompleted;
+	if sco-fave-found is false, uncompleted;
+	if dave-score is 4, completed;
+	llp-remaining;
 
 volume verb-checker rule
 
@@ -348,6 +353,7 @@ this is the verb-checker rule:
 					say "You may have used too many words. Any necessary command just needs two words, no more, no less. I put this in to make sure you can't just spam guesses. It's a bit strict, but ... I wanted some cursory protection, as well as simple guidance to narrow down what you should guess.";
 					the rule fails;
 				up-which core entry;
+				increment now-score of best-room entry;
 				if core entry is false:
 					increase lump-count by 1;
 			now idid entry is true;

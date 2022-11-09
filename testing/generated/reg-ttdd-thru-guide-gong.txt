@@ -1,0 +1,168 @@
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+
+## reg-ttdd-thru-guide-gong.txt
+## GENERATOR FILE: rbr-ttdd-thru.txt
+
+## walkthrough testing guide gong
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>guide gong
+(disabling later explanation of GUIDE GONG, etc., but it will still be in VERBS)
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+>au 2
+
+>snare snows
+by one point
+
+>e
+
+>tower tomb
+by one point
+
+>wower womb
+by one point
+
+>flower flume
+by one point
+
+>plower plume
+by one point
+
+>dour doom
+by one point
+
+>w
+
+>e
+A guide gong rings to notify you that you don't need to go back through Bower (BOOM!).
+
+>undo
+>undo
+
+>glower gloom
+by one point
+
+>w
+
+>e
+A guide gong rings to notify you that you don't need to go back through Bower (BOOM!).
+
+>fair foes
+by one point
+
+>arrows
+by one point
+
+>bare bows
+by one point
+
+>s
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>n
+
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
+
+>undo
+>undo
+
+>rar rage
+by one point
+
+>n
+
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
+
+>hair hose
+by one point
+
+>n
+
+>blam bleak
+by one point
+
+>slam sleek
+by one point
+
+>wham weak
+by one point
+
+>clam clique
+by one point
+
+>s
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Cram Creek.
+
+>undo
+>undo
+
+>maam meek
+by one point
+
+>s
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Cram Creek.
+
+>stair stows
+by one point
+
+>glare glows
+by one point
+
+>w
+
+>crave crowned
+by one point
+
+>save sound
+by one point
+
+>pave pound
+by one point
+
+>fave found
+by one point
+
+>e
+
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Wave (Wound).
+
+>undo
+>undo
+
+>rave round
+by one point
+
+>e
+
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Wave (Wound).
+
+>rope ruts
+by one point
+
+>hope huts
+by one point
+

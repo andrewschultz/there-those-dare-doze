@@ -128,7 +128,6 @@ this is the vr-glare-glows rule:
 	say "You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.";
 	try-open Rare Rows;
 
-
 a goodrhyme rule (this is the vc-stair-stows rule):
 	if player is not in rare rows, unavailable;
 	if sco-stair-stows is true:
