@@ -52,7 +52,7 @@ this is the vh-our-age rule:
 	say "That is too specific a time frame.";
 
 a goodrhyme rule (this is the vc-our-age rule):
-	if player is not in car cage, unavailable;
+	abide by the cage-or-sage rule;
 	if sco-our-age is true:
 		vcal "You already aligned things temporally!";
 		already-done;
@@ -60,11 +60,12 @@ a goodrhyme rule (this is the vc-our-age rule):
 
 this is the vr-our-age rule:
 	now sco-our-age is true;
+	abide by the in-cage rule;
 	say "You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!";
 	abide by the cage-change rule;
 
 a goodrhyme rule (this is the vc-far-phage rule):
-	if player is not in car cage, unavailable;
+	abide by the cage-or-sage rule;
 	if sco-far-phage is true:
 		vcal "You really don't want more phages than you need!";
 		already-done;
@@ -72,11 +73,12 @@ a goodrhyme rule (this is the vc-far-phage rule):
 
 this is the vr-far-phage rule:
 	now sco-far-phage is true;
+	abide by the in-cage rule;
 	say "A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!";
 	abide by the cage-change rule;
 
 a goodrhyme rule (this is the vc-rar-rage rule):
-	if player is not in car cage, unavailable;
+	abide by the cage-or-sage rule;
 	if sco-rar-rage is true:
 		vcal "You already raged effectively! The next time won't work so well. It might be counterproductive.";
 		already-done;
@@ -84,6 +86,7 @@ a goodrhyme rule (this is the vc-rar-rage rule):
 
 this is the vr-rar-rage rule:
 	now sco-rar-rage is true;
+	abide by the in-cage rule;
 	say "Your rage doesn't make perfect sense, but it doesn't have to. You're mad enough, and it's from the heart, and that's what counts.";
 	abide by the cage-change rule;
 
@@ -328,8 +331,9 @@ a goodrhyme rule (this is the vc-tower-tomb rule):
 
 this is the vr-tower-tomb rule:
 	now sco-tower-tomb is true;
-	say "Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though[just-noise]";
+	say "Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though[just-noise].";
 	opt-rule vc-wower-womb rule;
+	bump-up tomb-womb;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-wower-womb rule):
@@ -341,8 +345,9 @@ a goodrhyme rule (this is the vc-wower-womb rule):
 
 this is the vr-wower-womb rule:
 	now sco-wower-womb is true;
-	say "A passage opens downstairs briefly. Then it closes. But you know it's there[just-noise].";
+	say "A passage opens downstairs briefly. It's too narrow, and anyway, one doesn't go back into a womb, but it's there[just-noise].";
 	opt-rule vc-tower-tomb rule;
+	bump-up tomb-womb;
 	abide by the rowr-room-transform rule;
 
 this is the vh-dour-doom rule:
@@ -359,6 +364,7 @@ this is the vr-dour-doom rule:
 	now sco-dour-doom is true;
 	say "You invoke a sense of doom so dour, the rowring itself gets quieter.";
 	opt-rule vc-glower-gloom rule;
+	bump-up doom-gloom;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-glower-gloom rule):
@@ -372,6 +378,7 @@ this is the vr-glower-gloom rule:
 	now sco-glower-gloom is true;
 	say "You invoke a sense of gloom so glowery, the rowring itself gets quieter.";
 	opt-rule vc-dour-doom rule;
+	bump-up doom-gloom;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-plower-plume rule):
@@ -385,6 +392,7 @@ this is the vr-plower-plume rule:
 	now sco-plower-plume is true;
 	say "A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.";
 	opt-rule vc-flower-flume rule;
+	bump-up flume-plume;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-flower-flume rule):
@@ -398,6 +406,7 @@ this is the vr-flower-flume rule:
 	now sco-flower-flume is true;
 	say "Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.";
 	opt-rule vc-plower-plume rule;
+	bump-up flume-plume;
 	abide by the rowr-room-transform rule;
 
 this is the vh-hope-huts rule:
@@ -429,6 +438,14 @@ this is the vr-rope-ruts rule:
 
 section auxiliary rules
 
+to bump-up (moo - a rowr-mood):
+	if moo is unactivated:
+		now moo is halfway;
+	else if moo is halfway:
+		now moo is fullon;
+	else:
+		say "BUG. I tried to increase a mood that was already maximized. Let me know how this happened!"
+
 to opt-rm:
 	repeat through table of verb checks:
 		if there is no best-room entry, next;
@@ -438,7 +455,7 @@ to opt-rm:
 
 to opt-rule (ru - a rule):
 	repeat through table of verb checks:
-		unless run-rule entry is ru, next;
+		unless run-rule entry is ru or check-rule entry is ru, next;
 		if idid entry is false, now core entry is false;
 		continue the action;
 	say "TRIVIAL BUG: I did not see [ru] in the table of verb checks. If you can let me know at my github repository, I'd appreciate knowing this so I can fix it!"
@@ -470,9 +487,21 @@ this is the to-cage-progress rule:
 	else if binary-thing is 7:
 		say "The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.";
 
+this is the cage-or-sage rule:
+	unless player is in car cage or saar sage is in location of player, unavailable;
+
+this is the in-cage rule:
+	if player is not in Car Cage, say "You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!" instead;
+	if sco-star-stage is true:
+		say "The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you ";
+		if the player's command includes "phage", say "you set people on the pathway to cure the common cold. Not in your own universe, sadly.";
+		if the player's command includes "age", say "accelerated technological progress so people get jetpacks sooner. Not in your own universe, sadly.";
+		if the player's command includes "rage", say "allowed everyday folk to express their discontent in new and instructive ways.";
+		the rule succeeds;
+
 this is the cage-change rule:
-	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. 'No! I don't believe it! You can't keep this up!'[line break]";
-	say "[one of]However, it settles back. But you did something, you know that[or]Something has shattered. The car cage can become something more positive, you feel[or]Why not? Show off a bit, even though [if sco-star-stage is true]you defeated the star stage[else]the car cage seemed ripe for change[end if][stopping].";
+	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. '[one of]Lucky! It can't happen again[or]No! I don't believe it! You can't keep this up[or]If you pulled that off, I must be the underdog now[stopping]!'[paragraph break]";
+	say "[one of]However, it settles back. But you did something, you know that[or]Something has shattered. The car cage can become something more positive, you feel[or]It felt good to show off a bit, even though [if sco-star-stage is true]you already summoned the star stage[else]the car cage seemed ripe for change[end if]. No need to be all business, all the time[stopping].";
 
 this is the ground-boost rule:
 	if dave-score is 4:
@@ -506,15 +535,15 @@ this is the rowr-room-transform rule:
 	let up-rowr be whether or not rowr-score is old-rowr-score;
 	now old-rowr-score is rowr-score;
 	if up-rowr is true:
-		say "Nothing massive happens this time--perhaps you need to change what you are thinking of.";
+		say "You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.";
 		the rule succeeds;
 	if rowr-score is 3:
 		say "Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.";
 		solve-room;
 	else if rowr-score is 2:
-		say "The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is as loud as ever.";
+		say "The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.";
 	else:
-		say "You feel a slight but long-lasting tremor. The noise isn't that bad, still.";
+		say "You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.";
 	the rule succeeds;
 
 this is the huts-and-ruts rule:

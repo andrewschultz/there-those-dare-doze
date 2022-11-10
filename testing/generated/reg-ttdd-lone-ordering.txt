@@ -1,0 +1,325 @@
+## reg-ttdd-lone-ordering.txt
+
+## ordering the ways through, making everything an LLP or final needed point
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>snare snows
+
+>e
+
+#1-2-3-4-5-6
+
+>tower tomb
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+
+>wower womb
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
+
+>flower flume
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
+[Your score just went up by one point.]
+
+>plower plume
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+
+>dour doom
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
+[Your score just went up by one point.]
+
+Bower (BOOM!)
+
+>glower gloom
+Nothing much happens otherwise, but you feel good about going above and beyond.
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#2-1-4-3-6-5
+
+>wower womb
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+
+>tower tomb
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
+
+>plower plume
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
+[Your score just went up by one point.]
+
+>flower flume
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+
+>glower gloom
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
+[Your score just went up by one point.]
+
+Bower (BOOM!)
+
+>dour doom
+Nothing much happens otherwise, but you feel good about going above and beyond.
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#3-4-5-6-1-2
+
+>flower flume
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+
+>plower plume
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
+
+>dour doom
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
+[Your score just went up by one point.]
+
+>glower gloom
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+
+>tower tomb
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
+[Your score just went up by one point.]
+
+Bower (BOOM!)
+
+>wower womb
+Nothing much happens otherwise, but you feel good about going above and beyond.
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#4-3-6-5-2-1
+
+>plower plume
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+
+>flower flume
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
+
+>glower gloom
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
+[Your score just went up by one point.]
+
+>dour doom
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+
+>wower womb
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
+[Your score just went up by one point.]
+
+Bower (BOOM!)
+
+>tower tomb
+Nothing much happens otherwise, but you feel good about going above and beyond.
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#5-6-1-2-3-4
+
+>dour doom
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+
+>glower gloom
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
+
+>tower tomb
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
+[Your score just went up by one point.]
+
+>wower womb
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+
+>flower flume
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
+[Your score just went up by one point.]
+
+Bower (BOOM!)
+
+>plower plume
+Nothing much happens otherwise, but you feel good about going above and beyond.
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#6-5-2-1-4-3
+
+>glower gloom
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+
+>dour doom
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
+
+>wower womb
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
+[Your score just went up by one point.]
+
+>tower tomb
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
+[Your score and bonus points just went up by one point.]
+
+>plower plume
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
+[Your score just went up by one point.]
+
+Bower (BOOM!)
+
+>flower flume
+Nothing much happens otherwise, but you feel good about going above and beyond.
+[Your score and bonus points just went up by one point.]
+
+>w
+
+############################################################south room
+
+>arrows
+by one point
+
+>bare bows
+by one point
+
+>fair foes
+by one point
+
+>s
+
+>rar rage
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
+However, it settles back. But you did something, you know that.
+[Your score just went up by one point.]
+
+>far phage
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
+Something has shattered. The car cage can become something more positive, you feel.
+
+>our age
+It felt good to show off a bit, even though the car cage seemed ripe for change. No need to be all business, all the time.
+
+>undo
+
+>star stage
+
+>n
+
+>our age
+You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
+
+>undo
+>undo
+
+>our age
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you accelerated technological progress so people get jetpacks sooner. Not in your own universe, sadly.
+
+>undo
+
+>undo
+>undo
+>undo
+
+>far phage
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
+However, it settles back. But you did something, you know that.
+[Your score just went up by one point.]
+
+>our age
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
+Something has shattered. The car cage can become something more positive, you feel.
+
+>rar rage
+It felt good to show off a bit, even though the car cage seemed ripe for change. No need to be all business, all the time.
+
+>undo
+
+>star stage
+
+>n
+
+>rar rage
+You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
+
+>undo
+>undo
+
+>rar rage
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
+
+>undo
+
+>undo
+>undo
+>undo
+
+>our age
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
+However, it settles back. But you did something, you know that.
+[Your score just went up by one point.]
+
+>rar rage
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
+Something has shattered. The car cage can become something more positive, you feel.
+
+>far phage
+It felt good to show off a bit, even though the car cage seemed ripe for change. No need to be all business, all the time.
+
+>undo
+
+>star stage
+
+>n
+
+>far phage
+You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
+
+>undo
+>undo
+
+>far phage
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you you set people on the pathway to cure the common cold. Not in your own universe, sadly.
+
+>n
