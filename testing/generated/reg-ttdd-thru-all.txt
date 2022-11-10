@@ -154,8 +154,8 @@ WRONG
 >star stage
 by one point
 
-#+testcase-room-names-cram-creek
-`Spam's Peak
+#+testcase-room-names-car-cage
+`Star Stage
 
 #testcase-run-vr-star-stage-rule-default
 On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...
@@ -181,7 +181,7 @@ WRONG different if gone north
 
 >n
 
-#testcase-room-names-cram-creek
+#+testcase-room-names-cram-creek
 `Cram Creek
 
 >blam bleak
@@ -215,6 +215,7 @@ WRONG
 >clam clique
 by one point
 
+#testcase-room-names-cram-creek
 `Spam's Peak
 
 #testcase-run-vr-clam-clique-rule-default
@@ -289,6 +290,7 @@ WRONG
 >fave found
 by one point
 
+#+testcase-room-names-grave-ground
 `Wave (Wound)
 
 #testcase-run-vr-fave-found-rule-default

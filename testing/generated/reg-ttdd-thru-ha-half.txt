@@ -16,51 +16,51 @@ Taken.
 >au 2
 
 #testcase-ha-half-table-of-verb-checks-2-bare
->bare bows
-The HA HALF button on your Leet Learner lights up green.
+>bare zbows
+The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
 
 #testcase-ha-half-table-of-verb-checks-2-bows
->bare bows
+>zbare bows
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-3-fair
->fair foes
+>fair zfoes
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-3-foes
->fair foes
+>zfair foes
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-4-hair
->hair hose
+>hair zhose
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-4-hose
->hair hose
+>zhair hose
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-5-glare
->glare glows
+>glare zglows
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-5-glows
->glare glows
+>zglare glows
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-6-snare
->snare snows
+>snare zsnows
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-6-snows
->snare snows
+>zsnare snows
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-7-stair
->stair stows
+>stair zstows
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-7-stows
->stair stows
+>zstair stows
 The HA HALF button on your Leet Learner lights up green.
 
 >snare snows
@@ -173,17 +173,25 @@ The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-16-stage
 >zstar stage
-The HA HALF button on your Leet Learner lights up green.
+The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
 
 #testcase-ha-half-table-of-verb-checks-16-star
 >star zstage
-The HA HALF button on your Leet Learner lights up green.
+The HA HALF button on your Leet Learner lights up yellow.
 
 >our age
 by one point
 
 >far phage
 by one point
+
+#+testcase-ha-half-table-of-verb-checks-16-stage
+>zstar stage
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-16-star
+>star zstage
+The HA HALF button on your Leet Learner lights up green.
 
 >star stage
 by one point
@@ -232,11 +240,11 @@ The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-12-clam
 >clam zclique
-The HA HALF button on your Leet Learner lights up green.
+The HA HALF button on your Leet Learner lights up yellow.
 
 #testcase-ha-half-table-of-verb-checks-12-clique
 >zclam clique
-The HA HALF button on your Leet Learner lights up green.
+The HA HALF button on your Leet Learner lights up yellow.
 
 >blam bleak
 by one point
@@ -246,6 +254,14 @@ by one point
 
 >wham weak
 by one point
+
+#+testcase-ha-half-table-of-verb-checks-12-clam
+>clam zclique
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-12-clique
+>zclam clique
+The HA HALF button on your Leet Learner lights up green.
 
 >clam clique
 by one point
@@ -297,11 +313,11 @@ The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-21-fave
 >fave zfound
-The HA HALF button on your Leet Learner lights up green.
+The HA HALF button on your Leet Learner lights up yellow.
 
 #testcase-ha-half-table-of-verb-checks-21-found
 >zfave found
-The HA HALF button on your Leet Learner lights up green.
+The HA HALF button on your Leet Learner lights up yellow.
 
 >crave crowned
 by one point
@@ -311,6 +327,14 @@ by one point
 
 >pave pound
 by one point
+
+#+testcase-ha-half-table-of-verb-checks-21-fave
+>fave zfound
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-21-found
+>zfave found
+The HA HALF button on your Leet Learner lights up green.
 
 >fave found
 by one point

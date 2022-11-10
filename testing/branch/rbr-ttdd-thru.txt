@@ -96,51 +96,51 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 
 @ha
 #testcase-ha-half-table-of-verb-checks-2-bare
->bare bows
-{$GREENCORE}
+>bare zbows
+{$GREENCOREFIRST}
 \\
 #testcase-ha-half-table-of-verb-checks-2-bows
->bare bows
+>zbare bows
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-3-fair
->fair foes
+>fair zfoes
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-3-foes
->fair foes
+>zfair foes
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-4-hair
->hair hose
+>hair zhose
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-4-hose
->hair hose
+>zhair hose
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-5-glare
->glare glows
+>glare zglows
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-5-glows
->glare glows
+>zglare glows
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-6-snare
->snare snows
+>snare zsnows
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-6-snows
->snare snows
+>zsnare snows
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-7-stair
->stair stows
+>stair zstows
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-7-stows
->stair stows
+>zstair stows
 {$GREENCORE}
 
 @rej
@@ -762,11 +762,11 @@ The only way out is back north.
 \\
 #testcase-ha-half-table-of-verb-checks-16-stage
 >zstar stage
-{$GREENCORE}
+{$YELLOWCOREFIRST}
 \\
 #testcase-ha-half-table-of-verb-checks-16-star
 >star zstage
-{$GREENCORE}
+{$YELLOWCORE}
 
 @alt
 ##balance undo
@@ -829,12 +829,21 @@ WRONG
 >far phage
 WRONG
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-16-stage
+>zstar stage
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-16-star
+>star zstage
+{$GREENCORE}
+
 >star stage
 by one point
 
 @all
-#+testcase-room-names-cram-creek
-`Spam's Peak
+#+testcase-room-names-car-cage
+`Star Stage
 
 @all,rej
 {--rej}#testcase-check-vc-star-stage-rule-fallthrough
@@ -908,7 +917,7 @@ WRONG
 >n
 
 @all
-#testcase-room-names-cram-creek
+#+testcase-room-names-cram-creek
 `Cram Creek
 
 @verbs
@@ -961,11 +970,11 @@ The creek goes off too far into the distance. Whatever you need to do, it has to
 \\
 #testcase-ha-half-table-of-verb-checks-12-clam
 >clam zclique
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-12-clique
 >zclam clique
-{$GREENCORE}
+{$YELLOWCORE}
 
 @rej
 #testcase-check-vc-clam-clique-rule-if-sheik-score-<-3
@@ -1024,10 +1033,20 @@ WRONG
 >wham weak
 WRONG
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-12-clam
+>clam zclique
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-12-clique
+>zclam clique
+{$GREENCORE}
+
 >clam clique
 by one point
 
 @all
+#testcase-room-names-cram-creek
 `Spam's Peak
 
 @all,rej
@@ -1194,11 +1213,11 @@ Alas, he is too down to speak much.
 \\
 #testcase-ha-half-table-of-verb-checks-21-fave
 >fave zfound
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-21-found
 >zfave found
-{$GREENCORE}
+{$YELLOWCORE}
 
 >crave crowned
 by one point
@@ -1251,10 +1270,20 @@ WRONG
 >pave pound
 WRONG
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-21-fave
+>fave zfound
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-21-found
+>zfave found
+{$GREENCORE}
+
 >fave found
 by one point
 
 @all
+#+testcase-room-names-grave-ground
 `Wave (Wound)
 
 @all,rej
