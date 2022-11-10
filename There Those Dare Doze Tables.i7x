@@ -195,7 +195,7 @@ this is the vr-bare-bows rule:
 	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-slam-sleek rule):
-	if player is not in cram creek, unavailable;
+	abide by the creek-sheik rule;
 	if sco-slam-sleek is true:
 		vcal "You already dropped a slam, sleek, on the Sham Sheik.";
 		already-done;
@@ -203,11 +203,12 @@ a goodrhyme rule (this is the vc-slam-sleek rule):
 
 this is the vr-slam-sleek rule:
 	now sco-slam-sleek is true;
+	abide by the sheik-bonus rule;
 	say "You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!";
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-wham-weak rule):
-	if player is not in cram creek, unavailable;
+	abide by the creek-sheik rule;
 	if sco-wham-weak is true:
 		vcal "You already fingered the Sham Sheik as weak! And quite rightly, too.";
 		already-done;
@@ -215,11 +216,12 @@ a goodrhyme rule (this is the vc-wham-weak rule):
 
 this is the vr-wham-weak rule:
 	now sco-wham-weak is true;
+	abide by the sheik-bonus rule;
 	say "Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.";
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-blam-bleak rule):
-	if player is not in cram creek, unavailable;
+	abide by the creek-sheik rule;
 	if sco-blam-bleak is true:
 		vcal "You already fingered the Sham Sheik as bleak! And quite rightly, too.";
 		already-done;
@@ -227,11 +229,12 @@ a goodrhyme rule (this is the vc-blam-bleak rule):
 
 this is the vr-blam-bleak rule:
 	now sco-blam-bleak is true;
+	abide by the sheik-bonus rule;
 	say "Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.";
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-maam-meek rule):
-	if player is not in cram creek, unavailable;
+	abide by the creek-sheik rule;
 	if sco-maam-meek is true:
 		vcal "You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.";
 		already-done;
@@ -239,6 +242,7 @@ a goodrhyme rule (this is the vc-maam-meek rule):
 
 this is the vr-maam-meek rule:
 	now sco-maam-meek is true;
+	abide by the sheik-bonus rule;
 	say "You insult the Sham Sheik's perceived masculinity, which shouldn't be an insult to most well-adjusted people, but it is to him! And it's an effective one!";
 	abide by the check-sheik rule;
 
@@ -440,7 +444,9 @@ this is the vr-rope-ruts rule:
 	say "Rope ruts appear!";
 	abide by the huts-and-ruts rule;
 
-section auxiliary rules
+chapter auxiliary rules
+
+section very general
 
 to bump-up (moo - a rowr-mood):
 	if moo is unactivated:
@@ -473,6 +479,8 @@ to solve-room:
 	if number of solved rooms is 0:
 		say "[i][bracket][b]NOTE[r][i]: a person or entity you rhymed will be moved back to Rare Rows, but since this is a Petite Mort game, I didn't have time to tweak the code for rhymes or rhyme guesses with them. Sorry about that! You've done what you could. I'll fill these details in post-Ectocomp.[close bracket][r]";
 	opt-rm;
+
+section to the south
 
 this is the to-cage-progress rule:
 	let binary-thing be (boolval of sco-fair-foes * 4) + (boolval of sco-bare-bows * 2) + (boolval of sco-arrows);
@@ -507,6 +515,8 @@ this is the cage-change rule:
 	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. '[one of]Lucky! It can't happen again[or]No! I don't believe it! You can't keep this up[or]If you pulled that off, I must be the underdog now[stopping]!'[paragraph break]";
 	say "[one of]However, it settles back. But you did something, you know that[or]Something has shattered. The car cage can become something more positive, you feel[or]It felt good to show off a bit, even though [if sco-star-stage is true]you already summoned the star stage[else]the car cage seemed ripe for change[end if]. No need to be all business, all the time[stopping].";
 
+section to the west
+
 this is the grave-dave rule:
 	unless player is in grave ground or dave is in location of player, the rule fails;
 
@@ -521,17 +531,6 @@ this is the dave-bonus rule:
 
 this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet[or]Dave looks really gung-ho now[stopping].";
 
-this is the check-sheik rule:
-	if sheik-score is 3:
-		say "That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.[paragraph break]Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.";
-		moot sham sheik;
-		the rule succeeds;
-	else if sheik-score is 4:
-		say "And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures elsewhere.";
-		bump-room cram creek;
-		the rule succeeds;
-	say "The Sham Sheik looks [one of]a little more [or]a lot more [stopping]peeved. You're getting to him!";
-
 to process-dave:
 	say "Dave perks up! He looks [one of]slightly[or]somewhat[or]really[or]adequately[or]extra[stopping] perky and more willing and able to help.";
 	if dave-score is 4:
@@ -539,6 +538,28 @@ to process-dave:
 		solve-room;
 	else if dave-score is 5:
 		say "'Thanks, man. You didn't have to.' You nod. You enjoyed the exercise and practice. Who knows when it could come in handy?";
+
+section to the north
+
+this is the creek-sheik rule: if player is not in cram creek and clam clique is not in location of player, unavailable;
+
+this is the sheik-bonus rule:
+	if sheik-score is not 4, continue the action;
+	if player is in rare rows:
+		say "The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.";
+	else:
+		say "You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.";
+	bump-room cram creek;
+	the rule succeeds;
+
+this is the check-sheik rule:
+	if sheik-score is 3:
+		say "That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.[paragraph break]Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.";
+		moot sham sheik;
+		the rule succeeds;
+	say "The Sham Sheik looks [one of]slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover[or]genuinely vexed. You're getting to him[stopping]!";
+
+section to the east
 
 this is the rowr-room-transform rule:
 	now win-score of rowr room is rowr-max;
@@ -577,10 +598,10 @@ volume table of noways
 table of noways
 noway-rm	noway-txt
 Rare Rows	"There are no hidden directions here."
-Ground Grave	"It's even spookier and darker if you go further from the rare rows."
-Cram Creek	"The creek goes off too far into the distance. Whatever you need to do, it has to be right here."
-Rowr Room	"It's a room. The only way back is west."
-Car Cage	"The only way out is back north."
+Ground Grave	"[if sco-fave-found is false]It's even spookier and darker if you go further from the rare rows. Best to just go back east[else]The wound wave pushes you back east[end if]."
+Cram Creek	"[if sco-clam-clique is true]Spam's Peak holds nothing. You can and should just retreat to the south[else]The creek goes off too far into the distance. Whatever you need to do, it has to be right here[end if]."
+Rowr Room	"[if rowr room is solved]You've opened things up, but you don't need to go any further[else]It's a room[end if]. The only way back is west."
+Car Cage	"[if sco-star-stage is true]You might fall off the star stage[else]The car cage blocks you[end if]. The only way out is back north."
 
 volume homonyms
 

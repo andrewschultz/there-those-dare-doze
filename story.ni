@@ -97,7 +97,7 @@ the leet learner is in Rare Rows.
 check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
 
 after looking in rare rows when number of solved rooms is 4 and ppnn is off-stage:
-	say "You have assembled the needed components to wake the Prayer Pros. Dave (Downed)'s presence, the oppressed animals (the clam,) and a mystic (the Saar sage)  seem to stand in a triangle, with the right words (How, Er, Whom,) bouncing between them.";
+	say "You have assembled the needed components to wake the Prayer Pros. Dave (Downed)[']s presence, the oppressed animals (the clam,) and a mystic (the Saar sage)  seem to stand in a triangle, with the right words (How, Er, Whom,) bouncing between them.";
 	say "[line break]The prayer pros wake up! They turn to you for guidance. They are staring at -- well, your shirt. That's weird.";
 	moot saar sage;
 	moot dave;
@@ -181,13 +181,18 @@ chapter how er whom
 
 how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The [whom] from the east floats in the air--perhaps a question to be asked at the right time.". description is "It is incorporeal."
 
-book cram creek
+book cram creeki
 
-Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south.". win-score of Cram Creek is 4. block-descrip-text of Cram Creek is "you need a way to get less wet before going north".
+Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south[if sco-clam-clique is false]. It's too mountainous other ways, as well[else if sheik-score is 3]. The area feels ready to burst out in life. You just need to [fig-rem-clam] what sort of animal could live in or near the creek[end if].". win-score of Cram Creek is 4. block-descrip-text of Cram Creek is "you need a way to get less wet before going north". printed name of Cram Creek is "[if sco-clam-clique is false]Cram Creek[else]Spam's Peak[end if]".
+
+to say fig-rem-clam:
+	process vc-clam-clique rule;
+	let rbo be the outcome of the rulebook;
+	say "[if rbo is the ready outcome or rbo is the already-done outcome]recall[else]figure[end if]"
 
 chapter Sham Sheik
 
-the Sham Sheik is a person in Cram Creek. "A Sham Sheik eyes you sardonically here. He seems to think he owns the place and tries to tower over you.". description is "He shoos you away. This confrontation is strictly verbal."
+the Sham Sheik is a person in Cram Creek. "[one of]A Sham Sheik eyes you sardonically here. You know he is a Sham Sheik because, although he is not dressed ostentationsly, he is still wearing clothes labeling himself as such. He seems to think[or]The Sham Sheik continues to act as if[stopping] he owns the place and tries to tower over you.". description is "He shoos you away. You will have focus on, not physical interaction, but more how you both use your words."
 
 chapter clam clique
 
