@@ -72,6 +72,9 @@ by one point
 >stair stows
 by one point
 
+>glare glows
+by one point
+
 >w
 
 >crave crowned
@@ -87,9 +90,6 @@ by one point
 by one point
 
 >e
-
->glare glows
-by one point
 
 >rope ruts
 by one point

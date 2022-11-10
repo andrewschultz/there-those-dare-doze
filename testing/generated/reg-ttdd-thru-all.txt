@@ -65,15 +65,6 @@ WRONG
 #testcase-run-vr-plower-plume-rule-default
 WRONG
 
->glower gloom
-by one point
-
-#testcase-run-vr-glower-gloom-rule-abide-by-the-rowr-room-transform-rule
-WRONG
-
-#testcase-run-vr-glower-gloom-rule-default
-WRONG
-
 >dour doom
 by one point
 
@@ -81,6 +72,15 @@ by one point
 WRONG
 
 #testcase-run-vr-dour-doom-rule-default
+WRONG
+
+>glower gloom
+by one point
+
+#testcase-run-vr-glower-gloom-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+#testcase-run-vr-glower-gloom-rule-default
 WRONG
 
 >w
@@ -240,6 +240,12 @@ by one point
 #testcase-run-vr-stair-stows-rule-default
 You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.
 
+>glare glows
+by one point
+
+#testcase-run-vr-glare-glows-rule-default
+WRONG
+
 >w
 
 #testcase-room-names-grave-ground
@@ -289,12 +295,6 @@ WRONG
 #testcase-run-vr-rave-round-rule-default
 
 >e
-
->glare glows
-by one point
-
-#testcase-run-vr-glare-glows-rule-default
-WRONG
 
 #testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
 >hope huts

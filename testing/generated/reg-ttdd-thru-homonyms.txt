@@ -54,10 +54,10 @@ by one point
 >plower plume
 by one point
 
->glower gloom
+>dour doom
 by one point
 
->dour doom
+>glower gloom
 by one point
 
 >w
@@ -139,6 +139,9 @@ by one point
 >stare
 Yes, there was something to look for, and you found it.
 
+>glare glows
+by one point
+
 >w
 
 >crave crowned
@@ -157,9 +160,6 @@ by one point
 by one point
 
 >e
-
->glare glows
-by one point
 
 #testcase-homonym-reject-table-of-verb-checks-hutz
 #testcase-homonym-detail-vh-hope-huts-rule-default

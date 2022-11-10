@@ -128,10 +128,10 @@ by one point
 >plower plume
 by one point
 
->glower gloom
+>dour doom
 by one point
 
->dour doom
+>glower gloom
 by one point
 
 >w
@@ -258,6 +258,9 @@ by one point
 >stair stows
 by one point
 
+>glare glows
+by one point
+
 >w
 
 #testcase-ha-half-table-of-verb-checks-17-crave
@@ -316,9 +319,6 @@ by one point
 by one point
 
 >e
-
->glare glows
-by one point
 
 #testcase-ha-half-table-of-verb-checks-28-hope
 >hope zhuts

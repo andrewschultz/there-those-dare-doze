@@ -32,10 +32,10 @@ by one point
 >plower plume
 by one point
 
->glower gloom
+>dour doom
 by one point
 
->dour doom
+>glower gloom
 by one point
 
 >w
@@ -115,6 +115,9 @@ by one point
 >stair stows
 by one point
 
+>glare glows
+by one point
+
 >w
 
 >crave crowned
@@ -133,9 +136,6 @@ by one point
 by one point
 
 >e
-
->glare glows
-by one point
 
 >rope ruts
 by one point

@@ -68,6 +68,16 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 >take learner
 Taken.
 
+@gong
+>guide gong
+(disabling later explanation of GUIDE GONG, etc., but it will still be in VERBS)
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+@prong
+>pride prong
+(disabling later explanation of GUIDE GONG, etc., but it will still be in VERBS)
+You are now blocked from paths where no branches contain any point-scoring activities, critical or bonus.
+
 @gt
 #testcase-goto-table-of-noways-rare-rows
 >in
@@ -555,6 +565,39 @@ WRONG
 >plower plume
 WRONG
 
+>dour doom
+by one point
+
+@all
+#testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
+WRONG
+
+@all,rej
+{--all}#testcase-run-vr-dour-doom-rule-default
+{--rej}#testcase-check-vc-dour-doom-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
+>dour doom
+WRONG
+
+@gong
+>w
+\\
+>e
+A guide gong rings to notify you that you don't need to go back through Bower (BOOM!).
+\\
+>undo
+>undo
+
+@prong
+>w
+\\
+>e
+The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
+Bower (BOOM!)
+
 @!min
 >glower gloom
 by one point
@@ -573,24 +616,11 @@ WRONG
 >glower gloom
 WRONG
 
->dour doom
-by one point
-
-@all
-#testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
-WRONG
-
-@all,rej
-{--all}#testcase-run-vr-dour-doom-rule-default
-{--rej}#testcase-check-vc-dour-doom-rule-fallthrough
-WRONG
-
-@rej
-#testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
->dour doom
-WRONG
-
 >w
+
+@gong,prong
+>e
+A guide gong rings to notify you that you don't need to go back through Bower (BOOM!).
 
 >fair foes
 by one point
@@ -819,6 +849,21 @@ On the star stage, the Mar Mage suddenly grows more powerful. You seem to have n
 >star stage
 WRONG
 
+@gong
+>n
+\\
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
+\\
+>undo
+>undo
+
+@prong
+>n
+\\
+>s
+Star Stage
+
 @!min
 >rar rage
 by one point
@@ -838,6 +883,10 @@ WRONG
 WRONG
 
 >n
+
+@gong,prong
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
 
 @verbs
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-saar-sage
@@ -1008,6 +1057,21 @@ by one point
 >undo
 >undo
 
+@gong
+>s
+\\
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Cram Creek.
+\\
+>undo
+>undo
+
+@prong
+>s
+\\
+>n
+Cram Creek
+
 @!min
 >maam meek
 by one point
@@ -1027,6 +1091,10 @@ WRONG
 WRONG
 
 >s
+
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Cram Creek.
 
 @hom
 #testcase-homonym-detail-vh-stair-stows-rule-default
@@ -1051,6 +1119,19 @@ WRONG
 #+testcase-homonym-detail-vh-stair-stows-rule-default
 >stare
 Yes, there was something to look for, and you found it.
+
+>glare glows
+by one point
+
+@all,rej
+{--all}#testcase-run-vr-glare-glows-rule-default
+{--rej}#testcase-check-vc-glare-glows-rule-fallthrough
+WRONG
+
+@rej
+#testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
+>glare glows
+WRONG
 
 >w
 
@@ -1185,6 +1266,21 @@ WRONG
 >fave found
 WRONG
 
+@gong
+>e
+\\
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Wave (Wound).
+\\
+>undo
+>undo
+
+@prong
+>e
+\\
+>w
+Wave (Wound)
+
 @!min
 >rave round
 by one point
@@ -1216,18 +1312,9 @@ WRONG
 
 >e
 
->glare glows
-by one point
-
-@all,rej
-{--all}#testcase-run-vr-glare-glows-rule-default
-{--rej}#testcase-check-vc-glare-glows-rule-fallthrough
-WRONG
-
-@rej
-#testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
->glare glows
-WRONG
+@gong,prong
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Wave (Wound).
 
 @gt
 # 0 = rare rows 1 = car cage 2 = cram creek 3 = grave ground 4 = rowr rows

@@ -238,16 +238,6 @@ WRONG
 >plower plume
 WRONG
 
->glower gloom
-by one point
-
-#testcase-check-vc-glower-gloom-rule-fallthrough
-WRONG
-
-#testcase-check-vc-glower-gloom-rule-if-sco-glower-gloom-is-true
->glower gloom
-WRONG
-
 >dour doom
 by one point
 
@@ -256,6 +246,16 @@ WRONG
 
 #testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
 >dour doom
+WRONG
+
+>glower gloom
+by one point
+
+#testcase-check-vc-glower-gloom-rule-fallthrough
+WRONG
+
+#testcase-check-vc-glower-gloom-rule-if-sco-glower-gloom-is-true
+>glower gloom
 WRONG
 
 >w
@@ -418,6 +418,16 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 >stair stows
 WRONG
 
+>glare glows
+by one point
+
+#testcase-check-vc-glare-glows-rule-fallthrough
+WRONG
+
+#testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
+>glare glows
+WRONG
+
 >w
 
 #testcase-check-vc-fave-found-rule-if-dave-score-<-3
@@ -486,16 +496,6 @@ WRONG
 WRONG
 
 >e
-
->glare glows
-by one point
-
-#testcase-check-vc-glare-glows-rule-fallthrough
-WRONG
-
-#testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
->glare glows
-WRONG
 
 #testcase-reject-end-table-of-verb-checks-vc-arrows-rule
 >arrows
