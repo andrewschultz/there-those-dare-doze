@@ -244,6 +244,7 @@ It felt good to show off a bit, even though the car cage seemed ripe for change.
 >undo
 
 >star stage
+by one point
 
 >n
 
@@ -277,6 +278,7 @@ It felt good to show off a bit, even though the car cage seemed ripe for change.
 >undo
 
 >star stage
+by one point
 
 >n
 
@@ -310,6 +312,7 @@ It felt good to show off a bit, even though the car cage seemed ripe for change.
 >undo
 
 >star stage
+by one point
 
 >n
 
@@ -323,3 +326,152 @@ You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hoora
 The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you you set people on the pathway to cure the common cold. Not in your own universe, sadly.
 
 >n
+
+>stair stows
+by one point
+
+>w
+
+>crave crowned
+by one point
+Dave's head stays raised after this bit of positivity.
+
+>pave pound
+by one point
+Dave pumps his fist. And yet he isn't fully energized. Yet.
+
+>rave round
+by one point
+Dave looks really gung-ho now.
+
+>fave found
+
+>e
+
+>save sound
+by one point
+Dave pumps his fist. He's grateful for the additional support!
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+
+>save sound
+by one point
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+[Your score and bonus points just went up by one point.]
+
+>undo
+
+>undo
+>undo
+>undo
+>undo
+
+>pave pound
+by one point
+Dave's head stays raised after this bit of positivity.
+
+>rave round
+by one point
+Dave pumps his fist. And yet he isn't fully energized. Yet.
+
+>save sound
+by one point
+Dave looks really gung-ho now.
+
+>fave found
+
+>e
+
+>crave crowned
+by one point
+Dave pumps his fist. He's grateful for the additional support!
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+
+>crave crowned
+by one point
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+[Your score and bonus points just went up by one point.]
+
+>undo
+
+>undo
+>undo
+>undo
+>undo
+
+>rave round
+by one point
+Dave's head stays raised after this bit of positivity.
+
+>save sound
+by one point
+Dave pumps his fist. And yet he isn't fully energized. Yet.
+
+>crave crowned
+by one point
+Dave looks really gung-ho now.
+
+>fave found
+
+>e
+
+>pave pound
+by one point
+Dave pumps his fist. He's grateful for the additional support!
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+
+>pave pound
+by one point
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+[Your score and bonus points just went up by one point.]
+
+>undo
+
+>undo
+>undo
+>undo
+>undo
+
+>save sound
+by one point
+Dave's head stays raised after this bit of positivity.
+
+>crave crowned
+by one point
+Dave pumps his fist. And yet he isn't fully energized. Yet.
+
+>pave pound
+by one point
+Dave looks really gung-ho now.
+
+>fave found
+
+>e
+
+>rave round
+by one point
+Dave pumps his fist. He's grateful for the additional support!
+[Your score and bonus points just went up by one point.]
+
+>undo
+>undo
+
+>rave round
+by one point
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+[Your score and bonus points just went up by one point.]
+
+>undo
+
+>undo
+>undo
+>undo
+>undo

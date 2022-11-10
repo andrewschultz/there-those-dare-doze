@@ -259,7 +259,7 @@ this is the vr-clam-clique rule:
 	solve-room;
 
 a goodrhyme rule (this is the vc-rave-round rule):
-	if player is not in grave ground, unavailable;
+	abide by the grave-dave rule;
 	if sco-rave-round is true:
 		vcal "Too much raving might leave Dave tired. Perhaps you should try something else.";
 		already-done;
@@ -267,11 +267,12 @@ a goodrhyme rule (this is the vc-rave-round rule):
 
 this is the vr-rave-round rule:
 	now sco-rave-round is true;
+	abide by the dave-bonus rule;
 	say "For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jolly and day around actually makes him feel better.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-pave-pound rule):
-	if player is not in grave ground, unavailable;
+	abide by the grave-dave rule;
 	if sco-pave-pound is true:
 		vcal "You already boosted Dave this way!";
 		already-done;
@@ -279,11 +280,12 @@ a goodrhyme rule (this is the vc-pave-pound rule):
 
 this is the vr-pave-pound rule:
 	now sco-pave-pound is true;
-	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect full salary ";
+	abide by the dave-bonus rule;
+	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-fave-found rule):
-	if player is not in grave ground, unavailable;
+	abide by the grave-dave rule;
 	if dave-score < 3:
 		vcp "Hmm, that would be a good idea once Dave had [if dave-score is 0]favorites[else if dave-score is 1]some more[else]a bit more[end if] desires to choose from.";
 		not-yet;
@@ -299,7 +301,7 @@ this is the vr-fave-found rule:
 	solve-room;
 
 a goodrhyme rule (this is the vc-save-sound rule):
-	if player is not in grave ground, unavailable;
+	abide by the grave-dave rule;
 	if sco-save-sound is true:
 		vcal "You already boosted Dave this way!";
 		already-done;
@@ -307,11 +309,12 @@ a goodrhyme rule (this is the vc-save-sound rule):
 
 this is the vr-save-sound rule:
 	now sco-save-sound is true;
+	abide by the dave-bonus rule;
 	say "You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-crave-crowned rule):
-	if player is not in grave ground, unavailable;
+	abide by the grave-dave rule;
 	if sco-crave-crowned is true:
 		vcal "You already boosted Dave this way!";
 		already-done;
@@ -319,6 +322,7 @@ a goodrhyme rule (this is the vc-crave-crowned rule):
 
 this is the vr-crave-crowned rule:
 	now sco-crave-crowned is true;
+	abide by the dave-bonus rule;
 	say "Dave seems charged with motivation!";
 	abide by the ground-boost rule;
 
@@ -503,10 +507,19 @@ this is the cage-change rule:
 	say "The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. '[one of]Lucky! It can't happen again[or]No! I don't believe it! You can't keep this up[or]If you pulled that off, I must be the underdog now[stopping]!'[paragraph break]";
 	say "[one of]However, it settles back. But you did something, you know that[or]Something has shattered. The car cage can become something more positive, you feel[or]It felt good to show off a bit, even though [if sco-star-stage is true]you already summoned the star stage[else]the car cage seemed ripe for change[end if]. No need to be all business, all the time[stopping].";
 
-this is the ground-boost rule:
+this is the grave-dave rule:
+	unless player is in grave ground or dave is in location of player, the rule fails;
+
+this is the dave-bonus rule:
 	if dave-score is 4:
-		say "You feel [if player is in grave ground]a ripple across space[else]that much warmer[end if]. Dave is grateful for the additional support!";
+		if dave is not in location of player:
+			say "You feel a ripple across space. Dave must be that much happier back in Rare Rows.";
+		else:
+			say "Dave pumps his fist. He's grateful for the additional support!";
 		bump-room grave ground;
+		the rule succeeds;
+
+this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet[or]Dave looks really gung-ho now[stopping].";
 
 this is the check-sheik rule:
 	if sheik-score is 3:
