@@ -714,6 +714,10 @@ WRONG
 #testcase-check-vc-star-stage-rule-if-cage-prep-score-<-2
 >star stage
 WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-star-stage-rule
+>think
+You can pull out the STAR STAGE once you've manipulated the Car Cage enough.
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-hour
@@ -837,6 +841,11 @@ WRONG
 #+testcase-ha-half-table-of-verb-checks-16-star
 >star zstage
 {$GREENCORE}
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-star-stage-rule
+>think
+You can pull out the STAR STAGE now you've manipulated the Car Cage enough.
 
 >star stage
 by one point
@@ -980,6 +989,10 @@ The creek goes off too far into the distance. Whatever you need to do, it has to
 #testcase-check-vc-clam-clique-rule-if-sheik-score-<-3
 >clam clique
 WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-clam-clique-rule
+>think
+You can summon a CLAM CLIQUE once you've pushed the Sham Sheik away in a verbal duel.
 
 >blam bleak
 by one point
@@ -1041,6 +1054,11 @@ WRONG
 #+testcase-ha-half-table-of-verb-checks-12-clique
 >zclam clique
 {$GREENCORE}
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-clam-clique-rule
+>think
+You can summon a CLAM CLIQUE now you've pushed the Sham Sheik away in a verbal duel.
 
 >clam clique
 by one point
@@ -1163,6 +1181,10 @@ WRONG
 #testcase-check-vc-fave-found-rule-if-dave-score-<-3
 >fave found
 WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-fave-found-rule
+>think
+You can get Dave a FAVE FOUND once he has enough motivations to choose from.
 
 @gt
 #testcase-goto-table-of-noways-ground-grave
@@ -1278,6 +1300,11 @@ WRONG
 #+testcase-ha-half-table-of-verb-checks-21-found
 >zfave found
 {$GREENCORE}
+
+@rej
+#testcase-think-table-of-verb-checks-vc-fave-found-rule
+>think
+You can get Dave a FAVE FOUND now he has enough motivations to choose from.
 
 >fave found
 by one point

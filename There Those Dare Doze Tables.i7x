@@ -17,16 +17,16 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "maam"	"meek"	--	--	false	true	true	false	cram creek	vc-maam-meek rule	vr-maam-meek rule	--	--
 "slam"	"sleek"	--	--	false	true	true	false	cram creek	vc-slam-sleek rule	vr-slam-sleek rule	--	--
 "wham"	"weak"	--	--	false	true	true	false	cram creek	vc-wham-weak rule	vr-wham-weak rule	--	--
-"clam"	"clique"	--	--	false	true	true	false	cram creek	vc-clam-clique rule	vr-clam-clique rule	--	--
+"clam"	"clique"	--	--	false	true	true	false	cram creek	vc-clam-clique rule	vr-clam-clique rule	--	"You can summon a [b]CLAM CLIQUE[r] [once-now of vc-clam-clique rule] you've pushed the Sham Sheik away in a verbal duel."
 "far"	"phage"	--	--	false	true	true	false	car cage	vc-far-phage rule	vr-far-phage rule	--	-- [start way south]
 "our"	"age"	"hour"	vh-our-age rule	false	true	true	false	car cage	vc-our-age rule	vr-our-age rule	--	--
 "rar|rawr|rahr|rhar|rowr|rarr|raar"	"rage"	--	--	false	true	true	false	car cage	vc-rar-rage rule	vr-rar-rage rule	--	--
-"star"	"stage"	--	--	false	true	true	false	car cage	vc-star-stage rule	vr-star-stage rule	--	--
+"star"	"stage"	--	--	false	true	true	false	car cage	vc-star-stage rule	vr-star-stage rule	--	"You can pull out the [b]STAR STAGE[r] [once-now of vc-star-stage rule] you've manipulated the Car Cage enough."
 "crave"	"crowned"	--	--	false	true	true	false	grave ground	vc-crave-crowned rule	vr-crave-crowned rule	--	-- [start way west]
 "pave"	"pound"	--	--	false	true	true	false	grave ground	vc-pave-pound rule	vr-pave-pound rule	--	--
 "rave"	"round"	--	--	false	true	true	false	grave ground	vc-rave-round rule	vr-rave-round rule	--	--
 "save"	"sound"	--	--	false	true	true	false	grave ground	vc-save-sound rule	vr-save-sound rule	--	--
-"fave"	"found"	--	--	false	true	true	false	grave ground	vc-fave-found rule	vr-fave-found rule	--	--
+"fave"	"found"	--	--	false	true	true	false	grave ground	vc-fave-found rule	vr-fave-found rule	--	"You can get Dave a [b]FAVE FOUND[r] [once-now of vc-fave-found rule] he has enough motivations to choose from."
 "tower"	"tomb"	--	--	false	true	true	false	rowr room	vc-tower-tomb rule	vr-tower-tomb rule	--	-- [start way east]
 "wower"	"womb"	--	--	false	true	true	false	rowr room	vc-wower-womb rule	vr-wower-womb rule	--	--
 "dour"	"doom"	"dower"	vh-dour-doom rule	false	true	true	false	rowr room	vc-dour-doom rule	vr-dour-doom rule	--	--

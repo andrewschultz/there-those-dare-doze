@@ -296,6 +296,10 @@ WRONG
 >star stage
 WRONG
 
+#testcase-think-table-of-verb-checks-vc-star-stage-rule
+>think
+You can pull out the STAR STAGE once you've manipulated the Car Cage enough.
+
 >our age
 by one point
 
@@ -315,6 +319,10 @@ WRONG
 #testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
 >far phage
 WRONG
+
+#+testcase-think-table-of-verb-checks-vc-star-stage-rule
+>think
+You can pull out the STAR STAGE now you've manipulated the Car Cage enough.
 
 >star stage
 by one point
@@ -356,6 +364,10 @@ WRONG
 >clam clique
 WRONG
 
+#testcase-think-table-of-verb-checks-vc-clam-clique-rule
+>think
+You can summon a CLAM CLIQUE once you've pushed the Sham Sheik away in a verbal duel.
+
 >blam bleak
 by one point
 
@@ -385,6 +397,10 @@ WRONG
 #testcase-check-vc-wham-weak-rule-if-sco-wham-weak-is-true
 >wham weak
 WRONG
+
+#+testcase-think-table-of-verb-checks-vc-clam-clique-rule
+>think
+You can summon a CLAM CLIQUE now you've pushed the Sham Sheik away in a verbal duel.
 
 >clam clique
 by one point
@@ -434,6 +450,10 @@ WRONG
 >fave found
 WRONG
 
+#testcase-think-table-of-verb-checks-vc-fave-found-rule
+>think
+You can get Dave a FAVE FOUND once he has enough motivations to choose from.
+
 >crave crowned
 by one point
 
@@ -463,6 +483,10 @@ WRONG
 #testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
 >pave pound
 WRONG
+
+#testcase-think-table-of-verb-checks-vc-fave-found-rule
+>think
+You can get Dave a FAVE FOUND now he has enough motivations to choose from.
 
 >fave found
 by one point
