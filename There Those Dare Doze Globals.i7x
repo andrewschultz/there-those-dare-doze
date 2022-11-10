@@ -8,7 +8,7 @@ the release number is 1.
 
 entry-in-series is 5.
 
-core-max is 22.
+core-max is 23.
 
 max-bonus is 6. [ 1 point in each area except east, which is 3. ]
 

@@ -410,6 +410,34 @@ this is the verb-checker rule:
 		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--one of the words must work for a future solution[or][stopping][else]green[one of]--one of the words you thought must be right[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
 		abide-nlb the ha-half-help rule;
 
+volume endgame
+
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see the points you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
+
+to find-missed (rm - a room):
+	let got-one be false;
+	repeat through table of verb checks:
+		if best-room entry is not rm, next;
+		if idid entry is false:
+			if got-one is false:
+				say "You could have tried ";
+			else:
+				say "/";
+			now got-one is true;
+			let MISCMD be indexed text;
+			now MISCMD is "[w1 entry in upper case] [w2 entry in upper case]";
+			replace the regular expression "\|<^ >*" in MISCMD with "";
+			say "[b][MISCMD][r]";
+	if got-one is true, say " in [rm].";
+
+this is the show-misses rule:
+	find-missed Cram Creek;
+	find-missed Grave Ground;
+	find-missed Rowr Room;
+	find-missed Car Cage;
+
 volume parsing
 
 Rule for printing a parser error (this is the clue half right words rule):

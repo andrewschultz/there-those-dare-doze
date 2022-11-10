@@ -479,7 +479,7 @@ to bump-room (rm - a room): increment win-score of location of player;
 to solve-room:
 	now location of player is solved;
 	opt-rm;
-	print-the-room;
+	print-the-loc;
 
 section to the south
 
@@ -592,6 +592,9 @@ this is the huts-and-ruts rule:
 	process the score and thinking changes rule;
 	end the story finally saying "DONE DISHIN['] FUN FISHIN[']";
 	say "But you do think about the Prayer Pros over the years. Did people still respect them? Did the entities they petitioned? Were they happy in their jobs? Were they too mechanical with their prayers or too sloppy? All this seems like sophistry, but it also applies to real-world concerns of asking for favors or giving them. They're there to think about, when you've got a bit of solitude. Perhaps they've petitioned someone else.";
+	if cur-bonus is max-bonus:
+		choose row with final response rule of show-misses rule in the Table of Final Question Options;
+		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the shutdown rules;
 
 volume table of noways
