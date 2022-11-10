@@ -169,7 +169,13 @@ to say dave-upset: say "[if dave-score is 0]very[else if dave-score is 1]rather[
 
 book rowr room
 
-Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if rowr-score < 3]You feel you need to change the mood, add a sub-room, and create some fireworks here to see the secret of this place[else if now-score of rowr room is 6]Nothing left to do here[else]There are still mysteries here, but nothing's critical[end if]. The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
+Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if number of unactivated rowr-moods > 0]It's very noisy here. To dissipate the that, perhaps you could [list of unactivated rowr-moods]. [end if][if number of halfway rowr-moods > 0]You also have notions of [list of halfway rowr-moods], but just for fun. [end if][if number of fullon rowr-moods > 0]You have exhausted the ways to [list of fullon rowr-moods]. [end if]The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
+
+chapter rowr-moods
+
+tomb-womb is a rowr-mood. printed name of tomb-womb is "create a secret passage you'll never explore".
+flume-plume is a rowr-mood. printed name of flume-plume is "create some fireworks".
+doom-gloom is a rowr-mood. printed name of doom-gloom is "change the mood".
 
 chapter how er whom
 

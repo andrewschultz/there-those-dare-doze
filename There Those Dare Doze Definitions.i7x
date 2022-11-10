@@ -16,6 +16,12 @@ a room has a number called now-score. now-score of a room is usually 0.
 
 a room has text called block-descrip-text.
 
+chapter the rowr-mood type
+
+a rowr-mood is a kind of thing.
+
+a rowr-mood can be unactivated, halfway or fullon. a rowr-mood is usually unactivated.
+
 book definitions
 
 definition: a room (called rm) is available-from-here:
