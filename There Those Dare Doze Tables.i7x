@@ -430,6 +430,7 @@ a goodrhyme rule (this is the vc-hope-huts rule):
 this is the vr-hope-huts rule:
 	now sco-hope-huts is true;
 	say "Huts are built! The Prayer Pros go over to inspect them.";
+	move hope huts to rare rows;
 	abide by the huts-and-ruts rule;
 
 a goodrhyme rule (this is the vc-rope-ruts rule):
@@ -442,6 +443,7 @@ a goodrhyme rule (this is the vc-rope-ruts rule):
 this is the vr-rope-ruts rule:
 	now sco-rope-ruts is true;
 	say "Rope ruts appear!";
+	move rope ruts to rare rows;
 	abide by the huts-and-ruts rule;
 
 chapter auxiliary rules
@@ -476,9 +478,8 @@ to bump-room (rm - a room): increment win-score of location of player;
 
 to solve-room:
 	now location of player is solved;
-	if number of solved rooms is 0:
-		say "[i][bracket][b]NOTE[r][i]: a person or entity you rhymed will be moved back to Rare Rows, but since this is a Petite Mort game, I didn't have time to tweak the code for rhymes or rhyme guesses with them. Sorry about that! You've done what you could. I'll fill these details in post-Ectocomp.[close bracket][r]";
 	opt-rm;
+	print-the-room;
 
 section to the south
 

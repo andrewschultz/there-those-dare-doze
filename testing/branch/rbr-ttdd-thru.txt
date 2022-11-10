@@ -260,7 +260,7 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 Sadly, the walkthrough feelie is the only thing I had time to write up for EctoComp.
 \\
 #testcase-mainverbs-check-attacking-if-noun-is-prayer-pros
->a pros
+>attack pros
 But you're trying to help them!
 \\
 #testcase-mainverbs-check-taking-inventory-default
@@ -297,17 +297,16 @@ Better not risk it.
 \\
 #testcase-mainverbs-carry-out-abouting-default
 >about
-Civil Seeming Drivel Dreaming is the fourth entry in the Prime Pro-Rhyme Row series.
-https://github.com/andrewschultz/there-those-dare-doze is a site where you can report issues.
+There Those Dare Doze is the fifth entry in the Prime Pro-Rhyme Row series.
+Bug reports can go to https://github.com/andrewschultz/there-those-dare-doze.
 \\
 #testcase-mainverbs-carry-out-creditsing-default
 >credits
-Thanks to my testers.
-Thanks to Ruber Eaglenest for holding EctoComp yet again and hosting a Grand Guignol division.
+Thanks to Ruber Eaglenest for holding EctoComp yet again and having the Grand Guignol and Petite Mort divisions, so I could submit Civil Seeming Drivel Dreaming and then this as a bit of runoff. Thanks to JJ Guest for conceiving it, and to Duncan Bowsman for keeping its administration going.
 \\
 #testcase-mainverbs-check-attacking-fallthrough
 >attack pros
-Violence is not the way here.
+But you're trying to help them!
 \\
 #testcase-mainverbs-carry-out-verbsing-default
 >verbs
@@ -569,6 +568,9 @@ WRONG
 by one point
 
 @all
+#+testcase-room-names-rowr-room
+`Rowr Room
+\\
 #testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
 WRONG
 
@@ -646,7 +648,7 @@ They brush off your small talk to avoid even the appearance of unfair bias in th
 \\
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-prayer-pros
 >t prayer pros
-But you're trying to help them!
+You must wake them through your actions.
 
 @all
 #testcase-run-vr-bare-bows-rule-default
@@ -727,14 +729,6 @@ No way. Not on your own.
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-mar-mage
 >t mar mage
 The Mar Mage is too busy casting spells.
-\\
-#testcase-mainverbs-carry-out-talktoing-fallthrough
->t cage
-No response. You don't need to talk to everyone, but hopefully when you do, the dialogue is fun.
-\\
-#+testcase-mainverbs-carry-out-talktoing-fallthrough
->t cage
-`No response.
 
 @gt
 #testcase-goto-table-of-noways-car-cage
@@ -837,6 +831,10 @@ WRONG
 
 >star stage
 by one point
+
+@all
+#+testcase-room-names-cram-creek
+`Spam's Peak
 
 @all,rej
 {--rej}#testcase-check-vc-star-stage-rule-fallthrough
@@ -1029,6 +1027,9 @@ WRONG
 >clam clique
 by one point
 
+@all
+`Spam's Peak
+
 @all,rej
 {--all}#testcase-run-vr-clam-clique-rule-default
 {--rej}#testcase-check-vc-clam-clique-rule-fallthrough
@@ -1061,7 +1062,7 @@ by one point
 >s
 \\
 >n
-That guide gong, again, rings to notify you that you don't need to go back through Cram Creek.
+That guide gong, again, rings to notify you that you don't need to go back through Spam's Peak.
 \\
 >undo
 >undo
@@ -1070,7 +1071,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >s
 \\
 >n
-Cram Creek
+`Spam's Peak
 
 @!min
 >maam meek
@@ -1094,7 +1095,7 @@ WRONG
 
 @gong,prong
 >n
-That guide gong, again, rings to notify you that you don't need to go back through Cram Creek.
+That guide gong, again, rings to notify you that you don't need to go back through Spam's Peak.
 
 @hom
 #testcase-homonym-detail-vh-stair-stows-rule-default
@@ -1334,7 +1335,7 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-car-cage-cram-creek
 >gt cram creek
-`Cram Creek
+Spam's Peak
 \\
 #testcase-goto-tries-cram-creek-cram-creek
 >gt cram creek
@@ -1342,7 +1343,7 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-cram-creek-grave-ground
 >gt grave ground
-`Grave Ground
+`Wave (Wound)
 \\
 #testcase-goto-tries-grave-ground-grave-ground
 >gt grave ground
@@ -1364,7 +1365,7 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-rare-rows-cram-creek
 >gt cram creek
-`Cram Creek
+Spam's Peak
 \\
 #testcase-goto-tries-cram-creek-rowr-room
 >gt rowr room
@@ -1376,7 +1377,7 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-car-cage-grave-ground
 >gt grave ground
-`Grave Ground
+`Wave (Wound)
 \\
 #testcase-goto-tries-grave-ground-rare-rows
 >gt rare rows
@@ -1386,7 +1387,7 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-rare-rows-grave-ground
 >gt grave ground
-`Grave Ground
+`Wave (Wound)
 \\
 #testcase-goto-tries-grave-ground-car-cage
 >gt car cage
@@ -1398,7 +1399,7 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-rowr-room-cram-creek
 >gt cram creek
-`Cram Creek
+Spam's Peak
 \\
 #testcase-goto-tries-cram-creek-rare-rows
 >gt rare rows
@@ -1412,11 +1413,11 @@ You're already there! Well, here.
 \\
 #testcase-goto-tries-rowr-room-grave-ground
 >gt grave ground
-`Grave Ground
+`Wave (Wound)
 \\
 #testcase-goto-tries-grave-ground-cram-creek
 >gt cram creek
-`Cram Creek
+Spam's Peak
 \\
 #testcase-goto-tries-cram-creek-car-cage
 >gt car cage
@@ -1627,6 +1628,15 @@ Rope ruts appear!
 #testcase-check-vc-rope-ruts-rule-if-sco-rope-ruts-is-true
 >rope ruts
 You already created the rope ruts!
+
+@verbs
+#testcase-mainverbs-carry-out-talktoing-fallthrough
+>t ruts
+No response. You don't need to talk to everyone, but hopefully when you do, the dialogue is fun.
+\\
+#+testcase-mainverbs-carry-out-talktoing-fallthrough
+>t ruts
+`No response.
 
 >hope huts
 by one point

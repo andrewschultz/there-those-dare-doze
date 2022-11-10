@@ -68,6 +68,9 @@ WRONG
 >dour doom
 by one point
 
+#+testcase-room-names-rowr-room
+`Rowr Room
+
 #testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
 WRONG
 
@@ -151,6 +154,9 @@ WRONG
 >star stage
 by one point
 
+#+testcase-room-names-cram-creek
+`Spam's Peak
+
 #testcase-run-vr-star-stage-rule-default
 On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...
 ...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.
@@ -208,6 +214,8 @@ WRONG
 
 >clam clique
 by one point
+
+`Spam's Peak
 
 #testcase-run-vr-clam-clique-rule-default
 Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.
