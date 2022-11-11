@@ -241,7 +241,7 @@ chapter clam clique
 
 the clam clique are plural-named people. "The clam clique you rescued from the Sham Sheik is here.". description is "They occasionally make weird noises as their shells open and close."
 
-from-number of clam clique is 2706. to-number of clam clique is 2705.
+from-number of clam clique is 2706. to-number of clam clique is 12117.
 
 book car cage
 

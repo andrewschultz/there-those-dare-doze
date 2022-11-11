@@ -279,6 +279,12 @@ this is the vr-clam-clique rule:
 	say "Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.";
 	move clam clique to rare rows;
 	solve-room;
+	if sheik-score is 3:
+		now to-number of clam clique is reserve-number of cram creek;
+		now to-number of cram creek is reserve-number of cram creek;
+	else:
+		declue clam clique;
+		declue cram creek;
 
 a goodrhyme rule (this is the vc-rave-round rule):
 	abide by the grave-dave rule;
@@ -289,6 +295,7 @@ a goodrhyme rule (this is the vc-rave-round rule):
 
 this is the vr-rave-round rule:
 	now sco-rave-round is true;
+	grave-ground-down 2705;
 	abide by the dave-bonus rule;
 	say "For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jolly and day around actually makes him feel better.";
 	abide by the ground-boost rule;
@@ -302,6 +309,7 @@ a goodrhyme rule (this is the vc-pave-pound rule):
 
 this is the vr-pave-pound rule:
 	now sco-pave-pound is true;
+	grave-ground-down 2705;
 	abide by the dave-bonus rule;
 	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.";
 	abide by the ground-boost rule;
@@ -321,6 +329,12 @@ this is the vr-fave-found rule:
 	say "'Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!' Dave gives you a thumbs-up.[paragraph break]You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.";
 	move dave to Rare Rows;
 	solve-room;
+	if dave-score is 3:
+		now to-number of dave downed is reserve-number of grave ground;
+		now to-number of grave ground is reserve-number of grave ground;
+	else:
+		declue dave downed;
+		declue grave ground;
 
 a goodrhyme rule (this is the vc-save-sound rule):
 	abide by the grave-dave rule;
@@ -331,6 +345,7 @@ a goodrhyme rule (this is the vc-save-sound rule):
 
 this is the vr-save-sound rule:
 	now sco-save-sound is true;
+	grave-ground-down 2705;
 	abide by the dave-bonus rule;
 	say "You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.";
 	abide by the ground-boost rule;
@@ -344,6 +359,7 @@ a goodrhyme rule (this is the vc-crave-crowned rule):
 
 this is the vr-crave-crowned rule:
 	now sco-crave-crowned is true;
+	grave-ground-down 2757;
 	abide by the dave-bonus rule;
 	say "Dave seems charged with motivation!";
 	abide by the ground-boost rule;
@@ -562,6 +578,18 @@ this is the cage-change rule:
 
 section to the west
 
+to grave-ground-down (nu - a number):
+	if sco-fave-found is true:
+		declue grave ground;
+		declue dave downed;
+		continue the action;
+	decrease to-number of grave ground by nu;
+	decrease to-number of dave downed by nu;
+	if dave-score is 3:
+		now reserve-number of grave ground is 0 - to-number of car cage;
+		now to-number of grave ground is 2705;
+		now to-number of dave downed is 2705;
+
 this is the grave-dave rule:
 	unless player is in grave ground or dave is in location of player, the rule fails;
 
@@ -577,6 +605,19 @@ this is the dave-bonus rule:
 this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests[or]Dave looks really gung-ho now, but he looks confused whether to start[stopping].";
 
 section to the north
+
+to cram-creek-down (nu - a number):
+	if sco-clam-clique is true:
+		declue cram creek;
+		declue clam clique;
+		continue the action;
+	if dave-score < 3:
+		decrease to-number of clam clique by nu;
+		decrease to-number of sham sheik by nu;
+		decrease to-number of cram creek by nu;
+	else if dave-score is 3:
+		now reserve-number of cram creek is 0 - to-number of cram creek;
+		now to-number of cram creek is 2706;
 
 this is the creek-sheik rule: if player is not in cram creek and clam clique is not in location of player, unavailable;
 
