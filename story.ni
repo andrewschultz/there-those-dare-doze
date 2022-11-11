@@ -89,7 +89,7 @@ check going in rare rows when number of solved rooms is 3:
 	if the room gone to is solved, continue the action;
 	say "So close to the end, you feel as though you're being watched. You look down, and you realize it's probably a bad idea, then, to go forward. How can you counter this feeling of being watched?" instead;
 
-Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in all four cardinal directions[note-won][note-okay-now][note-blocked].". win-score of rare rows is 7.
+Rare Rows is a room. "Here is the resting place of the Prayer Pros. You see no way back to [shows], but the air feels rife with possibilities.[paragraph break]Passages lead in all four cardinal directions[note-won][note-okay-now][note-blocked].". win-score of rare rows is 7.
 
 guess-table of rare rows is table of rare rows guesses.
 
@@ -194,6 +194,8 @@ book grave ground
 
 Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "[if sco-fave-found is true]Dave's not here, man.[paragraph break]The wave (wound) surrounds you[else]It's far too dark and spooky[end if] every way except back east.". printed name of Grave Ground is "[if sco-fave-found is true]Wave (Wound)[else]Grave Ground[end if]". block-descrip-text of Grave Ground is "you can't quite navigate a drop-off to the west".
 
+guess-table of grave ground is table of grave ground guesses.
+
 from-number of grave ground is 2756. to-number of grave ground is 10872.
 
 chapter dave downed
@@ -207,6 +209,8 @@ to say dave-upset: say "[if dave-score is 0]very[else if dave-score is 1]rather[
 book rowr room
 
 Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if number of unactivated rowr-moods > 0]It's very noisy here. To dissipate the that, perhaps you could [list of unactivated rowr-moods]. [end if][if number of halfway rowr-moods > 0]You also have notions of [list of halfway rowr-moods], but just for fun. [end if][if number of fullon rowr-moods > 0]You have exhausted the ways to [list of fullon rowr-moods]. [end if]The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
+
+guess-table of rowr room is table of rowr room guesses.
 
 from-number of rowr room is 2704. to-number of rowr room is 16627.
 
@@ -253,6 +257,8 @@ from-number of clam clique is 2706. to-number of clam clique is 12117.
 book car cage
 
 Car Cage is south of Rare Rows. win-score of car cage is 3. printed name is "[if sco-star-stage is false]Car Cage[else]Star Stage[end if]". block-descrip-text of Car Cage is "you need an army to fight off the Mar Mage to the south".
+
+guess-table of car cage is table of car cage guesses.
 
 from-number of car cage is 2654. to-number of car cage is 8012.
 
