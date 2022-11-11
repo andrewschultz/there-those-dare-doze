@@ -78,6 +78,22 @@ to decide what number is rowr-max:
 	if sco-plower-plume is true and sco-flower-flume is true, increment temp;
 	decide on temp;
 
+to decide which number is new-rowr-scan:
+	let temp be 0;
+	if rowr-score is 6, decide on -3;
+	if rowr-score < 3:
+		if sco-wower-womb is false and sco-tower-tomb is false, increase temp by 2754;
+		if sco-flower-flume is false and sco-plower-plume is false, increase temp by 2805;
+		if sco-dour-doom is false and sco-glower-gloom is false, increase temp by 2704; [it could go either way but we'll go with the shorter one here]
+	else:
+		if sco-wower-womb is false, decrease temp by 2754;
+		if sco-tower-tomb is false, decrease temp by 2754;
+		if sco-flower-flume is false, decrease temp by 2805;
+		if sco-plower-plume is false, decrease temp by 2805;
+		if sco-dour-doom is false, decrease temp by 2704;
+		if sco-glower-gloom is false, decrease temp by 2805;
+	decide on temp;
+
 to decide which number is total-score of (rm - a room):
 	let temp be 0;
 	if player has ppnn and player is in Rare Rows, decide on 2;

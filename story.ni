@@ -62,8 +62,6 @@ description of the player is "There's something written on ... whatever you're w
 
 to say read-ppnn: now flag-read-ppnn is true.
 
-flag-read-ppnn is a truth state that varies.
-
 to say adverb:
 	let nsl  be number of solved rooms;
 	if nsl is 0:
@@ -219,6 +217,13 @@ doom-gloom is a rowr-mood. printed name of doom-gloom is "change the mood".
 chapter how er whom
 
 how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The [whom] from the east floats in the air--perhaps a question to be asked at the right time.". description is "It is incorporeal."
+
+from-number of how er whom is 2754.
+
+check lling how er whom:
+	if how-whom-note is false and to-number of how er whom is not -4:
+		now how-whom-note is true;
+		say "Counting how/er whom as five letters, then four...";
 
 book cram creek
 

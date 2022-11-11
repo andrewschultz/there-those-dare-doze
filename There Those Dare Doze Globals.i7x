@@ -63,6 +63,10 @@ volume game state variables
 
 old-rowr-score is a number that varies.
 
+how-whom-note is a truth state that varies.
+
+flag-read-ppnn is a truth state that varies.
+
 volume printing booleans
 
 print-room-block is a truth state that varies.

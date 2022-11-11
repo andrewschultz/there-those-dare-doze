@@ -4,6 +4,8 @@ Version 1/221007 of There Those Dare Doze Tests by Andrew Schultz begins here.
 
 volume tests
 
+test ccll with "arrows/fair foes/bare bows/s/showme car cage/our age/showme car cage/far phage/showme car cage/ll/star stage/showme car cage/ll/n/showme saar sage/ll saar sage/s/rawr rage/ll/n/ll"
+
 test x1 with "rope ruts/hope huts".
 test x2 with "hope huts/rope ruts".
 

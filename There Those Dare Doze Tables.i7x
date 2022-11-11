@@ -639,6 +639,14 @@ this is the check-sheik rule:
 
 section to the east
 
+to adjust-rowr-reading:
+	if rowr-score is 6:
+		declue-here;
+		declue how er whom;
+		continue the action;
+	now to-number of rowr room is new-rowr-scan;
+	now to-number of how er whom is new-rowr-scan;
+
 this is the rowr-room-transform rule:
 	now win-score of rowr room is rowr-max;
 	if old-rowr-score is 3:
