@@ -1,0 +1,153 @@
+## reg-ttdd-lone-south-try-combos.txt
+
+## checking blocking to the south based on how many of the 3 puzzles are solved
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+# 1 = arrows 2 = bare bows 4 = fair foes
+
+* main-thru
+
+# test case 0
+
+>;0
+>undo
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Start with summoning allies, then, maybe.
+
+# test case 1
+
+>arrows
+by one point
+
+>;1 a
+>undo
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Start with summoning allies, then, maybe.
+>undo
+
+# test case 3
+
+>;3 ab
+>undo
+>bare bows
+by one point
+
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Start with summoning allies, then, maybe.
+>undo
+
+# test case 5
+
+>undo
+
+>fair foes
+by one point
+
+>;5 af
+>undo
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Your allies, the fair foes, need weapons for the arrows.
+
+>undo
+
+#test case 2
+
+>undo
+>undo
+
+>bare bows
+by one point
+
+>;2 b
+>undo
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Start with summoning allies, then, maybe.
+>undo
+
+#test case 6
+
+>fair foes
+by one point
+
+>;6 bf
+>undo
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Your allies, the fair foes, need ammunition for the bare bows.
+>undo
+
+>undo
+>undo
+
+#test case 4
+
+>fair foes
+by one point
+
+>;4 f
+>undo
+>s
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
+The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.
+Your allies, the fair foes, need ammunition and weapons.
+>undo
+
+#test case 7
+
+>bare bows
+by one point
+
+>arrows
+by one point
+
+>;7 abf
+>undo
+>s
+Car Cage
+"I am the MAR MAGE!" a voice booms. You're blown back a bit.
+But the Fair Foes are not. The Mar Mage protests it's not fair, being so outnumbered! But the Fair Foes do not listen. They know the Mar Mage is outnumbered due to annoying everyone, including other evil allies. They nock their bare bows with arrows, and while the Mar Mage easily throws up a shield, the arrows do damage to it. The Mar Mage has lost their magic capabilities!
+The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But the Fair Foes also sense they are not the ones to ultimately help the Prayer Pros. And it's fair enough some work should be left to you, anyway.
+Car Cage
+The Mar Mage stands here defiantly! How can you adjust the Car Cage to drain their power?
+
+>n
+>s
+Car Cage
+!I am the MAR MAGE!
+Fortunately, from the Mar Mage's grumblings, it appears they haven't figured out how to recharge their spells yet. Good news! You can still tackle them.
+!Fair Foes
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>n
+>s
+Star Stage
+!grumblings
+!The Mar Mage stands here defiantly!

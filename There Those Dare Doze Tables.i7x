@@ -276,6 +276,7 @@ this is the vr-star-stage rule:
 	now sco-star-stage is true;
 	say "On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...";
 	say "[line break]...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.";
+	moot mar mage;
 	move saar sage to Rare Rows;
 	solve-room;
 	if cage-prep-score is 2:

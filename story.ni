@@ -91,6 +91,8 @@ check going in rare rows when number of solved rooms is 3:
 
 Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in all four cardinal directions[note-won][note-okay-now][note-blocked].". win-score of rare rows is 7.
 
+guess-table of rare rows is table of rare rows guesses.
+
 from-number of rare rows is 2704. to-number of rare rows is 19030.
 
 the player is in Rare Rows.
@@ -132,19 +134,19 @@ check going east in rare rows:
 		say "The heat, metaphorical and physical, pushes you back." instead;
 
 check going south in rare rows:
-	if sco-star-stage is false, say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.[line break]";
+	if car cage is unvisited, say "'I am the MAR MAGE!' a voice booms. You're blown back a bit.";
 	if rows-south < 3:
 		now Car Cage is tried;
-		say "Sadly, you are repressed a bit too much by the argument. 'No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!'[paragraph break]You realize you'll be needing the right allies, fully armed.[line break]";
+		say "[line break]As if the outright bluster weren't enough, you're hit with an argument as well. 'You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!'[paragraph break]The Mar Mage looks tough. You realize you'll be needing the right allies, fully armed.";
 		if sco-fair-foes is false, say "[line break]Start with summoning allies, then, maybe." instead;
-		if sco-bare-bows is false or sco-arrows is false, say "Your allies, the fair foes, need [if sco-bare-bows is true]ammunition[else if sco-arrows is true]weapons[else]ammunition and weapons[end if]." instead;
-	if sco-star-stage is false:
-		say "You hear grumbling from the south, but it's not enough to stop you proceeding [one of][or]back [stopping]there to take care of business.";
+		say "[line break]Your allies, the fair foes, need [if sco-bare-bows is true]ammunition for the bare bows[else if sco-arrows is true]weapons for the arrows[else]ammunition and weapons[end if]." instead;
 	if fair foes are in rare rows:
-		say "[line break]The Mar Mage to the south protests. Outnumbered, no less! But the Fair Foes do not listen. They nock their bare bows with arrows, and while the Mar Mage easily throws up a shield, the arrows do damage to it. The Mar Mage has lost their magic capabilities![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But being the one to show them what's what. And it's fair enough some work should be left to you.";
+		say "[line break]But the Fair Foes are not. The Mar Mage protests it's not fair, being so outnumbered! But the Fair Foes do not listen. They know the Mar Mage is outnumbered due to annoying everyone, including other evil allies. They nock their bare bows with arrows, and while the Mar Mage easily throws up a shield, the arrows do damage to it. The Mar Mage has lost their magic capabilities![paragraph break]The Fair Foes salute you as they turn away. It's understood without words that if you're the good guy, you can finish the job, not necessarily killing the Mar Mage and making them a martyr (or martyr mage-ter, amirite?) But the Fair Foes also sense they are not the ones to ultimately help the Prayer Pros. And it's fair enough some work should be left to you, anyway.";
 		moot fair foes;
 		moot arrows;
 		moot bare bows;
+	else if mar mage is in car cage:
+		say "[line break]Fortunately, from the Mar Mage's grumblings, it appears they haven't figured out how to recharge their spells yet. Good news! You can still tackle them.";
 
 chapter ppnn
 
