@@ -2,7 +2,8 @@ Version 1/221007 of There Those Dare Doze Tables by Andrew Schultz begins here.
 
 "This is the main tables file for TTDD. It largely encompasses the point-scoring mechanisms, but there are homonym clues, too."
 
-[the puzzles are organized by room and then alphabetically.]
+[UTILITIES:
+rorg.py organizes rules as they are in table (the puzzles are organized by room and then alphabetically.)]
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
@@ -60,6 +61,7 @@ a goodrhyme rule (this is the vc-our-age rule):
 
 this is the vr-our-age rule:
 	now sco-our-age is true;
+	car-cage-down 2653;
 	abide by the in-cage rule;
 	say "You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!";
 	abide by the cage-change rule;
@@ -67,12 +69,13 @@ this is the vr-our-age rule:
 a goodrhyme rule (this is the vc-far-phage rule):
 	abide by the cage-or-sage rule;
 	if sco-far-phage is true:
-		vcal "You really don't want more phages than you need!";
+		vcal "Too many phages, and they might infect you!";
 		already-done;
 	ready;
 
 this is the vr-far-phage rule:
 	now sco-far-phage is true;
+	car-cage-down 2655;
 	abide by the in-cage rule;
 	say "A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!";
 	abide by the cage-change rule;
@@ -86,6 +89,7 @@ a goodrhyme rule (this is the vc-rar-rage rule):
 
 this is the vr-rar-rage rule:
 	now sco-rar-rage is true;
+	car-cage-down 2654;
 	abide by the in-cage rule;
 	say "Your rage doesn't make perfect sense, but it doesn't have to. You're mad enough, and it's from the heart, and that's what counts.";
 	abide by the cage-change rule;
@@ -106,6 +110,13 @@ this is the vr-star-stage rule:
 	say "[line break]...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.";
 	move saar sage to Rare Rows;
 	solve-room;
+	if cage-prep-score is 2:
+		now to-number of car cage is reserve-number of car cage;
+		now to-number of saar sage is reserve-number of car cage;
+	else:
+		declue car cage;
+		declue saar sage;
+
 
 a goodrhyme rule (this is the vc-snare-snows rule):
 	if player is not in rare rows, unavailable;
@@ -117,6 +128,7 @@ a goodrhyme rule (this is the vc-snare-snows rule):
 this is the vr-snare-snows rule:
 	now sco-snare-snows is true;
 	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.";
+	ll-rows-down 2755;
 	try-open Rowr Room;
 
 a goodrhyme rule (this is the vc-glare-glows rule):
@@ -129,6 +141,7 @@ a goodrhyme rule (this is the vc-glare-glows rule):
 this is the vr-glare-glows rule:
 	now sco-glare-glows is true;
 	say "You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.";
+	ll-rows-down 2755;
 	try-open Rare Rows;
 
 a goodrhyme rule (this is the vc-stair-stows rule):
@@ -141,6 +154,7 @@ a goodrhyme rule (this is the vc-stair-stows rule):
 this is the vr-stair-stows rule:
 	now sco-stair-stows is true;
 	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.";
+	ll-rows-down 2755;
 	try-open Grave Ground;
 
 a goodrhyme rule (this is the vc-hair-hose rule):
@@ -153,6 +167,7 @@ a goodrhyme rule (this is the vc-hair-hose rule):
 this is the vr-hair-hose rule:
 	now sco-hair-hose is true;
 	say "You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.";
+	ll-rows-down 2704;
 	try-open Cram Creek;
 
 a goodrhyme rule (this is the vc-fair-foes rule):
@@ -166,6 +181,7 @@ this is the vr-fair-foes rule:
 	now sco-fair-foes is true;
 	say "Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.";
 	move fair foes to Rare Rows;
+	ll-rows-down 2704;
 	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-arrows rule):
@@ -179,6 +195,7 @@ this is the vr-arrows rule:
 	now sco-arrows is true;
 	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and [if sco-bare-bows is true]they're good ammo for the bare bows[else]there's got to be something that can sling them, somewhere[end if].";
 	move arrows to rare rows;
+	ll-rows-down 2653;
 	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-bare-bows rule):
@@ -192,6 +209,7 @@ this is the vr-bare-bows rule:
 	now sco-bare-bows is true;
 	say "Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but [if sco-arrows is true]that's okay. You already have some[else]there's got to be some, somewhere[end if].";
 	move bare bows to rare rows;
+	ll-rows-down 2704;
 	abide by the to-cage-progress rule;
 
 a goodrhyme rule (this is the vc-slam-sleek rule):
@@ -481,7 +499,33 @@ to solve-room:
 	opt-rm;
 	print-the-loc;
 
+section rare rows specific
+
+to ll-rows-down (nu - a number):
+	decrease to-number of rare rows by nu;
+	if to-number of rare rows is 0:
+		now to-number of rare rows is -3;
+		now to-number of arrows is -2;
+		now to-number of bare bows is -2;
+		now to-number of fair foes is -2;
+		continue the action;
+	now to-number of arrows is nu;
+	now to-number of bare bows is nu;
+	now to-number of fair foes is nu;
+
 section to the south
+
+to car-cage-down (nu - a number):
+	if sco-star-stage is true:
+		declue car cage;
+		declue saar sage;
+		continue the action;
+	decrease to-number of car cage by nu;
+	decrease to-number of saar sage by nu;
+	if cage-prep-score is 2:
+		now reserve-number of car cage is 0 - to-number of car cage;
+		now to-number of car cage is 2705;
+		now to-number of saar sage is 2705;
 
 this is the to-cage-progress rule:
 	let binary-thing be (boolval of sco-fair-foes * 4) + (boolval of sco-bare-bows * 2) + (boolval of sco-arrows);

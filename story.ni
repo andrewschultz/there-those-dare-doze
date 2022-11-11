@@ -259,7 +259,7 @@ chapter Saar Sage
 
 The Saar Sage is a person. "The Saar Sage, fresh off showing the Mar Mage what's what, waits for the right time to perform their next bit of magic.". description is "All very wizardly in a blue outfit with yellow Microsoft ClipArt-ish symbols all over. You suspect their position and size have some arcane meaning you will never know."
 
-from-number of Saar Sage is 2654. to-number of Saar Sage is 8012.
+from-number of Saar Sage is 2704. to-number of Saar Sage is 8012.
 
 volume LLing
 
