@@ -58,18 +58,21 @@ when play begins:
 
 volume you
 
-description of the player is "There's something written on ... whatever you're wearing. [if ppnn is fungible]You can finally read it! POPE? PUTZ, NOPE! NUTS![else]It's [adverb] too blurry right now.[end if]"
+description of the player is "There's something written on ... whatever you're wearing. [if ppnn is fungible]You [one of][read-ppnn]can finally read it![or]read it again: [stopping] POPE? PUTZ, NOPE! NUTS![else]It's [adverb] too blurry right now.[end if]"
 
-weird-num is a number that varies.
+to say read-ppnn: now flag-read-ppnn is true.
+
+flag-read-ppnn is a truth state that varies.
 
 to say adverb:
-	if weird-num is 0:
+	let nsl  be number of solved rooms;
+	if nsl is 0:
 		say "totally";
-	else if weird-num is 1:
+	else if nsl is 1:
 		say "still really";
-	else if weird-num is 2:
+	else if nsl is 2:
 		say "sadly pretty";
-	else if weird-num is 3:
+	else if nsl is 3:
 		say "barely unreadably";
 	else:
 		say "no longer";
@@ -90,11 +93,13 @@ check going in rare rows when number of solved rooms is 3:
 
 Rare Rows is a room. "Here is the resting place of the Prayer Pros. Passages go in all four cardinal directions[note-won][note-okay-now][note-blocked].". win-score of rare rows is 7.
 
+from-number of rare rows is 2704. to-number of rare rows is 19030.
+
 the player is in Rare Rows.
 
-the leet learner is in Rare Rows.
+the leet learner is in Rare Rows. "You notice an odd contraption here labeled [b]LEET LEARNER[r]. You reach out to take it. It doesn't send an electric current up your arm.".
 
-check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave."
+check taking when player is in rare rows: say "Anything you need, you will take when it is summoned. Anything someone else needs, you can leave." instead;
 
 after looking in rare rows when number of solved rooms is 4 and ppnn is off-stage:
 	say "You have assembled the needed components to wake the Prayer Pros. Dave (Downed)[']s presence, the oppressed animals (the clam,) and a mystic (the Saar sage)  seem to stand in a triangle, with the right words (How, Er, Whom,) bouncing between them.";
@@ -104,6 +109,12 @@ after looking in rare rows when number of solved rooms is 4 and ppnn is off-stag
 	moot clam;
 	moot how er whom;
 	now player has ppnn;
+	now from-number of player is 5404;
+	now to-number of player is 5404;
+
+after looking in rare rows when player does not have leet learner:
+	now player has leet learner;
+	continue the action;
 
 chapter block going when necessary
 
@@ -141,35 +152,63 @@ chapter ppnn
 
 the ppnn is a privately-named rhymable. It is scenery. understand "pn/ppnn" as ppnn when debug-state is true.
 
+from-number of ppnn is 5408. to-number of ppnn is 5408.
+
 guess-table of ppnn is table of ppnn guesses.
 
 chapter Prayer Pros
 
 the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4]mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them.". description is "[if number of solved rooms is 4]They look back at you expectantly[else]They all lie solemn in their rare rows, eyes closed, hands folded. What mental energy they must have expended in their failure! But perhaps it is not failure. Perhaps you were chosen as the agent of help[end if].".
 
+from-number of prayer pros is 2804. to-number of prayer pros is 19030.
+
 chapter Fair Foes
 
 the Fair Foes are people. "The Fair Foes wait here, ready to follow your lead as needed.". description is "Inscrutable, neither too enthusiastic nor too bored."
+
+from-number of fair foes is 2704. to-number of fair foes is 19030.
 
 chapter arrows
 
 the arrows are a thing. "Arrows lie here on the ground.".  description is "They look sharp enough for combat. You're not an expert."
 
+from-number of arrows is 2653. to-number of arrows is 19030.
+
 chapter bare bows
 
 the bare bows are a thing. "Bare bows lie on the ground.". description is "Too big and strong for you to use. Someone more experienced, though..."
+
+from-number of bare bows is 2704. to-number of bare bows is 19030.
+
+chapter huts and ruts
+
+the hope huts are scenery. "You can't do anything directly with the huts. Probably best to find what goes with them."
+
+from-number of hope huts is 5404. to-number of hope huts is 5404.
+
+the rope ruts are scenery. "You can't do anything directly with the ruts. Probably best to find what goes with them."
+
+from-number of rope ruts is 5404. to-number of rope ruts is 5404.
 
 book grave ground
 
 Grave Ground is west of Rare Rows. win-score of Grave Ground is 4. "[if sco-fave-found is true]Dave's not here, man.[paragraph break]The wave (wound) surrounds you[else]It's far too dark and spooky[end if] every way except back east.". printed name of Grave Ground is "[if sco-fave-found is true]Wave (Wound)[else]Grave Ground[end if]". block-descrip-text of Grave Ground is "you can't quite navigate a drop-off to the west".
 
+from-number of grave ground is 2756. to-number of grave ground is 10872.
+
+chapter dave downed
+
 Dave Downed is a person in Grave Ground. "[if player is in grave ground][one of]A ghost floats into view and identifies himself as Dave (Downed). He mentions he'd like motivation to afterlive it up a bit more, and it should come form within, but it doesn't. Can you help him?[or]Dave (Downed) is here, [one of][or]still [stopping]looking [dave-upset] upset and, oh yeah, vaguely undead.[stopping][else]Dave waits a lot more cheerily here than when you first saw him.[end if]". description is "[if player is in grave ground]He looks purposeless and adrift[else]Happy enough, almost impatient to do something real[end if]."
+
+from-number of dave downed is 2706. to-number of dave downed is 10872.
 
 to say dave-upset: say "[if dave-score is 0]very[else if dave-score is 1]rather[else if dave-score is 2]kind of[else]a little[end if]"
 
 book rowr room
 
 Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if number of unactivated rowr-moods > 0]It's very noisy here. To dissipate the that, perhaps you could [list of unactivated rowr-moods]. [end if][if number of halfway rowr-moods > 0]You also have notions of [list of halfway rowr-moods], but just for fun. [end if][if number of fullon rowr-moods > 0]You have exhausted the ways to [list of fullon rowr-moods]. [end if]The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
+
+from-number of rowr room is 2704. to-number of rowr room is 16627.
 
 chapter rowr-moods
 
@@ -181,9 +220,11 @@ chapter how er whom
 
 how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The [whom] from the east floats in the air--perhaps a question to be asked at the right time.". description is "It is incorporeal."
 
-book cram creeki
+book cram creek
 
 Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south[if sco-clam-clique is false]. It's too mountainous other ways, as well[else if sheik-score is 3]. The area feels ready to burst out in life. You just need to [fig-rem-clam] what sort of animal could live in or near the creek[end if].". win-score of Cram Creek is 4. block-descrip-text of Cram Creek is "you need a way to get less wet before going north". printed name of Cram Creek is "[if sco-clam-clique is false]Cram Creek[else]Spam's Peak[end if]".
+
+from-number of cram creek is 2705. to-number of cram creek is 12117.
 
 to say fig-rem-clam:
 	process vc-clam-clique rule;
@@ -194,21 +235,45 @@ chapter Sham Sheik
 
 the Sham Sheik is a person in Cram Creek. "[one of]A Sham Sheik eyes you sardonically here. You know he is a Sham Sheik because, although he is not dressed ostentationsly, he is still wearing clothes labeling himself as such. He seems to think[or]The Sham Sheik continues to act as if[stopping] he owns the place and tries to tower over you.". description is "He shoos you away. You will have focus on, not physical interaction, but more how you both use your words."
 
+from-number of sham sheik is 2705. to-number of sham sheik is 12117.
+
 chapter clam clique
 
 the clam clique are plural-named people. "The clam clique you rescued from the Sham Sheik is here.". description is "They occasionally make weird noises as their shells open and close."
+
+from-number of clam clique is 2706. to-number of clam clique is 2705.
 
 book car cage
 
 Car Cage is south of Rare Rows. win-score of car cage is 3. printed name is "[if sco-star-stage is false]Car Cage[else]Star Stage[end if]". block-descrip-text of Car Cage is "you need an army to fight off the Mar Mage to the south".
 
+from-number of car cage is 2654. to-number of car cage is 8012.
+
 chapter mar mage
 
 The Mar Mage is a person in Car Cage. "The Mar Mage stands here defiantly! How can you adjust the Car Cage to drain their power?". description is "The Mar Mage glares back, intimdatingly, at your property-violating self."
 
+from-number of mar mage is 2654. to-number of mar mage is 8012.
+
 chapter Saar Sage
 
 The Saar Sage is a person. "The Saar Sage, fresh off showing the Mar Mage what's what, waits for the right time to perform their next bit of magic.". description is "All very wizardly in a blue outfit with yellow Microsoft ClipArt-ish symbols all over. You suspect their position and size have some arcane meaning you will never know."
+
+from-number of Saar Sage is 2654. to-number of Saar Sage is 8012.
+
+volume LLing
+
+rule for supplying a missing noun when lling (this is the get readings from room rule):
+	if ppnn is fungible:
+		say "Nothing all around, but when you point it at yourself, something happens.";
+		if flag-read-ppnn is false:
+			try examining the player;
+			now flag-read-ppnn is true;
+		try lling the player;
+		reject the player's command;
+	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with the location's rhymes[or][stopping].";
+	abide by the general-ll-locations rule;
+	reject the player's command;
 
 volume standard and action verbs
 
@@ -255,11 +320,12 @@ carry out xyzzying:
 volume meta-verbs
 
 carry out abouting:
-	say "[this-game] was conceived the week of October 3rd, 2022, when I realized my first prospective entry, [csdd], wasn't going to fit in the EctoComp Petite Mort, even with the code generation scripts written for [lljj].[paragraph break]What could, then? I wanted something that needed relatively little testing and not too many moving pieces. The game name fell first. Then one branch. Then another. The room names were doodled on a piece of paper. I lost it. I found it on the 27th. I wondered if I should bother. But I hope, if there is overlap, there's genuine amusement for you, as there was for me.[paragraph break][this-game]'s features are necessarily abridged. It will be more like [csdd] post-release.[paragraph break]Having a scenario where you don't need to get all points in each room appealed to me, as I know people would get stuck on one puzzle in the other games.[paragraph break][this-game] is the fifth entry in the [pprr] series, which I originally considered to be a one-off. I can't see it expanding too much farther. The others are [other-ones].[paragraph break]Bug reports can go to https://github.com/andrewschultz/there-those-dare-doze.";
+	say "[this-game] is the fifth entry in the Prime Pro-Rhyme Row series. It was conceived the week of October 3rd, 2022, when I realized my first prospective entry, [csdd], wasn't going to fit in the EctoComp Petite Mort, even with the code generation scripts written for [lljj].[paragraph break]What could, then? I wanted something that needed relatively little testing and not too many moving pieces. The game name fell first. Then one branch. Then another. The room names were doodled on a piece of paper. I lost it. I found it on the 27th. I wondered if I should bother. But I hope, if there is overlap, there's genuine amusement for you, as there was for me.[paragraph break][this-game]'s features are necessarily abridged. It will be more like [csdd] post-release.[paragraph break]Having a scenario where you don't need to get all points in each room appealed to me, as I know people would get stuck on one puzzle in the other games.[paragraph break][this-game] is the fifth entry in the [pprr] series, which I originally considered to be a one-off. I can't see it expanding too much farther. The others are [other-ones].[paragraph break]Bug reports can go to https://github.com/andrewschultz/there-those-dare-doze.";
 
 carry out creditsing:
-	say "Thanks to Ruber Eaglenest for holding this EctoComp, JJ Guest for starting it going, and Duncan Bowsman for keeping it going.";
-	say "[line break]No testers were hurt in the creationg of [this-game]. However, I wrote a bunch of test scripts where command orders are adjusted, and one command is left out or placed at the end of all scripts. They all work.";
+	say "Thanks to Ruber Eaglenest for holding EctoComp yet again and having the Grand Guignol and Petite Mort divisions, so I could submit [csdd] and then this as a bit of runoff. Thanks to JJ Guest for conceiving it, and to Duncan Bowsman for keeping its administration going.";
+	say "[line break]No testers were hurt in the creation of [this-game]. However, I wrote a bunch of test scripts where command orders are adjusted, and one command is left out or placed at the end of all scripts. They all work.";
+	say "[line break]Thanks to Brian Rushton for filing issues at GitHub to make the post-comp version better.";
 	say "[line break]A lot of the code in the Tables.i7x file was generated by a Python script. This saved time and energy.";
 
 carry out hinting:

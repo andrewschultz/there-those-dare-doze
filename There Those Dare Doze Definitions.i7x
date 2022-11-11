@@ -16,6 +16,8 @@ a room has a number called now-score. now-score of a room is usually 0.
 
 a room has text called block-descrip-text.
 
+a room has a number called reserve-number. [for leet learner readings]
+
 chapter the rowr-mood type
 
 a rowr-mood is a kind of thing.

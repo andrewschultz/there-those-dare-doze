@@ -300,7 +300,7 @@ a goodrhyme rule (this is the vc-fave-found rule):
 
 this is the vr-fave-found rule:
 	now sco-fave-found is true;
-	say "'Aha! Yes, that's what I'll focus on. My afterlife has purpose now!' Dave gives you a thumbs-up.[paragraph break]You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.";
+	say "'Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!' Dave gives you a thumbs-up.[paragraph break]You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.";
 	move dave to Rare Rows;
 	solve-room;
 
@@ -530,15 +530,7 @@ this is the dave-bonus rule:
 		bump-room grave ground;
 		the rule succeeds;
 
-this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet[or]Dave looks really gung-ho now[stopping].";
-
-to process-dave:
-	say "Dave perks up! He looks [one of]slightly[or]somewhat[or]really[or]adequately[or]extra[stopping] perky and more willing and able to help.";
-	if dave-score is 4:
-		say "Dave shakes your hand. 'Thank you! I feel like my old self now! There's one more thing ... no, it's not necessary. I can help the Prayer Pros now.'";
-		solve-room;
-	else if dave-score is 5:
-		say "'Thanks, man. You didn't have to.' You nod. You enjoyed the exercise and practice. Who knows when it could come in handy?";
+this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests[or]Dave looks really gung-ho now, but he looks confused whether to start[stopping].";
 
 section to the north
 
