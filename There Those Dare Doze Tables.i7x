@@ -40,14 +40,196 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 this is the vh-arrows rule:
 	say "No, that [if sco-arrows is true]was[else]is[end if] only half it."
 
+a goodrhyme rule (this is the vc-arrows rule):
+	if player is not in rare rows, unavailable;
+	if sco-arrows is true:
+		vcal "You already have enough arrows!";
+		already-done;
+	ready;
+
+this is the vr-arrows rule:
+	now sco-arrows is true;
+	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and [if sco-bare-bows is true]they're good ammo for the bare bows[else]there's got to be something that can sling them, somewhere[end if].";
+	move arrows to rare rows;
+	ll-rows-down 2653;
+	abide by the to-cage-progress rule;
+
+a goodrhyme rule (this is the vc-bare-bows rule):
+	if player is not in rare rows, unavailable;
+	if sco-bare-bows is true:
+		vcal "You already have enough bare bows!";
+		already-done;
+	ready;
+
+this is the vr-bare-bows rule:
+	now sco-bare-bows is true;
+	say "Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but [if sco-arrows is true]that's okay. You already have some[else]there's got to be some, somewhere[end if].";
+	move bare bows to rare rows;
+	ll-rows-down 2704;
+	abide by the to-cage-progress rule;
+
+a goodrhyme rule (this is the vc-fair-foes rule):
+	if player is not in rare rows, unavailable;
+	if sco-fair-foes is true:
+		vcal "The fair foes have already been summoned!";
+		already-done;
+	ready;
+
+this is the vr-fair-foes rule:
+	now sco-fair-foes is true;
+	say "Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.";
+	move fair foes to Rare Rows;
+	ll-rows-down 2704;
+	abide by the to-cage-progress rule;
+
 this is the vh-hair-hose rule:
 	if the player's command includes "hare":
 		say "You'd need more than one rabbit.";
 	else:
 		say "Not around the Prayer Pros! Something less sacrilegious, if you please."
 
+a goodrhyme rule (this is the vc-hair-hose rule):
+	if player is not in rare rows, unavailable;
+	if sco-hair-hose is true:
+		vcal "You already acquired hair hose!";
+		already-done;
+	ready;
+
+this is the vr-hair-hose rule:
+	now sco-hair-hose is true;
+	say "You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.";
+	ll-rows-down 2704;
+	try-open Cram Creek;
+
+a goodrhyme rule (this is the vc-glare-glows rule):
+	if player is not in rare rows, unavailable;
+	if sco-glare-glows is true:
+		vcal "You already established an unnaturally bright glare of your own.";
+		already-done;
+	ready;
+
+this is the vr-glare-glows rule:
+	now sco-glare-glows is true;
+	say "You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.";
+	ll-rows-down 2755;
+	try-open Rare Rows;
+
+a goodrhyme rule (this is the vc-snare-snows rule):
+	if player is not in rare rows, unavailable;
+	if sco-snare-snows is true:
+		vcal "You already harvested snows!";
+		already-done;
+	ready;
+
+this is the vr-snare-snows rule:
+	now sco-snare-snows is true;
+	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.";
+	ll-rows-down 2755;
+	try-open Rowr Room;
+
 this is the vh-stair-stows rule:
 	say "Yes, there [if sco-stair-stows is true]was something to look for, and you found it.[else]is something to look for. But where?[end if]"
+
+a goodrhyme rule (this is the vc-stair-stows rule):
+	if player is not in rare rows, unavailable;
+	if sco-stair-stows is true:
+		vcal "You already found where the missing stair was!";
+		already-done;
+	ready;
+
+this is the vr-stair-stows rule:
+	now sco-stair-stows is true;
+	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.";
+	ll-rows-down 2755;
+	try-open Grave Ground;
+
+a goodrhyme rule (this is the vc-blam-bleak rule):
+	abide by the creek-sheik rule;
+	if sco-blam-bleak is true:
+		vcal "You already fingered the Sham Sheik as bleak! And quite rightly, too.";
+		already-done;
+	ready;
+
+this is the vr-blam-bleak rule:
+	now sco-blam-bleak is true;
+	abide by the sheik-bonus rule;
+	say "Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-maam-meek rule):
+	abide by the creek-sheik rule;
+	if sco-maam-meek is true:
+		vcal "You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.";
+		already-done;
+	ready;
+
+this is the vr-maam-meek rule:
+	now sco-maam-meek is true;
+	abide by the sheik-bonus rule;
+	say "You insult the Sham Sheik's perceived masculinity, which shouldn't be an insult to most well-adjusted people, but it is to him! And it's an effective one!";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-slam-sleek rule):
+	abide by the creek-sheik rule;
+	if sco-slam-sleek is true:
+		vcal "You already dropped a slam, sleek, on the Sham Sheik.";
+		already-done;
+	ready;
+
+this is the vr-slam-sleek rule:
+	now sco-slam-sleek is true;
+	abide by the sheik-bonus rule;
+	say "You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-wham-weak rule):
+	abide by the creek-sheik rule;
+	if sco-wham-weak is true:
+		vcal "You already fingered the Sham Sheik as weak! And quite rightly, too.";
+		already-done;
+	ready;
+
+this is the vr-wham-weak rule:
+	now sco-wham-weak is true;
+	abide by the sheik-bonus rule;
+	say "Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.";
+	abide by the check-sheik rule;
+
+a goodrhyme rule (this is the vc-clam-clique rule):
+	if player is not in cram creek, unavailable;
+	if sco-clam-clique is true:
+		vcal "You already got the clam clique on your side!";
+		already-done;
+	if sheik-score < 3:
+		vcp "You hear a commotion beneath the creek, but one look from the Sham Sheik, and the riverbed inhabitants go calm again.";
+		not-yet;
+	ready;
+
+this is the vr-clam-clique rule:
+	now sco-clam-clique is true;
+	say "Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.";
+	move clam clique to rare rows;
+	solve-room;
+	if sheik-score is 3:
+		now to-number of clam clique is reserve-number of cram creek;
+		now to-number of cram creek is reserve-number of cram creek;
+	else:
+		declue clam clique;
+		declue cram creek;
+
+a goodrhyme rule (this is the vc-far-phage rule):
+	abide by the cage-or-sage rule;
+	if sco-far-phage is true:
+		vcal "Too many phages, and they might infect you!";
+		already-done;
+	ready;
+
+this is the vr-far-phage rule:
+	now sco-far-phage is true;
+	car-cage-down 2655;
+	abide by the in-cage rule;
+	say "A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!";
+	abide by the cage-change rule;
 
 this is the vh-our-age rule:
 	say "That is too specific a time frame.";
@@ -64,20 +246,6 @@ this is the vr-our-age rule:
 	car-cage-down 2653;
 	abide by the in-cage rule;
 	say "You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!";
-	abide by the cage-change rule;
-
-a goodrhyme rule (this is the vc-far-phage rule):
-	abide by the cage-or-sage rule;
-	if sco-far-phage is true:
-		vcal "Too many phages, and they might infect you!";
-		already-done;
-	ready;
-
-this is the vr-far-phage rule:
-	now sco-far-phage is true;
-	car-cage-down 2655;
-	abide by the in-cage rule;
-	say "A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!";
 	abide by the cage-change rule;
 
 a goodrhyme rule (this is the vc-rar-rage rule):
@@ -117,174 +285,33 @@ this is the vr-star-stage rule:
 		declue car cage;
 		declue saar sage;
 
-
-a goodrhyme rule (this is the vc-snare-snows rule):
-	if player is not in rare rows, unavailable;
-	if sco-snare-snows is true:
-		vcal "You already harvested snows!";
+a goodrhyme rule (this is the vc-crave-crowned rule):
+	abide by the grave-dave rule;
+	if sco-crave-crowned is true:
+		vcal "You already boosted Dave this way!";
 		already-done;
 	ready;
 
-this is the vr-snare-snows rule:
-	now sco-snare-snows is true;
-	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.";
-	ll-rows-down 2755;
-	try-open Rowr Room;
+this is the vr-crave-crowned rule:
+	now sco-crave-crowned is true;
+	grave-ground-down 2757;
+	abide by the dave-bonus rule;
+	say "Dave seems charged with motivation!";
+	abide by the ground-boost rule;
 
-a goodrhyme rule (this is the vc-glare-glows rule):
-	if player is not in rare rows, unavailable;
-	if sco-glare-glows is true:
-		vcal "You already established an unnaturally bright glare of your own.";
+a goodrhyme rule (this is the vc-pave-pound rule):
+	abide by the grave-dave rule;
+	if sco-pave-pound is true:
+		vcal "You already boosted Dave this way!";
 		already-done;
 	ready;
 
-this is the vr-glare-glows rule:
-	now sco-glare-glows is true;
-	say "You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.";
-	ll-rows-down 2755;
-	try-open Rare Rows;
-
-a goodrhyme rule (this is the vc-stair-stows rule):
-	if player is not in rare rows, unavailable;
-	if sco-stair-stows is true:
-		vcal "You already found where the missing stair was!";
-		already-done;
-	ready;
-
-this is the vr-stair-stows rule:
-	now sco-stair-stows is true;
-	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.";
-	ll-rows-down 2755;
-	try-open Grave Ground;
-
-a goodrhyme rule (this is the vc-hair-hose rule):
-	if player is not in rare rows, unavailable;
-	if sco-hair-hose is true:
-		vcal "You already acquired hair hose!";
-		already-done;
-	ready;
-
-this is the vr-hair-hose rule:
-	now sco-hair-hose is true;
-	say "You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.";
-	ll-rows-down 2704;
-	try-open Cram Creek;
-
-a goodrhyme rule (this is the vc-fair-foes rule):
-	if player is not in rare rows, unavailable;
-	if sco-fair-foes is true:
-		vcal "The fair foes have already been summoned!";
-		already-done;
-	ready;
-
-this is the vr-fair-foes rule:
-	now sco-fair-foes is true;
-	say "Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.";
-	move fair foes to Rare Rows;
-	ll-rows-down 2704;
-	abide by the to-cage-progress rule;
-
-a goodrhyme rule (this is the vc-arrows rule):
-	if player is not in rare rows, unavailable;
-	if sco-arrows is true:
-		vcal "You already have enough arrows!";
-		already-done;
-	ready;
-
-this is the vr-arrows rule:
-	now sco-arrows is true;
-	say "Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and [if sco-bare-bows is true]they're good ammo for the bare bows[else]there's got to be something that can sling them, somewhere[end if].";
-	move arrows to rare rows;
-	ll-rows-down 2653;
-	abide by the to-cage-progress rule;
-
-a goodrhyme rule (this is the vc-bare-bows rule):
-	if player is not in rare rows, unavailable;
-	if sco-bare-bows is true:
-		vcal "You already have enough bare bows!";
-		already-done;
-	ready;
-
-this is the vr-bare-bows rule:
-	now sco-bare-bows is true;
-	say "Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but [if sco-arrows is true]that's okay. You already have some[else]there's got to be some, somewhere[end if].";
-	move bare bows to rare rows;
-	ll-rows-down 2704;
-	abide by the to-cage-progress rule;
-
-a goodrhyme rule (this is the vc-slam-sleek rule):
-	abide by the creek-sheik rule;
-	if sco-slam-sleek is true:
-		vcal "You already dropped a slam, sleek, on the Sham Sheik.";
-		already-done;
-	ready;
-
-this is the vr-slam-sleek rule:
-	now sco-slam-sleek is true;
-	abide by the sheik-bonus rule;
-	say "You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!";
-	abide by the check-sheik rule;
-
-a goodrhyme rule (this is the vc-wham-weak rule):
-	abide by the creek-sheik rule;
-	if sco-wham-weak is true:
-		vcal "You already fingered the Sham Sheik as weak! And quite rightly, too.";
-		already-done;
-	ready;
-
-this is the vr-wham-weak rule:
-	now sco-wham-weak is true;
-	abide by the sheik-bonus rule;
-	say "Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.";
-	abide by the check-sheik rule;
-
-a goodrhyme rule (this is the vc-blam-bleak rule):
-	abide by the creek-sheik rule;
-	if sco-blam-bleak is true:
-		vcal "You already fingered the Sham Sheik as bleak! And quite rightly, too.";
-		already-done;
-	ready;
-
-this is the vr-blam-bleak rule:
-	now sco-blam-bleak is true;
-	abide by the sheik-bonus rule;
-	say "Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.";
-	abide by the check-sheik rule;
-
-a goodrhyme rule (this is the vc-maam-meek rule):
-	abide by the creek-sheik rule;
-	if sco-maam-meek is true:
-		vcal "You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.";
-		already-done;
-	ready;
-
-this is the vr-maam-meek rule:
-	now sco-maam-meek is true;
-	abide by the sheik-bonus rule;
-	say "You insult the Sham Sheik's perceived masculinity, which shouldn't be an insult to most well-adjusted people, but it is to him! And it's an effective one!";
-	abide by the check-sheik rule;
-
-a goodrhyme rule (this is the vc-clam-clique rule):
-	if player is not in cram creek, unavailable;
-	if sco-clam-clique is true:
-		vcal "You already got the clam clique on your side!";
-		already-done;
-	if sheik-score < 3:
-		vcp "You hear a commotion beneath the creek, but one look from the Sham Sheik, and the riverbed inhabitants go calm again.";
-		not-yet;
-	ready;
-
-this is the vr-clam-clique rule:
-	now sco-clam-clique is true;
-	say "Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet you. They seem to be smiling as they flap their mouths/lids. They run off south. Your work here is done.";
-	move clam clique to rare rows;
-	solve-room;
-	if sheik-score is 3:
-		now to-number of clam clique is reserve-number of cram creek;
-		now to-number of cram creek is reserve-number of cram creek;
-	else:
-		declue clam clique;
-		declue cram creek;
+this is the vr-pave-pound rule:
+	now sco-pave-pound is true;
+	grave-ground-down 2705;
+	abide by the dave-bonus rule;
+	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.";
+	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-rave-round rule):
 	abide by the grave-dave rule;
@@ -300,18 +327,18 @@ this is the vr-rave-round rule:
 	say "For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jolly and day around actually makes him feel better.";
 	abide by the ground-boost rule;
 
-a goodrhyme rule (this is the vc-pave-pound rule):
+a goodrhyme rule (this is the vc-save-sound rule):
 	abide by the grave-dave rule;
-	if sco-pave-pound is true:
+	if sco-save-sound is true:
 		vcal "You already boosted Dave this way!";
 		already-done;
 	ready;
 
-this is the vr-pave-pound rule:
-	now sco-pave-pound is true;
+this is the vr-save-sound rule:
+	now sco-save-sound is true;
 	grave-ground-down 2705;
 	abide by the dave-bonus rule;
-	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.";
+	say "You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-fave-found rule):
@@ -335,34 +362,6 @@ this is the vr-fave-found rule:
 	else:
 		declue dave downed;
 		declue grave ground;
-
-a goodrhyme rule (this is the vc-save-sound rule):
-	abide by the grave-dave rule;
-	if sco-save-sound is true:
-		vcal "You already boosted Dave this way!";
-		already-done;
-	ready;
-
-this is the vr-save-sound rule:
-	now sco-save-sound is true;
-	grave-ground-down 2705;
-	abide by the dave-bonus rule;
-	say "You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.";
-	abide by the ground-boost rule;
-
-a goodrhyme rule (this is the vc-crave-crowned rule):
-	abide by the grave-dave rule;
-	if sco-crave-crowned is true:
-		vcal "You already boosted Dave this way!";
-		already-done;
-	ready;
-
-this is the vr-crave-crowned rule:
-	now sco-crave-crowned is true;
-	grave-ground-down 2757;
-	abide by the dave-bonus rule;
-	say "Dave seems charged with motivation!";
-	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-tower-tomb rule):
 	if player is not in rowr room, unavailable;
