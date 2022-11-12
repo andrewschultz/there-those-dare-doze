@@ -196,7 +196,7 @@ this is the vr-wham-weak rule:
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-clam-clique rule):
-	if player is not in cram creek, unavailable;
+	unless player is in cram creek or clam clique is in location of player, unavailable;
 	if sco-clam-clique is true:
 		vcal "You already got the clam clique on your side!";
 		already-done;

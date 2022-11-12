@@ -181,7 +181,7 @@ WRONG different if gone north
 
 >n
 
-#+testcase-room-names-cram-creek
+#testcase-room-names-cram-creek
 `Cram Creek
 
 >blam bleak
@@ -205,7 +205,9 @@ You don't just slam the Sheik. You do so with a minimum of wasted words, before 
 >wham weak
 by one point
 
+#testcase-run-vr-wham-weak-rule-fallthrough
 #testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
+Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
 
@@ -215,7 +217,7 @@ WRONG
 >clam clique
 by one point
 
-#testcase-room-names-cram-creek
+#+testcase-room-names-cram-creek
 `Spam's Peak
 
 #testcase-run-vr-clam-clique-rule-default

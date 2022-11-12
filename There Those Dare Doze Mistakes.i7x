@@ -55,7 +55,7 @@ mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
 
 to say knows-stuff:
 	if the player's command includes "knows":
-		say "But prayer and such is built on faith"
+		say "But prayer and such is built on faith";
 	else if the player's command includes "neer":
 		say "No, you're much better looking with your nose attached to your face";
 	else:
