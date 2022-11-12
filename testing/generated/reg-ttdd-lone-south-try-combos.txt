@@ -13,67 +13,68 @@
 
 #first, we detect each combination of arrows/bows/foes including which came last
 
+#testcase-run-vr-fair-foes-rule-abide-by-the-to-cage-progress-rule
 #a-1
 >arrows
-WRONG
+Hmm! But what can you do with arrows? You're not a fighter, and you have no weapons.
 
 #b-3
 >bare bows
-WRONG
+The bows and arrows would be good in a fight, but you have no accuracy. Maybe get some allies?
 
 #f-7
 >fair foes
-WRONG
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 
 >undo
 >undo
 
-#f-4
+#f-5
 >fair foes
-WRONG
+The fair foes pick up the arrows and study them with interest, but something is missing.
 
 >undo
 >undo
 
 #b-2
 >bare bows
-WRONG
+It would be nice if the bare bows had some ammunition and people that could use them.
 
 #a-3
 >arrows
-WRONG
+The bows and arrows would be good in a fight, but you have no accuracy. Maybe get some allies?
 
 >undo
 
-#b-6
+#f-6
 >fair foes
-WRONG
+The fair foes pick up the bare bows and study them with interest, but something is missing.
 
 #a-7
 >arrows
-WRONG
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 
 >undo
 >undo
 
 #f-4
 >fair foes
-WRONG
+The fair foes don't seem to have anything to do. They aren't equipped for battle.
 
 #a-5
 >arrows
-WRONG
+The fair foes pick up the arrows and study them with interest, but something is missing.
 
 #b-7
 >bare bows
-WRONG
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 
 >undo
 >undo
 
 #b-6
 >bare bows
-WRONG
+The fair foes pick up the bare bows and study them with interest, but something is missing.
 
 >undo
 >undo

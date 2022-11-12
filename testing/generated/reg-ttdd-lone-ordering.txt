@@ -35,6 +35,16 @@ Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Wor
 
 Bower (BOOM!)
 
+>w
+
+#testcase-run-vr-glower-gloom-rule-abide-by-the-flip-how-er-rule
+#testcase-run-vr-glower-gloom-rule-fallthrough
+>glower gloom
+by one point
+
+>undo
+>undo
+
 >glower gloom
 Nothing much happens otherwise, but you feel good about going above and beyond.
 [Your score and bonus points just went up by one point.]
@@ -70,6 +80,17 @@ Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Wor
 
 Bower (BOOM!)
 
+>w
+
+#testcase-run-vr-dour-doom-rule-abide-by-the-flip-how-er-rule
+#testcase-run-vr-dour-doom-rule-fallthrough
+>dour doom
+You hear a commotion off to the east. The "How, er, whom" voice gets louder, then settles down again.
+by one point
+
+>undo
+>undo
+
 >dour doom
 Nothing much happens otherwise, but you feel good about going above and beyond.
 [Your score and bonus points just went up by one point.]
@@ -85,6 +106,7 @@ Nothing much happens otherwise, but you feel good about going above and beyond.
 
 >flower flume
 You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
+[Your score just went up by one point.]
 
 >plower plume
 You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
@@ -104,6 +126,17 @@ Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Wor
 [Your score just went up by one point.]
 
 Bower (BOOM!)
+
+>w
+
+#testcase-run-vr-wower-womb-rule-abide-by-the-flip-how-er-rule
+#testcase-run-vr-wower-womb-rule-fallthrough
+>wower womb
+You hear a commotion off to the east. The "How, er, whom" voice gets louder, then settles down again.
+by one point
+
+>undo
+>undo
 
 >wower womb
 Nothing much happens otherwise, but you feel good about going above and beyond.
@@ -140,6 +173,17 @@ Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Wor
 
 Bower (BOOM!)
 
+>w
+
+#testcase-run-vr-tower-tomb-rule-abide-by-the-flip-how-er-rule
+#testcase-run-vr-tower-tomb-rule-fallthrough
+>tower tomb
+You hear a commotion off to the east. The "How, er, whom" voice gets louder, then settles down again.
+by one point
+
+>undo
+>undo
+
 >tower tomb
 Nothing much happens otherwise, but you feel good about going above and beyond.
 [Your score and bonus points just went up by one point.]
@@ -174,6 +218,17 @@ Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Wor
 [Your score just went up by one point.]
 
 Bower (BOOM!)
+
+>w
+
+#testcase-run-vr-plower-plume-rule-abide-by-the-flip-how-er-rule
+#+testcase-run-vr-plower-plume-rule-fallthrough
+>plower plume
+You hear a commotion off to the east. The "How, er, whom" voice gets louder, then settles down again.
+by one point
+
+>undo
+>undo
 
 >plower plume
 Nothing much happens otherwise, but you feel good about going above and beyond.
@@ -210,6 +265,17 @@ Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Wor
 
 Bower (BOOM!)
 
+>w
+
+#testcase-run-vr-flower-flume-rule-abide-by-the-flip-how-er-rule
+#testcase-run-vr-flower-flume-rule-fallthrough
+>flower flume
+You hear a commotion off to the east. The "How, er, whom" voice gets louder, then settles down again.
+by one point
+
+>undo
+>undo
+
 >flower flume
 Nothing much happens otherwise, but you feel good about going above and beyond.
 [Your score and bonus points just went up by one point.]
@@ -229,31 +295,39 @@ by one point
 
 >s
 
+#+testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
 >rar rage
 The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
 However, it settles back. But you did something, you know that.
 [Your score just went up by one point.]
 
+#+testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
 >far phage
 The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
 Something has shattered. The car cage can become something more positive, you feel.
 
+#+testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
 >our age
 It felt good to show off a bit, even though the car cage seemed ripe for change. No need to be all business, all the time.
 
 >undo
 
+#testcase-run-vr-star-stage-rule-if-cage-prep-score-is-2
 >star stage
 by one point
 
 >n
 
+#testcase-run-vr-our-age-rule-abide-by-the-in-cage-rule
+#testcase-run-vr-our-age-rule-fallthrough
 >our age
 You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
 
 >undo
 >undo
 
+#+testcase-run-vr-our-age-rule-abide-by-the-in-cage-rule
+#+testcase-run-vr-our-age-rule-fallthrough
 >our age
 The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you accelerated technological progress so people get jetpacks sooner. Not in your own universe, sadly.
 
@@ -263,31 +337,39 @@ The star stage seems pretty relaxed, but for whatever reason, your action, incon
 >undo
 >undo
 
+#+testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
 >far phage
 The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
 However, it settles back. But you did something, you know that.
 [Your score just went up by one point.]
 
+#+testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
 >our age
 The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
 Something has shattered. The car cage can become something more positive, you feel.
 
+#testcase-run-vr-rar-rage-rule-abide-by-the-in-cage-rule
 >rar rage
 It felt good to show off a bit, even though the car cage seemed ripe for change. No need to be all business, all the time.
 
 >undo
 
+#+testcase-run-vr-star-stage-rule-if-cage-prep-score-is-2
 >star stage
 by one point
 
 >n
 
+#+testcase-run-vr-rar-rage-rule-abide-by-the-in-cage-rule
+#testcase-run-vr-rar-rage-rule-fallthrough
 >rar rage
 You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
 
 >undo
 >undo
 
+#+testcase-run-vr-rar-rage-rule-abide-by-the-in-cage-rule
+#+testcase-run-vr-rar-rage-rule-fallthrough
 >rar rage
 The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
 
@@ -297,31 +379,39 @@ The star stage seems pretty relaxed, but for whatever reason, your action, incon
 >undo
 >undo
 
+#+testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
 >our age
 The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
 However, it settles back. But you did something, you know that.
 [Your score just went up by one point.]
 
+#+testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
 >rar rage
 The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
 Something has shattered. The car cage can become something more positive, you feel.
 
+#+testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
 >far phage
 It felt good to show off a bit, even though the car cage seemed ripe for change. No need to be all business, all the time.
 
 >undo
 
+#+testcase-run-vr-star-stage-rule-if-cage-prep-score-is-2
 >star stage
 by one point
 
 >n
 
+#testcase-run-vr-far-phage-rule-abide-by-the-in-cage-rule
+#testcase-run-vr-far-phage-rule-fallthrough
 >far phage
 You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
 
 >undo
 >undo
 
+#+testcase-run-vr-far-phage-rule-abide-by-the-in-cage-rule
+#+testcase-run-vr-far-phage-rule-fallthrough
 >far phage
 The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you set people on the pathway to cure the common cold. Not in your own universe, sadly.
 
@@ -338,7 +428,7 @@ by one point
 #testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
-Dave seems charged with motivation!
+Dave seems charged with motivation to be the best at something, anything!
 Dave's head stays raised after this bit of positivity.
 
 #testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
@@ -476,7 +566,7 @@ Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to 
 #+testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
-Dave seems charged with motivation!
+Dave seems charged with motivation to be the best at something, anything!
 Dave looks really gung-ho now, but he looks confused about where to start with his goals.
 [Your score just went up by one point.]
 
@@ -571,7 +661,7 @@ by one point
 #+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
 >blam bleak
 by one point
-The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
+The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover!
 [Your score just went up by one point.]
 
 #+testcase-check-vc-maam-meek-rule-abide-by-the-creek-sheik-rule
@@ -590,8 +680,10 @@ Oh, there's one more way to mock the now-departed Sheik if you want a bonus poin
 
 >wham weak
 by one point
+
 >clam clique
 by one point
+
 #testcase-run-vr-clam-clique-rule-if-sheik-score-is-3
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with the location's rhymes.
@@ -615,8 +707,8 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 
 >s
 
-#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
-#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
+#testcase-run-vr-wham-weak-rule-abide-by-the-sheik-bonus-rule
+#+testcase-run-vr-wham-weak-rule-fallthrough
 >wham weak
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
@@ -625,8 +717,8 @@ The clam clique rapidly opens and closes their shells favorably. The clacking is
 >undo
 >undo
 
-#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
-#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
+#+testcase-run-vr-wham-weak-rule-abide-by-the-sheik-bonus-rule
+#+testcase-run-vr-wham-weak-rule-fallthrough
 >wham weak
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
@@ -642,9 +734,8 @@ You shout your final critique for all to hear. Maybe the immediate victory was w
 #+testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
 >maam meek
 by one point
-The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
+The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover!
 [Your score just went up by one point.]
-WRONG
 
 #+testcase-check-vc-slam-sleek-rule-abide-by-the-creek-sheik-rule
 #+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
@@ -652,7 +743,6 @@ WRONG
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
-WRONG
 
 #+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
 #+testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
@@ -660,7 +750,6 @@ WRONG
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
-WRONG
 
 >clam clique
 by one point
@@ -673,7 +762,6 @@ by one point
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 [Your score and bonus points just went up by one point.]
-WRONG
 
 >undo
 >undo
@@ -684,7 +772,6 @@ WRONG
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 [Your score and bonus points just went up by one point.]
-WRONG
 >undo
 
 >undo
@@ -696,9 +783,8 @@ WRONG
 #+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
 >slam sleek
 by one point
-The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
+The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover!
 [Your score just went up by one point.]
-WRONG
 
 #+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
 #+testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
@@ -706,7 +792,6 @@ WRONG
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
-WRONG
 
 #+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
 #+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
@@ -714,7 +799,6 @@ WRONG
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
-WRONG
 
 >clam clique
 by one point
@@ -727,7 +811,6 @@ by one point
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 [Your score and bonus points just went up by one point.]
-WRONG
 
 >undo
 >undo
@@ -738,7 +821,6 @@ WRONG
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 [Your score and bonus points just went up by one point.]
-WRONG
 
 >undo
 
@@ -751,9 +833,8 @@ WRONG
 #+testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
 >wham weak
 by one point
-The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
+The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover!
 [Your score just went up by one point.]
-WRONG
 
 #+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
 #+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
@@ -761,7 +842,6 @@ WRONG
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
-WRONG
 
 #+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
 #+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
@@ -769,7 +849,6 @@ WRONG
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
-WRONG
 
 >clam clique
 by one point
@@ -782,7 +861,6 @@ by one point
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 [Your score and bonus points just went up by one point.]
-WRONG
 
 >undo
 >undo
@@ -793,7 +871,6 @@ WRONG
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 [Your score and bonus points just went up by one point.]
-WRONG
 
 >undo
 
