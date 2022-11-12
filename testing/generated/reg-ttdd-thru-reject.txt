@@ -472,7 +472,7 @@ WRONG
 
 #testcase-check-vc-crave-crowned-rule-if-sco-crave-crowned-is-true
 >crave crowned
-WRONG
+You already gave Dave a need for a literal or figurative crown!
 
 >save sound
 by one point
@@ -482,7 +482,7 @@ You catalog ways to save things soundly, as well as ways to economize on the yel
 
 #testcase-check-vc-save-sound-rule-if-sco-save-sound-is-true
 >save sound
-WRONG
+You already encouraged Dave to save and be sound!
 
 >pave pound
 by one point
@@ -492,7 +492,7 @@ WRONG
 
 #testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
 >pave pound
-WRONG
+Too much raving might leave Dave tired. Perhaps you should try something else.
 
 #+testcase-think-table-of-verb-checks-vc-fave-found-rule
 >think
@@ -506,7 +506,7 @@ WRONG
 
 #testcase-check-vc-fave-found-rule-if-sco-fave-found-is-true
 >fave found
-WRONG
+You already helped Dave focus on a favorite goal!
 
 >rave round
 by one point

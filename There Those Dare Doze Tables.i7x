@@ -293,7 +293,7 @@ this is the vr-star-stage rule:
 a goodrhyme rule (this is the vc-crave-crowned rule):
 	abide by the grave-dave rule;
 	if sco-crave-crowned is true:
-		vcal "You already boosted Dave this way!";
+		vcal "You already gave Dave a need for a literal or figurative crown!";
 		already-done;
 	ready;
 
@@ -335,7 +335,7 @@ this is the vr-rave-round rule:
 a goodrhyme rule (this is the vc-save-sound rule):
 	abide by the grave-dave rule;
 	if sco-save-sound is true:
-		vcal "You already boosted Dave this way!";
+		vcal "You already encouraged Dave to save and be sound!";
 		already-done;
 	ready;
 
@@ -352,7 +352,7 @@ a goodrhyme rule (this is the vc-fave-found rule):
 		vcp "Hmm, that would be a good idea once Dave had [if dave-score is 0]favorites[else if dave-score is 1]some more[else]a bit more[end if] desires to choose from.";
 		not-yet;
 	if sco-fave-found is true:
-		vcal "You already boosted Dave this way!";
+		vcal "You already helped Dave focus on a favorite goal!";
 		already-done;
 	ready;
 
@@ -601,12 +601,12 @@ to grave-ground-down (nu - a number):
 	decrease to-number of grave ground by nu;
 	decrease to-number of dave downed by nu;
 	if dave-score is 3:
-		now reserve-number of grave ground is 0 - to-number of car cage;
+		now reserve-number of grave ground is 0 - to-number of grave ground;
 		now to-number of grave ground is 2705;
 		now to-number of dave downed is 2705;
 
 this is the grave-dave rule:
-	unless player is in grave ground or dave is in location of player, the rule fails;
+	unless player is in grave ground or dave is in location of player, unavailable;
 
 this is the dave-bonus rule:
 	if dave-score is 4:

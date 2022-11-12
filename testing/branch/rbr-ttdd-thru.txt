@@ -500,6 +500,48 @@ A spare "s'pose" feels like false humility.
 >tear toes
 Self-mutilation is not a good alternative to prayer.
 
+@hin
+# this is weird because no matter which area we do last, one will trigger the Prayer Pros waking, neutralizing everyone else. I could put in a testing flag to keep people there, but I want a real-world test case.
+>stair stows
+by one point
+\\
+>w
+\\
+>pave pound
+by one point
+\\
+>rave round
+by one point
+\\
+>save sound
+by one point
+\\
+>fave found
+by one point
+\\
+>e
+>ll dave
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>crave crowned
+by one point
+\\
+>ll dave
+Nothing comes up. You've changed Dave (Downed) as much as you needed to.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >snare snows
 by one point
 
@@ -1119,6 +1161,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 \\
 ##balance undos
 >n
+#testcase-values-from-number-of-saar-sage-is-2704
 >ll saar sage
 You notice one dot in the corner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -1127,6 +1170,7 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 >rar rage
 by one point
 \\
+#+testcase-values-from-number-of-saar-sage-is-2704
 >ll saar sage
 Nothing comes up. You don't need to change the Saar Sage.
 \\
@@ -1619,6 +1663,18 @@ Alas, he is too down to speak much.
 >zfave found
 {$YELLOWCORE}
 
+@hint
+#testcase-values-from-number-of-grave-ground-is-2756
+>ll
+You scan the area.
+You notice four dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -0.50.)
+\\
+#testcase-values-from-number-of-dave-downed-is-2706
+>ll dave
+You notice four dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.50.)
+
 >crave crowned
 by one point
 
@@ -1634,7 +1690,16 @@ WRONG
 @rej
 #testcase-check-vc-crave-crowned-rule-if-sco-crave-crowned-is-true
 >crave crowned
-WRONG
+You already gave Dave a need for a literal or figurative crown!
+
+@hint
+#+testcase-values-from-number-of-grave-ground-is-2756
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+\\
+#+testcase-values-from-number-of-dave-downed-is-2706
+>ll dave
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >save sound
 by one point
@@ -1651,7 +1716,16 @@ You catalog ways to save things soundly, as well as ways to economize on the yel
 @rej
 #testcase-check-vc-save-sound-rule-if-sco-save-sound-is-true
 >save sound
-WRONG
+You already encouraged Dave to save and be sound!
+
+@hint
+#+testcase-values-from-number-of-grave-ground-is-2756
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+\\
+#+testcase-values-from-number-of-dave-downed-is-2706
+>ll dave
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >pave pound
 by one point
@@ -1668,7 +1742,7 @@ WRONG
 @rej
 #testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
 >pave pound
-WRONG
+Too much raving might leave Dave tired. Perhaps you should try something else.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-21-fave
@@ -1683,6 +1757,15 @@ WRONG
 #+testcase-think-table-of-verb-checks-vc-fave-found-rule
 >think
 You can get Dave a FAVE FOUND now he has enough motivations to choose from.
+
+@hint
+#+testcase-values-from-number-of-grave-ground-is-2756
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+\\
+#+testcase-values-from-number-of-dave-downed-is-2706
+>ll dave
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >fave found
 by one point
@@ -1699,7 +1782,7 @@ WRONG
 @rej
 #testcase-check-vc-fave-found-rule-if-sco-fave-found-is-true
 >fave found
-WRONG
+You already helped Dave focus on a favorite goal!
 
 @mis
 #+testcase-mistakes-table-of-grave-ground-guesses-wave-wound
