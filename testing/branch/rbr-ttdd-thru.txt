@@ -992,6 +992,18 @@ by one point
 by one point
 >undo
 
+@hint
+#testcase-values-from-number-of-car-cage-is-2654
+>ll
+You scan the area.
+You notice three dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.00.)
+\\
+#testcase-values-from-number-of-mar-mage-is-2654
+>ll mar mage
+You notice three dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.00.)
+
 >our age
 by one point
 
@@ -1009,6 +1021,17 @@ WRONG
 >our age
 WRONG
 
+@hint
+#testcase-values-from-number-of-car-cage-is-2654
+>ll
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+\\
+#testcase-values-from-number-of-mar-mage-is-2654
+>ll mar mage
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
 >far phage
 by one point
 
@@ -1019,12 +1042,12 @@ WRONG
 @all,rej
 {--all}#testcase-run-vr-far-phage-rule-default
 {--rej}#testcase-check-vc-far-phage-rule-fallthrough
-WRONG
+You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
 
 @rej
 #testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
 >far phage
-WRONG
+You already aligned things temporally!
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-16-stage
@@ -1039,6 +1062,17 @@ WRONG
 #+testcase-think-table-of-verb-checks-vc-star-stage-rule
 >think
 You can pull out the STAR STAGE now you've manipulated the Car Cage enough.
+
+@hint
+#testcase-values-from-number-of-car-cage-is-2654
+>ll
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+\\
+#testcase-values-from-number-of-mar-mage-is-2654
+>ll mar mage
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >star stage
 by one point
@@ -1056,7 +1090,7 @@ On the star stage, the Mar Mage suddenly grows more powerful. You seem to have n
 @rej
 #testcase-check-vc-star-stage-rule-if-sco-star-stage-is-true
 >star stage
-WRONG
+The star stage has already been summoned!
 
 @gong
 >n
@@ -1072,6 +1106,34 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 \\
 >s
 Star Stage
+
+@hint
+>ll
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>ll mar mage
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
+\\
+##balance undos
+>n
+>ll saar sage
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>rar rage
+by one point
+\\
+>ll saar sage
+Nothing comes up. You don't need to change the Saar Sage.
+\\
+>undo
+>undo
+>undo
+>undo
 
 @!min
 >rar rage

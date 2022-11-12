@@ -288,7 +288,7 @@ this is the vr-star-stage rule:
 		now to-number of saar sage is reserve-number of car cage;
 	else:
 		declue car cage;
-		declue saar sage;
+		declue-unchanged saar sage;
 
 a goodrhyme rule (this is the vc-crave-crowned rule):
 	abide by the grave-dave rule;
@@ -548,14 +548,15 @@ section to the south
 to car-cage-down (nu - a number):
 	if sco-star-stage is true:
 		declue car cage;
-		declue saar sage;
+		declue-unchanged saar sage;
 		continue the action;
 	decrease to-number of car cage by nu;
 	decrease to-number of saar sage by nu;
+	decrease to-number of mar mage by nu;
 	if cage-prep-score is 2:
 		now reserve-number of car cage is 0 - to-number of car cage;
 		now to-number of car cage is 2705;
-		now to-number of saar sage is 2705;
+		now to-number of mar mage is 2705;
 
 this is the to-cage-progress rule:
 	let binary-thing be (boolval of sco-fair-foes * 4) + (boolval of sco-bare-bows * 2) + (boolval of sco-arrows);

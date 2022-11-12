@@ -312,11 +312,11 @@ WRONG
 by one point
 
 #testcase-check-vc-far-phage-rule-fallthrough
-WRONG
+You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
 
 #testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
 >far phage
-WRONG
+You already aligned things temporally!
 
 #+testcase-think-table-of-verb-checks-vc-star-stage-rule
 >think
@@ -331,7 +331,7 @@ On the star stage, the Mar Mage suddenly grows more powerful. You seem to have n
 
 #testcase-check-vc-star-stage-rule-if-sco-star-stage-is-true
 >star stage
-WRONG
+The star stage has already been summoned!
 
 >rar rage
 by one point

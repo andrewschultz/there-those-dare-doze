@@ -144,7 +144,7 @@ by one point
 WRONG
 
 #testcase-run-vr-far-phage-rule-default
-WRONG
+You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
 
 >star stage
 by one point
