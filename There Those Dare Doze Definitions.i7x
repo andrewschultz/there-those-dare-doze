@@ -64,12 +64,15 @@ to decide what number is sheik-score:
 to decide what number is cage-prep-score:
 	decide on (boolval of sco-our-age) + (boolval of sco-far-phage) + (boolval of sco-rar-rage)
 
-to decide what number is rowr-score:
+to decide what number is rowr-progress-score:
 	let temp be 0;
 	if sco-dour-doom is true or sco-glower-gloom is true, increment temp;
 	if sco-tower-tomb is true or sco-wower-womb is true, increment temp;
 	if sco-plower-plume is true or sco-flower-flume is true, increment temp;
 	decide on temp;
+
+to decide what number is rowr-full-score:
+	decide on (boolval of sco-dour-doom) + (boolval of sco-glower-gloom) + (boolval of sco-tower-tomb) + (boolval of sco-wower-womb) + (boolval of sco-plower-plume) + (boolval of sco-flower-flume);
 
 to decide what number is rowr-max:
 	let temp be 3;
@@ -80,8 +83,8 @@ to decide what number is rowr-max:
 
 to decide which number is new-rowr-scan:
 	let temp be 0;
-	if rowr-score is 6, decide on -3;
-	if rowr-score < 3:
+	if rowr-full-score is 6, decide on -3;
+	if rowr-progress-score < 3:
 		if sco-wower-womb is false and sco-tower-tomb is false, increase temp by 2754;
 		if sco-flower-flume is false and sco-plower-plume is false, increase temp by 2805;
 		if sco-dour-doom is false and sco-glower-gloom is false, increase temp by 2704; [it could go either way but we'll go with the shorter one here]

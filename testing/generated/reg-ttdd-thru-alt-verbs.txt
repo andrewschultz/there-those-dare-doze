@@ -10,9 +10,6 @@
 
 * main-thru
 
->take learner
-Taken.
-
 >au 2
 
 >snare snows

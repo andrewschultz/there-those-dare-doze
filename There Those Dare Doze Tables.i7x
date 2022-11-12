@@ -43,7 +43,7 @@ this is the vh-arrows rule:
 a goodrhyme rule (this is the vc-arrows rule):
 	if player is not in rare rows, unavailable;
 	if sco-arrows is true:
-		vcal "You already have enough arrows!";
+		vcal "You already [had-have-s] ammunition!";
 		already-done;
 	ready;
 
@@ -57,7 +57,7 @@ this is the vr-arrows rule:
 a goodrhyme rule (this is the vc-bare-bows rule):
 	if player is not in rare rows, unavailable;
 	if sco-bare-bows is true:
-		vcal "You already have enough bare bows!";
+		vcal "You already [had-have-s] weaponry!";
 		already-done;
 	ready;
 
@@ -71,7 +71,7 @@ this is the vr-bare-bows rule:
 a goodrhyme rule (this is the vc-fair-foes rule):
 	if player is not in rare rows, unavailable;
 	if sco-fair-foes is true:
-		vcal "The fair foes have already been summoned!";
+		vcal "You already [had-have-s] allies!";
 		already-done;
 	ready;
 
@@ -365,7 +365,7 @@ this is the vr-fave-found rule:
 		declue grave ground;
 
 a goodrhyme rule (this is the vc-tower-tomb rule):
-	if player is not in rowr room, unavailable;
+	abide by the rowr-how-er rule;
 	if sco-tower-tomb is true:
 		vcal "You already built a tower-tomb!";
 		already-done;
@@ -373,13 +373,14 @@ a goodrhyme rule (this is the vc-tower-tomb rule):
 
 this is the vr-tower-tomb rule:
 	now sco-tower-tomb is true;
+	abide by the flip-how-er rule;
 	say "Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though[just-noise].";
 	opt-rule vc-wower-womb rule;
 	bump-up tomb-womb;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-wower-womb rule):
-	if player is not in rowr room, unavailable;
+	abide by the rowr-how-er rule;
 	if sco-wower-womb is true:
 		vcal "Duplicating wow factor doesn't increase the wows.";
 		already-done;
@@ -387,6 +388,7 @@ a goodrhyme rule (this is the vc-wower-womb rule):
 
 this is the vr-wower-womb rule:
 	now sco-wower-womb is true;
+	abide by the flip-how-er rule;
 	say "A passage opens downstairs briefly. It's too narrow, and anyway, one doesn't go back into a womb, but it's there[just-noise].";
 	opt-rule vc-tower-tomb rule;
 	bump-up tomb-womb;
@@ -396,7 +398,7 @@ this is the vh-dour-doom rule:
 	say "We need more than money, here."
 
 a goodrhyme rule (this is the vc-dour-doom rule):
-	if player is not in rowr room, unavailable;
+	abide by the rowr-how-er rule;
 	if sco-dour-doom is true:
 		vcal "No, all that doom you fobbed off might leak back into you.";
 		already-done;
@@ -404,13 +406,14 @@ a goodrhyme rule (this is the vc-dour-doom rule):
 
 this is the vr-dour-doom rule:
 	now sco-dour-doom is true;
+	abide by the flip-how-er rule;
 	say "You invoke a sense of doom so dour, the rowring itself gets quieter.";
 	opt-rule vc-glower-gloom rule;
 	bump-up doom-gloom;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-glower-gloom rule):
-	if player is not in rowr room, unavailable;
+	abide by the rowr-how-er rule;
 	if sco-glower-gloom is true:
 		vcal "THere's a limit to how much glowering and gloom is helpful, here.";
 		already-done;
@@ -418,13 +421,14 @@ a goodrhyme rule (this is the vc-glower-gloom rule):
 
 this is the vr-glower-gloom rule:
 	now sco-glower-gloom is true;
+	abide by the flip-how-er rule;
 	say "You invoke a sense of gloom so glowery, the rowring itself gets quieter.";
 	opt-rule vc-dour-doom rule;
 	bump-up doom-gloom;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-plower-plume rule):
-	if player is not in rowr room, unavailable;
+	abide by the rowr-how-er rule;
 	if sco-plower-plume is true:
 		vcal "The plower plume was a neat one-time display. It's done its work.";
 		already-done;
@@ -432,13 +436,14 @@ a goodrhyme rule (this is the vc-plower-plume rule):
 
 this is the vr-plower-plume rule:
 	now sco-plower-plume is true;
+	abide by the flip-how-er rule;
 	say "A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.";
 	opt-rule vc-flower-flume rule;
 	bump-up flume-plume;
 	abide by the rowr-room-transform rule;
 
 a goodrhyme rule (this is the vc-flower-flume rule):
-	if player is not in rowr room, unavailable;
+	abide by the rowr-how-er rule;
 	if sco-flower-flume is true:
 		vcal "The flower flume was a neat one-time display. It's done its work.";
 		already-done;
@@ -446,6 +451,7 @@ a goodrhyme rule (this is the vc-flower-flume rule):
 
 this is the vr-flower-flume rule:
 	now sco-flower-flume is true;
+	abide by the flip-how-er rule;
 	say "Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.";
 	opt-rule vc-plower-plume rule;
 	bump-up flume-plume;
@@ -519,15 +525,19 @@ section rare rows specific
 
 to ll-rows-down (nu - a number):
 	decrease to-number of rare rows by nu;
+	decrease to-number of prayer pros by nu;
 	if to-number of rare rows is 0:
 		now to-number of rare rows is -3;
 		now to-number of arrows is -2;
 		now to-number of bare bows is -2;
 		now to-number of fair foes is -2;
+		now to-number of prayer pros is -4;
 		continue the action;
 	now to-number of arrows is nu;
 	now to-number of bare bows is nu;
 	now to-number of fair foes is nu;
+
+to say had-have-s: say "[if fair foes are moot]had[else]have[end if] enough"
 
 section to the south
 
@@ -640,33 +650,46 @@ this is the check-sheik rule:
 section to the east
 
 to adjust-rowr-reading:
-	if rowr-score is 6:
+	if rowr-full-score is 6:
 		declue-here;
 		declue how er whom;
 		continue the action;
 	now to-number of rowr room is new-rowr-scan;
 	now to-number of how er whom is new-rowr-scan;
 
+this is the flip-how-er rule:
+	if player is in rare rows:
+		declue-here;
+		declue how er whom;
+		say "You hear a commotion off to the east. The 'How, er, whom' voice gets louder, then settles down again.";
+		the rule succeeds;
+
+this is the rowr-how-er rule:
+	if player is not in rowr room and how er whom is not in location of player, unavailable;
+
 this is the rowr-room-transform rule:
 	now win-score of rowr room is rowr-max;
-	if old-rowr-score is 3:
+	adjust-rowr-reading;
+	if old-rowr-progress is 3:
 		say "Nothing much happens otherwise, but you feel good about going above and beyond.";
 		the rule succeeds;
-	let up-rowr be whether or not rowr-score is old-rowr-score;
-	now old-rowr-score is rowr-score;
+	let up-rowr be whether or not rowr-progress-score is old-rowr-progress;
+	now old-rowr-progress is rowr-progress-score;
 	if up-rowr is true:
 		say "You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.";
 		the rule succeeds;
-	if rowr-score is 3:
+	if rowr-progress-score is 3:
 		say "Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.";
+		move how er whom to rare rows;
 		solve-room;
-	else if rowr-score is 2:
+	else if rowr-progress-score is 2:
 		say "The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.";
 	else:
 		say "You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.";
 	the rule succeeds;
 
 this is the huts-and-ruts rule:
+	decrease to-number of ppnn by 2704;
 	if sco-rope-ruts is false:
 		say "But the huts are not sturdy enough yet. They need support.";
 		continue the action;

@@ -61,7 +61,7 @@ sco-flower-flume is a truth state that varies.
 
 volume game state variables
 
-old-rowr-score is a number that varies.
+old-rowr-progress is a number that varies.
 
 how-whom-note is a truth state that varies.
 

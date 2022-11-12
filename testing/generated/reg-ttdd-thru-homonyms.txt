@@ -10,9 +10,6 @@
 
 * main-thru
 
->take learner
-Taken.
-
 >au 2
 
 #testcase-homonym-detail-vh-arrows-rule-default

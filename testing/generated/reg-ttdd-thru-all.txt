@@ -10,13 +10,10 @@
 
 * main-thru
 
+>au 2
+
 #testcase-room-names-rare-rows
 `Rare Rows
-
->take learner
-Taken.
-
->au 2
 
 >snare snows
 by one point
@@ -84,7 +81,7 @@ by one point
 WRONG
 
 #testcase-run-vr-glower-gloom-rule-default
-WRONG
+You invoke a sense of gloom so glowery, the rowring itself gets quieter.
 
 >w
 

@@ -10,14 +10,11 @@
 
 * main-thru
 
->take learner
-Taken.
+>au 2
 
 >pride prong
 (disabling later explanation of GUIDE GONG, etc., but it will still be in VERBS)
 You are now blocked from paths where no branches contain any point-scoring activities, critical or bonus.
-
->au 2
 
 >snare snows
 by one point

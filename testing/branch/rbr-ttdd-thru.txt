@@ -60,13 +60,31 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 * main-thru
 
+>au 2
+
 @all
 #testcase-room-names-rare-rows
 `Rare Rows
 
-@!min
->take learner
-Taken.
+@hints
+#testcase-values-from-number-of-rare-rows-is-2704
+>ll rare
+You notice seven dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.28, 0.28.)
+\\
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with the location's rhymes.
+You notice seven dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.28, 0.28.)
+\\
+>ll
+`You scan the area.
+You notice seven dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.28, 0.28.)
+\\
+#testcase-values-from-number-of-prayer-pros-is-2804
+>ll prayer pros
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.71, 0.28.)
 
 @gong
 >guide gong
@@ -91,8 +109,6 @@ There is no fourth option for the guide gong, but you do have a chance for a hee
 #testcase-mistakes-table-of-general-good-guesses-side-song
 >side song
 This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art.
-
->au 2
 
 @ha
 #testcase-ha-half-table-of-verb-checks-2-bare
@@ -495,7 +511,14 @@ Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your l
 @rej
 #testcase-check-vc-snare-snows-rule-if-sco-snare-snows-is-true
 >snare snows
-WRONG
+You already harvested snows!
+
+@hint
+#+testcase-values-from-number-of-rare-rows-is-2704
+>ll
+`You scan the area.
+You notice six dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.16, 0.16.)
 
 >e
 
@@ -568,6 +591,11 @@ We need more than money, here.
 >zflower flume
 {$GREENCORE}
 
+@hint
+#testcase-values-from-number-of-rowr-room-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.33.)
+
 >tower tomb
 by one point
 
@@ -584,6 +612,11 @@ WRONG
 #testcase-check-vc-tower-tomb-rule-if-sco-tower-tomb-is-true
 >tower tomb
 WRONG
+
+@hint
+#+testcase-values-from-number-of-rowr-room-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 @!min
 >wower womb
@@ -603,6 +636,11 @@ WRONG
 >wower womb
 WRONG
 
+@hint
+#+testcase-values-from-number-of-rowr-room-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
 >flower flume
 by one point
 
@@ -619,6 +657,11 @@ Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyr
 #testcase-check-vc-flower-flume-rule-if-sco-flower-flume-is-true
 >flower flume
 WRONG
+
+@hint
+#+testcase-values-from-number-of-rowr-room-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @!min
 >plower plume
@@ -638,6 +681,11 @@ WRONG
 >plower plume
 WRONG
 
+@hint
+#+testcase-values-from-number-of-rowr-room-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >dour doom
 by one point
 
@@ -656,7 +704,10 @@ WRONG
 @rej
 #testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
 >dour doom
-WRONG
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @gong
 >w
@@ -674,6 +725,37 @@ A guide gong rings to notify you that you don't need to go back through Bower (B
 The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
 Bower (BOOM!)
 
+@hint
+#+testcase-values-from-number-of-rowr-room-is-2704
+>ll
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+##balance undo
+>w
+\\
+#testcase-values-from-number-of-how-er-whom-is-2754
+>ll whom
+Counting how/er whom as five letters, then four...
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>glower gloom
+You hear a commotion off to the east. The "How, er, whom" voice gets louder, then settles down again.
+!You invoke a sense of gloom so glowery, the rowring itself gets quieter.
+\\
+>ll whom
+!Counting
+WRONG
+\\
+>undo
+>undo
+>undo
+>undo
+
 @!min
 >glower gloom
 by one point
@@ -685,12 +767,18 @@ WRONG
 @all,rej
 {--all}#testcase-run-vr-glower-gloom-rule-default
 {--rej}#testcase-check-vc-glower-gloom-rule-fallthrough
-WRONG
+You invoke a sense of gloom so glowery, the rowring itself gets quieter.
 
 @rej
 #testcase-check-vc-glower-gloom-rule-if-sco-glower-gloom-is-true
 >glower gloom
 WRONG
+
+@hint
+#+testcase-values-from-number-of-rowr-room-is-2704
+>ll
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
 
 >w
 
@@ -713,7 +801,7 @@ Several warriors approach. They introduce themselves as the Fair Foes. They will
 @rej
 #testcase-check-vc-fair-foes-rule-if-sco-fair-foes-is-true
 >fair foes
-WRONG
+You already have enough allies!
 
 @verbs
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-fair-foes
@@ -753,7 +841,7 @@ Now that you know to look for arrows, or to some of them, you find a bunch, and 
 @rej
 #testcase-check-vc-arrows-rule-if-sco-arrows-is-true
 >arrows
-WRONG
+You already have enough ammunition!
 
 @mis
 #+testcase-mistakes-table-of-rare-rows-guesses-air-err-ere-ohs-owes
@@ -781,7 +869,28 @@ Splat! And just like that, a bunch of high quality bows, or what you assumed to 
 @rej
 #testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
 >bare bows
-WRONG
+You already have enough weaponry!
+
+@hints
+#testcase-values-from-number-of-arrows-is-2653
+>ll arrows
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+\\
+#testcase-values-from-number-of-bare-bows-is-2704
+>ll bare bows
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#testcase-values-from-number-of-fair-foes-is-2704
+>ll fair foes
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#+testcase-values-from-number-of-prayer-pros-is-2804
+>ll prayer pros
+You notice three dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.33, 0.66.)
 
 >s
 
@@ -988,10 +1097,30 @@ WRONG
 >s
 That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
 
+@rej
+#+testcase-check-vc-fair-foes-rule-if-sco-arrows-is-true
+>arrows
+You already had enough allies!
+\\
+#+testcase-check-vc-fair-foes-rule-if-sco-bare-bows-is-true
+>bare bows
+You already had enough allies!
+\\
+#+testcase-check-vc-fair-foes-rule-if-sco-fair-foes-is-true
+>fair foes
+You already had enough allies!
+
 @verbs
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-saar-sage
 >t sage
 The Saar Sage is exhausted from casting spells.
+
+@hint
+#+testcase-values-from-number-of-rare-rows-is-2704
+>ll
+`You scan the area.
+You notice three dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 0.66.)
 
 >hair hose
 by one point
@@ -1242,6 +1371,13 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >stare
 Yes, there is something to look for. But where?
 
+@hint
+#+testcase-values-from-number-of-rare-rows-is-2704
+>ll
+`You scan the area.
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >stair stows
 by one point
 
@@ -1254,6 +1390,13 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 #testcase-check-vc-stair-stows-rule-if-sco-stair-stows-is-true
 >stair stows
 WRONG
+
+@hint
+#+testcase-values-from-number-of-rare-rows-is-2704
+>ll
+`You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 @hom
 #+testcase-homonym-detail-vh-stair-stows-rule-default
@@ -1626,6 +1769,11 @@ Spam's Peak
 {$REJECT2}
 ====alphabetize off
 
+@hin
+#+testcase-values-from-number-of-prayer-pros-is-2804
+>ll prayer pros
+Nothing comes up. You've changed the Prayer Pros as much as you needed to.
+
 @mis
 #testcase-mistakes-table-of-ppnn-guesses-cope-cuts
 >cope cuts
@@ -1757,6 +1905,19 @@ You don't need any more arrows raining down.
 >hutz
 And why not wish for Troy McClure, while you're at it?
 
+@hint
+##balance undos
+>hope huts
+by one point
+\\
+#testcase-values-from-number-of-hope-huts-is-2704
+>ll hope huts
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+>undo
+>undo
+
 @rej
 ##balance undos
 >hope huts
@@ -1785,6 +1946,19 @@ DONE DISHIN' FUN FISHIN'
 >undo
 >undo
 
+@hint
+#testcase-values-from-number-of-ppnn-is-5408
+>ll
+Nothing all around, but when you point the leet learner at yourself, something happens.
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#+testcase-values-from-number-of-ppnn-is-5408
+>ll me
+!Nothing all around
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >rope ruts
 by one point
 
@@ -1809,6 +1983,24 @@ No response. You don't need to talk to everyone, but hopefully when you do, the 
 #+testcase-mainverbs-carry-out-talktoing-fallthrough
 >t ruts
 `No response.
+
+@hint
+#+testcase-values-from-number-of-ppnn-is-5408
+>ll
+Again, when you point the leet learner at yourself, something happens.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#+testcase-values-from-number-of-ppnn-is-5408
+>ll me
+!Nothing all around
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#testcase-values-from-number-of-rope-ruts-is-2704
+>ll rope ruts
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >hope huts
 by one point

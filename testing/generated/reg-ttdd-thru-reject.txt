@@ -10,9 +10,6 @@
 
 * main-thru
 
->take learner
-Taken.
-
 >au 2
 
 #testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
@@ -194,7 +191,7 @@ by one point
 
 #testcase-check-vc-snare-snows-rule-if-sco-snare-snows-is-true
 >snare snows
-WRONG
+You already harvested snows!
 
 >e
 
@@ -246,13 +243,16 @@ WRONG
 
 #testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
 >dour doom
-WRONG
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >glower gloom
 by one point
 
 #testcase-check-vc-glower-gloom-rule-fallthrough
-WRONG
+You invoke a sense of gloom so glowery, the rowring itself gets quieter.
 
 #testcase-check-vc-glower-gloom-rule-if-sco-glower-gloom-is-true
 >glower gloom
@@ -268,7 +268,7 @@ Several warriors approach. They introduce themselves as the Fair Foes. They will
 
 #testcase-check-vc-fair-foes-rule-if-sco-fair-foes-is-true
 >fair foes
-WRONG
+You already have enough allies!
 
 >arrows
 by one point
@@ -278,7 +278,7 @@ Now that you know to look for arrows, or to some of them, you find a bunch, and 
 
 #testcase-check-vc-arrows-rule-if-sco-arrows-is-true
 >arrows
-WRONG
+You already have enough ammunition!
 
 >bare bows
 by one point
@@ -288,7 +288,7 @@ Splat! And just like that, a bunch of high quality bows, or what you assumed to 
 
 #testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
 >bare bows
-WRONG
+You already have enough weaponry!
 
 >s
 
@@ -346,6 +346,18 @@ WRONG
 WRONG
 
 >n
+
+#+testcase-check-vc-fair-foes-rule-if-sco-arrows-is-true
+>arrows
+You already had enough allies!
+
+#+testcase-check-vc-fair-foes-rule-if-sco-bare-bows-is-true
+>bare bows
+You already had enough allies!
+
+#+testcase-check-vc-fair-foes-rule-if-sco-fair-foes-is-true
+>fair foes
+You already had enough allies!
 
 >hair hose
 by one point

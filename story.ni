@@ -184,11 +184,11 @@ chapter huts and ruts
 
 the hope huts are scenery. "You can't do anything directly with the huts. Probably best to find what goes with them."
 
-from-number of hope huts is 5404. to-number of hope huts is 5404.
+from-number of hope huts is 2704. to-number of hope huts is 2704.
 
 the rope ruts are scenery. "You can't do anything directly with the ruts. Probably best to find what goes with them."
 
-from-number of rope ruts is 5404. to-number of rope ruts is 5404.
+from-number of rope ruts is 2704. to-number of rope ruts is 2704.
 
 book grave ground
 
@@ -208,11 +208,11 @@ to say dave-upset: say "[if dave-score is 0]very[else if dave-score is 1]rather[
 
 book rowr room
 
-Rowr Room is east of Rare Rows. printed name is "[if rowr-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if number of unactivated rowr-moods > 0]It's very noisy here. To dissipate the that, perhaps you could [list of unactivated rowr-moods]. [end if][if number of halfway rowr-moods > 0]You also have notions of [list of halfway rowr-moods], but just for fun. [end if][if number of fullon rowr-moods > 0]You have exhausted the ways to [list of fullon rowr-moods]. [end if]The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
+Rowr Room is east of Rare Rows. printed name is "[if rowr-progress-score < 3]Rowr Room[else]Bower (BOOM!)[end if]". win-score of rowr room is 3. "[if number of unactivated rowr-moods > 0]It's very noisy here. To dissipate the that, perhaps you could [list of unactivated rowr-moods]. [end if][if number of halfway rowr-moods > 0]You also have notions of [list of halfway rowr-moods], but just for fun. [end if][if number of fullon rowr-moods > 0]You have exhausted the ways to [list of fullon rowr-moods]. [end if]The only way out is back west.". block-descrip-text of Rowr Room is "it's too hot to the east"
 
 guess-table of rowr room is table of rowr room guesses.
 
-from-number of rowr room is 2704. to-number of rowr room is 16627.
+from-number of rowr room is 2704. to-number of rowr room is 8263.
 
 chapter rowr-moods
 
@@ -224,7 +224,7 @@ chapter how er whom
 
 how er whom is a thing. printed name is "How, Er, Whom?[run paragraph on]". "The [whom] from the east floats in the air--perhaps a question to be asked at the right time.". description is "It is incorporeal."
 
-from-number of how er whom is 2754.
+from-number of how er whom is 2754. to-number of how er whom is 8263.
 
 check lling how er whom:
 	if how-whom-note is false and to-number of how er whom is not -4:
@@ -278,15 +278,14 @@ volume LLing
 
 rule for supplying a missing noun when lling (this is the get readings from room rule):
 	if ppnn is fungible:
-		say "Nothing all around, but when you point it at yourself, something happens.";
-		if flag-read-ppnn is false:
-			try examining the player;
-			now flag-read-ppnn is true;
-		try lling the player;
-		reject the player's command;
+		say "[one of]Nothing all around, but[or]Again,[stopping] when you point the leet learner at yourself, something happens.";
+		now noun is the player;
+		continue the action;
 	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with the location's rhymes[or][stopping].";
 	abide by the general-ll-locations rule;
 	reject the player's command;
+
+check lling the player when player has ppnn: try lling ppnn instead;
 
 volume standard and action verbs
 
@@ -374,9 +373,8 @@ this is the gong-cram-creek rule:
 	llp-remaining;
 
 this is the gong-rowr-room rule:
-	say "Rowr = [rowr-score], now-score = [now-score of rowr room].";
-	if rowr-score < 3, uncompleted;
-	if now-score of rowr room is 6, completed;
+	if rowr-progress-score < 3, uncompleted;
+	if rowr-full-score is 6, completed; ["now-score of rowr room" also works]
 	llp-remaining;
 
 this is the gong-grave-ground rule:

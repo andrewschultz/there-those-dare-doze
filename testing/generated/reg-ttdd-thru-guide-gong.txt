@@ -10,14 +10,11 @@
 
 * main-thru
 
->take learner
-Taken.
+>au 2
 
 >guide gong
 (disabling later explanation of GUIDE GONG, etc., but it will still be in VERBS)
 You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
-
->au 2
 
 >snare snows
 by one point
