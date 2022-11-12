@@ -154,6 +154,7 @@ this is the vr-blam-bleak rule:
 	now sco-blam-bleak is true;
 	abide by the sheik-bonus rule;
 	say "Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.";
+	cram-creek-down 2705;
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-maam-meek rule):
@@ -167,6 +168,7 @@ this is the vr-maam-meek rule:
 	now sco-maam-meek is true;
 	abide by the sheik-bonus rule;
 	say "You insult the Sham Sheik's perceived masculinity, which shouldn't be an insult to most well-adjusted people, but it is to him! And it's an effective one!";
+	cram-creek-down 2704;
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-slam-sleek rule):
@@ -180,6 +182,7 @@ this is the vr-slam-sleek rule:
 	now sco-slam-sleek is true;
 	abide by the sheik-bonus rule;
 	say "You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!";
+	cram-creek-down 2705;
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-wham-weak rule):
@@ -193,6 +196,7 @@ this is the vr-wham-weak rule:
 	now sco-wham-weak is true;
 	abide by the sheik-bonus rule;
 	say "Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.";
+	cram-creek-down 2704;
 	abide by the check-sheik rule;
 
 a goodrhyme rule (this is the vc-clam-clique rule):
@@ -621,11 +625,10 @@ to cram-creek-down (nu - a number):
 		declue cram creek;
 		declue clam clique;
 		continue the action;
-	if dave-score < 3:
-		decrease to-number of clam clique by nu;
+	if sheik-score < 3:
 		decrease to-number of sham sheik by nu;
 		decrease to-number of cram creek by nu;
-	else if dave-score is 3:
+	else if sheik-score is 3:
 		now reserve-number of cram creek is 0 - to-number of cram creek;
 		now to-number of cram creek is 2706;
 
@@ -638,6 +641,8 @@ this is the sheik-bonus rule:
 	else:
 		say "You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.";
 	bump-room cram creek;
+	declue cram creek;
+	declue-unchanged clam clique;
 	the rule succeeds;
 
 this is the check-sheik rule:

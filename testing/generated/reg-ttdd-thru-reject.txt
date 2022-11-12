@@ -1,5 +1,3 @@
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-
 ## reg-ttdd-thru-reject.txt
 ## GENERATOR FILE: rbr-ttdd-thru.txt
 
@@ -384,11 +382,11 @@ You can summon a CLAM CLIQUE once you've pushed the Sham Sheik away in a verbal 
 by one point
 
 #testcase-check-vc-blam-bleak-rule-fallthrough
-WRONG
+Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.
 
 #testcase-check-vc-blam-bleak-rule-if-sco-blam-bleak-is-true
 >blam bleak
-WRONG
+You already fingered the Sham Sheik as bleak! And quite rightly, too.
 
 >slam sleek
 by one point
@@ -398,17 +396,17 @@ You don't just slam the Sheik. You do so with a minimum of wasted words, before 
 
 #testcase-check-vc-slam-sleek-rule-if-sco-slam-sleek-is-true
 >slam sleek
-WRONG
+You already dropped a slam, sleek, on the Sham Sheik.
 
 >wham weak
 by one point
 
 #testcase-check-vc-wham-weak-rule-fallthrough
-WRONG
+Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.
 
 #testcase-check-vc-wham-weak-rule-if-sco-wham-weak-is-true
 >wham weak
-WRONG
+You already fingered the Sham Sheik as weak! And quite rightly, too.
 
 #+testcase-think-table-of-verb-checks-vc-clam-clique-rule
 >think
@@ -422,7 +420,7 @@ Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet 
 
 #testcase-check-vc-clam-clique-rule-if-sco-clam-clique-is-true
 >clam clique
-WRONG
+You already got the clam clique on your side!
 
 >maam meek
 by one point

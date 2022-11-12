@@ -1,5 +1,3 @@
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-
 ## reg-ttdd-thru-all.txt
 ## GENERATOR FILE: rbr-ttdd-thru.txt
 
@@ -188,7 +186,7 @@ by one point
 The Sham Sheik looks peeved. You're getting to him!
 
 #testcase-run-vr-blam-bleak-rule-default
-WRONG
+Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.
 
 >slam sleek
 by one point
@@ -209,7 +207,7 @@ That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a 
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
 
 #testcase-run-vr-wham-weak-rule-default
-WRONG
+Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.
 
 >clam clique
 by one point

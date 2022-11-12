@@ -235,7 +235,7 @@ book cram creek
 
 Cram Creek is north of Rare Rows. "A creek turns in a U here, blocking every way except back south[if sco-clam-clique is false]. It's too mountainous other ways, as well[else if sheik-score is 3]. The area feels ready to burst out in life. You just need to [fig-rem-clam] what sort of animal could live in or near the creek[end if].". win-score of Cram Creek is 4. block-descrip-text of Cram Creek is "you need a way to get less wet before going north". printed name of Cram Creek is "[if sco-clam-clique is false]Cram Creek[else]Spam's Peak[end if]".
 
-from-number of cram creek is 2705. to-number of cram creek is 12117.
+from-number of cram creek is 2705. to-number of cram creek is 10818.
 
 to say fig-rem-clam:
 	process vc-clam-clique rule;
@@ -246,13 +246,13 @@ chapter Sham Sheik
 
 the Sham Sheik is a person in Cram Creek. "[one of]A Sham Sheik eyes you sardonically here. You know he is a Sham Sheik because, although he is not dressed ostentationsly, he is still wearing clothes labeling himself as such. He seems to think[or]The Sham Sheik continues to act as if[stopping] he owns the place and tries to tower over you.". description is "He shoos you away. You will have focus on, not physical interaction, but more how you both use your words."
 
-from-number of sham sheik is 2705. to-number of sham sheik is 12117.
+from-number of sham sheik is 2705. to-number of sham sheik is 10818.
 
 chapter clam clique
 
 the clam clique are plural-named people. "The clam clique you rescued from the Sham Sheik is here.". description is "They occasionally make weird noises as their shells open and close."
 
-from-number of clam clique is 2706. to-number of clam clique is 12117.
+from-number of clam clique is 2706. to-number of clam clique is 10818.
 
 book car cage
 

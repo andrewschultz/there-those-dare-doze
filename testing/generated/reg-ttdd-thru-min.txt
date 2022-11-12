@@ -1,5 +1,3 @@
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-
 ## reg-ttdd-thru-min.txt
 ## GENERATOR FILE: rbr-ttdd-thru.txt
 

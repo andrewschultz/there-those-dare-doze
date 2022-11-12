@@ -24,7 +24,7 @@ files=reg-ttdd-thru-min.txt,reg-ttdd-thru-all.txt,reg-ttdd-thru-reject.txt,reg-t
 ~	goto,gt,go	t10
 ~	hin,hint,hints	t11
 ~	hf,hfull	t12
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
 }$REJECT=I couldn't parse that command. You don't need any more than two words long.
@@ -749,7 +749,7 @@ You hear a commotion off to the east. The "How, er, whom" voice gets louder, the
 \\
 >ll whom
 !Counting
-WRONG
+Nothing comes up. You've changed How, Er, Whom? as much as you needed to.
 \\
 >undo
 >undo
@@ -1142,6 +1142,17 @@ WRONG
 #testcase-room-names-cram-creek
 `Cram Creek
 
+@hint
+#testcase-values-from-number-of-sham-sheik-is-2705
+>ll sheik
+You notice four dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.50.)
+\\
+#testcase-values-from-number-of-cram-creek-is-2705
+>ll
+You notice four dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.50.)
+
 @mis
 #testcase-mistakes-table-of-cram-creek-guesses-bam-beak
 >bam beak
@@ -1233,12 +1244,21 @@ The Sham Sheik looks peeved. You're getting to him!
 @all,rej
 {--rej}#testcase-check-vc-blam-bleak-rule-fallthrough
 {--all}#testcase-run-vr-blam-bleak-rule-default
-WRONG
+Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.
 
 @rej
 #testcase-check-vc-blam-bleak-rule-if-sco-blam-bleak-is-true
 >blam bleak
-WRONG
+You already fingered the Sham Sheik as bleak! And quite rightly, too.
+
+@hint
+#+testcase-values-from-number-of-sham-sheik-is-2705
+>ll sheik
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.66.)
+\\
+#+testcase-values-from-number-of-cram-creek-is-2705
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.66.)
 
 >slam sleek
 by one point
@@ -1255,7 +1275,7 @@ You don't just slam the Sheik. You do so with a minimum of wasted words, before 
 @rej
 #testcase-check-vc-slam-sleek-rule-if-sco-slam-sleek-is-true
 >slam sleek
-WRONG
+You already dropped a slam, sleek, on the Sham Sheik.
 
 >wham weak
 by one point
@@ -1270,12 +1290,12 @@ Oh, there's one more way to mock the now-departed Sheik if you want a bonus poin
 @all,rej
 {--all}#testcase-run-vr-wham-weak-rule-default
 {--rej}#testcase-check-vc-wham-weak-rule-fallthrough
-WRONG
+Straightforward but effective. You question how much power the Sheik has, and over whom. He winces.
 
 @rej
 #testcase-check-vc-wham-weak-rule-if-sco-wham-weak-is-true
 >wham weak
-WRONG
+You already fingered the Sham Sheik as weak! And quite rightly, too.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-12-clam
@@ -1290,6 +1310,15 @@ WRONG
 #+testcase-think-table-of-verb-checks-vc-clam-clique-rule
 >think
 You can summon a CLAM CLIQUE now you've pushed the Sham Sheik away in a verbal duel.
+
+@hint
+#testcase-values-from-number-of-sham-sheik-is-2705
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+\\
+#testcase-values-from-number-of-cram-creek-is-2705
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
 >clam clique
 by one point
@@ -1306,7 +1335,7 @@ Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet 
 @rej
 #testcase-check-vc-clam-clique-rule-if-sco-clam-clique-is-true
 >clam clique
-WRONG
+You already got the clam clique on your side!
 
 @hom
 #+ttc-table-of-room-homonyms-cram-creek-creak
@@ -1341,9 +1370,46 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >n
 `Spam's Peak
 
+@hint
+#testcase-values-from-number-of-cram-creek-is-2705
+>ll
+You scan the area.
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+##balance undos
+>s
+\\
+#testcase-values-from-number-of-clam-clique-is-2706
+>ll clam clique
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>maam meek
+by one point
+\\
+#testcase-values-from-number-of-clam-clique-is-2706
+>ll clam clique
+!You scan the area.
+Nothing comes up. You don't need to change the clam clique.
+!lights up
+\\
+>undo
+>undo
+>undo
+>undo
+
 @!min
 >maam meek
 by one point
+
+@hint
+#testcase-values-from-number-of-cram-creek-is-2705
+>ll
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
 
 @all
 #testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
