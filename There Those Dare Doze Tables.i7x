@@ -7,7 +7,7 @@ rorg.py organizes rules as they are in table (the puzzles are organized by room 
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"arrows"	--	"air/rows"	vh-arrows rule	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
+"arrows"	--	"air/rows/rose/roes"	vh-arrows rule	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
 "bare"	"bows"	--	--	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
 "fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
 "hair"	"hose"	"hare/hoes"	vh-hair-hose rule	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
@@ -97,7 +97,7 @@ a goodrhyme rule (this is the vc-hair-hose rule):
 
 this is the vr-hair-hose rule:
 	now sco-hair-hose is true;
-	say "You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.";
+	say "You now have stuff so your head doesn't get too wet. [if cram creek is tried]That'll make you less self-conscious going north![else]You're not sure why you need it, but it'll be helpful.[end if]";
 	ll-rows-down 2704;
 	try-open Cram Creek;
 
@@ -123,7 +123,7 @@ a goodrhyme rule (this is the vc-snare-snows rule):
 
 this is the vr-snare-snows rule:
 	now sco-snare-snows is true;
-	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.";
+	say "Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. [if rowr room is tried]You remember the heat off to the east[else]Some trial and error leads you, where the air starts getting hotter[end if]. You hear a sizzling as the snow disappears.";
 	ll-rows-down 2755;
 	try-open Rowr Room;
 
@@ -139,7 +139,7 @@ a goodrhyme rule (this is the vc-stair-stows rule):
 
 this is the vr-stair-stows rule:
 	now sco-stair-stows is true;
-	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place.";
+	say "You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! [if grave ground is tried]That'll fix the steep drop to the west[else]Then you wonder where to place it. Why, just off to the west, the land drops off. That's a good place[end if].";
 	ll-rows-down 2755;
 	try-open Grave Ground;
 
@@ -301,7 +301,7 @@ this is the vr-crave-crowned rule:
 	now sco-crave-crowned is true;
 	grave-ground-down 2757;
 	abide by the dave-bonus rule;
-	say "Dave seems charged with motivation!";
+	say "Dave seems charged with motivation to be the best at something, anything!";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-pave-pound rule):
@@ -315,7 +315,7 @@ this is the vr-pave-pound rule:
 	now sco-pave-pound is true;
 	grave-ground-down 2705;
 	abide by the dave-bonus rule;
-	say "Well it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.";
+	say "While it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-rave-round rule):
@@ -329,7 +329,7 @@ this is the vr-rave-round rule:
 	now sco-rave-round is true;
 	grave-ground-down 2705;
 	abide by the dave-bonus rule;
-	say "For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jolly and day around actually makes him feel better.";
+	say "For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jollying him around actually makes him feel better.";
 	abide by the ground-boost rule;
 
 a goodrhyme rule (this is the vc-save-sound rule):
@@ -469,6 +469,7 @@ a goodrhyme rule (this is the vc-hope-huts rule):
 	if sco-hope-huts is true:
 		vcal "You already created the hope huts!";
 		already-done;
+	abide by the huts-ruts-rows rule;
 	ready;
 
 this is the vr-hope-huts rule:
@@ -482,6 +483,7 @@ a goodrhyme rule (this is the vc-rope-ruts rule):
 	if sco-rope-ruts is true:
 		vcal "You already created the rope ruts!";
 		already-done;
+	abide by the huts-ruts-rows rule;
 	ready;
 
 this is the vr-rope-ruts rule:
@@ -526,6 +528,11 @@ to solve-room:
 	print-the-loc;
 
 section rare rows specific
+
+this is the huts-ruts-rows rule:
+	if player is not in rare rows:
+		vcp "This isn't such a good place for that. Go back to the Rare Rows.";
+		not-yet;
 
 to ll-rows-down (nu - a number):
 	decrease to-number of rare rows by nu;
@@ -582,7 +589,7 @@ this is the in-cage rule:
 	if player is not in Car Cage, say "You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!" instead;
 	if sco-star-stage is true:
 		say "The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you ";
-		if the player's command includes "phage", say "you set people on the pathway to cure the common cold. Not in your own universe, sadly.";
+		if the player's command includes "phage", say "set people on the pathway to cure the common cold. Not in your own universe, sadly.";
 		if the player's command includes "age", say "accelerated technological progress so people get jetpacks sooner. Not in your own universe, sadly.";
 		if the player's command includes "rage", say "allowed everyday folk to express their discontent in new and instructive ways.";
 		the rule succeeds;
@@ -617,7 +624,7 @@ this is the dave-bonus rule:
 		bump-room grave ground;
 		the rule succeeds;
 
-this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests[or]Dave looks really gung-ho now, but he looks confused whether to start[stopping].";
+this is the ground-boost rule: say "[one of]Dave's head stays raised after this bit of positivity[or]Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests[or]Dave looks really gung-ho now, but he looks confused about where to start with his goals[stopping].";
 
 section to the north
 
@@ -651,7 +658,7 @@ this is the check-sheik rule:
 		say "That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.[paragraph break]Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.";
 		moot sham sheik;
 		the rule succeeds;
-	say "The Sham Sheik looks [one of]slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover[or]genuinely vexed. You're getting to him[stopping]!";
+	say "The Sham Sheik looks [one of]slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover[or]genuinely vexed. You're getting to him[stopping]!";
 
 section to the east
 

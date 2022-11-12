@@ -11,7 +11,7 @@
 >au 2
 
 #testcase-homonym-detail-vh-arrows-rule-default
-#testcase-homonym-reject-table-of-verb-checks-air-rows
+#testcase-homonym-reject-table-of-verb-checks-air-rows-rose-roes
 >air
 No, that is only half it.
 
@@ -64,8 +64,11 @@ by one point
 by one point
 
 #+testcase-homonym-detail-vh-arrows-rule-default
-#+testcase-homonym-reject-table-of-verb-checks-air-rows
->air/rows
+#+testcase-homonym-reject-table-of-verb-checks-air-rows-rose-roes
+>air xxx
+No, that was only half it.
+
+>xxx rows
 No, that was only half it.
 
 >bare bows

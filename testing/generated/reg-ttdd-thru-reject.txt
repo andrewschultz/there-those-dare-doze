@@ -25,7 +25,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >crave crowned
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-dour-doom-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-dour-doom-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-dour-doom-rule
 >dour doom
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -40,16 +40,17 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >fave found
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-flower-flume-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-flower-flume-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-flower-flume-rule
 >flower flume
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-glower-gloom-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-glower-gloom-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-glower-gloom-rule
 >glower gloom
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-hope-huts-rule-abide-by-the-huts-ruts-rows-rule
 #testcase-reject-start-table-of-verb-checks-vc-hope-huts-rule
 >hope huts
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -69,7 +70,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >pave pound
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-plower-plume-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-plower-plume-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-plower-plume-rule
 >plower plume
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -84,6 +85,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >rave round
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-rope-ruts-rule-abide-by-the-huts-ruts-rows-rule
 #testcase-reject-start-table-of-verb-checks-vc-rope-ruts-rule
 >rope ruts
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -103,7 +105,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >star stage
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-tower-tomb-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-tower-tomb-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-tower-tomb-rule
 >tower tomb
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -113,7 +115,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >wham weak
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-wower-womb-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-wower-womb-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-wower-womb-rule
 >wower womb
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -197,7 +199,7 @@ You already harvested snows!
 by one point
 
 #testcase-check-vc-tower-tomb-rule-fallthrough
-WRONG
+Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though. Just having more places for the noise to dissipate is a good thing.
 
 #testcase-check-vc-tower-tomb-rule-if-sco-tower-tomb-is-true
 >tower tomb
@@ -207,7 +209,7 @@ WRONG
 by one point
 
 #testcase-check-vc-wower-womb-rule-fallthrough
-WRONG
+A passage opens downstairs briefly. It's too narrow, and anyway, one doesn't go back into a womb, but it's there. Just having more places for the noise to dissipate is a good thing.
 
 #testcase-check-vc-wower-womb-rule-if-sco-wower-womb-is-true
 >wower womb
@@ -227,7 +229,7 @@ WRONG
 by one point
 
 #testcase-check-vc-plower-plume-rule-fallthrough
-WRONG
+A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.
 
 #testcase-check-vc-plower-plume-rule-if-sco-plower-plume-is-true
 >plower plume
@@ -237,7 +239,7 @@ WRONG
 by one point
 
 #testcase-check-vc-dour-doom-rule-fallthrough
-WRONG
+You invoke a sense of doom so dour, the rowring itself gets quieter.
 
 #testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
 >dour doom
@@ -272,7 +274,7 @@ You already have enough allies!
 by one point
 
 #testcase-check-vc-arrows-rule-fallthrough
-Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.
+Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and there's got to be something that can sling them, somewhere.
 
 #testcase-check-vc-arrows-rule-if-sco-arrows-is-true
 >arrows
@@ -302,7 +304,7 @@ You can pull out the STAR STAGE once you've manipulated the Car Cage enough.
 by one point
 
 #testcase-check-vc-our-age-rule-fallthrough
-WRONG
+You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
 
 #testcase-check-vc-our-age-rule-if-sco-our-age-is-true
 >our age
@@ -312,7 +314,7 @@ WRONG
 by one point
 
 #testcase-check-vc-far-phage-rule-fallthrough
-You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
+A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!
 
 #testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
 >far phage
@@ -337,7 +339,7 @@ The star stage has already been summoned!
 by one point
 
 #testcase-check-vc-rar-rage-rule-fallthrough
-WRONG
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
 
 #testcase-check-vc-rar-rage-rule-if-sco-rar-rage-is-true
 >rar rage
@@ -345,11 +347,11 @@ WRONG
 
 >n
 
-#+testcase-check-vc-fair-foes-rule-if-sco-arrows-is-true
+#+testcase-check-vc-arrows-rule-if-sco-arrows-is-true
 >arrows
 You already had enough allies!
 
-#+testcase-check-vc-fair-foes-rule-if-sco-bare-bows-is-true
+#+testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
 >bare bows
 You already had enough allies!
 
@@ -362,7 +364,6 @@ by one point
 
 #testcase-check-vc-hair-hose-rule-fallthrough
 You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.
-WRONG different if gone north
 
 #testcase-check-vc-hair-hose-rule-if-sco-hair-hose-is-true
 >hair hose
@@ -426,11 +427,11 @@ You already got the clam clique on your side!
 by one point
 
 #testcase-check-vc-maam-meek-rule-fallthrough
-WRONG
+You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 
 #testcase-check-vc-maam-meek-rule-if-sco-maam-meek-is-true
 >maam meek
-WRONG
+You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.
 
 >s
 
@@ -442,17 +443,17 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 
 #testcase-check-vc-stair-stows-rule-if-sco-stair-stows-is-true
 >stair stows
-WRONG
+You already found where the missing stair was!
 
 >glare glows
 by one point
 
 #testcase-check-vc-glare-glows-rule-fallthrough
-WRONG
+You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.
 
 #testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
 >glare glows
-WRONG
+You already established an unnaturally bright glare of your own.
 
 >w
 
@@ -468,7 +469,7 @@ You can get Dave a FAVE FOUND once he has enough motivations to choose from.
 by one point
 
 #testcase-check-vc-crave-crowned-rule-fallthrough
-WRONG
+Dave seems charged with motivation to be the best at something, anything!
 
 #testcase-check-vc-crave-crowned-rule-if-sco-crave-crowned-is-true
 >crave crowned
@@ -488,7 +489,7 @@ You already encouraged Dave to save and be sound!
 by one point
 
 #testcase-check-vc-pave-pound-rule-fallthrough
-WRONG
+While it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.
 
 #testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
 >pave pound
@@ -502,7 +503,8 @@ You can get Dave a FAVE FOUND now he has enough motivations to choose from.
 by one point
 
 #testcase-check-vc-fave-found-rule-fallthrough
-WRONG
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
 
 #testcase-check-vc-fave-found-rule-if-sco-fave-found-is-true
 >fave found
@@ -512,10 +514,12 @@ You already helped Dave focus on a favorite goal!
 by one point
 
 #testcase-check-vc-rave-round-rule-fallthrough
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+!For whatever good it might do
 
 #testcase-check-vc-rave-round-rule-if-sco-rave-round-is-true
 >rave round
-WRONG
+Too much raving might leave Dave tired. Perhaps you should try something else.
 
 >e
 
@@ -670,5 +674,6 @@ You already created the rope ruts!
 by one point
 
 #testcase-check-vc-hope-huts-rule-fallthrough
-WRONG
+Huts are built! The Prayer Pros go over to inspect them.
+The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of "Ne'er Nos" or "Ne'er Knows" (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.
 

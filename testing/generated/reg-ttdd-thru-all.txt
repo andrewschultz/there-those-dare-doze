@@ -8,16 +8,37 @@
 
 * main-thru
 
->au 2
-
 #testcase-room-names-rare-rows
 `Rare Rows
+
+>au 2
+
+>n
+>hair hose
+You now have stuff so your head doesn't get too wet. That'll make you less self-conscious going north!
+
+>undo
+>undo
+
+>e
+>snare snows
+Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You remember the heat off to the east. You hear a sizzling as the snow disappears.
+
+>undo
+>undo
+
+>w
+>stair stows
+You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! That'll fix the steep drop to the west.
+
+>undo
+>undo
 
 >snare snows
 by one point
 
 #testcase-run-vr-snare-snows-rule-default
-Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.
+Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. Some trial and error leads you, where the air starts getting hotter. You hear a sizzling as the snow disappears.
 
 >e
 
@@ -28,25 +49,25 @@ Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your l
 by one point
 
 #testcase-run-vr-tower-tomb-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
 
 #testcase-run-vr-tower-tomb-rule-default
-WRONG
+Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though. Just having more places for the noise to dissipate is a good thing.
 
 >wower womb
 by one point
 
 #testcase-run-vr-wower-womb-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
 
 #testcase-run-vr-wower-womb-rule-default
-WRONG
+A passage opens downstairs briefly. It's too narrow, and anyway, one doesn't go back into a womb, but it's there. Just having more places for the noise to dissipate is a good thing.
 
 >flower flume
 by one point
 
 #testcase-run-vr-flower-flume-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
 
 #testcase-run-vr-flower-flume-rule-default
 Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyrotechnics definitely distract you from the noise.
@@ -55,28 +76,29 @@ Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyr
 by one point
 
 #testcase-run-vr-plower-plume-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
 
 #testcase-run-vr-plower-plume-rule-default
-WRONG
+#testcase-run-vr-plower-plume-rule-fallthrough
+A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.
 
 >dour doom
 by one point
 
 #+testcase-room-names-rowr-room
-`Rowr Room
+`Bower (BOOM!)
 
 #testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
 
 #testcase-run-vr-dour-doom-rule-default
-WRONG
+You invoke a sense of doom so dour, the rowring itself gets quieter.
 
 >glower gloom
 by one point
 
 #testcase-run-vr-glower-gloom-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+Nothing much happens otherwise, but you feel good about going above and beyond.
 
 #testcase-run-vr-glower-gloom-rule-default
 You invoke a sense of gloom so glowery, the rowring itself gets quieter.
@@ -85,9 +107,6 @@ You invoke a sense of gloom so glowery, the rowring itself gets quieter.
 
 >fair foes
 by one point
-
-#testcase-run-vr-fair-foes-rule-abide-by-the-to-cage-progress-rule
-WRONG
 
 #testcase-run-vr-fair-foes-rule-default
 Several warriors approach. They introduce themselves as the Fair Foes. They will be very objective, but decisive, in disposing of baddies. They will be invulnerable to any sly counterarguments.
@@ -100,7 +119,8 @@ Splat! And just like that, a bunch of high quality bows, or what you assumed to 
 #testcase-run-vr-arrows-rule-default
 >arrows
 by one point
-Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but there's got to be some, somewhere.
+Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and they're good ammo for the bare bows.
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 
 >undo
 >undo
@@ -109,16 +129,16 @@ Splat! And just like that, a bunch of high quality bows, or what you assumed to 
 by one point
 
 #testcase-run-vr-arrows-rule-abide-by-the-to-cage-progress-rule
-WRONG
+The fair foes pick up the arrows and study them with interest, but something is missing.
 
 #+testcase-run-vr-arrows-rule-default
-Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.
+Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and there's got to be something that can sling them, somewhere.
 
 >bare bows
 by one point
 
 #testcase-run-vr-bare-bows-rule-abide-by-the-to-cage-progress-rule
-WRONG
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 
 #+testcase-run-vr-bare-bows-rule-default
 Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but that's okay. You already have some.
@@ -132,19 +152,21 @@ Splat! And just like that, a bunch of high quality bows, or what you assumed to 
 by one point
 
 #testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
-WRONG
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
+However, it settles back. But you did something, you know that.
 
 #testcase-run-vr-our-age-rule-default
-WRONG
+You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
 
 >far phage
 by one point
 
 #testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
-WRONG
+Something has shattered. The car cage can become something more positive, you feel.
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
 
 #testcase-run-vr-far-phage-rule-default
-You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
+A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!
 
 >star stage
 by one point
@@ -156,14 +178,22 @@ by one point
 On the star stage, the Mar Mage suddenly grows more powerful. You seem to have no chance...
 ...until in swoops a savior from distant lands. The SAAR SAGE! The battle is quick, pyrotechnic and brutal.
 
+#testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
+>n
+>rar rage
+You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
+
+>undo
+>undo
+
 >rar rage
 by one point
 
-#testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
-WRONG
+#+testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
 
 #testcase-run-vr-rar-rage-rule-default
-WRONG
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
 
 >n
 
@@ -172,7 +202,6 @@ by one point
 
 #testcase-run-vr-hair-hose-rule-default
 You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.
-WRONG different if gone north
 
 >n
 
@@ -183,7 +212,7 @@ WRONG different if gone north
 by one point
 
 #testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
-The Sham Sheik looks peeved. You're getting to him!
+The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover!
 
 #testcase-run-vr-blam-bleak-rule-default
 Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surprisingly, he has no good refutation.
@@ -192,7 +221,7 @@ Ooh! Cutting! You claim the Sheik is not as happy or powerful as he seems. Surpr
 by one point
 
 #testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
-The Sham Sheik looks a little more peeved. You're getting to him!
+The Sham Sheik looks genuinely vexed. You're getting to him!
 
 #testcase-run-vr-slam-sleek-rule-default
 You don't just slam the Sheik. You do so with a minimum of wasted words, before he can cut you off and tell you you're boring. You repeat the barb, as if he did not understand the first time. Devastating!
@@ -223,7 +252,7 @@ Hooray! With the Sham Sheik gone, the clam clique is unafraid to come out greet 
 by one point
 
 >maam meek
-by one point
+You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.
 
 >undo
 >undo
@@ -233,10 +262,10 @@ by one point
 by one point
 
 #testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
-And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures elsewhere.
+You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 
 #testcase-run-vr-maam-meek-rule-default
-WRONG
+You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 
 >s
 
@@ -250,7 +279,7 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 by one point
 
 #testcase-run-vr-glare-glows-rule-default
-WRONG
+You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.
 
 >w
 
@@ -260,17 +289,11 @@ WRONG
 >crave crowned
 by one point
 
-#testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
-WRONG
-
 #testcase-run-vr-crave-crowned-rule-default
-WRONG
+Dave seems charged with motivation to be the best at something, anything!
 
 >save sound
 by one point
-
-#testcase-run-vr-save-sound-rule-abide-by-the-ground-boost-rule
-WRONG
 
 #testcase-run-vr-save-sound-rule-default
 You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.
@@ -278,11 +301,8 @@ You catalog ways to save things soundly, as well as ways to economize on the yel
 >pave pound
 by one point
 
-#testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
-WRONG
-
 #testcase-run-vr-pave-pound-rule-default
-WRONG
+While it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.
 
 >fave found
 by one point
@@ -291,15 +311,15 @@ by one point
 `Wave (Wound)
 
 #testcase-run-vr-fave-found-rule-default
-WRONG
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
 
 >rave round
 by one point
 
-#testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
-WRONG
-
 #testcase-run-vr-rave-round-rule-default
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+!For whatever good it might do
 
 >e
 
@@ -330,7 +350,8 @@ Rope ruts appear!
 by one point
 
 #testcase-run-vr-hope-huts-rule-default
-WRONG
+Huts are built! The Prayer Pros go over to inspect them.
+The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of "Ne'er Nos" or "Ne'er Knows" (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.
 
 #+testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule
 DONE DISHIN' FUN FISHIN'

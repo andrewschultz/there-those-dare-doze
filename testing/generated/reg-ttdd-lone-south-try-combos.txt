@@ -9,6 +9,75 @@
 
 * main-thru
 
+>a 2
+
+#first, we detect each combination of arrows/bows/foes including which came last
+
+#a-1
+>arrows
+WRONG
+
+#b-3
+>bare bows
+WRONG
+
+#f-7
+>fair foes
+WRONG
+
+>undo
+>undo
+
+#f-4
+>fair foes
+WRONG
+
+>undo
+>undo
+
+#b-2
+>bare bows
+WRONG
+
+#a-3
+>arrows
+WRONG
+
+>undo
+
+#b-6
+>fair foes
+WRONG
+
+#a-7
+>arrows
+WRONG
+
+>undo
+>undo
+
+#f-4
+>fair foes
+WRONG
+
+#a-5
+>arrows
+WRONG
+
+#b-7
+>bare bows
+WRONG
+
+>undo
+>undo
+
+#b-6
+>bare bows
+WRONG
+
+>undo
+>undo
+
 # test case 0
 
 >;0

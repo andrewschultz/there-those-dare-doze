@@ -60,11 +60,11 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 * main-thru
 
->au 2
-
 @all
 #testcase-room-names-rare-rows
 `Rare Rows
+
+>au 2
 
 @hints
 #testcase-values-from-number-of-rare-rows-is-2704
@@ -176,7 +176,7 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 >crave crowned
 {$REJECT2}
 \\
-#testcase-check-vc-dour-doom-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-dour-doom-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-dour-doom-rule
 >dour doom
 {$REJECT2}
@@ -191,16 +191,17 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 >fave found
 {$REJECT2}
 \\
-#testcase-check-vc-flower-flume-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-flower-flume-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-flower-flume-rule
 >flower flume
 {$REJECT2}
 \\
-#testcase-check-vc-glower-gloom-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-glower-gloom-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-glower-gloom-rule
 >glower gloom
 {$REJECT2}
 \\
+#testcase-check-vc-hope-huts-rule-abide-by-the-huts-ruts-rows-rule
 #testcase-reject-start-table-of-verb-checks-vc-hope-huts-rule
 >hope huts
 {$REJECT2}
@@ -220,7 +221,7 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 >pave pound
 {$REJECT2}
 \\
-#testcase-check-vc-plower-plume-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-plower-plume-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-plower-plume-rule
 >plower plume
 {$REJECT2}
@@ -235,6 +236,7 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 >rave round
 {$REJECT2}
 \\
+#testcase-check-vc-rope-ruts-rule-abide-by-the-huts-ruts-rows-rule
 #testcase-reject-start-table-of-verb-checks-vc-rope-ruts-rule
 >rope ruts
 {$REJECT2}
@@ -254,7 +256,7 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 >star stage
 {$REJECT2}
 \\
-#testcase-check-vc-tower-tomb-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-tower-tomb-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-tower-tomb-rule
 >tower tomb
 {$REJECT2}
@@ -264,7 +266,7 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 >wham weak
 {$REJECT2}
 \\
-#testcase-check-vc-wower-womb-rule-if-player-is-not-in-rowr-room
+#testcase-check-vc-wower-womb-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-wower-womb-rule
 >wower womb
 {$REJECT2}
@@ -329,6 +331,28 @@ But you're trying to help them!
 You don't need any special verbs to win. The four basic cardinal directions work, and you can T NPC for small clues, maybe. The main thing is to guess what to say--you may note something about the room name and the pest.
 OPTS also gives options.
 META gives meta-commands that show general information.
+
+@all
+>n
+>hair hose
+You now have stuff so your head doesn't get too wet. That'll make you less self-conscious going north!
+\\
+>undo
+>undo
+\\
+>e
+>snare snows
+Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You remember the heat off to the east. You hear a sizzling as the snow disappears.
+\\
+>undo
+>undo
+\\
+>w
+>stair stows
+You just know somewhere there's a stair hidden. It's a matter of finding it. And you do! That'll fix the steep drop to the west.
+\\
+>undo
+>undo
 
 @rej
 ##balance undos
@@ -415,7 +439,7 @@ by one point
 
 @hom
 #testcase-homonym-detail-vh-arrows-rule-default
-#testcase-homonym-reject-table-of-verb-checks-air-rows
+#testcase-homonym-reject-table-of-verb-checks-air-rows-rose-roes
 >air
 No, that is only half it.
 \\
@@ -548,7 +572,7 @@ by one point
 @all
 {--rej}#testcase-check-vc-snare-snows-rule-fallthrough
 {--all}#testcase-run-vr-snare-snows-rule-default
-Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. You find it, off to the east, where the air starts getting hotter. You hear a sizzling as the snow disappears.
+Oh, there you go. You wait a bit, and you shuffle your feet, and somehow, your little snow dance works. You collect the snow, and you look for places to put it before it melts. Some trial and error leads you, where the air starts getting hotter. You hear a sizzling as the snow disappears.
 
 @rej
 #testcase-check-vc-snare-snows-rule-if-sco-snare-snows-is-true
@@ -643,12 +667,12 @@ by one point
 
 @all
 #testcase-run-vr-tower-tomb-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+You feel a slight but long-lasting tremor. The noise seems to reduce a bit, which is nice.
 
 @all,rej
 {--all}#testcase-run-vr-tower-tomb-rule-default
 {--rej}#testcase-check-vc-tower-tomb-rule-fallthrough
-WRONG
+Pop! It seems like you can see a passage briefly to a tower tomb. But it covers up. You know it's there, though. Just having more places for the noise to dissipate is a good thing.
 
 @rej
 #testcase-check-vc-tower-tomb-rule-if-sco-tower-tomb-is-true
@@ -666,12 +690,12 @@ by one point
 
 @all
 #testcase-run-vr-wower-womb-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
 
 @all,rej
 {--all}#testcase-run-vr-wower-womb-rule-default
 {--rej}#testcase-check-vc-wower-womb-rule-fallthrough
-WRONG
+A passage opens downstairs briefly. It's too narrow, and anyway, one doesn't go back into a womb, but it's there. Just having more places for the noise to dissipate is a good thing.
 
 @rej
 #testcase-check-vc-wower-womb-rule-if-sco-wower-womb-is-true
@@ -688,7 +712,7 @@ by one point
 
 @all
 #testcase-run-vr-flower-flume-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+The room seems to shake significantly. You stumble a bit. The room feels very unstable. The noise is almost bearable now, and perhaps you can make it completely so.
 
 @all,rej
 {--all}#testcase-run-vr-flower-flume-rule-default
@@ -711,12 +735,12 @@ by one point
 
 @all
 #testcase-run-vr-plower-plume-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+You feel a sense of intellectual satisfaction but not emotional fulfillment. Perhaps you need to shift your focus on what to change.
 
 @all,rej
-{--all}#testcase-run-vr-plower-plume-rule-default
+{--all}#testcase-run-vr-plower-plume-rule-default\\#testcase-run-vr-plower-plume-rule-fallthrough
 {--rej}#testcase-check-vc-plower-plume-rule-fallthrough
-WRONG
+A giant plume rises into the air. Two, actually. One of a snow plow, the other of a plow you might see on the farm. They seem to almost try to destroy the room you are in.
 
 @rej
 #testcase-check-vc-plower-plume-rule-if-sco-plower-plume-is-true
@@ -733,15 +757,15 @@ by one point
 
 @all
 #+testcase-room-names-rowr-room
-`Rowr Room
+`Bower (BOOM!)
 \\
 #testcase-run-vr-dour-doom-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+Suddenly, you hear a rumbling. The top blows off the room! It's now a bower! Words escape -- simple ones, you can't quite figure them out--back to the Rare Rows. You can find more to do if you want, but you've done what you need.
 
 @all,rej
 {--all}#testcase-run-vr-dour-doom-rule-default
 {--rej}#testcase-check-vc-dour-doom-rule-fallthrough
-WRONG
+You invoke a sense of doom so dour, the rowring itself gets quieter.
 
 @rej
 #testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
@@ -804,7 +828,7 @@ by one point
 
 @all
 #testcase-run-vr-glower-gloom-rule-abide-by-the-rowr-room-transform-rule
-WRONG
+Nothing much happens otherwise, but you feel good about going above and beyond.
 
 @all,rej
 {--all}#testcase-run-vr-glower-gloom-rule-default
@@ -830,10 +854,6 @@ A guide gong rings to notify you that you don't need to go back through Bower (B
 
 >fair foes
 by one point
-
-@all
-#testcase-run-vr-fair-foes-rule-abide-by-the-to-cage-progress-rule
-WRONG
 
 @all,rej
 {--rej}#testcase-check-vc-fair-foes-rule-fallthrough
@@ -863,7 +883,8 @@ Splat! And just like that, a bunch of high quality bows, or what you assumed to 
 #testcase-run-vr-arrows-rule-default
 >arrows
 by one point
-Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but there's got to be some, somewhere.
+Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and they're good ammo for the bare bows.
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 \\
 >undo
 >undo
@@ -873,12 +894,12 @@ by one point
 
 @all
 #testcase-run-vr-arrows-rule-abide-by-the-to-cage-progress-rule
-WRONG
+The fair foes pick up the arrows and study them with interest, but something is missing.
 
 @all,rej
 {--all}#+testcase-run-vr-arrows-rule-default
 {--rej}#testcase-check-vc-arrows-rule-fallthrough
-Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting.
+Now that you know to look for arrows, or to some of them, you find a bunch, and a bunch fall from the sky, too. Fortunately, none fall on your head. There's enough for a good round of fighting, and there's got to be something that can sling them, somewhere.
 
 @rej
 #testcase-check-vc-arrows-rule-if-sco-arrows-is-true
@@ -892,8 +913,11 @@ There's no need to split up the arrows.
 
 @hom
 #+testcase-homonym-detail-vh-arrows-rule-default
-#+testcase-homonym-reject-table-of-verb-checks-air-rows
->air/rows
+#+testcase-homonym-reject-table-of-verb-checks-air-rows-rose-roes
+>air xxx
+No, that was only half it.
+\\
+>xxx rows
 No, that was only half it.
 
 >bare bows
@@ -901,7 +925,7 @@ by one point
 
 @all
 #testcase-run-vr-bare-bows-rule-abide-by-the-to-cage-progress-rule
-WRONG
+The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. They are ready to do as you command.
 
 @all,rej
 {--all}#+testcase-run-vr-bare-bows-rule-default
@@ -1051,12 +1075,13 @@ by one point
 
 @all
 #testcase-run-vr-our-age-rule-abide-by-the-cage-change-rule
-WRONG
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "Lucky! It can't happen again!"
+However, it settles back. But you did something, you know that.
 
 @all,rej
 {--rej}#testcase-check-vc-our-age-rule-fallthrough
 {--all}#testcase-run-vr-our-age-rule-default
-WRONG
+You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
 
 @rej
 #testcase-check-vc-our-age-rule-if-sco-our-age-is-true
@@ -1064,12 +1089,12 @@ WRONG
 WRONG
 
 @hint
-#testcase-values-from-number-of-car-cage-is-2654
+#+testcase-values-from-number-of-car-cage-is-2654
 >ll
 You notice two dots in the corner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 \\
-#testcase-values-from-number-of-mar-mage-is-2654
+#+testcase-values-from-number-of-mar-mage-is-2654
 >ll mar mage
 You notice two dots in the corner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
@@ -1079,12 +1104,13 @@ by one point
 
 @all
 #testcase-run-vr-far-phage-rule-abide-by-the-cage-change-rule
-WRONG
+Something has shattered. The car cage can become something more positive, you feel.
+The universe seems to lurch, or at least this small part of it. The Mar Mage shakes their fist. "No! I don't believe it! You can't keep this up!"
 
 @all,rej
 {--all}#testcase-run-vr-far-phage-rule-default
 {--rej}#testcase-check-vc-far-phage-rule-fallthrough
-You drag the Mar Mage out of whatever temporal oddity they are living in to face the present and also to make sure their hand isn't in the cookie jar of some ancient magic. They blush. Guilty!
+A distant virus pops through and seeps into the Mar Mage. The strongest staff in the world won't do any good, here!
 
 @rej
 #testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
@@ -1106,12 +1132,12 @@ You already aligned things temporally!
 You can pull out the STAR STAGE now you've manipulated the Car Cage enough.
 
 @hint
-#testcase-values-from-number-of-car-cage-is-2654
+#+testcase-values-from-number-of-car-cage-is-2654
 >ll
 You notice one dot in the corner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
-#testcase-values-from-number-of-mar-mage-is-2654
+#+testcase-values-from-number-of-mar-mage-is-2654
 >ll mar mage
 You notice one dot in the corner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
@@ -1161,6 +1187,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 \\
 ##balance undos
 >n
+\\
 #testcase-values-from-number-of-saar-sage-is-2704
 >ll saar sage
 You notice one dot in the corner.
@@ -1179,18 +1206,27 @@ Nothing comes up. You don't need to change the Saar Sage.
 >undo
 >undo
 
+@all
+#testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
+>n
+>rar rage
+You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hooray, brownie points!
+\\
+>undo
+>undo
+
 @!min
 >rar rage
 by one point
 
 @all
-#testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
-WRONG
+#+testcase-run-vr-rar-rage-rule-abide-by-the-cage-change-rule
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
 
 @all,rej
 {--all}#testcase-run-vr-rar-rage-rule-default
 {--rej}#testcase-check-vc-rar-rage-rule-fallthrough
-WRONG
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you allowed everyday folk to express their discontent in new and instructive ways.
 
 @rej
 #testcase-check-vc-rar-rage-rule-if-sco-rar-rage-is-true
@@ -1204,11 +1240,11 @@ WRONG
 That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
 
 @rej
-#+testcase-check-vc-fair-foes-rule-if-sco-arrows-is-true
+#+testcase-check-vc-arrows-rule-if-sco-arrows-is-true
 >arrows
 You already had enough allies!
 \\
-#+testcase-check-vc-fair-foes-rule-if-sco-bare-bows-is-true
+#+testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
 >bare bows
 You already had enough allies!
 \\
@@ -1235,7 +1271,6 @@ by one point
 {--rej}#testcase-check-vc-hair-hose-rule-fallthrough
 {--all}#testcase-run-vr-hair-hose-rule-default
 You now have stuff so your head doesn't get too wet. You're not sure why you need it, but it'll be helpful.
-WRONG different if gone north
 
 @rej
 #testcase-check-vc-hair-hose-rule-if-sco-hair-hose-is-true
@@ -1345,7 +1380,7 @@ by one point
 
 @all
 #testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
-The Sham Sheik looks peeved. You're getting to him!
+The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace yet, but he realizes you're no pushover!
 
 @all,rej
 {--rej}#testcase-check-vc-blam-bleak-rule-fallthrough
@@ -1371,7 +1406,7 @@ by one point
 
 @all
 #testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
-The Sham Sheik looks a little more peeved. You're getting to him!
+The Sham Sheik looks genuinely vexed. You're getting to him!
 
 @all,rej
 {--rej}#testcase-check-vc-slam-sleek-rule-fallthrough
@@ -1418,11 +1453,11 @@ You already fingered the Sham Sheik as weak! And quite rightly, too.
 You can summon a CLAM CLIQUE now you've pushed the Sham Sheik away in a verbal duel.
 
 @hint
-#testcase-values-from-number-of-sham-sheik-is-2705
+#+testcase-values-from-number-of-sham-sheik-is-2705
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 \\
-#testcase-values-from-number-of-cram-creek-is-2705
+#+testcase-values-from-number-of-cram-creek-is-2705
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
@@ -1455,7 +1490,7 @@ A different sort of noise was required here.
 by one point
 \\
 >maam meek
-by one point
+You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.
 \\
 >undo
 >undo
@@ -1477,7 +1512,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 `Spam's Peak
 
 @hint
-#testcase-values-from-number-of-cram-creek-is-2705
+#+testcase-values-from-number-of-cram-creek-is-2705
 >ll
 You scan the area.
 You notice two dots in the corner.
@@ -1494,9 +1529,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
 >maam meek
+The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 by one point
 \\
-#testcase-values-from-number-of-clam-clique-is-2706
+#+testcase-values-from-number-of-clam-clique-is-2706
 >ll clam clique
 !You scan the area.
 Nothing comes up. You don't need to change the clam clique.
@@ -1512,24 +1548,24 @@ Nothing comes up. You don't need to change the clam clique.
 by one point
 
 @hint
-#testcase-values-from-number-of-cram-creek-is-2705
+#+testcase-values-from-number-of-cram-creek-is-2705
 >ll
 You scan the area.
 Nothing comes up. The general area here has been changed enough.
 
 @all
 #testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
-And why not? You're not doing this to pile on, but rather, to help the next person who may be frustrated with his trolling. One can always use better preventative measures elsewhere.
+You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 
 @all,rej
 {--all}#testcase-run-vr-maam-meek-rule-default
 {--rej}#testcase-check-vc-maam-meek-rule-fallthrough
-WRONG
+You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 
 @rej
 #testcase-check-vc-maam-meek-rule-if-sco-maam-meek-is-true
 >maam meek
-WRONG
+You already cut at the Sham Sheik's overvaluation of the masculine ideal, or something.
 
 >s
 
@@ -1561,7 +1597,7 @@ You just know somewhere there's a stair hidden. It's a matter of finding it. And
 @rej
 #testcase-check-vc-stair-stows-rule-if-sco-stair-stows-is-true
 >stair stows
-WRONG
+You already found where the missing stair was!
 
 @hint
 #+testcase-values-from-number-of-rare-rows-is-2704
@@ -1581,12 +1617,12 @@ by one point
 @all,rej
 {--all}#testcase-run-vr-glare-glows-rule-default
 {--rej}#testcase-check-vc-glare-glows-rule-fallthrough
-WRONG
+You look around, and you see a pair of eyes staring back at you. But instead of flinching, you look into them. You feel scared at first, but slowly, you get your courage out. It makes you feel you won't be stared down by anybody trying to pretend you are out of your league.
 
 @rej
 #testcase-check-vc-glare-glows-rule-if-sco-glare-glows-is-true
 >glare glows
-WRONG
+You already established an unnaturally bright glare of your own.
 
 >w
 
@@ -1678,14 +1714,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >crave crowned
 by one point
 
-@all
-#testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
-WRONG
-
 @all,rej
 {--all}#testcase-run-vr-crave-crowned-rule-default
 {--rej}#testcase-check-vc-crave-crowned-rule-fallthrough
-WRONG
+Dave seems charged with motivation to be the best at something, anything!
 
 @rej
 #testcase-check-vc-crave-crowned-rule-if-sco-crave-crowned-is-true
@@ -1703,10 +1735,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >save sound
 by one point
-
-@all
-#testcase-run-vr-save-sound-rule-abide-by-the-ground-boost-rule
-WRONG
 
 @all,rej
 {--rej}#testcase-check-vc-save-sound-rule-fallthrough
@@ -1730,14 +1758,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >pave pound
 by one point
 
-@all
-#testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
-WRONG
-
 @all,rej
 {--all}#testcase-run-vr-pave-pound-rule-default
 {--rej}#testcase-check-vc-pave-pound-rule-fallthrough
-WRONG
+While it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.
 
 @rej
 #testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
@@ -1777,7 +1801,8 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-fave-found-rule-fallthrough
 {--all}#testcase-run-vr-fave-found-rule-default
-WRONG
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
 
 @rej
 #testcase-check-vc-fave-found-rule-if-sco-fave-found-is-true
@@ -1808,18 +1833,16 @@ Wave (Wound)
 >rave round
 by one point
 
-@all
-#testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
-WRONG
-
 @all,rej
 {--all}#testcase-run-vr-rave-round-rule-default
 {--rej}#testcase-check-vc-rave-round-rule-fallthrough
+You feel a ripple across space. Dave must be that much happier back in Rare Rows.
+!For whatever good it might do
 
 @rej
 #testcase-check-vc-rave-round-rule-if-sco-rave-round-is-true
 >rave round
-WRONG
+Too much raving might leave Dave tired. Perhaps you should try something else.
 \\
 >e
 \\
@@ -2219,7 +2242,8 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-hope-huts-rule-fallthrough
 {--all}#testcase-run-vr-hope-huts-rule-default
-WRONG
+Huts are built! The Prayer Pros go over to inspect them.
+The Prayer Pros look at the ruts and huts and back and forth. Yes. The new meditation places are adequate. The Prayer Pros all bow slightly to you, shaking your hand and clapping your shoulder in turn. A chorus of "Ne'er Nos" or "Ne'er Knows" (it could be either) rises. They no longer notice you. You feel deserted and trapped at first.
 
 @all
 #+testcase-run-vr-hope-huts-rule-abide-by-the-huts-and-ruts-rule

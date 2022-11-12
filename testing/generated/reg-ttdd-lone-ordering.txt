@@ -323,31 +323,63 @@ You hear a rumbling to the south. The Saar Sage seems invigorated as well. Hoora
 >undo
 
 >far phage
-The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you you set people on the pathway to cure the common cold. Not in your own universe, sadly.
+The star stage seems pretty relaxed, but for whatever reason, your action, incongruous as it seems, made things better. Without knowing it, you set people on the pathway to cure the common cold. Not in your own universe, sadly.
 
 >n
+
+############################################################west room
 
 >stair stows
 by one point
 
 >w
 
+#testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
+#testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
+Dave seems charged with motivation!
 Dave's head stays raised after this bit of positivity.
 
+#testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
+#testcase-run-vr-pave-pound-rule-fallthrough
 >pave pound
 by one point
-Dave pumps his fist. And yet he isn't fully energized. Yet.
+While it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.
+Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests.
 
+#testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
+#testcase-run-vr-rave-round-rule-fallthrough
 >rave round
 by one point
-Dave looks really gung-ho now.
+For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jollying him around actually makes him feel better.
+Dave looks really gung-ho now, but he looks confused about where to start with his goals.
 
+#testcase-run-vr-save-sound-rule-abide-by-the-dave-bonus-rule
+>save sound
+by one point
+!You catalog ways
+Dave pumps his fist. He's grateful for the additional support!
+
+#testcase-run-vr-fave-found-rule-if-dave-score-is-3
 >fave found
+by one point
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
+`Wave (Wound)
+
+>undo
+>undo
+
+#+testcase-run-vr-fave-found-rule-if-dave-score-is-3
+>fave found
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
+`Wave (Wound)
 
 >e
 
+#+testcase-run-vr-save-sound-rule-abide-by-the-dave-bonus-rule
 >save sound
 by one point
 Dave pumps his fist. He's grateful for the additional support!
@@ -368,22 +400,40 @@ You feel a ripple across space. Dave must be that much happier back in Rare Rows
 >undo
 >undo
 
+#+testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-pave-pound-rule-fallthrough
 >pave pound
 by one point
+While it's unclear whether or not you need to exhort Dave to pound the pavement, or if you have a pound full of prisoners to pay. Either way, it seems to interest him more than you'd expect.
 Dave's head stays raised after this bit of positivity.
+[Your score just went up by one point.]
 
+#+testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-rave-round-rule-fallthrough
 >rave round
 by one point
-Dave pumps his fist. And yet he isn't fully energized. Yet.
+For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jollying him around actually makes him feel better.
+Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests.
+[Your score just went up by one point.]
 
+#testcase-run-vr-save-sound-rule-abide-by-the-ground-boost-rule
+#testcase-run-vr-save-sound-rule-fallthrough
 >save sound
-by one point
-Dave looks really gung-ho now.
+You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.
+Dave looks really gung-ho now, but he looks confused about where to start with his goals.
+[Your score just went up by one point.]
 
+#+testcase-run-vr-fave-found-rule-if-dave-score-is-3
 >fave found
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
+Wave (Wound)
+[Your score just went up by one point.]
 
 >e
 
+#testcase-run-vr-crave-crowned-rule-abide-by-the-dave-bonus-rule
+#+testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
 Dave pumps his fist. He's grateful for the additional support!
@@ -392,6 +442,8 @@ Dave pumps his fist. He's grateful for the additional support!
 >undo
 >undo
 
+#+testcase-run-vr-crave-crowned-rule-abide-by-the-dave-bonus-rule
+#+testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
 You feel a ripple across space. Dave must be that much happier back in Rare Rows.
@@ -404,22 +456,41 @@ You feel a ripple across space. Dave must be that much happier back in Rare Rows
 >undo
 >undo
 
+#+testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-rave-round-rule-fallthrough
 >rave round
 by one point
 Dave's head stays raised after this bit of positivity.
+For whatever good it might do, you run around in a circle acting as sort of a hype man or woman or whatever. Surprisingly, all this jollying him around actually makes him feel better.
+[Your score just went up by one point.]
 
+#+testcase-run-vr-rave-round-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-rave-round-rule-fallthrough
 >save sound
 by one point
-Dave pumps his fist. And yet he isn't fully energized. Yet.
+You catalog ways to save things soundly, as well as ways to economize on the yelling you need to do. Dave looks relieved at all this, explaining briefly that he always felt that if he wasn't yelling, he wasn't really giving 110%. He knows better now.
+Dave pumps his fist. And yet he isn't fully energized. Yet. In fact he seems to be weighing his two new interests.
+[Your score just went up by one point.]
 
+#+testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
-Dave looks really gung-ho now.
+Dave seems charged with motivation!
+Dave looks really gung-ho now, but he looks confused about where to start with his goals.
+[Your score just went up by one point.]
 
+#+testcase-run-vr-fave-found-rule-if-dave-score-is-3
 >fave found
+"Aha! Yes, that's what I'll focus on. My afterlife has not just purpose now but also focus!" Dave gives you a thumbs-up.
+You feel a big wave in from the distance, not actually water to get you wet and all upset and so forth, but a wave of energy. Well, it sort of paused there at first, to wind up and build up kinetic energy before actually releasing itself. That just made everything powerful. Dave seems to glow as it passes through him, saying he'll see you in a bit as he runs to Rare Rows, and you feel energized, yourself.
+Wave (Wound)
+[Your score just went up by one point.]
 
 >e
 
+#testcase-run-vr-pave-pound-rule-abide-by-the-dave-bonus-rule
+#+testcase-run-vr-pave-pound-rule-fallthrough
 >pave pound
 by one point
 Dave pumps his fist. He's grateful for the additional support!
@@ -428,6 +499,8 @@ Dave pumps his fist. He's grateful for the additional support!
 >undo
 >undo
 
+#+testcase-run-vr-pave-pound-rule-abide-by-the-dave-bonus-rule
+#+testcase-run-vr-pave-pound-rule-fallthrough
 >pave pound
 by one point
 You feel a ripple across space. Dave must be that much happier back in Rare Rows.
@@ -440,22 +513,31 @@ You feel a ripple across space. Dave must be that much happier back in Rare Rows
 >undo
 >undo
 
+#+testcase-run-vr-save-sound-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-save-sound-rule-fallthrough
 >save sound
 by one point
 Dave's head stays raised after this bit of positivity.
 
+#+testcase-run-vr-crave-crowned-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-crave-crowned-rule-fallthrough
 >crave crowned
 by one point
 Dave pumps his fist. And yet he isn't fully energized. Yet.
 
+#+testcase-run-vr-pave-pound-rule-abide-by-the-ground-boost-rule
+#+testcase-run-vr-pave-pound-rule-fallthrough
 >pave pound
 by one point
-Dave looks really gung-ho now.
+Dave looks really gung-ho now, but he looks confused about where to start with his goals.
 
+#+testcase-run-vr-fave-found-rule-if-dave-score-is-3
 >fave found
 
 >e
 
+#testcase-run-vr-rave-round-rule-abide-by-the-dave-bonus-rule
+#+testcase-run-vr-rave-round-rule-fallthrough
 >rave round
 by one point
 Dave pumps his fist. He's grateful for the additional support!
@@ -464,6 +546,8 @@ Dave pumps his fist. He's grateful for the additional support!
 >undo
 >undo
 
+#+testcase-run-vr-rave-round-rule-abide-by-the-dave-bonus-rule
+#+testcase-run-vr-rave-round-rule-fallthrough
 >rave round
 by one point
 You feel a ripple across space. Dave must be that much happier back in Rare Rows.
@@ -479,27 +563,60 @@ You feel a ripple across space. Dave must be that much happier back in Rare Rows
 >hair hose
 by one point
 
+############################################################north room
+
 >n
 
+#+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
 >blam bleak
 by one point
 The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
 [Your score just went up by one point.]
 
+#+testcase-check-vc-maam-meek-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
 >maam meek
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
 
+#+testcase-check-vc-slam-sleek-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
 >slam sleek
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
 
+>wham weak
+by one point
 >clam clique
+by one point
+#testcase-run-vr-clam-clique-rule-if-sheik-score-is-3
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with the location's rhymes.
+Nothing comes up. The general area here has been changed enough.
+
+>undo
+>undo
+>undo
+
+>clam clique
+by one point
+
+#+testcase-run-vr-clam-clique-rule-if-sheik-score-is-3
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with the location's rhymes.
+You notice two dots in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>undo
 
 >s
 
+#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
 >wham weak
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
@@ -508,6 +625,8 @@ The clam clique rapidly opens and closes their shells favorably. The clacking is
 >undo
 >undo
 
+#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
 >wham weak
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
@@ -519,37 +638,53 @@ You shout your final critique for all to hear. Maybe the immediate victory was w
 >undo
 >undo
 
+#+testcase-check-vc-maam-meek-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-maam-meek-rule-abide-by-the-check-sheik-rule
 >maam meek
 by one point
 The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
 [Your score just went up by one point.]
+WRONG
 
+#+testcase-check-vc-slam-sleek-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
 >slam sleek
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
+WRONG
 
+#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
 >wham weak
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
+WRONG
 
 >clam clique
+by one point
 
 >s
 
+#testcase-run-vr-blam-bleak-rule-abide-by-the-sheik-bonus-rule
+#testcase-run-vr-blam-bleak-rule-fallthrough
 >blam bleak
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 [Your score and bonus points just went up by one point.]
+WRONG
 
 >undo
 >undo
 
+#+testcase-run-vr-blam-bleak-rule-abide-by-the-sheik-bonus-rule
+#+testcase-run-vr-blam-bleak-rule-fallthrough
 >blam bleak
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 [Your score and bonus points just went up by one point.]
+WRONG
 >undo
 
 >undo
@@ -557,37 +692,54 @@ You shout your final critique for all to hear. Maybe the immediate victory was w
 >undo
 >undo
 
+#+testcase-check-vc-slam-sleek-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-slam-sleek-rule-abide-by-the-check-sheik-rule
 >slam sleek
 by one point
 The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
 [Your score just went up by one point.]
+WRONG
 
+#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
 >wham weak
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
+WRONG
 
+#+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
 >blam bleak
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
+WRONG
 
 >clam clique
+by one point
 
 >s
 
+#testcase-run-vr-maam-meek-rule-abide-by-the-sheik-bonus-rule
+#testcase-run-vr-maam-meek-rule-fallthrough
 >maam meek
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 [Your score and bonus points just went up by one point.]
+WRONG
 
 >undo
 >undo
 
+#+testcase-run-vr-maam-meek-rule-abide-by-the-sheik-bonus-rule
+#+testcase-run-vr-maam-meek-rule-fallthrough
 >maam meek
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 [Your score and bonus points just went up by one point.]
+WRONG
+
 >undo
 
 >undo
@@ -595,37 +747,54 @@ You shout your final critique for all to hear. Maybe the immediate victory was w
 >undo
 >undo
 
+#+testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-wham-weak-rule-abide-by-the-check-sheik-rule
 >wham weak
 by one point
 The Sham Sheik looks slightly irked and less intimidating. You can't administer a coup de grace, but he realizes you're no pushover!
 [Your score just went up by one point.]
+WRONG
 
+#+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
 >blam bleak
 by one point
 The Sham Sheik looks genuinely vexed. You're getting to him!
 [Your score just went up by one point.]
+WRONG
 
+#+testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
+#+testcase-run-vr-blam-bleak-rule-abide-by-the-check-sheik-rule
 >maam meek
 by one point
 That does it! The Sham Sheik retreats in humiliation. The creek seems to stir a bit. You may have to call what's in there.
 Oh, there's one more way to mock the now-departed Sheik if you want a bonus point, but it's not critical.
+WRONG
 
 >clam clique
+by one point
 
 >s
 
+#testcase-run-vr-slam-sleek-rule-abide-by-the-sheik-bonus-rule
+#testcase-run-vr-slam-sleek-rule-fallthrough
 >slam sleek
 by one point
 The clam clique rapidly opens and closes their shells favorably. The clacking is as close to a laugh as you'll get. You're not running up the score, but rather, you're just making sure someone like the Sham Sheik can't cast a spell next time.
 [Your score and bonus points just went up by one point.]
+WRONG
 
 >undo
 >undo
 
+#+testcase-run-vr-slam-sleek-rule-abide-by-the-sheik-bonus-rule
+#+testcase-run-vr-slam-sleek-rule-fallthrough
 >slam sleek
 by one point
 You shout your final critique for all to hear. Maybe the immediate victory was won, but hooray eternal vigilance against stuff like the Sham Sheik pulls, and all that sort of thing.
 [Your score and bonus points just went up by one point.]
+WRONG
+
 >undo
 
 >undo

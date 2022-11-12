@@ -158,7 +158,7 @@ guess-table of ppnn is table of ppnn guesses.
 
 chapter Prayer Pros
 
-the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4]mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them.". description is "[if number of solved rooms is 4]They look back at you expectantly[else]They all lie solemn in their rare rows, eyes closed, hands folded. What mental energy they must have expended in their failure! But perhaps it is not failure. Perhaps you were chosen as the agent of help[end if].".
+the Prayer Pros are people in Rare Rows. "The Prayer Pros [if number of solved rooms is 4] have finally woken! They mill about here, looking for a new home[else]still lie here. You are confident you will do what you need to wake them[end if].". description is "[if number of solved rooms is 4]They look back at you expectantly[else]They all lie solemn in their rare rows, eyes closed, hands folded. What mental energy they must have expended in their failure! But perhaps it is not failure. Perhaps you were chosen as the agent of help[end if].".
 
 from-number of prayer pros is 2804. to-number of prayer pros is 19030.
 
@@ -200,7 +200,7 @@ from-number of grave ground is 2756. to-number of grave ground is 10872.
 
 chapter dave downed
 
-Dave Downed is a person in Grave Ground. "[if player is in grave ground][one of]A ghost floats into view and identifies himself as Dave (Downed). He mentions he'd like motivation to afterlive it up a bit more, and it should come form within, but it doesn't. Can you help him?[or]Dave (Downed) is here, [one of][or]still [stopping]looking [dave-upset] upset and, oh yeah, vaguely undead.[stopping][else]Dave waits a lot more cheerily here than when you first saw him.[end if]". description is "[if player is in grave ground]He looks purposeless and adrift[else]Happy enough, almost impatient to do something real[end if]."
+Dave Downed is a person in Grave Ground. "[if player is in grave ground][one of]A ghost floats into view and identifies himself as Dave (Downed). He mentions he'd like motivation to afterlive it up a bit more, and it should come form within, but it doesn't. Can you help him?[or]Dave (Downed) is here, [one of][or]still [stopping]looking [dave-upset] upset and, oh yeah, vaguely undead.[stopping][else]Dave waits a lot more cheerily here than when you first saw him.[end if]". description is "[if player is in grave ground]He looks purposeless and adrift[else]Happy enough, almost impatient to do something real[end if].". printed name of Dave Downed is "Dave (Downed)".
 
 from-number of dave downed is 2706. to-number of dave downed is 10872.
 
@@ -456,8 +456,12 @@ this is the verb-checker rule:
 		if shut-scan is true, next;
 		if two-too is true and player has leet learner:
 			if there is a posthom entry:
+				now vc-dont-print is true;
+				process the check-rule entry;
+				let rb-out be the outcome of the rulebook;
+				now vc-dont-print is false;
 				if the player's command includes the posthom entry:
-					if rb-out is worth-parsing:
+					if rb-out is worth-parsing or rb-out is the already-done outcome:
 						now local-post-hom is true;
 						now hom-row is global-row-check;
 		if ha-half is true and my-count is 1 and player has leet learner:
