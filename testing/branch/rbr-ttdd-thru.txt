@@ -30,7 +30,7 @@ files=reg-ttdd-thru-min.txt,reg-ttdd-thru-all.txt,reg-ttdd-thru-reject.txt,reg-t
 }$REJECT=I couldn't parse that command. You don't need any more than two words long.
 }$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
-}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, There Those Dare Doze has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
 }$GREENCORE=The HA HALF button on your Leet Learner lights up green.
@@ -65,6 +65,9 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 `Rare Rows
 
 >au 2
+
+@rej
+>z
 
 @hints
 #testcase-values-from-number-of-rare-rows-is-2704
@@ -164,112 +167,112 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 #testcase-check-vc-blam-bleak-rule-abide-by-the-creek-sheik-rule
 #testcase-reject-start-table-of-verb-checks-vc-blam-bleak-rule
 >blam bleak
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-clam-clique-rule-unless-player-is-in-cram-creek-or-clam-clique-is-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-clam-clique-rule
 >clam clique
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-crave-crowned-rule-abide-by-the-grave-dave-rule
 #testcase-reject-start-table-of-verb-checks-vc-crave-crowned-rule
 >crave crowned
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-dour-doom-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-dour-doom-rule
 >dour doom
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-far-phage-rule-abide-by-the-cage-or-sage-rule
 #testcase-reject-start-table-of-verb-checks-vc-far-phage-rule
 >far phage
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-fave-found-rule-abide-by-the-grave-dave-rule
 #testcase-reject-start-table-of-verb-checks-vc-fave-found-rule
 >fave found
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-flower-flume-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-flower-flume-rule
 >flower flume
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-glower-gloom-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-glower-gloom-rule
 >glower gloom
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-hope-huts-rule-abide-by-the-huts-ruts-rows-rule
 #testcase-reject-start-table-of-verb-checks-vc-hope-huts-rule
 >hope huts
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-maam-meek-rule-abide-by-the-creek-sheik-rule
 #testcase-reject-start-table-of-verb-checks-vc-maam-meek-rule
 >maam meek
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-our-age-rule-abide-by-the-cage-or-sage-rule
 #testcase-reject-start-table-of-verb-checks-vc-our-age-rule
 >our age
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-pave-pound-rule-abide-by-the-grave-dave-rule
 #testcase-reject-start-table-of-verb-checks-vc-pave-pound-rule
 >pave pound
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-plower-plume-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-plower-plume-rule
 >plower plume
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-rar-rage-rule-abide-by-the-cage-or-sage-rule
 #testcase-reject-start-table-of-verb-checks-vc-rar-rage-rule
 >rar rage
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-rave-round-rule-abide-by-the-grave-dave-rule
 #testcase-reject-start-table-of-verb-checks-vc-rave-round-rule
 >rave round
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-rope-ruts-rule-abide-by-the-huts-ruts-rows-rule
 #testcase-reject-start-table-of-verb-checks-vc-rope-ruts-rule
 >rope ruts
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-save-sound-rule-abide-by-the-grave-dave-rule
 #testcase-reject-start-table-of-verb-checks-vc-save-sound-rule
 >save sound
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-slam-sleek-rule-abide-by-the-creek-sheik-rule
 #testcase-reject-start-table-of-verb-checks-vc-slam-sleek-rule
 >slam sleek
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-star-stage-rule-if-player-is-not-in-car-cage
 #testcase-reject-start-table-of-verb-checks-vc-star-stage-rule
 >star stage
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-tower-tomb-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-tower-tomb-rule
 >tower tomb
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-wham-weak-rule-abide-by-the-creek-sheik-rule
 #testcase-reject-start-table-of-verb-checks-vc-wham-weak-rule
 >wham weak
-{$REJECT2}
+{$REJECT}
 \\
 #testcase-check-vc-wower-womb-rule-abide-by-the-rowr-how-er-rule
 #testcase-reject-start-table-of-verb-checks-vc-wower-womb-rule
 >wower womb
-{$REJECT2}
+{$REJECT}
 ====alphabetize off
 
 @verbs
@@ -333,6 +336,7 @@ OPTS also gives options.
 META gives meta-commands that show general information.
 
 @all
+##balance undos
 >n
 >hair hose
 You now have stuff so your head doesn't get too wet. That'll make you less self-conscious going north!
@@ -395,7 +399,7 @@ by one point
 #testcase-check-vc-arrows-rule-if-player-is-not-in-rare-rows
 #testcase-reject-start-table-of-verb-checks-vc-arrows-rule
 >arrows
-{$REJECT2}
+{$REJECT1}
 \\
 >undo
 \\
@@ -526,6 +530,7 @@ Self-mutilation is not a good alternative to prayer.
 
 @hin
 # this is weird because no matter which area we do last, one will trigger the Prayer Pros waking, neutralizing everyone else. I could put in a testing flag to keep people there, but I want a real-world test case.
+##balance undos
 >stair stows
 by one point
 \\
@@ -677,7 +682,7 @@ Pop! It seems like you can see a passage briefly to a tower tomb. But it covers 
 @rej
 #testcase-check-vc-tower-tomb-rule-if-sco-tower-tomb-is-true
 >tower tomb
-WRONG
+You already built a tower-tomb!
 
 @hint
 #+testcase-values-from-number-of-rowr-room-is-2704
@@ -700,7 +705,7 @@ A passage opens downstairs briefly. It's too narrow, and anyway, one doesn't go 
 @rej
 #testcase-check-vc-wower-womb-rule-if-sco-wower-womb-is-true
 >wower womb
-WRONG
+Duplicating wow factor doesn't increase the wows.
 
 @hint
 #+testcase-values-from-number-of-rowr-room-is-2704
@@ -722,7 +727,7 @@ Oh wow! Not just one flower flume but a whole bouquet of flowers! The visual pyr
 @rej
 #testcase-check-vc-flower-flume-rule-if-sco-flower-flume-is-true
 >flower flume
-WRONG
+The flower flume was a neat one-time display. It's done its work.
 
 @hint
 #+testcase-values-from-number-of-rowr-room-is-2704
@@ -745,7 +750,7 @@ A giant plume rises into the air. Two, actually. One of a snow plow, the other o
 @rej
 #testcase-check-vc-plower-plume-rule-if-sco-plower-plume-is-true
 >plower plume
-WRONG
+The plower plume was a neat one-time display. It's done its work.
 
 @hint
 #+testcase-values-from-number-of-rowr-room-is-2704
@@ -770,10 +775,7 @@ You invoke a sense of doom so dour, the rowring itself gets quieter.
 @rej
 #testcase-check-vc-dour-doom-rule-if-sco-dour-doom-is-true
 >dour doom
-You scan the area.
-You notice one dot in the corner.
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+No, all that doom you fobbed off might leak back into you.
 
 @gong
 >w
@@ -838,7 +840,7 @@ You invoke a sense of gloom so glowery, the rowring itself gets quieter.
 @rej
 #testcase-check-vc-glower-gloom-rule-if-sco-glower-gloom-is-true
 >glower gloom
-WRONG
+There's a limit to how much glowering and gloom is helpful, here.
 
 @hint
 #+testcase-values-from-number-of-rowr-room-is-2704
@@ -972,7 +974,7 @@ You remember, for no parrticular reason, that a 64-gauge cigar is one inch thick
 @rej
 #testcase-check-vc-star-stage-rule-if-cage-prep-score-<-2
 >star stage
-WRONG
+You haven't prepared enough to change the stage yet. But yes, that is the way to go once you do!
 \\
 #testcase-think-table-of-verb-checks-vc-star-stage-rule
 >think
@@ -1086,7 +1088,7 @@ You drag the Mar Mage out of whatever temporal oddity they are living in to face
 @rej
 #testcase-check-vc-our-age-rule-if-sco-our-age-is-true
 >our age
-WRONG
+You already aligned things temporally!
 
 @hint
 #+testcase-values-from-number-of-car-cage-is-2654
@@ -1115,7 +1117,7 @@ A distant virus pops through and seeps into the Mar Mage. The strongest staff in
 @rej
 #testcase-check-vc-far-phage-rule-if-sco-far-phage-is-true
 >far phage
-You already aligned things temporally!
+Too many phages, and they might infect you!
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-16-stage
@@ -1231,7 +1233,7 @@ The star stage seems pretty relaxed, but for whatever reason, your action, incon
 @rej
 #testcase-check-vc-rar-rage-rule-if-sco-rar-rage-is-true
 >rar rage
-WRONG
+You already raged effectively! The next time won't work so well. It might be counterproductive.
 
 >n
 
@@ -1242,11 +1244,11 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 @rej
 #+testcase-check-vc-arrows-rule-if-sco-arrows-is-true
 >arrows
-You already had enough allies!
+You already had enough ammunition!
 \\
 #+testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
 >bare bows
-You already had enough allies!
+You already had enough weaponry!
 \\
 #+testcase-check-vc-fair-foes-rule-if-sco-fair-foes-is-true
 >fair foes
@@ -1275,7 +1277,7 @@ You now have stuff so your head doesn't get too wet. You're not sure why you nee
 @rej
 #testcase-check-vc-hair-hose-rule-if-sco-hair-hose-is-true
 >hair hose
-WRONG
+You already acquired hair hose!
 
 >n
 
@@ -1369,7 +1371,8 @@ The creek goes off too far into the distance. Whatever you need to do, it has to
 @rej
 #testcase-check-vc-clam-clique-rule-if-sheik-score-<-3
 >clam clique
-WRONG
+You hear a commotion beneath the creek, but one look from the Sham Sheik, and the riverbed inhabitants go calm again.
+(useful command again saved to THINK for later reference.)
 \\
 #testcase-think-table-of-verb-checks-vc-clam-clique-rule
 >think
@@ -1638,7 +1641,8 @@ You call for a wave, but it might not come until after Dave's sorted out what he
 @rej
 #testcase-check-vc-fave-found-rule-if-dave-score-<-3
 >fave found
-WRONG
+That would be a great idea once Dave had more than one goal to choose from.
+(useful command again saved to THINK for later reference.)
 \\
 #testcase-think-table-of-verb-checks-vc-fave-found-rule
 >think
@@ -1723,6 +1727,12 @@ Dave seems charged with motivation to be the best at something, anything!
 #testcase-check-vc-crave-crowned-rule-if-sco-crave-crowned-is-true
 >crave crowned
 You already gave Dave a need for a literal or figurative crown!
+\\
+#+testcase-check-vc-fave-found-rule-if-dave-score-<-3
+>fave found
+That would be a great idea once Dave had some more goals to choose from.
+Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
+!(useful command again saved to THINK for later reference.)
 
 @hint
 #+testcase-values-from-number-of-grave-ground-is-2756
@@ -1745,6 +1755,12 @@ You catalog ways to save things soundly, as well as ways to economize on the yel
 #testcase-check-vc-save-sound-rule-if-sco-save-sound-is-true
 >save sound
 You already encouraged Dave to save and be sound!
+\\
+#+testcase-check-vc-fave-found-rule-if-dave-score-<-3
+>fave found
+That would be a great idea once Dave had just one more goal to choose from.
+Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
+!(useful command again saved to THINK for later reference.)
 
 @hint
 #+testcase-values-from-number-of-grave-ground-is-2756
@@ -1766,7 +1782,7 @@ While it's unclear whether or not you need to exhort Dave to pound the pavement,
 @rej
 #testcase-check-vc-pave-pound-rule-if-sco-pave-pound-is-true
 >pave pound
-Too much raving might leave Dave tired. Perhaps you should try something else.
+You already gave Dave motivation to pound the pavement!
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-21-fave
@@ -1850,11 +1866,13 @@ Too much raving might leave Dave tired. Perhaps you should try something else.
 \\
 #testcase-check-vc-hope-huts-rule-if-ppnn-is-not-fungible
 >hope huts
-WRONG
+This isn't such a good place for that. Go back to the Rare Rows.
+(useful command again saved to THINK for later reference.)
 \\
 #testcase-check-vc-rope-ruts-rule-if-ppnn-is-not-fungible
 >rope ruts
-WRONG
+This isn't such a good place for that. Go back to the Rare Rows.
+(useful command again saved to THINK for later reference.)
 
 >e
 
@@ -1973,10 +1991,12 @@ Spam's Peak
 `Rare Rows
 
 @rej
+>n
+\\
 ====alphabetize on
 #testcase-reject-end-table-of-verb-checks-vc-arrows-rule
 >arrows
-{$REJECT2}
+{$REJECT1}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-bare-bows-rule
 >bare bows
@@ -2002,6 +2022,8 @@ Spam's Peak
 >stair stows
 {$REJECT2}
 ====alphabetize off
+\\
+>s
 
 @hin
 #+testcase-values-from-number-of-prayer-pros-is-2804
@@ -2059,10 +2081,6 @@ You don't need any more arrows raining down.
 >glower gloom
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vc-hope-huts-rule
->hope huts
-{$REJECT2}
-\\
 #testcase-reject-end-table-of-verb-checks-vc-maam-meek-rule
 >maam meek
 {$REJECT2}
@@ -2085,10 +2103,6 @@ You don't need any more arrows raining down.
 \\
 #testcase-reject-end-table-of-verb-checks-vc-rave-round-rule
 >rave round
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-verb-checks-vc-rope-ruts-rule
->rope ruts
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-save-sound-rule

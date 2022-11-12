@@ -307,7 +307,7 @@ this is the vr-crave-crowned rule:
 a goodrhyme rule (this is the vc-pave-pound rule):
 	abide by the grave-dave rule;
 	if sco-pave-pound is true:
-		vcal "You already boosted Dave this way!";
+		vcal "You already gave Dave motivation to pound the pavement!";
 		already-done;
 	ready;
 
@@ -349,7 +349,7 @@ this is the vr-save-sound rule:
 a goodrhyme rule (this is the vc-fave-found rule):
 	abide by the grave-dave rule;
 	if dave-score < 3:
-		vcp "Hmm, that would be a good idea once Dave had [if dave-score is 0]favorites[else if dave-score is 1]some more[else]a bit more[end if] desires to choose from.";
+		vcp "That would be a great idea once Dave had [if dave-score is 0]more than one goal[else if dave-score is 1]some more goals[else]just one more goal[end if] to choose from.";
 		not-yet;
 	if sco-fave-found is true:
 		vcal "You already helped Dave focus on a favorite goal!";
@@ -419,7 +419,7 @@ this is the vr-dour-doom rule:
 a goodrhyme rule (this is the vc-glower-gloom rule):
 	abide by the rowr-how-er rule;
 	if sco-glower-gloom is true:
-		vcal "THere's a limit to how much glowering and gloom is helpful, here.";
+		vcal "There's a limit to how much glowering and gloom is helpful, here.";
 		already-done;
 	ready;
 
