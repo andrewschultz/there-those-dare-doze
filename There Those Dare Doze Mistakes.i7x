@@ -15,11 +15,11 @@ mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 volume room guesses
 
 table of car cage guesses
-mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
+mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 "gar gauge"	--	false	--	"You remember, for no parrticular reason, that a 64-gauge cigar is one inch thick. Or is that diameter? Or circumference?"
 
 table of cram creek guesses
-mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
+mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 "bam beak"	--	false	--	"Alas, no birds swoop down to assist you."
 "lamb leak|leek"	--	false	--	"That might work in a pasture, but not here."
 "spam speak"	no-clique rule	false	--	"You need quality and not quantity of words. Plus, you're not sure how to speak in ALL CAPS."
@@ -29,7 +29,7 @@ this is the no-clique rule:
 	the rule fails;
 
 table of grave ground guesses
-mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
+mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 "wave wound"	no-wave rule	--	--	"You call for a wave, but it might not come until after Dave's sorted out what he likes."
 
 this is the no-wave rule:
@@ -37,7 +37,7 @@ this is the no-wave rule:
 	the rule fails;
 
 table of rare rows guesses
-mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
+mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 "air|err|ere ohs|owes"	--	false	--	"[if arrows are moot]You don't need any more arrows raining down[else if sco-arrows is true]There's no need to split up the arrows[else]Hmm! You feel on the right track, for some odd reason. But you can't put everything together[end if]."
 "blare blows"	--	false	--	"No euphemisms for violence, please."
 "brer bros"	--	false	--	"That's overdoing the whole 'we are family' angle."
@@ -68,7 +68,7 @@ mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
 volume thing guesses
 
 table of ppnn guesses
-mist-regex	mist-rule	got-yet	leet-rule	mist-txt
+mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 "cope cuts"	--	false	--	"The right idea, but you need something more concrete."
 "mope mutts"	--	false	--	"The Prayer Pros could use pets, even ones not very cheery, but first comes more basic needs."
 "slope sluts"	--	false	--	"Whoever they're for, um, no."
