@@ -8,7 +8,7 @@ rorg.py organizes rules as they are in table (the puzzles are organized by room 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "arrows"	--	"air/rows/rose/roes"	vh-arrows rule	false	true	true	false	rare rows	vc-arrows rule	vr-arrows rule	"arrows"	--
-"bare"	"bows"	--	--	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
+"bare"	"bows"	"bear"	vh-bare-bows rule	false	true	true	false	rare rows	vc-bare-bows rule	vr-bare-bows rule	--	--
 "fair"	"foes"	--	--	false	true	true	false	rare rows	vc-fair-foes rule	vr-fair-foes rule	--	--
 "hair"	"hose"	"hare/hoes"	vh-hair-hose rule	false	true	true	false	rare rows	vc-hair-hose rule	vr-hair-hose rule	--	--
 "glare"	"glows"	--	--	false	true	true	false	rare rows	vc-glare-glows rule	vr-glare-glows rule	--	--
@@ -53,6 +53,9 @@ this is the vr-arrows rule:
 	move arrows to rare rows;
 	ll-rows-down 2653;
 	abide by the to-cage-progress rule;
+
+this is the vh-bare-bows rule:
+	say "[if bare bows are moot]You already had allies for the big fight[else if bare bows are fungible]No, bears can't handle bows[else]While there may be a big fight and stuff, the bears here don't have enough of a moral compass to help you[end if].";
 
 a goodrhyme rule (this is the vc-bare-bows rule):
 	if player is not in rare rows, unavailable;

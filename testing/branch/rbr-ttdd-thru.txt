@@ -458,6 +458,11 @@ You'd need more than one rabbit.
 #+testcase-homonym-detail-vh-hair-hose-rule-if-the-player's-command-includes-hare
 >hoes
 Not around the Prayer Pros! Something less sacrilegious, if you please.
+\\
+#testcase-homonym-reject-table-of-verb-checks-bear
+#testcase-homonym-detail-vh-bare-bows-rule-default
+>bear boas
+While there may be a big fight and stuff, the bears here don't have enough of a moral compass to help you.
 
 @mis
 #testcase-mistakes-table-of-rare-rows-guesses-air-err-ere-ohs-owes
@@ -934,6 +939,11 @@ The fair foes nod appreciatively. They nock arrows to the bare bows, then nod. T
 {--rej}#testcase-check-vc-bare-bows-rule-fallthrough
 Splat! And just like that, a bunch of high quality bows, or what you assumed to be high quality, drop from some unknown direction on the ground. They don't have any ammunition to go with them, but that's okay. You already have some.
 
+@hom
+#+testcase-homonym-detail-vh-bare-bows-rule-default
+>bear bos
+No, bears can't handle bows.
+
 @rej
 #testcase-check-vc-bare-bows-rule-if-sco-bare-bows-is-true
 >bare bows
@@ -1240,6 +1250,11 @@ You already raged effectively! The next time won't work so well. It might be cou
 @gong,prong
 >s
 That guide gong, again, rings to notify you that you don't need to go back through Star Stage.
+
+@hom
+#+testcase-homonym-detail-vh-bare-bows-rule-default
+>bear boss
+You already had allies for the big fight.
 
 @rej
 #+testcase-check-vc-arrows-rule-if-sco-arrows-is-true

@@ -27,6 +27,11 @@ You'd need more than one rabbit.
 >hoes
 Not around the Prayer Pros! Something less sacrilegious, if you please.
 
+#testcase-homonym-reject-table-of-verb-checks-bear
+#testcase-homonym-detail-vh-bare-bows-rule-default
+>bear boas
+While there may be a big fight and stuff, the bears here don't have enough of a moral compass to help you.
+
 >snare snows
 by one point
 
@@ -74,6 +79,10 @@ No, that was only half it.
 >bare bows
 by one point
 
+#+testcase-homonym-detail-vh-bare-bows-rule-default
+>bear bos
+No, bears can't handle bows.
+
 >s
 
 #testcase-homonym-reject-table-of-verb-checks-hour
@@ -94,6 +103,10 @@ by one point
 by one point
 
 >n
+
+#+testcase-homonym-detail-vh-bare-bows-rule-default
+>bear boss
+You already had allies for the big fight.
 
 >hair hose
 by one point
