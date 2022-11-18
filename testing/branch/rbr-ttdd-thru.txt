@@ -380,7 +380,7 @@ You see a body of water far ahead! Suddenly, you are irrationally worried you ha
 \\
 >s
 "I am the MAR MAGE!" a voice booms. You're blown back a bit.
-Sadly, you are repressed a bit too much by the argument. "No way! You can't! You haven't been fully objective! And even if you were, I'd probably be too strong for you!"
+As if the outright bluster weren't enough, you're hit with an argument as well. "You're totally invading my personal space! Sure, you think I'm the bad guy! But you haven't been fully objective! And even if you were, I'd start a righteous war, and stuff! You couldn't attack me alone!"
 You realize you'll be needing the right allies, fully armed.
 \\
 >e
@@ -482,15 +482,27 @@ That's overdoing the whole "we are family" angle.
 No, more than corporate help is required here.
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-claire-close-clothes
->claire close clothes
+>claire close
+No, what you're wearing is okay, and you don't need someone to help you finish the job.
+\\
+>claire clothes
 No, what you're wearing is okay, and you don't need someone to help you finish the job.
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-flayer-flare-flair-flows
->flayer flare flair flows
+>flare flows
+Alas, anything violent or even a bright explosion may be overkill.
+\\
+>flayer flows
+Alas, anything violent or even a bright explosion may be overkill.
+\\
+>flair flows
 Alas, anything violent or even a bright explosion may be overkill.
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-frere-fros-froze
->frere fros froze
+>frere fros
+Foreign language is innovative but not necessary.
+\\
+>frere froze
 Foreign language is innovative but not necessary.
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-impair-impose
@@ -502,28 +514,40 @@ Psychological warfare is not the way to go. It is the opposite of prayer. Even c
 You briefly spend a second fearing if someone or something down under might swallow you up. It does not. Whoah!
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-mare-mayor-mows
->mare mayor mows
+>mare mows
+The land is too desolate to need mowing.
+\\
+>mayor mows
 The land is too desolate to need mowing.
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
 >neer knows
-But prayer and such is built on faith.
+But prayer and such is built on faith!
 \\
 #+testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
 >nair knows
-But prayer and such is built on faith.
+But prayer and such is built on faith!
 \\
 #+testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
 >neer nose
-No, you're much better looking with your nose attached to your face.
+No, you're much better looking with your nose attached to your face!
 \\
 #+testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
 >nair nose
-Cosmetic hair removal can wait. You, like, have a spiritual quest, and stuff. Or something.
+Cosmetic hair removal can wait. You, like, have a big important spiritual quest, or something!
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-pair-pare-pose-poes
->pair pare pose poes
+>pair pose
 No, one must be sincere and not pose.
+\\
+>pare pose
+No, one must be sincere and not pose.
+\\
+>pair poes
+A suitable author for Halloween, but I'm trying to avoid literary references. Unless they give a really awful pun.
+\\
+>pare poes
+A suitable author for Halloween, but I'm trying to avoid literary references. Unless they give a really awful pun.
 \\
 #testcase-mistakes-table-of-rare-rows-guesses-spare-spose
 >spare spose
@@ -1317,7 +1341,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 Alas, no birds swoop down to assist you.
 \\
 #testcase-mistakes-table-of-cram-creek-guesses-lamb-leak-leek
->lamb leak leek
+>lamb leak
 That might work in a pasture, but not here.
 \\
 >lamb leek

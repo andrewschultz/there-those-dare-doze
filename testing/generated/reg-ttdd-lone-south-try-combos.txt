@@ -9,6 +9,8 @@
 
 * main-thru
 
+>z
+
 >a 2
 
 #first, we detect each combination of arrows/bows/foes including which came last

@@ -1,0 +1,266 @@
+## reg-ttdd-thru-mistakes.txt
+## GENERATOR FILE: rbr-ttdd-thru.txt
+
+## walkthrough testing all mistakes
+
+** game: /home/andrew/prt/debug-there-those-dare-doze.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+#testcase-mistakes-table-of-general-good-guesses-ride-wrong
+>ride wrong
+There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end.
+
+#testcase-mistakes-table-of-general-good-guesses-side-song
+>side song
+This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art.
+
+#testcase-mistakes-table-of-rare-rows-guesses-air-err-ere-ohs-owes
+>err ohs
+Hmm! You feel on the right track, for some odd reason. But you can't put everything together.
+
+#testcase-mistakes-table-of-rare-rows-guesses-blare-blows
+>blare blows
+No euphemisms for violence, please.
+
+#testcase-mistakes-table-of-rare-rows-guesses-brer-bros
+>brer bros
+That's overdoing the whole "we are family" angle.
+
+#testcase-mistakes-table-of-rare-rows-guesses-care-cos
+>care cos
+No, more than corporate help is required here.
+
+#testcase-mistakes-table-of-rare-rows-guesses-claire-close-clothes
+>claire close
+No, what you're wearing is okay, and you don't need someone to help you finish the job.
+
+>claire clothes
+No, what you're wearing is okay, and you don't need someone to help you finish the job.
+
+#testcase-mistakes-table-of-rare-rows-guesses-flayer-flare-flair-flows
+>flare flows
+Alas, anything violent or even a bright explosion may be overkill.
+
+>flayer flows
+Alas, anything violent or even a bright explosion may be overkill.
+
+>flair flows
+Alas, anything violent or even a bright explosion may be overkill.
+
+#testcase-mistakes-table-of-rare-rows-guesses-frere-fros-froze
+>frere fros
+Foreign language is innovative but not necessary.
+
+>frere froze
+Foreign language is innovative but not necessary.
+
+#testcase-mistakes-table-of-rare-rows-guesses-impair-impose
+>impair impose
+Psychological warfare is not the way to go. It is the opposite of prayer. Even clever stuff like what you just found.
+
+#testcase-mistakes-table-of-rare-rows-guesses-lair-lows
+>lair lows
+You briefly spend a second fearing if someone or something down under might swallow you up. It does not. Whoah!
+
+#testcase-mistakes-table-of-rare-rows-guesses-mare-mayor-mows
+>mare mows
+The land is too desolate to need mowing.
+
+>mayor mows
+The land is too desolate to need mowing.
+
+#testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
+>neer knows
+But prayer and such is built on faith!
+
+#+testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
+>nair knows
+But prayer and such is built on faith!
+
+#+testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
+>neer nose
+No, you're much better looking with your nose attached to your face!
+
+#+testcase-mistakes-table-of-rare-rows-guesses-nair-neer-nose-knows
+>nair nose
+Cosmetic hair removal can wait. You, like, have a big important spiritual quest, or something!
+
+#testcase-mistakes-table-of-rare-rows-guesses-pair-pare-pose-poes
+>pair pose
+No, one must be sincere and not pose.
+
+>pare pose
+No, one must be sincere and not pose.
+
+>pair poes
+A suitable author for Halloween, but I'm trying to avoid literary references. Unless they give a really awful pun.
+
+>pare poes
+A suitable author for Halloween, but I'm trying to avoid literary references. Unless they give a really awful pun.
+
+#testcase-mistakes-table-of-rare-rows-guesses-spare-spose
+>spare spose
+A spare "s'pose" feels like false humility.
+
+#testcase-mistakes-table-of-rare-rows-guesses-tear-toes
+>tear toes
+Self-mutilation is not a good alternative to prayer.
+
+>snare snows
+by one point
+
+>e
+
+#testcase-mistakes-table-of-rowr-room-guesses-sour-assume
+>sour assume
+You assume this trickery won't get you a point, and what do you know? You're right on!
+
+>tower tomb
+by one point
+
+>wower womb
+by one point
+
+>flower flume
+by one point
+
+>plower plume
+by one point
+
+>dour doom
+by one point
+
+>glower gloom
+by one point
+
+>w
+
+>fair foes
+by one point
+
+>arrows
+by one point
+
+#+testcase-mistakes-table-of-rare-rows-guesses-air-err-ere-ohs-owes
+>ere ohs
+There's no need to split up the arrows.
+
+>bare bows
+by one point
+
+>s
+
+#testcase-mistakes-table-of-car-cage-guesses-gar-gauge
+>gar gauge
+You remember, for no parrticular reason, that a 64-gauge cigar is one inch thick. Or is that diameter? Or circumference?
+
+>our age
+by one point
+
+>far phage
+by one point
+
+>star stage
+by one point
+
+>rar rage
+by one point
+
+>n
+
+>hair hose
+by one point
+
+>n
+
+#testcase-mistakes-table-of-cram-creek-guesses-bam-beak
+>bam beak
+Alas, no birds swoop down to assist you.
+
+#testcase-mistakes-table-of-cram-creek-guesses-lamb-leak-leek
+>lamb leak
+That might work in a pasture, but not here.
+
+>lamb leek
+That might work in a pasture, but not here.
+
+#testcase-mistakes-table-of-cram-creek-guesses-spam-speak
+>spam speak
+You need quality and not quantity of words. Plus, you're not sure how to speak in ALL CAPS.
+
+>blam bleak
+by one point
+
+>slam sleek
+by one point
+
+>wham weak
+by one point
+
+>clam clique
+by one point
+
+>maam meek
+by one point
+
+>s
+
+>stair stows
+by one point
+
+>glare glows
+by one point
+
+>w
+
+#testcase-mistakes-table-of-grave-ground-guesses-wave-wound
+>wave wound
+You call for a wave, but it might not come until after Dave's sorted out what he likes.
+
+>crave crowned
+by one point
+
+>save sound
+by one point
+
+>pave pound
+by one point
+
+>fave found
+by one point
+
+#+testcase-mistakes-table-of-grave-ground-guesses-wave-wound
+>wave wound
+!You call for a wave, but
+
+>rave round
+by one point
+
+>e
+
+#testcase-mistakes-table-of-ppnn-guesses-cope-cuts
+>cope cuts
+The right idea, but you need something more concrete.
+
+#testcase-mistakes-table-of-ppnn-guesses-mope-mutts
+>mope mutts
+The Prayer Pros could use pets, even ones not very cheery, but first comes more basic needs.
+
+#testcase-mistakes-table-of-ppnn-guesses-slope-sluts
+>slope sluts
+Whoever they're for, um, no.
+
+#+testcase-mistakes-table-of-rare-rows-guesses-air-err-ere-ohs-owes
+>air owes
+You don't need any more arrows raining down.
+
+>rope ruts
+by one point
+
+>hope huts
+by one point
+

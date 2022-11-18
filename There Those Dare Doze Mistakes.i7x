@@ -21,7 +21,7 @@ mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 table of cram creek guesses
 mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
 "bam beak"	--	false	--	"Alas, no birds swoop down to assist you."
-"lamb leak|leek"	--	false	--	"That might work in a pasture, but not here."
+"lamb (leak|leek)"	--	false	--	"That might work in a pasture, but not here."
 "spam speak"	no-clique rule	false	--	"You need quality and not quantity of words. Plus, you're not sure how to speak in ALL CAPS."
 
 this is the no-clique rule:
@@ -38,18 +38,18 @@ this is the no-wave rule:
 
 table of rare rows guesses
 mist-regex(text)	mist-rule	got-yet	leet-rule	mist-txt
-"air|err|ere ohs|owes"	--	false	--	"[if arrows are moot]You don't need any more arrows raining down[else if sco-arrows is true]There's no need to split up the arrows[else]Hmm! You feel on the right track, for some odd reason. But you can't put everything together[end if]."
+"(air|err|ere) (ohs|owes)"	--	false	--	"[if arrows are moot]You don't need any more arrows raining down[else if sco-arrows is true]There's no need to split up the arrows[else]Hmm! You feel on the right track, for some odd reason. But you can't put everything together[end if]."
 "blare blows"	--	false	--	"No euphemisms for violence, please."
 "brer bros"	--	false	--	"That's overdoing the whole 'we are family' angle."
 "care cos"	--	false	--	"No, more than corporate help is required here."
-"claire close|clothes"	--	false	--	"No, what you're wearing is okay, and you don't need someone to help you finish the job."
-"flayer|flare|flair flows"	--	false	--	"Alas, anything violent or even a bright explosion may be overkill."
-"frere fros|froze"	--	false	--	"Foreign language is innovative but not necessary."
+"claire (close|clothes)"	--	false	--	"No, what you're wearing is okay, and you don't need someone to help you finish the job."
+"(flayer|flare|flair) flows"	--	false	--	"Alas, anything violent or even a bright explosion may be overkill."
+"frere (fros|froze)"	--	false	--	"Foreign language is innovative but not necessary."
 "impair impose"	--	false	--	"Psychological warfare is not the way to go. It is the opposite of prayer. Even clever stuff like what you just found."
 "lair lows"	--	false	--	"You briefly spend a second fearing if someone or something down under might swallow you up. It does not. Whoah!"
-"mare|mayor mows"	--	false	--	"The land is too desolate to need mowing."
-"nair|neer nose|knows"	--	false	--	"[knows-stuff]!"
-"pair|pare pose|poes"	--	false	--	"No, one must be sincere and not pose."
+"(mare|mayor) mows"	--	false	--	"The land is too desolate to need mowing."
+"(nair|neer) (nose|knows)"	--	false	--	"[knows-stuff]!"
+"(pair|pare) (pose|poes)"	--	false	--	"[pose-poes]."
 "spare spose"	--	false	--	"A spare 's'pose' feels like false humility."
 "tear toes"	--	false	--	"Self-mutilation is not a good alternative to prayer."
 
@@ -59,7 +59,13 @@ to say knows-stuff:
 	else if the player's command includes "neer":
 		say "No, you're much better looking with your nose attached to your face";
 	else:
-		say "Cosmetic hair removal can wait. You, like, have a spiritual quest, and stuff. Or something"
+		say "Cosmetic hair removal can wait. You, like, have a big important spiritual quest, or something"
+
+to say pose-poes:
+	if the player's command includes "pose":
+		say "No, one must be sincere and not pose";
+	else:
+		say "A suitable author for Halloween, but I'm trying to avoid literary references. Unless they give a really awful pun"
 
 table of rowr room guesses
 mist-cmd	mist-rule	got-yet	leet-rule	mist-txt
